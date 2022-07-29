@@ -32,7 +32,7 @@ ObjectTemplate.createComponent DefaultAmmoComp
 ObjectTemplate.ammo.ammoType 6
 ObjectTemplate.ammo.nrOfMags 2
 ObjectTemplate.ammo.magSize 1
-ObjectTemplate.ammo.reloadTime 3
+ObjectTemplate.ammo.reloadTime 1.25
 ObjectTemplate.ammo.autoReload 1
 ObjectTemplate.ammo.instantReloadOnEnable 1
 ObjectTemplate.ammo.toggleWhenNoAmmo 1
@@ -76,7 +76,7 @@ ObjectTemplate.projectileTemplate medikit_dressing_Projectile
 ObjectTemplate.keepProjectiles 1
 ObjectTemplate.velocity 2
 ObjectTemplate.itemIndex 8
-ObjectTemplate.delayToUse 2.5
+ObjectTemplate.delayToUse 1.25
 
 GeometryTemplate.compressVertexData 1
 GeometryTemplate.maxTextureRepeat 16
@@ -94,7 +94,7 @@ ObjectTemplate.createComponent ReplenishDetonationComp
 ObjectTemplate.detonation.triggerRadius 1.75
 ObjectTemplate.detonation.triggerType MTYPco
 ObjectTemplate.detonation.replenishingType RTHeal
-ObjectTemplate.detonation.replenishingStrength 45
+ObjectTemplate.detonation.replenishingStrength 50
 rem ---EndComp ---
 rem ---BeginComp:DefaultProjSoundComp ---
 ObjectTemplate.createComponent DefaultProjSoundComp

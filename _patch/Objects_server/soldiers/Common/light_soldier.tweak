@@ -1,16 +1,16 @@
 ObjectTemplate.drag 1.0
-ObjectTemplate.mass 100
+ObjectTemplate.mass 95
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.SprintRecoverTime 60
-ObjectTemplate.SprintDissipationTime 120
+ObjectTemplate.SprintRecoverTime 35
+ObjectTemplate.SprintDissipationTime 80
 ObjectTemplate.SprintLimit 0.05
-ObjectTemplate.SprintLossAtJump 0.05
+ObjectTemplate.SprintLossAtJump 0.15
 rem ObjectTemplate.Grip 20
 
 rem ---BeginComp:Armor ---
 ObjectTemplate.createComponent Armor
-ObjectTemplate.armor.maxHitPoints 45
+ObjectTemplate.armor.maxHitPoints 100
 ObjectTemplate.armor.hitPoints 100
 ObjectTemplate.armor.wreckhitpoints 320
 ObjectTemplate.armor.defaultMaterial 24
@@ -22,7 +22,7 @@ ObjectTemplate.armor.timeToStayAfterDestroyed 1
 ObjectTemplate.armor.angleMod 1
 ObjectTemplate.armor.wreckExplosionForceMod 0
 ObjectTemplate.armor.wreckExplosionForceMax 0
-ObjectTemplate.armor.criticalDamage 40
+ObjectTemplate.armor.criticalDamage 55
 ObjectTemplate.armor.addArmorEffect 35 e_exp_bleeding 0/0/0 0/0/0
 ObjectTemplate.armor.addArmorEffect 35 e_bloodtrail 0/0/0 0/0/0
 rem ObjectTemplate.armor.addArmorEffect 4 e_heal_soldier 0/0/0 0/0/0

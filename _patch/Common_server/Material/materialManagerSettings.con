@@ -8302,11 +8302,11 @@ MaterialManager.setSoundTemplate 0 S_Grenade_Metal_Impact
 MaterialManager.createCell 69 22
 MaterialManager.damageMod 0
 MaterialManager.createCell 69 23
-MaterialManager.damageMod 0.8
+MaterialManager.damageMod 0.3
 MaterialManager.createCell 69 24
-MaterialManager.damageMod 1
+MaterialManager.damageMod 0.5
 MaterialManager.createCell 69 25
-MaterialManager.damageMod 1.5
+MaterialManager.damageMod 0.55
 MaterialManager.setSoundTemplate 0 S_Grenade_Metal_Impact
 MaterialManager.createCell 69 26
 MaterialManager.setEffectTemplate 0 e_mExp_grenade_metalsolid
