@@ -1,0 +1,23 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/1/9 13:59]
+GeometryTemplate.setSubGeometryLodDistance 0 0 10
+GeometryTemplate.setSubGeometryLodDistance 0 1 35
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject cafechair
+ObjectTemplate.creator MFR-1:mfr
+ObjectTemplate.modifiedByUser dfr
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry cafechair
+ObjectTemplate.setCollisionMesh cafechair
+ObjectTemplate.mapMaterial 0 metal_solid 21
+ObjectTemplate.mapMaterial 1 plastic 11
+ObjectTemplate.mass 50
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.isSleeping 1
+ObjectTemplate.setNetworkableInfo BasicInfo
+

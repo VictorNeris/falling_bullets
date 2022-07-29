@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh sas_nvg
+
+ObjectTemplate.create MaskObject sas_nvg
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry sas_nvg
+ObjectTemplate.maskType MOTNightVisionGoggles
+
+

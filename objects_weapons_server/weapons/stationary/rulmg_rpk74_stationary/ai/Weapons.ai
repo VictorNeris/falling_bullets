@@ -1,0 +1,13 @@
+rem *** Add Saw ***
+weaponTemplate.create rulmg_rpk74_stationary
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 80.0
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 10.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  1.0
+weaponTemplate.setStrength AirPlane    0.5
+weaponTemplate.setSoundSphereRadius   60.0
+weaponTemplate.allowedDeviation 5.0

@@ -1,0 +1,80 @@
+
+
+ObjectTemplate.create Particle p_echo_m4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_ak
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_bizon
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_sniper
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_g3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_g36
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_mp5
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak
+
+
+ObjectTemplate.create Particle p_echo_pkm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh p_wreck_01
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+
+include p_echo.tweak

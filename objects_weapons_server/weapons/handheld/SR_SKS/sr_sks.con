@@ -1,0 +1,10 @@
+GeometryTemplate.create BundledMesh sr_sks
+
+ObjectTemplate.create GenericFireArm sr_sks
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARS:theta
+ObjectTemplate.geometry sr_sks
+
+include sr_sks.tweak
+
+include sr_sks_sks.tweak

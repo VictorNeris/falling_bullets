@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_jetski_wake
+ObjectTemplate.createdInEditor 1
+
+include e_jetski_wake.tweak

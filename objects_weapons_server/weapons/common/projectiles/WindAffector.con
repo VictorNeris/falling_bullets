@@ -1,0 +1,69 @@
+ObjectTemplate.create EffectBundle WindAffector
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate WindAffectorForce_1
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate WindAffectorForce_2
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate WindAffectorForce_3
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate WindAffectorForce_4
+ObjectTemplate.setRotation 270/0/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+
+
+ObjectTemplate.create ForceObject WindAffectorForce_1
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.force 2
+ObjectTemplate.constantForce 2
+ObjectTemplate.useAbsoluteDirection 1
+ObjectTemplate.startDelay 0.1
+
+
+
+ObjectTemplate.create ForceObject WindAffectorForce_2
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.force 2
+ObjectTemplate.constantForce 2
+ObjectTemplate.useAbsoluteDirection 1
+ObjectTemplate.startDelay 0.5
+
+
+
+ObjectTemplate.create ForceObject WindAffectorForce_3
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.force 2
+ObjectTemplate.constantForce 2
+ObjectTemplate.useAbsoluteDirection 1
+ObjectTemplate.startDelay 0.9
+
+
+
+ObjectTemplate.create ForceObject WindAffectorForce_4
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.force 2
+ObjectTemplate.constantForce 2
+ObjectTemplate.useAbsoluteDirection 1
+ObjectTemplate.startDelay 1.2

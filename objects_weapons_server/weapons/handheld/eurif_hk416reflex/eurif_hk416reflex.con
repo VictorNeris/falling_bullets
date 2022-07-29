@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh eurif_hk416reflex
+
+ObjectTemplate.create GenericFirearm eurif_hk416reflex
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DNAPC:Администратор
+ObjectTemplate.geometry eurif_hk416reflex
+
+include eurif_hk416reflex.tweak

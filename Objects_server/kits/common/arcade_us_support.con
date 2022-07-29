@@ -1,0 +1,95 @@
+ObjectTemplate.create Kit arcade_us_support
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Support
+ObjectTemplate.aiTemplate Support
+ObjectTemplate.geometry US_Kits
+ObjectTemplate.geometry.kit 4
+ObjectTemplate.geometry.dropGeom 14
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.dropHeadwear helmet
+ObjectTemplate.abilityRestoreRate 0.05
+ObjectTemplate.abilityInVehicleRadius 10
+ObjectTemplate.abilityInVehicleStrength 0.5
+ObjectTemplate.abilityInVehicleMaterial 91
+ObjectTemplate.unlockIndex 5
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 30
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_m249
+ObjectTemplate.addTemplate bf4_m249_deployed
+ObjectTemplate.addTemplate pistol_m1911
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate ammokit
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate Unlock_arcade_us_Support_1
+ObjectTemplate.addTemplate Unlock_arcade_us_Support_2
+ObjectTemplate.addTemplate Unlock_arcade_us_Support_3
+ObjectTemplate.addTemplate Unlock_arcade_us_Support_4
+rem -------------------------------------
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.hasAmmoAbility 1
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SUPPORT"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Heavy_Assault_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Heavy_Assault.tga"
+ObjectTemplate.vehicleHud.abilityIcon 		"Ingame\Weapons\Icons\Hud\SpecialKitIcons\kevlarVest.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_KIT_SUPPORT_inVehicle"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_KIT_SUPPORT_inVehicle"
+rem ---EndComp ---
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer Unlock_arcade_us_Support_1
+ObjectTemplate.addTemplate bf4_rpk
+ObjectTemplate.replaceItem bf4_m249
+ObjectTemplate.addTemplate bf4_rpk_deployed
+ObjectTemplate.replaceItem bf4_m249_deployed
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer Unlock_arcade_us_Support_2
+ObjectTemplate.addTemplate MG_RPK74M
+ObjectTemplate.replaceItem bf4_rpk
+ObjectTemplate.addTemplate MG_RPK74M_deployed
+ObjectTemplate.replaceItem bf4_rpk_deployed
+
+ObjectTemplate.addTemplate pis_deagle
+ObjectTemplate.replaceItem rupis_makarov
+ObjectTemplate.unlockLevel 2
+
+ObjectTemplate.create ItemContainer Unlock_arcade_us_Support_3
+ObjectTemplate.addTemplate bf4_pkp
+ObjectTemplate.replaceItem MG_RPK74M
+ObjectTemplate.addTemplate bf4_pkp_deployed
+ObjectTemplate.replaceItem MG_RPK74M_deployed
+ObjectTemplate.unlockLevel 3
+
+ObjectTemplate.create ItemContainer Unlock_arcade_us_Support_4
+ObjectTemplate.addTemplate play4free_mg3 
+ObjectTemplate.replaceItem bf4_pkp
+ObjectTemplate.addTemplate play4free_mg3_deployed
+ObjectTemplate.replaceItem bf4_pkp_deployed
+ObjectTemplate.unlockLevel 4

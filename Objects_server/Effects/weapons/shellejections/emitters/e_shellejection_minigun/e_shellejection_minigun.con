@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_shellejection_minigun
+ObjectTemplate.createdInEditor 1
+
+include e_shellejection_minigun.tweak

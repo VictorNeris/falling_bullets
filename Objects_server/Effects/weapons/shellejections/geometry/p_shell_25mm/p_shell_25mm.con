@@ -1,0 +1,11 @@
+GeometryTemplate.create BundledMesh p_shell_25mm
+
+ObjectTemplate.create Particle p_shell_25mm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.mapMaterial 0 shell_50cal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_shell_25mm
+
+include p_shell_25mm.tweak

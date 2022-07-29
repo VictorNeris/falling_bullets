@@ -1,0 +1,250 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/18 17:41]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.3
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm mg_m60_deployed
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair_sniper.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\deployed_machinegun.ddsmg_m60.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\deployed_machinegun.ddsmg_m60.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\deployed_machinegun.ddsmg_m60.dds
+ObjectTemplate.weaponHud.hudName "M60E4"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ObjectTemplate.weaponHud.deviationFactor 3
+rem ObjectTemplate.weaponHud.maxVisualDeviation 65
+rem ObjectTemplate.weaponHud.minVisualDeviation 10
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Handheld_Overheat
+rem ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.05/0
+ObjectTemplate.fire.roundsPerMinute 635
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.onlyFireWhenProne 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/machinegun_mags.tweak
+rem ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.magSize 100
+ObjectTemplate.ammo.reloadTime 7.5
+ObjectTemplate.ammo.magLinkWeapon mg_m60
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/07_62x51mm_deployed_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/1.6/0.4/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-1/1/0
+rem ObjectTemplate.recoil.zoomModifier 0.8
+rem ObjectTemplate.recoil.recoilGraphFrameCount 6
+rem ObjectTemplate.recoil.recoilGraphExponent 5
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 1
+rem ObjectTemplate.recoil.recoilSize 0.25
+rem ObjectTemplate.recoil.recoilSpeed 30
+rem ObjectTemplate.recoil.cameraRecoilSpeed 11
+rem ObjectTemplate.recoil.cameraRecoilSize 1.5
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_LMG_GENERAL_watchTempGauge"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_LMG_GENERAL_watchTempGauge"
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/deployed_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/highzoom.tweak
+ObjectTemplate.zoom.onlyZoomWhenProne 1
+ObjectTemplate.zoom.zoomDelay 0.30
+ObjectTemplate.zoom.zoomLod 0
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.5
+rem 1.5
+rem rem ObjectTemplate.zoom.mouseSpeedMod 0.6
+rem ObjectTemplate.zoom.mouseSpeedMod 0.5
+rem ---EndComp ---
+ObjectTemplate.geometry mg_m60
+rem ObjectTemplate.setCollisionMesh uslmg_m249saw
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate lmg_deployed_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mg_m60_Fire1P
+ObjectTemplate.setPosition 0.00130758/0.072425/0.55158
+ObjectTemplate.addTemplate S_mg_m60_Fire1P_Outdoor
+ObjectTemplate.setPosition 0.000193767/0.0738525/0.552745
+ObjectTemplate.addTemplate S_mg_m60_Fire3P
+ObjectTemplate.setPosition 0.000106107/0.0722778/0.551821
+ObjectTemplate.addTemplate S_mg_m60_BoltClick
+ObjectTemplate.setPosition 0/0.0799825/-0.131798
+ObjectTemplate.addTemplate S_mg_m60_TriggerClick
+ObjectTemplate.setPosition 0.0126139/-0.0187192/-0.081256
+ObjectTemplate.addTemplate S_mg_m60_SwitchFireRate
+ObjectTemplate.setPosition 0.0195339/0.0280159/-0.113085
+ObjectTemplate.addTemplate S_mg_m60_Reload1P
+ObjectTemplate.setPosition 0.00896461/0.0434158/0.00171497
+ObjectTemplate.addTemplate S_mg_m60_Reload3P
+ObjectTemplate.setPosition -0.000943646/-0.0342668/-0.0135139
+ObjectTemplate.addTemplate S_mg_m60_Deploy1P
+ObjectTemplate.setPosition 0.00472397/0.0395077/-0.133244
+ObjectTemplate.addTemplate S_mg_m60_Deploy3P
+ObjectTemplate.setPosition 0.0106914/0.0652283/-0.109307
+ObjectTemplate.addTemplate S_mg_m60_Zoom
+ObjectTemplate.setPosition 0/0.0945407/-0.0520584
+ObjectTemplate.addTemplate e_muzz_M240
+ObjectTemplate.setPosition 0/0.1020902/0.871102
+ObjectTemplate.addTemplate e_shellejection_m249
+ObjectTemplate.setPosition 0.0300354/0.0834186/-0.00208129
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/mg_m60/AnimationSystem1p_deployed.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/mg_m60/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 762_51_mg
+ObjectTemplate.velocity 850
+ObjectTemplate.itemIndex 6
+ObjectTemplate.delayToUse 0
+include ../../common/heat/gpmg_heat.tweak
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Fire1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/mg_m60/sounds/LMG_M60_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1.2
+ObjectTemplate.pitch 0.9
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.00130758/0.072425/0.55158
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Fire3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/mg_m60/sounds/LMG_M60_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/-1.97887e-005/0.67157
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 20
+
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_BoltClick
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0799825/-0.131798
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_TriggerClick
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.0126139/-0.0187192/-0.081256
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_SwitchFireRate
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Reload1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/mg_m60/sounds/m60_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.00896461/0.0434158/0.00171497
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Reload3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -0.000943646/-0.0342668/-0.0135139
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Deploy1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/mg_m60/sounds/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.00472397/0.0395077/-0.133244
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Deploy3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.0106914/0.0652283/-0.109307
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_mg_m60_deployed_Zoom
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0945407/-0.0520584
+
+ObjectTemplate.activeSafe Sound S_mg_m60Projectile_Looping
+ObjectTemplate.modifiedByUser nfe
+

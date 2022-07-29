@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_dAmb_jumpingfish
+ObjectTemplate.createdInEditor 1
+
+include e_dAmb_jumpingfish.tweak

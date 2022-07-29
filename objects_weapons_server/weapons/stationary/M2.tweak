@@ -1,0 +1,212 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm m2
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft -0.105895/0.0126209/-0.731889
+ObjectTemplate.ik.rotationLeft -63.9408/-4.82176/-72.1486
+ObjectTemplate.ik.poleVectorLeft -0.706101/-0.203402/-0.156404
+ObjectTemplate.ik.positionRight 0.0938978/0.00892711/-0.73389
+ObjectTemplate.ik.rotationRight -96.305/27.3512/114.913
+ObjectTemplate.ik.poleVectorRight 0.675322/-0.38396/0.0380014
+rem ---EndComp ---
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Predator.tga
+ObjectTemplate.weaponHud.hudName "m2hb"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 20
+ObjectTemplate.weaponHud.minVisualDeviation 2
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Handheld_Overheat
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 450
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 100
+ObjectTemplate.ammo.reloadTime 6
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 0.23
+ObjectTemplate.recoil.recoilSpeed 30
+ObjectTemplate.recoil.recoilForce 1
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.setFireDev 0.1 0.05 0.01
+ObjectTemplate.deviation.minDev 0.015
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.geometry HMG_M2HB
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.aiTemplate Stationary_hmg_AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_m2_Fire1P
+ObjectTemplate.addTemplate S_m2_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_m2_Fire3P
+ObjectTemplate.setPosition 0/0.0440063/1.02271
+ObjectTemplate.addTemplate S_m2_BoltClick
+ObjectTemplate.setPosition 0/0.0511522/-0.5527
+ObjectTemplate.addTemplate S_m2_TriggerClick
+ObjectTemplate.addTemplate S_m2_SwitchFireRate
+ObjectTemplate.addTemplate S_m2_Reload1P
+ObjectTemplate.setPosition 0/0.0580606/-0.114207
+ObjectTemplate.addTemplate S_m2_Reload3P
+ObjectTemplate.setPosition 0/0.0548553/-0.0740795
+ObjectTemplate.addTemplate S_m2_Deploy1P
+ObjectTemplate.setPosition 0/0.0652676/-0.36916
+ObjectTemplate.addTemplate S_m2_Deploy3P
+ObjectTemplate.setPosition 0/0.0478239/-0.473166
+ObjectTemplate.addTemplate S_m2_Zoom
+ObjectTemplate.setPosition 0/0.116629/-0.521821
+ObjectTemplate.addTemplate S_M2b_Fire1P
+ObjectTemplate.setPosition 0/0.0413275/1.02263
+ObjectTemplate.addTemplate e_shellejection_50cal
+ObjectTemplate.setPosition 0.0551913/0.0667658/-0.0916505
+ObjectTemplate.addTemplate e_muzz_minigun
+ObjectTemplate.setPosition 0/0.0408155/1.02774
+rem -------------------------------------
+ObjectTemplate.projectileTemplate 50_bmg
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 890
+ObjectTemplate.itemIndex 1
+include ../../common/heat/hmg_heat.tweak
+
+
+ObjectTemplate.activeSafe Sound S_m2_Fire1P
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m2hb/sounds/m2hb_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.93/1/
+
+ObjectTemplate.activeSafe Sound S_m2_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+
+ObjectTemplate.activeSafe Sound S_m2_Fire3P
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m2hb/sounds/m2hb_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.975/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.93/1/
+ObjectTemplate.position 0/0.0440063/1.02271
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_m2_BoltClick
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 0.9
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0511522/-0.5527
+
+ObjectTemplate.activeSafe Sound S_m2_TriggerClick
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_m2_SwitchFireRate
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+
+ObjectTemplate.activeSafe Sound S_m2_Reload1P
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/sound/hmg_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0580606/-0.114207
+
+ObjectTemplate.activeSafe Sound S_m2_Reload3P
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/sound/hmg_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0548553/-0.0740795
+ObjectTemplate.minDistance 2.5
+ObjectTemplate.halfVolumeDistance 5
+
+ObjectTemplate.activeSafe Sound S_m2_Deploy1P
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+
+ObjectTemplate.activeSafe Sound S_m2_Deploy3P
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+
+ObjectTemplate.activeSafe Sound S_m2_Zoom
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+
+ObjectTemplate.activeSafe Sound S_50cal_Projectile_Looping
+ObjectTemplate.modifiedByUser "Sturm_tiger"
+

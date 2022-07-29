@@ -1,0 +1,22 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/10 7:10]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor air_a10_intake
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.modifiedByUser "chrisel"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 10
+ObjectTemplate.geometry air_a10_intake
+ObjectTemplate.setCollisionMesh air_a10_intake
+ObjectTemplate.mapMaterial 0 Airplane 32
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.changeLodAt 0.3
+ObjectTemplate.tolerance 4.76835e-008
+ObjectTemplate.rotationSpeedMod -0.05
+ObjectTemplate.rotationSpeedModBlur -0.05
+ObjectTemplate.rotationAxle 2
+ObjectTemplate.engineName air_a10_Engine
+

@@ -1,0 +1,16 @@
+GeometryTemplate.create BundledMesh sr_m95
+CollisionManager.createTemplate sr_m95
+
+ObjectTemplate.create GenericFireArm sr_m95
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DEVELOP013-PC:DEVELOP013
+ObjectTemplate.collisionMesh sr_m95
+ObjectTemplate.mapMaterial 0 SR_M95 0
+ObjectTemplate.mapMaterial 1 SR_m95_scope 0
+ObjectTemplate.mapMaterial 2 Alpha 0
+ObjectTemplate.mapMaterial 3 SR_m95_clip 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sr_m95
+
+include sr_m95.tweak

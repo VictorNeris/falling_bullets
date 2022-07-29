@@ -1,0 +1,108 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/4/7 9:48]
+ObjectTemplate.active PlaneMG
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.guiIndex 0
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.magSize 400
+ObjectTemplate.ammo.reloadTime 0.1
+ObjectTemplate.ammo.autoReload 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSpeed 50
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.setFireDev 1.9 0.26 0.05
+ObjectTemplate.deviation.minDev 0.75
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+rem -------------------------------------
+ObjectTemplate.addTemplate S_PlaneMG_Fire1P
+ObjectTemplate.addTemplate S_PlaneMG_Fire3P
+ObjectTemplate.addTemplate S_PlaneMG_Reload1P
+ObjectTemplate.addTemplate S_PlaneMG_Reload3P
+ObjectTemplate.addTemplate S_PlaneMG_Deploy1P
+ObjectTemplate.addTemplate S_PlaneMG_Deploy3P
+ObjectTemplate.addTemplate S_PlaneMG_Zoom
+ObjectTemplate.addTemplate S_PlaneMG_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_PlaneMG_BoltClick
+ObjectTemplate.addTemplate S_PlaneMG_TriggerClick
+ObjectTemplate.addTemplate S_PlaneMG_SwitchFireRate
+rem -------------------------------------
+ObjectTemplate.projectileTemplate PlaneMG_Projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.heatAddWhenFire 0.005
+ObjectTemplate.coolDownPerSec 0.2
+
+ObjectTemplate.create GenericProjectile PlaneMG_Projectile
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.createComponent DefaultRicochetComp
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.createComponent DefaultProjSoundComp
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_PlaneMG_Projectile_Looping
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.setPosition 0/0/-0.00992489
+ObjectTemplate.addTemplate houselight_big_LightSource
+ObjectTemplate.setPosition 0/0/-0.4
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.material 38
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 30
+ObjectTemplate.tracerSizeModifier 3
+ObjectTemplate.tracerTemplate p_tracer_tank
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 25
+
+ObjectTemplate.active S_PlaneMG_Fire1P
+
+ObjectTemplate.active S_PlaneMG_Fire3P
+
+ObjectTemplate.active S_PlaneMG_Reload1P
+
+ObjectTemplate.active S_PlaneMG_Reload3P
+
+ObjectTemplate.active S_PlaneMG_Deploy1P
+
+ObjectTemplate.active S_PlaneMG_Deploy3P
+
+ObjectTemplate.active S_PlaneMG_Zoom
+
+ObjectTemplate.active S_PlaneMG_Fire1P_Outdoor
+
+ObjectTemplate.active S_PlaneMG_BoltClick
+
+ObjectTemplate.active S_PlaneMG_TriggerClick
+
+ObjectTemplate.active S_PlaneMG_SwitchFireRate
+

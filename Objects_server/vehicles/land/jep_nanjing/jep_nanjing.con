@@ -1,0 +1,108 @@
+GeometryTemplate.create BundledMesh jep_nanjing
+CollisionManager.createTemplate jep_nanjing
+
+ObjectTemplate.create PlayerControlObject jep_nanjing
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEI-2:mei
+ObjectTemplate.collisionMesh jep_nanjing
+ObjectTemplate.mapMaterial 0 Tyg 0
+ObjectTemplate.mapMaterial 1 Glas 0
+ObjectTemplate.mapMaterial 2 armormetal 0
+ObjectTemplate.mapMaterial 3 penetrablemetal 0
+ObjectTemplate.mapMaterial 4 Rubber 0
+ObjectTemplate.mapMaterial 5 wood 0
+ObjectTemplate.mapMaterial 6 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry jep_nanjing
+ObjectTemplate.addTemplate JEP_nanjing_Steeringwheel
+ObjectTemplate.setPosition -0.4494/0.7247/1.2628
+ObjectTemplate.setRotation 0/40.2982/0
+ObjectTemplate.addTemplate JEP_nanjing_cupolabase
+ObjectTemplate.setPosition -0.0081/1.4951/-0.3738
+ObjectTemplate.addTemplate JEP_nanjing_Engine
+ObjectTemplate.setPosition 0/-0.2475/-0.2500
+
+ObjectTemplate.create RotationalBundle JEP_nanjing_Steeringwheel
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create PlayerControlObject JEP_nanjing_cupolabase
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate JEP_nanjing_cupola
+ObjectTemplate.setPosition 0/0/-0.0158
+
+ObjectTemplate.create RotationalBundle JEP_nanjing_cupola
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate JEP_nanjing_gunmount
+ObjectTemplate.setPosition 0.0055/0.3032/0.6637
+
+ObjectTemplate.create RotationalBundle JEP_nanjing_gunmount
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Engine JEP_nanjing_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate JEP_nanjing_nav_RF
+ObjectTemplate.setPosition 0.7695/-0.3875/1.8615
+ObjectTemplate.addTemplate JEP_nanjing_nav_LF
+ObjectTemplate.setPosition -0.8066/-0.3875/1.8618
+ObjectTemplate.addTemplate JEP_nanjing_Wheel_LB
+ObjectTemplate.setPosition -0.9347/-0.3506/-1.0225
+ObjectTemplate.addTemplate JEP_nanjing_Wheel_RB
+ObjectTemplate.setPosition 0.9201/-0.3506/-1.0225
+
+ObjectTemplate.create RotationalBundle JEP_nanjing_nav_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate JEP_nanjing_Wheel_RF
+ObjectTemplate.setPosition 0.1506/0.0370/0
+
+ObjectTemplate.create Spring JEP_nanjing_Wheel_RF
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle JEP_nanjing_nav_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate JEP_nanjing_Wheel_LF
+ObjectTemplate.setPosition -0.1281/0.0370/0
+
+ObjectTemplate.create Spring JEP_nanjing_Wheel_LF
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring JEP_nanjing_Wheel_LB
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring JEP_nanjing_Wheel_RB
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+include jep_nanjing.tweak

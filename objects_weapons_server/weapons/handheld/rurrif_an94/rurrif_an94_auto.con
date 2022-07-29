@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rurrif_an94
+
+ObjectTemplate.create GenericFireArm rurrif_an94_auto
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARS:theta
+ObjectTemplate.geometry rurrif_an94
+
+include rurrif_an94_auto.tweak

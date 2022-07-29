@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_ATRocket_trail
+ObjectTemplate.createdInEditor 1
+
+include e_ATRocket_trail.tweak

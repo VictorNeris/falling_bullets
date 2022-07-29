@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm PlaneMG
+
+include PlaneMG.tweak
+

@@ -1,0 +1,17 @@
+hudBuilder.createSplitNode		IngameHud elcanHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 20003
+hudBuilder.setNodeInTime		0.15
+hudBuilder.setNodeOutTime		0.1
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode 		elcanHud elcanHitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+rem hudBuilder.setNodeColor 		1 0 0 1
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable    	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+ 
+hudBuilder.createPictureNode 		elcanHud elcanRedDot 385 285 30 30
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/elcanCrosshair.tga
+rem hudBuilder.setNodeColor 		1 0 0 1

@@ -1,0 +1,25 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/16 17:12]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor chthe_z8_mainrotor
+ObjectTemplate.creator LMA-1:lma
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry chthe_z8_mainrotor
+ObjectTemplate.setCollisionMesh chthe_z8_mainrotor
+ObjectTemplate.mapMaterial 0 rotor 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.18
+ObjectTemplate.tolerance 3.81467e-007
+ObjectTemplate.rotationSpeedMod -0.35
+ObjectTemplate.rotationSpeedModBlur -0.015
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName chthe_z8_Rotor
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chpis_qsz92_silencer
+
+ObjectTemplate.create GenericFireArm chpis_qsz92_silencer
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PAN-1:pan
+ObjectTemplate.geometry chpis_qsz92
+
+include chpis_qsz92_silencer.tweak

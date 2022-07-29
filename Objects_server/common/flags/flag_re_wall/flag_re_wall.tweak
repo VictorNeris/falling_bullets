@@ -1,0 +1,5 @@
+ObjectTemplate.activeSafe AnimatedBundle flag_re_wall
+ObjectTemplate.skeleton Objects\Common\Flags\flag_setup_wall.ske
+ObjectTemplate.animationSystem1P Objects\Common\Flags\flag_re_wall\AnimationSystem.inc
+ObjectTemplate.cullRadiusScale 3
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh pis_m9
+
+ObjectTemplate.create GenericFireArm pis_m9
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARVIN:radeexpitheta
+ObjectTemplate.geometry pis_m9
+
+include pis_m9.tweak

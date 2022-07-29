@@ -1,0 +1,11 @@
+GeometryTemplate.create BundledMesh p_link_smallarms
+
+ObjectTemplate.create Particle p_link_smallarms
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.mapMaterial 0 link_smallarms 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_link_smallarms
+
+include p_link_smallarms.tweak

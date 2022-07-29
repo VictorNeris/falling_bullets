@@ -1,0 +1,24 @@
+GeometryTemplate.create SkinnedMesh meinsurgent_kits
+
+ObjectTemplate.create SimpleObject meinsurgent_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry meinsurgent_kits
+
+ObjectTemplate.create SimpleObject mec_spec_kit_sinrad
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch4
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch2
+
+ObjectTemplate.create SimpleObject mec_spec_kit_canteen
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch5
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch6
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch7
+
+ObjectTemplate.create SimpleObject headwrap_high3
+
+include meinsurgent_kits.tweak

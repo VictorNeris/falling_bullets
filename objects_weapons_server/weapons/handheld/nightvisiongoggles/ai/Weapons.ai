@@ -1,0 +1,12 @@
+rem *** Add Usrif_m4 ***
+weaponTemplate.create Knife
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 1.5
+weaponTemplate.setStrength Infantry    1.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.setSoundSphereRadius    0.0

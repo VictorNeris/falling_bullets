@@ -1,0 +1,21 @@
+GeometryTemplate.create BundledMesh e_vexp_xpak_jetski
+
+ObjectTemplate.create EffectBundle e_vexp_xpak_jetski
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.addTemplate e_xpak_jetski_arm
+ObjectTemplate.setPosition 0/0.6700/0.4700
+
+ObjectTemplate.create Emitter e_xpak_jetski_arm
+ObjectTemplate.template p_e_xpak_jetski_arm
+
+ObjectTemplate.create Particle p_e_xpak_jetski_arm
+ObjectTemplate.collisionMesh e_vexp_xpak_jetski
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_jetski
+ObjectTemplate.geometryPart 0
+
+include e_vexp_xpak_jetski.tweak

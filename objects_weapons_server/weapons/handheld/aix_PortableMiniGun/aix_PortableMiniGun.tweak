@@ -1,0 +1,250 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.3
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm aix_portableminigun
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\MinigunUS_Icon.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\MinigunUS_Icon.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\MinigunUS_Icon.dds
+ObjectTemplate.weaponHud.hudName "Mini�Gun"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 4
+ObjectTemplate.weaponHud.deviationFactor 2
+ObjectTemplate.weaponHud.maxVisualDeviation 60
+ObjectTemplate.weaponHud.minVisualDeviation 60
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Handheld_Overheat
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 6000
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.fireStartDelay CRD_NONE/0.5/0/0
+ObjectTemplate.fire.projectileStartPosition 0.2/-0.4/0.2
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 3
+ObjectTemplate.ammo.magSize 500
+ObjectTemplate.ammo.reloadTime 2.91667
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/07_62x51mm_deployed_recoil.tweak
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_LMG_GENERAL_watchTempGauge"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_LMG_GENERAL_watchTempGauge"
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/gpmg_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.9
+rem ---EndComp ---
+ObjectTemplate.geometry aix_portableMiniGun
+ObjectTemplate.setCollisionMesh aix_portableMiniGun
+ObjectTemplate.mapMaterial 0 metal 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate aix_PortableMiniGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_aix_portableminigun_Fire1P
+ObjectTemplate.setPosition 0.00130758/0.072425/0.55158
+ObjectTemplate.addTemplate S_aix_portableminigun_Fire1P_Outdoor
+ObjectTemplate.setPosition 0.000193767/0.0738525/0.552745
+ObjectTemplate.addTemplate S_aix_portableminigun_Fire3P
+ObjectTemplate.setPosition 0.000106107/0.0722778/0.551821
+ObjectTemplate.addTemplate S_aix_portableminigun_BoltClick
+ObjectTemplate.setPosition 0/0.0799825/-0.131798
+ObjectTemplate.addTemplate S_aix_portableminigun_TriggerClick
+ObjectTemplate.setPosition 0.0126139/-0.0187192/-0.081256
+ObjectTemplate.addTemplate S_aix_portableminigun_SwitchFireRate
+ObjectTemplate.setPosition 0.0195339/0.0280159/-0.113085
+ObjectTemplate.addTemplate S_aix_portableminigun_Reload1P
+ObjectTemplate.setPosition 0.00896461/0.0434158/0.00171497
+ObjectTemplate.addTemplate S_aix_portableminigun_Reload3P
+ObjectTemplate.setPosition -0.000943646/-0.0342668/-0.0135139
+ObjectTemplate.addTemplate S_aix_portableminigun_Deploy1P
+ObjectTemplate.setPosition 0.00472397/0.0395077/-0.133244
+ObjectTemplate.addTemplate S_aix_portableminigun_Deploy3P
+ObjectTemplate.setPosition 0.0106914/0.0652283/-0.109307
+ObjectTemplate.addTemplate S_aix_portableminigun_Zoom
+ObjectTemplate.setPosition 0/0.0945407/-0.0520584
+ObjectTemplate.addTemplate e_muzz_minigun
+ObjectTemplate.setPosition 0/-0.0016288/0.650042
+ObjectTemplate.addTemplate e_shellejection_m249
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/aix_portableMiniGun/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/aix_portableMiniGun/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 762_51_mg
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 815
+ObjectTemplate.itemIndex 8
+ObjectTemplate.delayToUse 1.2
+ObjectTemplate.heatAddWhenFire 0.0033
+ObjectTemplate.coolDownPerSec 0.0166
+ObjectTemplate.overheatPenalty 1.0016
+
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Fire1P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/aix_portableminigun/sounds/aix_minigunfire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.00130758/0.072425/0.55158
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "DEVELOP013"
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Fire3P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/aix_portableminigun/sounds/aix_minigunfire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0.000106107/0.0722778/0.551821
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 5
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_BoltClick
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0799825/-0.131798
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_TriggerClick
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.0126139/-0.0187192/-0.081256
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_SwitchFireRate
+ObjectTemplate.modifiedByUser "DEVELOP013"
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Reload1P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/aix_portableminigun/sounds/m249_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.00896461/0.0434158/0.00171497
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Reload3P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -0.000943646/-0.0342668/-0.0135139
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Deploy1P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.00472397/0.0395077/-0.133244
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Deploy3P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uslmg_m249saw/sounds/m249_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0.0106914/0.0652283/-0.109307
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Zoom
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0945407/-0.0520584
+
+ObjectTemplate.activeSafe Sound S_aix_portableminigun_Projectile_Looping
+ObjectTemplate.modifiedByUser "DEVELOP013"
+

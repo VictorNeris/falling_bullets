@@ -1,0 +1,25 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/06/07 16:47]
+ObjectTemplate.activeSafe EffectBundle e_heal_soldier
+ObjectTemplate.modifiedByUser "7game"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem*** -------------------------------------
+ObjectTemplate.addTemplate S_e_heal_soldier_Start
+ObjectTemplate.addTemplate heal_sod_arr
+rem*** -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_heal_soldier_Start
+ObjectTemplate.modifiedByUser dsu
+
+ObjectTemplate.create SupplyObject heal_sod_arr
+ObjectTemplate.modifiedByUser "7game"
+ObjectTemplate.damageSpeed -2.5
+ObjectTemplate.healSpeed 2.5
+ObjectTemplate.radius 0.25

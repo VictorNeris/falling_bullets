@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_bhit_minigun_glass_armored
+ObjectTemplate.createdInEditor 1
+
+include e_bhit_minigun_glass_armored.tweak

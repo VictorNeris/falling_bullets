@@ -1,0 +1,271 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.25
+GeometryTemplate.setSpecularStaticGloss 0 0 0 0.15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm moh_fn2000telescopic
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\moh_fn2000telescopic.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\moh_fn2000telescopic.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\moh_fn2000telescopic.dds
+ObjectTemplate.weaponHud.hudName "FN F2000"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 23
+rem ObjectTemplate.weaponHud.minVisualDeviation 2
+rem ObjectTemplate.weaponHud.disableOnSprint 0
+ObjectTemplate.weaponHud.hasRangeFinder 1
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.05/0
+ObjectTemplate.fire.roundsPerMinute 801
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/rifle_mags.tweak
+rem ObjectTemplate.ammo.ammoType 1
+rem ObjectTemplate.ammo.nrOfMags 9
+ObjectTemplate.ammo.reloadTime 3.2
+rem ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/05_56x45mm_rifle_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.goBackOnRecoil 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/1.0/0.5/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.95/0.95/0
+rem ObjectTemplate.recoil.zoomModifier 0.67
+rem ObjectTemplate.recoil.recoilGraphFrameCount 15
+rem ObjectTemplate.recoil.recoilGraphExponent 6
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/assaultrifle_bullpup_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/mediumzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.18
+ObjectTemplate.zoom.zoomLod 1
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.740
+rem 1.35
+rem ObjectTemplate.zoom.mouseSpeedMod 0.7
+rem rem ObjectTemplate.zoom.mouseSpeedMod 0.95
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 0
+rem ---EndComp ---
+ObjectTemplate.geometry moh_fn2000telescopic
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate ar_aimpoint_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Fire1P
+ObjectTemplate.setPosition -0.00154155/0.0174675/0.474922
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Fire1P_Outdoor
+ObjectTemplate.setPosition -0.000946715/0.0175849/0.474557
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Fire3P
+ObjectTemplate.setPosition -0.00107837/0.0164062/0.474377
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_BoltClick
+ObjectTemplate.setPosition 0/0.0271776/-0.108983
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_TriggerClick
+ObjectTemplate.setPosition 0/-0.0442018/-0.0382003
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_SwitchFireRate
+ObjectTemplate.setPosition 0/-0.0181397/-0.0909292
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Reload1P
+ObjectTemplate.setPosition 0/-0.063823/0.0222512
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Reload3P
+ObjectTemplate.setPosition 0/-0.0582734/0.0158555
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Deploy1P
+ObjectTemplate.setPosition 0/0.0595026/-0.0856211
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Deploy3P
+ObjectTemplate.setPosition 0/0.0159245/-0.0538461
+ObjectTemplate.addTemplate S_moh_fn2000telescopic_Zoom
+ObjectTemplate.setPosition 0/0.0913384/-0.0160701
+ObjectTemplate.addTemplate e_muzz_f2000
+ObjectTemplate.setPosition 0/0.0081088/0.444657
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.00545883/0.0205752/-0.0176413
+ObjectTemplate.setRotation -10/0/11
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/moh_fn2000telescopic/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/sasrif_fn2000/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 556_45_rifle
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 900
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.7
+include ../../common/heat/ar_heat.tweak
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Fire1P
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/moh_fn2000telescopic/sounds/f2000_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position -0.00154155/0.0174675/0.474922
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Fire1P_Outdoor
+
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Fire3P
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/moh_fn2000telescopic/sounds/f2000_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position 0/0.013551/0.501526
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 15
+ObjectTemplate.soundRadius 0.4
+
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_BoltClick
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0271776/-0.108983
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_TriggerClick
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0442018/-0.0382003
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_SwitchFireRate
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0181397/-0.0909292
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Reload1P
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/moh_fn2000telescopic/sounds/f2000_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.063823/0.0222512
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Reload3P
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sasrif_fn2000/sounds/fn2000_1p_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0582734/0.0158555
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 8
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Deploy1P
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0595026/-0.0856211
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Deploy3P
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0159245/-0.0538461
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_moh_fn2000telescopic_Zoom
+ObjectTemplate.modifiedByUser "Striker105"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0913384/-0.0160701
+
+ObjectTemplate.activeSafe Sound S_Sig552Projectile_Looping
+ObjectTemplate.modifiedByUser "Striker105"
+

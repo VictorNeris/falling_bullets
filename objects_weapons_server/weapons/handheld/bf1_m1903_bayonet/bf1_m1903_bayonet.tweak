@@ -1,0 +1,187 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/24 20:1]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm bf1_m1903_bayonet
+ObjectTemplate.creator TDA-1:tda
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\bf1_m1903_bayonet
+ObjectTemplate.weaponHud.hudName "Bayonet"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 110
+ObjectTemplate.fire.fireLaunchDelay 0.4
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.reloadTime 0
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 0 0 1
+ObjectTemplate.deviation.subProjectileDev 1
+ObjectTemplate.deviation.setTurnDev 0 0 0 1
+ObjectTemplate.deviation.setSpeedDev 0.1 0 0 1
+ObjectTemplate.deviation.setMiscDev 0 0 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry bf1_m1903_bayonet
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate m1903_bayonet
+rem -------------------------------------
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Fire1P
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Fire3P
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_BoltClick
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_TriggerClick
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_SwitchFireRate
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Reload1P
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Reload3P
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Deploy1P
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Deploy3P
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/bf1_m1903_bayonet/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/bf1_m1903_bayonet/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate bf1_m1903_bayonet_Projectile
+ObjectTemplate.velocity 30
+ObjectTemplate.itemIndex 1
+ObjectTemplate.delayToUse 0.6
+
+ObjectTemplate.create GenericProjectile bf1_m1903_bayonet_Projectile
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 48
+rem -------------------------------------
+ObjectTemplate.addTemplate S_bf1_m1903_bayonet_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/0.07/0/0
+ObjectTemplate.material 48
+ObjectTemplate.damage 100
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Fire1P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf1_m1903_bayonet/sounds/fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf1_m1903_bayonet/sounds/fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Fire3P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf1_m1903_bayonet/sounds/fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_BoltClick
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_TriggerClick
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_SwitchFireRate
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Reload1P
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Reload3P
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Deploy1P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf1_m1903_bayonet/sounds/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Deploy3P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf1_m1903_bayonet/sounds/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Zoom
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_bf1_m1903_bayonet_Projectile_Looping
+ObjectTemplate.modifiedByUser fli
+

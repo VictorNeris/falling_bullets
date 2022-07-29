@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh us_heavy_soldier
+
+ObjectTemplate.create Soldier us_heavy_soldier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry us_heavy_soldier
+
+include us_heavy_soldier.tweak

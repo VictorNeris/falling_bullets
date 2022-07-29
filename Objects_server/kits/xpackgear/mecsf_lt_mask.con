@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh mecsf_lt_mask
+
+ObjectTemplate.create MaskObject mecsf_lt_mask
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry mecsf_lt_mask
+ObjectTemplate.maskType MOTGasMask
+
+

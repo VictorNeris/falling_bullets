@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh uspis_92fs
+CollisionManager.createTemplate uspis_92fs
+
+ObjectTemplate.create GenericFireArm uspis_92fs
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh uspis_92fs
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry uspis_92fs
+
+include uspis_92fs.tweak

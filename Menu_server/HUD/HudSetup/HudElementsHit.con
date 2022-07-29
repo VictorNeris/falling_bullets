@@ -1,0 +1,57 @@
+
+rem -----------------------------------Hit direction----------------------------------------------------
+
+hudBuilder.createPictureNode 		IngameHud HitDirection 210 -270 370 600
+hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/hitIndicator.tga
+hudBuilder.setPictureNodeRotateVariable HitDirectionAngle
+hudBuilder.setPictureNodeCenterPoint 	0 0
+hudBuilder.setNodeColor 	        1 0 0 1
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		IngameHud HitDirectionBackground 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame/Hud/tunnel.dds
+hudBuilder.setNodeColor 	        0 0 0 0.7
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		4
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		IngameHud HitDirectionBlood 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame/Hud/fade2.dds
+hudBuilder.setPictureNodeTexture 	Ingame/Hud/fade.dds
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeLogicShowVariable		NOT VehicleIconShow 1
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		IngameHud HitDirectionBlood2 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame/Hud/blood4_bullet.dds
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeLogicShowVariable		NOT VehicleIconShow 1
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		3
+hudBuilder.addNodeAlphaShowEffect
+
+rem -----------------------------------Passout Effect----------------------------------------------------
+
+hudBuilder.createPictureNode 		IngameHud Passout 0 0 801 601
+hudBuilder.setPictureNodeTexture 	Ingame/Hud/tunnel.dds
+hudBuilder.setNodeColor 	        1 0 0 1
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeAlphaShowEffect
+
+rem -----------------------------------TunnelEffect----------------------------------------------------
+
+hudBuilder.createPictureNode 		IngameHud Tunnel 0 0 801 601
+hudBuilder.setPictureNodeTexture 	Ingame/Hud/tunnel.dds
+hudBuilder.setNodeColor 	        0 0 0 1
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		4
+hudBuilder.addNodeAlphaShowEffect

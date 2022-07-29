@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh smg_ump45
+
+ObjectTemplate.create GenericFireArm smg_ump45
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ASUS-K45VJ-PC:Asus-K45VJ
+ObjectTemplate.geometry smg_ump45
+
+include smg_ump45.tweak

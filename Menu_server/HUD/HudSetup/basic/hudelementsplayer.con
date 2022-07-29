@@ -1,0 +1,673 @@
+beginrem 
+hudBuilder.createPictureNode 		IngameHud RedSliderPicture 0 0 5 20
+hudBuilder.setNodeColor 	        1 0 0 1
+
+hudBuilder.createSliderNode 		IngameHud RedSlider 0 1 0.7 0.01
+hudBuilder.setSliderNodeChild 		RedSliderPicture 
+hudBuilder.setSliderNodeData 		MenuBackgroundRed
+hudBuilder.setNodePos	 		20 450
+hudBuilder.setNodeSize	 		150 20
+hudBuilder.setNodeShowVariable 		SetupShow
+
+hudBuilder.createPictureNode 		IngameHud GreenSliderPicture 0 0 5 20
+hudBuilder.setNodeColor 	        0 1 0 1
+
+hudBuilder.createSliderNode 		IngameHud GreenSlider 0 1 0.7 0.01
+hudBuilder.setSliderNodeChild 		GreenSliderPicture 
+hudBuilder.setSliderNodeData 		MenuBackgroundGreen
+hudBuilder.setNodePos	 		20 470
+hudBuilder.setNodeSize	 		150 20
+hudBuilder.setNodeShowVariable 		SetupShow
+
+hudBuilder.createPictureNode 		IngameHud BlueSliderPicture 0 0 5 20
+hudBuilder.setNodeColor 	        0 0 1 1
+
+hudBuilder.createSliderNode 		IngameHud BlueSlider 0 1 0.7 0.01
+hudBuilder.setSliderNodeChild 		BlueSliderPicture 
+hudBuilder.setSliderNodeData 		MenuBackgroundBlue
+hudBuilder.setNodePos	 		20 490
+hudBuilder.setNodeSize	 		150 20
+hudBuilder.setNodeShowVariable 		SetupShow
+
+hudBuilder.createPictureNode 		IngameHud AlphaSliderPicture 0 0 5 20
+hudBuilder.setNodeColor 	        1 1 1 1
+
+hudBuilder.createSliderNode 		IngameHud AlphaSlider 0 1 0.7 0.01
+hudBuilder.setSliderNodeChild 		AlphaSliderPicture 
+hudBuilder.setSliderNodeData 		MenuBackgroundAlpha
+hudBuilder.setNodePos	 		20 510
+hudBuilder.setNodeSize	 		150 20
+hudBuilder.setNodeShowVariable 		SetupShow
+endrem
+
+
+rem -----------------------------------Reference cross----------------------------------------------------
+
+hudBuilder.createPictureNode 		IngameHud ReferenceCross 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame/Crosshair/ReferenceCross.tga
+hudBuilder.setNodeColor 	        1 1 1 1
+hudBuilder.setNodeShowVariable 		ReferenceCrossShow
+
+rem -----------------------------------Ability Bar (upper)----------------------------------------------------
+
+hudBuilder.createSplitNode		BottomRightAnimateHud AbilityInfo
+hudBuilder.setNodeShowVariable		AbilityBarShow 
+hudBuilder.setNodeShowVariable 	PrimaryAmmoBarShow
+hudBuilder.setNodeLogicShowVariable AND AbilityBarShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	3.14 53
+
+
+hudBuilder.createPictureNode 		AbilityInfo AbilityBar 320 45 385 19
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/abilityBarBackground.tga
+hudBuilder.setNodeAlphaVariable		MenuBackgroundAlpha
+
+hudBuilder.createPictureNode 			AbilityInfo AbilityIcon 432 47 16 16
+hudBuilder.setPictureNodeVariableTexture 	AbilityIconPath
+
+hudBuilder.createPictureNode 		AbilityInfo AbilityHealthBarBg 350 51 79 8
+hudBuilder.setPictureNodeTexture	Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+
+hudBuilder.createBarNode 		AbilityInfo AbilityHealthBar 2 350 51 79 8
+rem hudBuilder.setBarNodeBorder 		1 7 1 48
+hudbuilder.setBarNodeTexture		1 Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeSnap		4
+hudBuilder.setBarNodeValueVariable 	AbilityBar
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+
+rem ------------------------------------Bars-------------------------------------------------------
+
+hudBuilder.createSplitNode		BottomRightAnimateHud BottomRightPrimaryAmmo
+hudBuilder.setNodeShowVariable 		PrimaryAmmoShow
+
+hudBuilder.createSplitNode		BottomRightStaticHud BottomRightSecondaryAmmo
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+
+hudBuilder.createPictureNode 		BottomRightPrimaryAmmo BottomRightBar 301 64 400 39
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/ammoBackground.tga
+hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+
+hudBuilder.createSplitNode		BottomLeftStaticHud BottomLeftPrimaryHealth
+hudBuilder.setNodeShowVariable 		PlayerHealthShow
+
+hudBuilder.createPictureNode 		BottomLeftAnimateHud BottomLeftBar -103 -2 400 39
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/healthBackGround.tga
+hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+
+
+rem ------------------------------------Primary Ammo-------------------------------------------------------
+
+hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryWeaponContainer 321 78 133 6
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/weaponContainer.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeShowVariable 		PrimaryAmmoBarShow
+
+hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryAmmoFadedBar 325 73 79 8
+hudBuilder.setPictureNodeTexture	Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT PrimarySingleFireShow 1
+
+hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimarySingleAmmoFaded 325 73 79 8
+hudBuilder.setPictureNodeTexture	Ingame/Bars/oneShotAmmoBar.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+hudBuilder.setNodeShowVariable 		PrimarySingleFireShow
+
+rem hudBuilder.createBarNode 		BottomRightPrimaryAmmo PrimarySingleAmmo 2 325 73 79 8
+rem hudbuilder.setBarNodeTexture		1 Ingame/Bars/oneShotAmmoBar.tga
+rem hudBuilder.setBarNodeValueVariable 	PrimaryAmmo
+rem hudBuilder.setNodeRGBVariables		PrimaryAmmoColorRed PrimaryAmmoColorGreen PrimaryAmmoColorBlue
+rem hudBuilder.setNodeShowVariable 		PrimaryAmmoBarShow
+rem hudBuilder.setNodeLogicShowVariable 	AND PrimarySingleFireShow 1
+
+rem hudBuilder.createBarNode 		BottomRightPrimaryAmmo PrimaryAmmo 2 325 73 79 8
+rem hudbuilder.setBarNodeTexture		1 Ingame/Bars/shortHealthSprintBar.tga
+rem hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+rem hudBuilder.setBarNodeSnap		4
+rem hudBuilder.setBarNodeValueVariable 	PrimaryAmmo
+rem hudBuilder.setNodeRGBVariables		PrimaryAmmoColorRed PrimaryAmmoColorGreen PrimaryAmmoColorBlue
+rem hudBuilder.setNodeShowVariable 		PrimaryAmmoBarShow
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimarySingleFireShow 1
+
+hudBuilder.createSplitNode 		BottomRightPrimaryAmmo PrimaryAmmoCountSplit
+hudBuilder.setNodeShowVariable 		PrimaryAmmoBarShow
+
+hudBuilder.createPictureNode 		PrimaryAmmoCountSplit PrimaryAmmoCountBackground 412 71 34 10
+hudBuilder.setPictureNodeTexture	Ingame/Bars/DigitalNumberBackround_FourDigit.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryEternalShow 1
+
+rem hudBuilder.createTextNode		PrimaryAmmoCountSplit PrimaryAmmoCount 414 70 34 10
+rem hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 1
+rem hudBuilder.setTextNodeStringVariable	PrimaryAmmoString
+rem hudBuilder.setNodeRGBVariables		PrimaryAmmoColorRed PrimaryAmmoColorGreen PrimaryAmmoColorBlue
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryAmmoBlink 1
+rem hudBuilder.setNodeInTime 		0.2
+rem hudBuilder.setNodeOutTime 		0.2
+rem hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createSplitNode 		BottomRightPrimaryAmmo PrimaryClipCountSplit
+hudBuilder.setNodeShowVariable 		PrimaryClipStringShow
+hudBuilder.setNodeLogicShowVariable 	AND PrimaryClipsShow 1
+
+hudBuilder.createTextNode		PrimaryClipCountSplit PrimaryClipCount 449 65 30 16
+hudBuilder.setTextNodeStyle		Fonts/digitalSmallNumbers.dif 2
+hudBuilder.setTextNodeStringVariable	PrimaryClipString
+hudBuilder.setNodeRGBVariables		PrimaryClipColorRed PrimaryClipColorGreen PrimaryClipColorBlue
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryClipBlink 1
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		 BottomRightPrimaryAmmo ShotSelect 449 90 5 7
+hudBuilder.setPictureNodeVariableTexture FireRateIconPathString
+hudBuilder.setNodeColor 		 0.8275 0.8235 0.702 1
+hudBuilder.setNodeShowVariable 		 FireRateIconShow
+hudBuilder.setNodeLogicShowVariable 	 AND PrimaryClipsShow 1
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryHeatFadedContainer 321 93 88 5
+rem hudBuilder.setPictureNodeTexture	Ingame/Bars/reloadContainer.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+rem hudBuilder.setNodeShowVariable 		PrimaryAmmoBarShow
+rem hudBuilder.setNodeLogicShowVariable 	AND PrimaryAmmoShow 1
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryHeatContainer 321 93 88 5
+rem hudBuilder.setPictureNodeTexture	Ingame/Bars/reloadContainer.tga
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+rem hudBuilder.setNodeShowVariable 	        PrimaryHeatShow
+rem hudBuilder.setNodeLogicShowVariable 	OR PrimaryReloadTimeShow 1
+rem hudBuilder.setNodeLogicShowVariable 	OR AbilityValueShow 1
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryHeatReloadFadedBar 325 90 79 5
+rem hudBuilder.setPictureNodeTexture	Ingame/Bars/shortHealthSprintBar.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+rem hudBuilder.setNodeShowVariable 		PrimaryAmmoShow
+
+rem hudBuilder.createSplitNode 		BottomRightPrimaryAmmo PrimaryHeatSplit
+rem hudBuilder.setNodeShowVariable 		PrimaryAmmoShow
+rem hudBuilder.setNodeLogicShowVariable 	AND PrimaryHeatShow 1
+rem rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryEternalMagsShow 1
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryGrenadeLoadShow 1
+
+rem hudBuilder.createPictureNode 		PrimaryHeatSplit PrimaryHeatFadedIcon 412 88 33 8
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/overHeat.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+rem hudBuilder.setNodeShowVariable 		PrimaryHeatBlink
+
+rem hudBuilder.createPictureNode 		PrimaryHeatSplit PrimaryHeatIcon 412 88 33 8
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/overHeat.tga
+rem hudBuilder.setNodeRGBVariables		PrimaryHeatColorRed PrimaryHeatColorGreen PrimaryHeatColorBlue
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryHeatBlink 1
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryGrenadeLoadFadedIcon 412 78 32 32
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/grenade.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+rem hudBuilder.setNodeShowVariable		PrimaryGrenadeLoadShow
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryGrenadeLoadIcon 412 78 32 32
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/grenade.tga
+rem hudBuilder.setNodeRGBVariables		PrimaryHeatColorRed PrimaryHeatColorGreen PrimaryHeatColorBlue
+rem hudBuilder.setNodeShowVariable		PrimaryGrenadeLoadShow
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryEternalIcon 412 71 32 12
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/eternal.tga
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+rem hudBuilder.setNodeShowVariable 		PrimaryEternalShow
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		BottomRightPrimaryAmmo PrimaryEternalMagsIcon 412 88 32 12
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/eternal.tga
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+rem hudBuilder.setNodeShowVariable 		PrimaryEternalMagsShow
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryReloadTimeShow 1
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryHeatShow 1
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createBarNode 		BottomRightPrimaryAmmo PrimaryHeat 2 325 90 79 5
+rem hudBuilder.setBarNodeTexture 		1 Ingame/Bars/shortHealthSprintBar.tga
+rem hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+rem hudBuilder.setBarNodeValueVariable 	PrimaryHeatValue
+rem hudBuilder.setBarNodeSnap		4
+rem hudBuilder.setNodeRGBVariables		PrimaryHeatColorRed PrimaryHeatColorGreen PrimaryHeatColorBlue
+rem hudBuilder.setNodeAlphaVariable     	PrimaryHeatColorAlpha
+rem hudBuilder.setNodeShowVariable 		PrimaryHeatShow
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem ------------------------------------Primary reload-------------------------------------------------------
+
+rem hudBuilder.createSplitNode 		BottomRightPrimaryAmmo PrimaryReload
+rem hudBuilder.setNodeShowVariable 		PrimaryReloadTimeShow
+rem hudBuilder.setNodeLogicShowVariable 	NOT PrimaryHeatShow 1
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		PrimaryReload PrimaryReloadFadedIcon 412 88 32 12
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/reload.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	MenuBackgroundAlpha
+
+rem hudBuilder.createPictureNode 		PrimaryReload PrimaryReloadIcon 412 88 32 12
+rem hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/reload.tga
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+
+rem hudBuilder.createBarNode 		PrimaryReload PrimaryReloadTime 2 325 90 79 5
+rem hudBuilder.setBarNodeTexture 		1 Ingame/Bars/shortHealthSprintBar.tga
+rem hudBuilder.setBarNodeValueVariable 	PrimaryReloadTime
+rem hudBuilder.setBarNodeSnap		4
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+
+rem -------------------------------------------Ability ammo-----------------------------------------------
+
+hudBuilder.createBarNode 		BottomRightPrimaryAmmo AbilityAmmo 2 325 90 79 5
+hudBuilder.setBarNodeTexture 		1 Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	AbilityValue
+hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeRGBVariables		PrimaryHeatColorRed PrimaryHeatColorGreen PrimaryHeatColorBlue
+hudBuilder.setNodeAlphaVariable     	PrimaryHeatColorAlpha
+hudBuilder.setNodeShowVariable 		AbilityValueShow
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryReloadTimeShow 1
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryHeatShow 1
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryEternalMagsShow 1
+
+rem ------------------------------------Secondary Ammo-------------------------------------------------------
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryWeaponContainer 246 12 133 6
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/weaponContainer.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryAmmoFadedBar 250 7 79 8
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightFadedAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT SecondarySingleFireShow 1
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondarySingleAmmoFaded 250 7 79 8
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/oneShotAmmoBar.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightFadedAlpha
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+hudBuilder.setNodeLogicShowVariable 	AND SecondarySingleFireShow 1
+
+hudBuilder.createBarNode 		BottomRightSecondaryAmmo SecondarySingleAmmo 2 250 7 79 8
+hudbuilder.setBarNodeTexture		1 Ingame/Bars/oneShotAmmoBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	SecondaryAmmo
+hudBuilder.setNodeRGBVariables		SecondaryAmmoColorRed SecondaryAmmoColorGreen SecondaryAmmoColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+hudBuilder.setNodeLogicShowVariable 	AND SecondarySingleFireShow 1
+
+hudBuilder.createBarNode 		BottomRightSecondaryAmmo SecondaryAmmo 2 250 7 79 8
+hudbuilder.setBarNodeTexture		1 Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	SecondaryAmmo
+hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeRGBVariables		SecondaryAmmoColorRed SecondaryAmmoColorGreen SecondaryAmmoColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+hudBuilder.setNodeLogicShowVariable 	NOT SecondarySingleFireShow 1
+
+hudBuilder.createSplitNode 		BottomRightSecondaryAmmo SecondaryAmmoCountSplit
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+
+hudBuilder.createPictureNode 		SecondaryAmmoCountSplit SecondaryAmmoCountBackground 337 5 34 10
+hudBuilder.setPictureNodeTexture	Ingame/Bars/DigitalNumberBackround_FourDigit.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryEternalShow 1
+
+hudBuilder.createTextNode		SecondaryAmmoCountSplit SecondaryAmmoCount 339 4 34 10
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 1
+hudBuilder.setTextNodeStringVariable	SecondaryAmmoString
+hudBuilder.setNodeRGBVariables		SecondaryAmmoColorRed SecondaryAmmoColorGreen SecondaryAmmoColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryAmmoBlink 1
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createSplitNode 		BottomRightSecondaryAmmo SecondaryClipCountSplit
+hudBuilder.setNodeShowVariable 		SecondaryClipStringShow
+hudBuilder.setNodeLogicShowVariable 	AND SecondaryClipStringShow 1
+
+hudBuilder.createTextNode		SecondaryClipCountSplit SecondaryClipCount 373 -1 30 16
+hudBuilder.setTextNodeStyle		Fonts/digitalSmallNumbers.dif 2
+hudBuilder.setTextNodeStringVariable	SecondaryClipString
+hudBuilder.setNodeRGBVariables		SecondaryClipColorRed SecondaryClipColorGreen SecondaryClipColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryClipBlink 1
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryHeatFadedContainer 246 27 88 5
+hudBuilder.setPictureNodeTexture	Ingame/Bars/reloadContainer.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightFadedAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryHeatShow 1
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryReloadTimeShow 1
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryHeatContainer 246 27 88 5
+hudBuilder.setPictureNodeTexture	Ingame/Bars/reloadContainer.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryHeatShow
+hudBuilder.setNodeLogicShowVariable 	OR SecondaryReloadTimeShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryHeatFadedBar 250 24 79 5 
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightFadedAlpha
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+
+hudBuilder.createSplitNode 		BottomRightSecondaryAmmo SecondaryHeatSplit
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+hudBuilder.setNodeLogicShowVariable 	AND SecondaryHeatShow 1
+rem hudBuilder.setNodeLogicShowVariable NOT SecondaryEternalMagsShow 1
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryGrenadeLoadShow 1
+
+hudBuilder.createPictureNode 		SecondaryHeatSplit SecondaryHeatFadedIcon 337 22 33 8
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/reload.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightFadedAlpha
+hudBuilder.setNodeShowVariable 		SecondaryHeatBlink
+
+hudBuilder.createPictureNode 		SecondaryHeatSplit SecondaryHeatIcon 337 22 33 8
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/overHeat.tga
+hudBuilder.setNodeRGBVariables		SecondaryHeatColorRed SecondaryHeatColorGreen SecondaryHeatColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryHeatBlink 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryGrenadeLoadIcon 337 12 32 32
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/grenade.tga
+hudBuilder.setNodeRGBVariables		SecondaryHeatColorRed SecondaryHeatColorGreen SecondaryHeatColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryAmmoShow
+hudBuilder.setNodeLogicShowVariable 	AND SecondaryGrenadeLoadShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryEternalIcon 337 5 32 12
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/eternal.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryEternalShow
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		BottomRightSecondaryAmmo SecondaryEternalMagsIcon 337 22 32 12
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/eternal.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryEternalMagsShow
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryReloadTimeShow 1
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryHeatShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		BottomRightSecondaryAmmo SecondaryHeat 2 250 24 79 5 
+hudBuilder.setBarNodeTexture 		1 Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	SecondaryHeatValue
+hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeRGBVariables		SecondaryHeatColorRed SecondaryHeatColorGreen SecondaryHeatColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeShowVariable 		SecondaryHeatShow
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+rem -----------------------------------Secondary reload-------------------------------------------------
+
+hudBuilder.createSplitNode 		BottomRightSecondaryAmmo SecondaryReload
+hudBuilder.setNodeShowVariable 		SecondaryReloadTimeShow
+hudBuilder.setNodeLogicShowVariable 	NOT SecondaryHeatShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		SecondaryReload SecondaryReloadFadedIcon 337 22 32 12
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/reload.tga
+hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomRightFadedAlpha
+
+hudBuilder.createPictureNode 		SecondaryReload SecondaryReloadIcon 337 22 32 12
+hudBuilder.setPictureNodeTexture	Ingame/Weapons/Icons/Hud/reload.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+
+hudBuilder.createBarNode 		SecondaryReload SecondaryReloadTime 2 250 24 79 5
+hudBuilder.setBarNodeTexture 		1 Ingame/Bars/shortHealthSprintBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	SecondaryReloadTime
+hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeAlphaVariable     	BottomRightAlpha
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+
+rem -----------------------------------Player health-------------------------------------------------------
+
+beginrem
+hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerHealthContainer 6 12 133 6
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/healthContainer.tga
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+
+hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerHealthIconFaded 8 5 16 16
+hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/healthIcon.tga
+hudBuilder.setNodeColor			0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+hudBuilder.setNodeShowVariable     	PlayerHealthBlink
+
+hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerHealthIcon 8 5 16 16
+hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/healthIcon.tga
+hudBuilder.setNodeRGBVariables		PlayerHealthColorRed PlayerHealthColorGreen PlayerHealthColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+hudBuilder.setNodeLogicShowVariable     NOT PlayerHealthBlink 1
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerHealthFadedBar 24 7 111 8
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/longHealthSprintBar.tga
+hudBuilder.setNodeColor			0.384 0.376 0.321 1
+hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+
+hudBuilder.createBarNode 		BottomLeftPrimaryHealth PlayerHealthBar 3 24 7 111 8
+hudBuilder.setBarNodeTexture 		1 Ingame/Bars/longHealthSprintBar.tga
+hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	PlayerHealth
+hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeRGBVariables		PlayerHealthColorRed PlayerHealthColorGreen PlayerHealthColorBlue
+hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+endrem
+
+beginrem
+rem ++++++++++++++++++++++++++++ wolfi test ++++++++++++++++++++++++++++++++++
+hudBuilder.createTextNode 			BottomLeftPrimaryHealth PlayerHealthCount -14 4 50 15
+hudBuilder.setTextNodeStyle 		Fonts/commanderChatFontLocal_6.dif 0
+hudBuilder.setTextNodeStringVariable 		PlayerHealthString
+hudBuilder.setNodeColor    		0.8275 0.8235 0.702 1
+rem ++++++++++++++++++++++++++++ wolfi test ++++++++++++++++++++++++++++++++++
+endrem
+
+rem ++++++++++++++++++++++++++++ wolfi test ++++++++++++++++++++++++++++++++++
+rem hudBuilder.createTextNode 			BottomLeftPrimaryHealth PlayerHealthCount -14 4 50 15
+rem hudBuilder.setTextNodeStyle 		Fonts/commanderChatFontLocal_6.dif 0
+rem hudBuilder.setTextNodeStringVariable 		PlayerHealthString
+rem hudBuilder.setNodeRGBVariables		PlayerHealthColorRed PlayerHealthColorGreen PlayerHealthColorBlue
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeLogicShowVariable     NOT PlayerHealthBlink 1
+rem hudBuilder.setNodeInTime 		0.2
+rem hudBuilder.setNodeOutTime 		0.2
+rem hudBuilder.addNodeAlphaShowEffect
+rem ++++++++++++++++++++++++++++ wolfi test ++++++++++++++++++++++++++++++++++
+
+rem -----------------------------------Player stamina-------------------------------------------------------
+
+rem hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerStaminaFadedContainer 6 26 133 6
+rem hudBuilder.setPictureNodeTexture 	Ingame/Bars/healthContainer.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+rem hudBuilder.setNodeLogicShowVariable 	NOT PlayerStaminaShow 1
+
+rem hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerStaminaContainer 6 26 133 6
+rem hudBuilder.setPictureNodeTexture 	Ingame/Bars/healthContainer.tga
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeShowVariable 		PlayerStaminaShow
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerStaminaFadedIcon 6 23 13 5
+rem hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/sprintIcon.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+
+rem hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerStaminaIcon 6 23 13 5
+rem hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/sprintIcon.tga
+rem hudBuilder.setNodeRGBVariables		PlayerSprintColorRed PlayerSprintColorGreen PlayerSprintColorBlue
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeShowVariable 		PlayerStaminaShow
+rem hudBuilder.setNodeLogicShowVariable     NOT PlayerStaminaBlink 1
+rem hudBuilder.setNodeInTime 		0.2
+rem hudBuilder.setNodeOutTime 		0.2
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem hudBuilder.createPictureNode 		BottomLeftPrimaryHealth PlayerStaminaFadedBar 24 24 111 5
+rem hudBuilder.setPictureNodeTexture 	Ingame/Bars/longHealthSprintBar.tga
+rem hudBuilder.setNodeColor			0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+
+rem hudBuilder.createBarNode 		BottomLeftPrimaryHealth PlayerStaminaBar 3 24 24 111 5
+rem hudBuilder.setBarNodeTexture 		1 Ingame/Bars/longHealthSprintBar.tga
+rem hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+rem hudBuilder.setBarNodeValueVariable 	PlayerStamina
+rem hudBuilder.setBarNodeSnap		4
+rem hudBuilder.setNodeRGBVariables		PlayerSprintColorRed PlayerSprintColorGreen PlayerSprintColorBlue
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeShowVariable 		PlayerStaminaShow
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeAlphaShowEffect
+
+rem ---------------------------------Squad/commander info----------------------------------------------------
+
+hudBuilder.createSplitNode		BottomLeftPrimaryHealth SquadInfo
+hudBuilder.setNodeShowVariable		SquadInfoBarShow 
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	0 53
+
+hudBuilder.createPictureNode 		SquadInfo SquadInfoBar 0 -21 142 19
+hudBuilder.setPictureNodeTexture 	Ingame/Bars/squadBarBackground.tga
+hudBuilder.setNodeAlphaVariable		MenuBackgroundAlpha
+
+hudBuilder.createPictureNode 		 SquadInfo SquadIcon 5 -19 16 16
+hudBuilder.setPictureNodeVariableTexture SquadInfoIconPath
+hudBuilder.setNodeColor 		 0.4 1 0 1
+hudBuilder.setNodeShowVariable		 ShowSquadIcon
+hudBuilder.setNodeLogicShowVariable      NOT ShowCommanderIcon 1
+
+hudBuilder.createPictureNode 		 SquadInfo CommanderIcon 5 -20 16 16
+hudBuilder.setPictureNodeVariableTexture SquadInfoIconPath
+hudBuilder.setNodeColor 		 1 0.965 0 1
+hudBuilder.setNodeShowVariable		 ShowCommanderIcon
+hudBuilder.setNodeLogicShowVariable      NOT ShowSquadIcon 1
+
+hudBuilder.createTextNode		SquadInfo SquadInfoText 25 -20 142 19
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 2
+hudBuilder.setTextNodeStringVariable	SquadInfoText
+hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+
+rem ************************************************* nite vision battery ****************************************************
+
+rem hudBuilder.createSplitNode		BottomLeftPrimaryHealth NightVisionGauge
+rem hudBuilder.setNodeShowVariable		ShowNightVisionGauge
+rem hudBuilder.setNodeInTime 		0.3
+rem hudBuilder.setNodeOutTime 		0.3
+rem hudBuilder.addNodeMoveShowEffect	0 53
+
+rem hudBuilder.createPictureNode 		NightVisionGauge PlayerNightVisionFadedContainer 8 -555 137 8
+rem hudBuilder.setPictureNodeTexture 	Ingame/Bars/healthContainer.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+rem hudBuilder.setNodeLogicShowVariable 	NOT NightVisionGaugeShow 1
+
+rem hudBuilder.createPictureNode 		NightVisionGauge PlayerNightVisionContainer 8 -555 137 8
+rem hudBuilder.setPictureNodeTexture 	Ingame/Bars/healthContainer.tga
+rem hudBuilder.setNodeColor 		0.8275 0.8235 0.702 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeShowVariable 		NightVisionGaugeShow
+
+rem hudBuilder.createPictureNode 		NightVisionGauge PlayerNightVisionFadedIcon 5 -558 16 8
+rem hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/nvicon.tga
+rem hudBuilder.setNodeColor 		0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+
+rem hudBuilder.createPictureNode 		NightVisionGauge PlayerNightVisionIcon 5 -558 16 8
+rem hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/nvicon.tga
+rem rem hudBuilder.setNodeRGBVariables		NightVisionColorRed NightVisionColorGreen NightVisionColorBlue
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeShowVariable 		NightVisionGaugeShow
+rem hudBuilder.setNodeLogicShowVariable     NOT NightVisionGaugeBlink 1
+
+rem hudBuilder.createPictureNode 		NightVisionGauge PlayerNightVisionFadedBar 30 -558 111 8
+rem hudBuilder.setPictureNodeTexture 	Ingame/Bars/longHealthSprintBar.tga
+rem hudBuilder.setNodeColor			0.384 0.376 0.321 1
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthFadedAlpha
+
+rem hudBuilder.createBarNode 		NightVisionGauge PlayerNightVisionBar 3 30 -558 111 8
+rem hudBuilder.setBarNodeTexture 		1 Ingame/Bars/longHealthSprintBar.tga
+rem hudBuilder.setBarNodeTexture 		0 Ingame/GeneralIcons/empty.tga
+rem hudBuilder.setBarNodeValueVariable 	NightVisionGaugeValue
+rem hudBuilder.setBarNodeSnap		4
+rem hudBuilder.setNodeRGBVariables		NightVisionColorRed NightVisionColorGreen NightVisionColorBlue
+rem hudBuilder.setNodeAlphaVariable     	BottomLeftHealthAlpha
+rem hudBuilder.setNodeShowVariable 		NightVisionGaugeShow
+
+rem ************************************************* nite vision battery ****************************************************
+
+
+rem --------------------White out screen when hit by visual damage, i.e flash bang--------------------------
+
+hudBuilder.createPictureNode 		IngameHud WhiteOutScreen 0 0 800 600
+hudBuilder.setNodeColor 	        1 1 1 1
+hudBuilder.setNodeShowVariable 		BlindingLightDamageShow
+hudBuilder.setNodeAlphaVariable    	BlindingLightDamageAlpha

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_exp_medium
+ObjectTemplate.createdInEditor 1
+
+include e_exp_medium.tweak

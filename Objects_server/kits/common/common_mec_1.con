@@ -1,0 +1,67 @@
+ObjectTemplate.create Kit common_mec_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Sniper
+ObjectTemplate.aiTemplate Sniper
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 6
+ObjectTemplate.geometry.dropGeom 16
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.dropHeadwear mec_helmet
+ObjectTemplate.unlockIndex 6
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf1_m1903_sniper
+ObjectTemplate.addTemplate rupis_makarov
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockCommonMec1_1
+ObjectTemplate.addTemplate UnlockCommonMec1_2
+ObjectTemplate.addTemplate UnlockCommonMec1_3
+ObjectTemplate.addTemplate UnlockCommonMec1_4
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SNIPER"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Sniper_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Sniper.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"sniper_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockCommonMec1_1
+ObjectTemplate.addTemplate bf4_sv98_hunterscope
+ObjectTemplate.replaceItem bf1_m1903_sniper
+
+ObjectTemplate.unlockLevel 1
+ObjectTemplate.create ItemContainer UnlockCommonMec1_2
+ObjectTemplate.addTemplate bf4_l115_riflescope
+ObjectTemplate.replaceItem bf4_sv98_hunterscope
+ObjectTemplate.unlockLevel 2
+
+ObjectTemplate.create ItemContainer UnlockCommonMec1_3
+ObjectTemplate.addTemplate sr_m95
+ObjectTemplate.replaceItem bf4_l115_riflescope
+ObjectTemplate.unlockLevel 3
+
+ObjectTemplate.create ItemContainer UnlockCommonMec1_4
+ObjectTemplate.addTemplate bf4_srr61_riflescope
+ObjectTemplate.replaceItem sr_m95
+ObjectTemplate.unlockLevel 4

@@ -1,0 +1,21 @@
+rem ** Set up Weapon HUD's **
+
+run HudElementsEoTech.con
+run HudElementsReflex.con
+run HudElementsAcog.con
+run HudElementsM145.con
+run HudElementsPKAS.con
+run HudElementsKobra.con
+run HudElementsPSO1.con
+run HudElementsPKA.con
+run HudElementsHD33.con
+run HudElementsJGM4.con
+run HudElementsPrisma.con
+run HudElementsFGM142.con
+run HudElementsHKXM25.con
+run HudElementsDelta.con
+run HudElementsRMR.con
+
+
+
+

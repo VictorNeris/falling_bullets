@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chhmg_kord
+
+ObjectTemplate.create GenericFireArm chhmg_kord
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.geometry chhmg_kord
+
+include chhmg_kord.tweak

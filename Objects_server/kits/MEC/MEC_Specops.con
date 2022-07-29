@@ -1,0 +1,56 @@
+ObjectTemplate.create Kit MEC_Specops
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Specops
+ObjectTemplate.aiTemplate Specops
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 2
+ObjectTemplate.geometry.dropGeom 10
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.unlockIndex 4
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate RUS_AK9
+ObjectTemplate.addTemplate gepis_p226
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate c4_explosives
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockMECSpecops_1
+ObjectTemplate.addTemplate UnlockMECSpecops_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SPECIALFORCES"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Specops_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Specops.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockMECSpecops_1
+ObjectTemplate.addTemplate bf4_ace21cqb_hd33_s
+ObjectTemplate.replaceItem RUS_AK9
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECSpecops_2
+ObjectTemplate.addTemplate bf4_ace53sv_jgm4_s
+ObjectTemplate.replaceItem bf4_ace21cqb_hd33_s
+ObjectTemplate.unlockLevel 2

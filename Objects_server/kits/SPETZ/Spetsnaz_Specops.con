@@ -1,0 +1,57 @@
+ObjectTemplate.create Kit Spetsnaz_Specops
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Specops
+ObjectTemplate.aiTemplate Specops
+ObjectTemplate.geometry spetz1_kits
+ObjectTemplate.geometry.kit 0
+ObjectTemplate.geometry.dropGeom 10
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.unlockIndex 4
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_groza4
+ObjectTemplate.addTemplate rupis_gsh18
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate c4_explosives
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockSpetsSpecops_1
+ObjectTemplate.addTemplate UnlockSpetsSpecops_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SPECIALFORCES"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Specops_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Specops.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.sprintStaminaDissipationFactor 0.2
+ObjectTemplate.vehicleHud.vehicleType		7
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockSpetsSpecops_1
+ObjectTemplate.addTemplate bf4_groza4_pka
+ObjectTemplate.replaceItem bf4_groza4
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSpetsSpecops_2
+ObjectTemplate.addTemplate bf4_asval_pso1
+ObjectTemplate.replaceItem bf4_groza4_pka
+ObjectTemplate.unlockLevel 2
+

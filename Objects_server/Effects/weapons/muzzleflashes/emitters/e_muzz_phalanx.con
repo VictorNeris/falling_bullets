@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_muzz_phalanx
+ObjectTemplate.createdInEditor 1
+
+include e_muzz_phalanx.tweak

@@ -1,0 +1,18 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/12/22 0:18]
+ObjectTemplate.activeSafe Particle p_link_50cal
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry p_link_50cal
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.mapMaterial 0 link_smallarms 0
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.mass 0.9
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType RotationalPoint
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/2/1/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh flag_uk_wall
+
+ObjectTemplate.create AnimatedBundle flag_uk_wall
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMYP:jeremypr
+ObjectTemplate.geometry flag_uk_wall
+
+include flag_uk_wall.tweak

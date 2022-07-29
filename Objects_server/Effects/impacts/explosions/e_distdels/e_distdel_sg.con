@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_distdel_sg
+ObjectTemplate.createdInEditor 1
+
+include e_distdel_sg.tweak

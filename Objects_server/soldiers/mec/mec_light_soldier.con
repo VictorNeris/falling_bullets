@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh mec_light_soldier
+
+ObjectTemplate.create Soldier mec_light_soldier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry mec_light_soldier
+
+include mec_light_soldier.tweak

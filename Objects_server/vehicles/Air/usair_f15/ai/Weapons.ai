@@ -1,0 +1,53 @@
+rem *** Weaponory ***
+
+rem * Machine gun *
+weaponTemplate.create USAIR_F15MachineGun
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 600.0
+weaponTemplate.setStrength Infantry    9.0
+weaponTemplate.setStrength LightArmour 28.0
+weaponTemplate.setStrength HeavyArmour 24.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  50.0
+weaponTemplate.setStrength Airplane    50.0
+weaponTemplate.allowedDeviation 25.0
+
+rem * AAM *
+weaponTemplate.create f15_sidewinder_AI
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 600.0
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  7.0
+weaponTemplate.setStrength Airplane    9.0
+weaponTemplate.allowedDeviation 15.0
+
+rem * Bombs *
+weaponTemplate.create USAIR_F15Bombs
+weaponTemplate.indirect 1
+weaponTemplate.minRange 30.0
+weaponTemplate.maxRange 500.0
+weaponTemplate.setStrength Infantry    8
+weaponTemplate.setStrength LightArmour 31
+weaponTemplate.setStrength HeavyArmour 25
+weaponTemplate.setStrength NavalArmour 3
+weaponTemplate.setStrength Helicopter  1
+weaponTemplate.setStrength Airplane    1
+weaponTemplate.allowedDeviation 15.0
+
+rem * Laser guided *
+weaponTemplate.create USAIR_F15Maverick
+weaponTemplate.indirect 0
+weaponTemplate.minRange 30.0
+weaponTemplate.maxRange 700.0
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 6.0
+weaponTemplate.setStrength HeavyArmour 6.0
+weaponTemplate.setStrength NavalArmour 3.0
+weaponTemplate.setStrength Helicopter  3.0
+weaponTemplate.setStrength Airplane    3.0
+weaponTemplate.allowedDeviation 15.0

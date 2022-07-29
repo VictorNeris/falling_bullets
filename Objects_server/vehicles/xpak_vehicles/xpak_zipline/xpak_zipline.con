@@ -1,0 +1,14 @@
+GeometryTemplate.create BundledMesh xpak_zipline
+CollisionManager.createTemplate xpak_zipline
+
+ObjectTemplate.create SimpleObject xpak_zipline
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.collisionMesh xpak_zipline
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.mapMaterial 1 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry xpak_zipline
+
+include xpak_zipline.tweak

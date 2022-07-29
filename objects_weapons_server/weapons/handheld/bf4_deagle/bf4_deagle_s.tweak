@@ -1,0 +1,240 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setSubGeometryLodDistance 1 0 1
+GeometryTemplate.setSubGeometryLodDistance 1 1 2
+GeometryTemplate.setSubGeometryLodDistance 1 2 5
+GeometryTemplate.setSubGeometryLodDistance 1 3 10
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.4
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm bf4_deagle_s
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.modifiedByUser "JONES"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+objectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\bf4_deagle_s
+ObjectTemplate.weaponHud.hudName "Deagle 44"
+rem objectTemplate.weaponhud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.02/0
+ObjectTemplate.fire.roundsPerMinute 225
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/pistol_mags.tweak
+ObjectTemplate.ammo.magSize 8
+ObjectTemplate.ammo.reloadTime 3.2
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/10_90x33mmR_pistol_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/5.8/6/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/4.35/-4.35/0
+rem ObjectTemplate.recoil.zoomModifier 0.45
+rem ObjectTemplate.recoil.recoilGraphFrameCount 12
+rem ObjectTemplate.recoil.recoilGraphExponent 5
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/revolver_dev.tweak
+rem ObjectTemplate.deviation.setFireDev 1.5 1.0 0.175
+rem ObjectTemplate.deviation.minDev 0.9
+rem ObjectTemplate.deviation.setTurnDev 0 0 0 0
+rem ObjectTemplate.deviation.setSpeedDev 1.5 0.4 0.4 0.35
+rem ObjectTemplate.deviation.setMiscDev 2.5 2.5 0.175
+rem ObjectTemplate.deviation.devModStand 0.75
+rem ObjectTemplate.deviation.devModCrouch 0.75
+rem ObjectTemplate.deviation.devModLie 0.75
+rem ObjectTemplate.deviation.devModZoom 0.35
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/lowzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.12
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.8
+ObjectTemplate.zoom.zoomLod 1
+rem ---EndComp ---
+ObjectTemplate.geometry bf4_deagle_s
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate pistol_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_bf4_deagle_s_Fire1P
+ObjectTemplate.setPosition 0/0.0368838/0.245643
+ObjectTemplate.addTemplate S_bf4_deagle_s_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.0365171/0.245324
+ObjectTemplate.addTemplate S_bf4_deagle_s_Fire3P
+ObjectTemplate.setPosition 0/0.0387022/0.247454
+ObjectTemplate.addTemplate S_bf4_deagle_s_BoltClick
+ObjectTemplate.setPosition 0/0.032593/-0.0417674
+ObjectTemplate.addTemplate S_bf4_deagle_s_TriggerClick
+ObjectTemplate.addTemplate S_bf4_deagle_s_SwitchFireRate
+ObjectTemplate.addTemplate S_bf4_deagle_s_Reload1P
+ObjectTemplate.setPosition 0/-0.0663167/-0.0589631
+ObjectTemplate.addTemplate S_bf4_deagle_s_Reload3P
+ObjectTemplate.setPosition 0/-0.0725516/-0.0591016
+ObjectTemplate.addTemplate S_bf4_deagle_s_Deploy1P
+ObjectTemplate.addTemplate S_bf4_deagle_s_Deploy3P
+ObjectTemplate.addTemplate S_bf4_deagle_s_Zoom
+ObjectTemplate.addTemplate e_muzz_handgunSilenced
+ObjectTemplate.setPosition 0/0.05/0.29771
+ObjectTemplate.addTemplate e_shellejection_9mm
+ObjectTemplate.setPosition 0.008/0.052/0.025
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/bf4_Deagle/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/bf4_deagle/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 44_magnum
+ObjectTemplate.velocity 470
+ObjectTemplate.itemIndex 2
+ObjectTemplate.delayToUse 0.5
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Fire1P
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/fire_s.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.94/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+ObjectTemplate.position 0/0.0368838/0.245643
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/fire_outdoor_s.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.94/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+ObjectTemplate.position 0/0.0368838/0.245643
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Fire3P
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/fire_3p_s.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position 0/0.013551/0.501526
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 15
+ObjectTemplate.soundRadius 0.4
+
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_BoltClick
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.032593/-0.0417674
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_TriggerClick
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_SwitchFireRate
+ObjectTemplate.modifiedByUser REQUIN94
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Reload1P
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0663167/-0.0589631
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Reload3P
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0725516/-0.0591016
+ObjectTemplate.minDistance 1.5
+ObjectTemplate.halfVolumeDistance 3
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Deploy1P
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/Pistol_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Deploy3P
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/bf4_deagle/sounds/Pistol_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.57
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_bf4_deagle_s_Zoom
+ObjectTemplate.modifiedByUser REQUIN94
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+

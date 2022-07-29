@@ -1,0 +1,9 @@
+ObjectTemplate.create GenericProjectile coax
+ObjectTemplate.material 38
+ObjectTemplate.damage 30
+ObjectTemplate.minDamage 30
+ObjectTemplate.drag 0.001
+ObjectTemplate.mass 0.049
+ObjectTemplate.gravityModifier 1
+include projectiles_common_suppressive.tweak
+include projectiles_tracer_big.tweak

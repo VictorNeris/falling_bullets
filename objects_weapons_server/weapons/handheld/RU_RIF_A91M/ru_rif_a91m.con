@@ -1,0 +1,18 @@
+GeometryTemplate.create BundledMesh ru_rif_a91m
+CollisionManager.createTemplate ru_rif_a91m
+
+ObjectTemplate.create GenericFireArm ru_rif_a91m
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DIANOTEBOOK:Wazar
+ObjectTemplate.collisionMesh ru_rif_a91m
+ObjectTemplate.mapMaterial 0 Default 0
+ObjectTemplate.mapMaterial 1 Alpha 0
+ObjectTemplate.mapMaterial 2 Material_#79 0
+ObjectTemplate.mapMaterial 3 Material_#80 0
+ObjectTemplate.mapMaterial 4 Material_#52 0
+ObjectTemplate.mapMaterial 5 Material_#74 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ru_rif_a91m
+
+include ru_rif_a91m.tweak

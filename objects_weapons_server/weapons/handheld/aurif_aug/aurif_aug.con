@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh aurif_aug
+
+ObjectTemplate.create GenericFireArm aurif_aug
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator EASY STUDIOS
+ObjectTemplate.geometry aurif_aug
+
+include aurif_aug.tweak

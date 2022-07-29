@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh flag_neutral_wall
+
+ObjectTemplate.create AnimatedBundle flag_neutral_wall
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMYP:jeremypr
+ObjectTemplate.geometry flag_neutral_wall
+
+include flag_neutral_wall.tweak

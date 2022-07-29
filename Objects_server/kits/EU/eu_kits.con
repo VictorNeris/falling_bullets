@@ -1,0 +1,36 @@
+GeometryTemplate.create SkinnedMesh eu_kits
+
+ObjectTemplate.create SimpleObject eu_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAYE:jayev
+ObjectTemplate.geometry eu_kits
+
+ObjectTemplate.create SimpleObject MIVDoubleMag11
+
+ObjectTemplate.create SimpleObject MIV_and_pistol_mag9
+
+ObjectTemplate.create SimpleObject Canteen8
+
+ObjectTemplate.create SimpleObject MIVDoubleMag13
+
+ObjectTemplate.create SimpleObject MIV_and_pistol_mag8
+
+ObjectTemplate.create SimpleObject Sustainment_pocket4
+
+ObjectTemplate.create SimpleObject Waist_pack3
+
+ObjectTemplate.create SimpleObject MIVDoubleMag12
+
+ObjectTemplate.create SimpleObject MIVDoubleMag10
+
+ObjectTemplate.create SimpleObject single_pistol_mag4
+
+ObjectTemplate.create SimpleObject pistol_holster10
+
+ObjectTemplate.create SimpleObject Radio5
+
+ObjectTemplate.create SimpleObject single_pistol_mag5
+
+ObjectTemplate.create SimpleObject EU_Beret1
+
+include eu_kits.tweak

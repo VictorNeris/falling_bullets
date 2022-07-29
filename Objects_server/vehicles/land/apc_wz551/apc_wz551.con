@@ -1,0 +1,181 @@
+GeometryTemplate.create BundledMesh apc_wz551
+CollisionManager.createTemplate apc_wz551
+
+ObjectTemplate.create PlayerControlObject apc_wz551
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.collisionMesh apc_wz551
+ObjectTemplate.mapMaterial 0 Armor_3_tank_rear_top 0
+ObjectTemplate.mapMaterial 1 Armor_5_tank_front 0
+ObjectTemplate.mapMaterial 2 Armor_4_tank_sides 0
+ObjectTemplate.mapMaterial 3 Wreck 0
+ObjectTemplate.mapMaterial 4 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry apc_wz551
+ObjectTemplate.addTemplate APC_WZ551_hudPass
+ObjectTemplate.setPosition 0/0.1042/0
+ObjectTemplate.addTemplate APC_WZ551_Turret
+ObjectTemplate.setPosition 0/1.5621/-0.6459
+ObjectTemplate.addTemplate APC_WZ551_Rpropeller
+ObjectTemplate.setPosition 1.1922/0.5468/-3.0308
+ObjectTemplate.addTemplate APC_WZ551_Lpropeller
+ObjectTemplate.setPosition -1.1922/0.5468/-3.0308
+ObjectTemplate.addTemplate APC_WZ551_Engine
+ObjectTemplate.setPosition 0/0.9925/0
+
+ObjectTemplate.create SimpleObject APC_WZ551_hudPass
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle APC_WZ551_Turret
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate APC_WZ551_BarrelBase
+ObjectTemplate.setPosition -0.5794/0.6226/-0.4651
+ObjectTemplate.addTemplate APC_WZ551_Hud_Spring
+ObjectTemplate.setPosition -0.3988/0.3266/0.1472
+ObjectTemplate.addTemplate Coaxial_mg_mec
+ObjectTemplate.setPosition 0.577463/-0.0428071/0.945039
+
+ObjectTemplate.create RotationalBundle APC_WZ551_BarrelBase
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate APC_WZ551_AP_Barrel
+ObjectTemplate.setPosition 0.5794/0.0439/0.6482
+ObjectTemplate.addTemplate APC_WZ551_HE_Barrel
+ObjectTemplate.setPosition 0.5794/0.0439/0.6482
+ObjectTemplate.addTemplate APC_WZ551_Canister_Barrel
+ObjectTemplate.setPosition 0.5794/0.0439/0.6482
+
+ObjectTemplate.create GenericFireArm APC_WZ551_AP_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create GenericFireArm APC_WZ551_HE_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create GenericFireArm APC_WZ551_Canister_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create RotationalBundle APC_WZ551_Hud_Spring
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate APC_WZ551_hud
+ObjectTemplate.setPosition 0/0.0244/-0.1196
+
+ObjectTemplate.create RotationalBundle APC_WZ551_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle APC_WZ551_Rpropeller
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create RotationalBundle APC_WZ551_Lpropeller
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Engine APC_WZ551_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate APC_WZ551_Lwheel
+ObjectTemplate.setPosition -1.1886/-1.1657/-2.0353
+ObjectTemplate.addTemplate APC_WZ551_Rwheel
+ObjectTemplate.setPosition 1.1886/-1.1657/-2.0353
+ObjectTemplate.addTemplate APC_WZ551_nav_LR
+ObjectTemplate.setPosition -1.1886/-1.1657/-0.1588
+ObjectTemplate.addTemplate APC_WZ551_nav_LF
+ObjectTemplate.setPosition -1.1886/-1.1657/1.7304
+ObjectTemplate.addTemplate APC_WZ551_nav_RR
+ObjectTemplate.setPosition 1.1886/-1.1657/-0.1588
+ObjectTemplate.addTemplate APC_WZ551_nav_RF
+ObjectTemplate.setPosition 1.1886/-1.1657/1.7304
+
+ObjectTemplate.create Spring APC_WZ551_Lwheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring APC_WZ551_Rwheel
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create RotationalBundle APC_WZ551_nav_LR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+ObjectTemplate.addTemplate APC_WZ551_Wheel_LR
+
+ObjectTemplate.create Spring APC_WZ551_Wheel_LR
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create RotationalBundle APC_WZ551_nav_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+ObjectTemplate.addTemplate APC_WZ551_Wheel_LF
+
+ObjectTemplate.create Spring APC_WZ551_Wheel_LF
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create RotationalBundle APC_WZ551_nav_RR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+ObjectTemplate.addTemplate APC_WZ551_Wheel_RR
+
+ObjectTemplate.create Spring APC_WZ551_Wheel_RR
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create RotationalBundle APC_WZ551_nav_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+ObjectTemplate.addTemplate APC_WZ551_Wheel_RF
+
+ObjectTemplate.create Spring APC_WZ551_Wheel_RF
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+include apc_wz551.tweak

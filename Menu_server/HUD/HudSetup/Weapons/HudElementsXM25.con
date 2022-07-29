@@ -1,0 +1,16 @@
+hudBuilder.createSplitNode		IngameHud XM25Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 56789
+hudBuilder.setNodeInTime		0.14
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+
+hudBuilder.createPictureNode 		XM25Hud XM25HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+rem hudBuilder.setNodeColor 			1 0 0 1
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable    	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+hudBuilder.createPictureNode		XM25Hud XM25Frame 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Crosshair\XM25_Scope.dds
+

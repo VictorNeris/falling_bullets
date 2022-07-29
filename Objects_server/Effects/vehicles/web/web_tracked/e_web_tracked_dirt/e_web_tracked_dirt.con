@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_web_tracked_dirt
+ObjectTemplate.createdInEditor 1
+
+include E_web_tracked_dirt.tweak

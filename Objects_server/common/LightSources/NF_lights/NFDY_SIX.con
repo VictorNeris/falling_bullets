@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle NFDY_SIX
+ObjectTemplate.createdInEditor 1
+
+include NFDY_SIX.tweak

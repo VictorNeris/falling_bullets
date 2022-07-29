@@ -1,0 +1,59 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/1/10 8:53]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile hydra_70
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 55
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionForce 4
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.endEffectTemplate e_exp_medium_rocket
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+ObjectTemplate.geometry hydra_70
+ObjectTemplate.setCollisionMesh hydra_70
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.drag 1
+ObjectTemplate.mass 20
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.material 55
+rem -------------------------------------
+ObjectTemplate.addTemplate S_hydra_70_Looping
+ObjectTemplate.addTemplate e_dumbrocket_trail
+rem ObjectTemplate.setPosition 0/0/-0.69
+ObjectTemplate.addTemplate houselight_big_LightSource
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.material 55
+ObjectTemplate.damage 350
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 125
+
+ObjectTemplate.activeSafe Sound S_hydra_70_Looping
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/hydra_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 15
+

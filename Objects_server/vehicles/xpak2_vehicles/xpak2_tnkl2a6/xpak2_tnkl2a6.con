@@ -1,0 +1,261 @@
+GeometryTemplate.create BundledMesh xpak2_tnkl2a6
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate xpak2_tnkl2a6
+
+ObjectTemplate.create PlayerControlObject xpak2_tnkl2a6
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.collisionMesh xpak2_tnkl2a6
+ObjectTemplate.mapMaterial 0 col_tankTreads 0
+ObjectTemplate.mapMaterial 1 col_tankFront 0
+ObjectTemplate.mapMaterial 2 col_tankRear 0
+ObjectTemplate.mapMaterial 3 col_tankSide 0
+ObjectTemplate.mapMaterial 4 Armor_Tank 0
+ObjectTemplate.mapMaterial 5 col_wreck 0
+ObjectTemplate.mapMaterial 6 l2a6_main 0
+ObjectTemplate.mapMaterial 7 AnimatedUV 0
+ObjectTemplate.mapMaterial 8 Wheels 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry xpak2_tnkl2a6
+ObjectTemplate.addTemplate tnk_l2a6_turretbase
+ObjectTemplate.setPosition 0/0.0158/0
+ObjectTemplate.addTemplate tnk_l2a6_engine
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_turretbase
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate tnk_l2a6_barrelBase
+ObjectTemplate.setPosition 0/0.8495/1.5657
+ObjectTemplate.addTemplate tnk_l2a6_gunner
+ObjectTemplate.setPosition -0.7500/0.8600/-0.4600
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_barrelBase
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate tnk_l2a6_HEAT_Barrel
+ObjectTemplate.addTemplate tnk_l2a6_AP_Barrel
+ObjectTemplate.addTemplate tnk_l2a6_Guided_Barrel
+ObjectTemplate.addTemplate tnk_l2a6_Canister_Barrel
+ObjectTemplate.addTemplate tnk_l2a6_hud
+ObjectTemplate.setPosition 0/-0.8495/-1.5657
+
+
+ObjectTemplate.create GenericFireArm tnk_l2a6_HEAT_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create GenericFireArm tnk_l2a6_AP_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create GenericFireArm tnk_l2a6_Guided_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create GenericFireArm tnk_l2a6_Canister_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create PlayerControlObject tnk_l2a6_gunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate tnk_l2a6_cupolabase
+ObjectTemplate.setPosition 0.0300/0.4880/0
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_cupolabase
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate tnk_l2a6_gunpivot
+ObjectTemplate.setPosition 0/0.2830/0.6000
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_gunpivot
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Engine tnk_l2a6_engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R1
+ObjectTemplate.setPosition 1.6200/-0.95/2.6282
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R2
+ObjectTemplate.setPosition 1.6200/-0.95/1.7476
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R3
+ObjectTemplate.setPosition 1.6200/-0.95/0.8237
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R4
+ObjectTemplate.setPosition 1.6200/-0.95/-0.0822
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R5
+ObjectTemplate.setPosition 1.6200/-0.95/-1.0374
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R6
+ObjectTemplate.setPosition 1.6200/-0.95/-1.9926
+ObjectTemplate.addTemplate tnk_l2a6_wheel_R7
+ObjectTemplate.setPosition 1.6200/-0.95/-2.8761
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L1
+ObjectTemplate.setPosition -1.5785/-0.95/2.6282
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L2
+ObjectTemplate.setPosition -1.5785/-0.95/1.7476
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L3
+ObjectTemplate.setPosition -1.5785/-0.95/0.8237
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L4
+ObjectTemplate.setPosition -1.5785/-0.95/-0.0822
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L5
+ObjectTemplate.setPosition -1.5785/-0.95/-1.0374
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L6
+ObjectTemplate.setPosition -1.5785/-0.95/-1.9926
+ObjectTemplate.addTemplate tnk_l2a6_wheel_L7
+ObjectTemplate.setPosition -1.5785/-0.95/-2.8761
+ObjectTemplate.addTemplate tnk_l2a6_drivewheel_R
+ObjectTemplate.setPosition 1.4800/-0.3500/-3.5830
+ObjectTemplate.addTemplate tnk_l2a6_drivewheel_L
+ObjectTemplate.setPosition -1.4800/-0.3500/-3.5830
+ObjectTemplate.addTemplate tnk_l2a6_wheels_front
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R1
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R2
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R3
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R4
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R5
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R6
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_R7
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L1
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L2
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L3
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L4
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L5
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L6
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring tnk_l2a6_wheel_L7
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_drivewheel_R
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create RotationalBundle tnk_l2a6_drivewheel_L
+ObjectTemplate.collisionPart 24
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+ObjectTemplate.create SimpleObject tnk_l2a6_wheels_front
+ObjectTemplate.collisionPart 25
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 25
+
+include xpak2_tnkl2a6.tweak

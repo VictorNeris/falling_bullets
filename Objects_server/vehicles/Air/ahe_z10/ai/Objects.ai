@@ -1,0 +1,123 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit AHE_Z10Unit
+aiTemplatePlugIn.equipmentTypeName Helicopter
+aiTemplatePlugIn.setStrategicStrength 0 3
+aiTemplatePlugIn.setStrategicStrength 1 3
+
+aiTemplatePlugIn.create Cover AHE_Z10Cover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Physical AHE_Z10Physical
+aiTemplatePlugIn.setStrType Helicopter
+
+aiTemplatePlugIn.create ControlInfo AHE_Z10Ctrl
+aiTemplatePlugIn.driveTurnControl     PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIYaw
+aiTemplatePlugIn.aimVerticalControl   PIPitch
+aiTemplatePlugIn.driveRollControl     PIRoll
+aiTemplatePlugIn.drivePitchControl    PIPitch
+aiTemplatePlugIn.aimRollControl       PIRoll
+aiTemplatePlugIn.aimThrottleControl   PIThrottle
+aiTemplatePlugIn.throttleSensitivity -3.0
+rem aiTemplatePlugIn.pitchSensitivity -0.5
+aiTemplatePlugIn.pitchSensitivity    -1.0
+aiTemplatePlugIn.rollSensitivity     -1.3
+aiTemplatePlugIn.yawSensitivity       0.3
+aiTemplatePlugIn.throttleLookAhead    1.0
+aiTemplatePlugIn.pitchLookAhead       1.2
+aiTemplatePlugIn.rollLookAhead        1.5
+aiTemplatePlugIn.yawLookAhead         0.3
+aiTemplatePlugIn.throttleScale        1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale           0.0010
+aiTemplatePlugIn.rollScale            0.0020
+aiTemplatePlugIn.yawScale             0.0175
+aiTemplatePlugIn.maxRollAngle         0.9900
+aiTemplatePlugIn.maxClimbAngle        0.3333
+
+aiTemplatePlugIn.create Mobile AHE_Z10Mobile
+aiTemplatePlugIn.vehicleNumber -1
+aiTemplatePlugIn.maxSpeed 60.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.setSoundSphereRadius 0.0 75.0
+aiTemplatePlugIn.setHearingProbability 0.01 0.3
+
+aiTemplatePlugIn.create Armament AHE_Z10Arms
+rem aiTemplatePlugIn.setIsAntiAircraft 1
+
+
+rem *** AITemplate ***
+aiTemplate.create Ahe_Z10
+aiTemplate.addType ITUnit
+aiTemplate.addType ITMobile
+aiTemplate.addType ITAir
+aiTemplate.addType ITHasWreck
+aiTemplate.addType ITHelicopter
+rem aiTemplate.addType ITCover
+aiTemplate.degeneration 5
+aiTemplate.allowedTimeDiff 0.5
+aiTemplate.basicTemp 300
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn AHE_Z10Unit
+aiTemplate.addPlugIn AHE_Z10Cover
+aiTemplate.addPlugIn AHE_Z10Physical
+aiTemplate.addPlugIn AHE_Z10Ctrl
+aiTemplate.addPlugIn AHE_Z10Mobile
+aiTemplate.addPlugIn AHE_Z10Arms
+
+
+rem  *** The turret mounted MG
+rem *********************************************************************
+rem *********************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament Ahe_Z10_Gunner_Armament
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit Ahe_Z10_Gunner_Unit
+aiTemplatePlugIn.equipmentTypeName Fixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 3
+aiTemplatePlugIn.SelectKey PIMenuSelect2
+
+aiTemplatePlugIn.create ControlInfo Ahe_Z10_Gunner_ControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -3.0
+aiTemplatePlugIn.pitchSensitivity    -1.0
+aiTemplatePlugIn.rollSensitivity     -1.3
+aiTemplatePlugIn.yawSensitivity       0.3
+aiTemplatePlugIn.throttleLookAhead    1.0
+aiTemplatePlugIn.pitchLookAhead       1.2
+aiTemplatePlugIn.rollLookAhead        1.5
+aiTemplatePlugIn.yawLookAhead         0.3
+aiTemplatePlugIn.throttleScale        1.0
+aiTemplatePlugIn.proportionalConstant -5
+aiTemplatePlugIn.derivativeConstant   -1
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale           0.0010
+aiTemplatePlugIn.rollScale            0.0750
+aiTemplatePlugIn.yawScale             0.0750
+rem *** CHECK NONAI OBJECT.CON FOR THESE VALUES
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -100/-10/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 100/60/0
+
+rem *** AITemplate ***
+aiTemplate.create Ahe_Z10_Gunner
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITAir
+aiTemplate.addType ITHelicopter
+aiTemplate.degeneration 5
+aiTemplate.allowedTimeDiff 0.5
+aiTemplate.basicTemp 300
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn Ahe_Z10_Gunner_Armament
+aiTemplate.addPlugIn Ahe_Z10_Gunner_Unit
+aiTemplate.addPlugIn Ahe_Z10_Gunner_ControlInfo

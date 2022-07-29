@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh cart_dest
+CollisionManager.createTemplate cart_dest
+
+ObjectTemplate.create DestroyableObject cart_dest
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.collisionMesh cart_dest
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.mapMaterial 1 metal 0
+ObjectTemplate.mapMaterial 2 metal_thin 0
+ObjectTemplate.mapMaterial 3 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cart_dest
+ObjectTemplate.anchor 0.6368/-0.4866/0
+
+include cart_dest.tweak

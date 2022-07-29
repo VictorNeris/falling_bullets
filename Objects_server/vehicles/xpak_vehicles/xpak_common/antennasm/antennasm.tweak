@@ -1,0 +1,14 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/7/21 5:12]
+ObjectTemplate.activeSafe AntennaObject antennasm
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.modifiedByUser "jeffev"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry antennasm
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.antenna.skeleton Objects/Vehicles/Common/Antenna/antenna_setup.ske
+ObjectTemplate.antenna.maxSwayAngle 60/60
+ObjectTemplate.antenna.stiffness 0.5
+ObjectTemplate.antenna.damping 0.05
+ObjectTemplate.antenna.accelerationFactor 20
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create AirDraftEffectBundle heli_bass
+ObjectTemplate.createdInEditor 1
+
+include heli_bass.tweak

@@ -1,0 +1,24 @@
+hudBuilder.createSplitNode		IngameHud KobraHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3630
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3631
+hudBuilder.addNodeBlendEffect		7 2
+hudBuilder.setNodeInTime		0.15
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+
+hudBuilder.createPictureNode 		KobraHud KobraHitIndication 385 285 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+hudBuilder.createSplitNode		KobraHud KobraAltHud
+
+hudBuilder.createPictureNode 		KobraAltHud KobraAltCrosshair 383 279 35 44
+hudBuilder.setPictureNodeTexture 	Ingame\PonyCrossHair\kobra_ret.dds
+
+hudBuilder.createSplitNode		KobraHud GenericWeaponKobraHudtemp
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable		CrossHairColorAlpha
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3630
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3631

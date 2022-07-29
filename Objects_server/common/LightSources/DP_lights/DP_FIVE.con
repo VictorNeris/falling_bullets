@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle DP_FIVE
+ObjectTemplate.createdInEditor 1
+
+include DP_FIVE.tweak

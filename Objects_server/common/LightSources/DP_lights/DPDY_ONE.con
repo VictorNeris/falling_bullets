@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle DPDY_ONE
+ObjectTemplate.createdInEditor 1
+
+include DPDY_ONE.tweak

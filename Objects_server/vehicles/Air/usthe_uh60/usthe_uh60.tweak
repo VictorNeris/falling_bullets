@@ -1,0 +1,1240 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/10/3 6:41]
+GeometryTemplate.setSubGeometryLodDistance 1 0 30
+GeometryTemplate.setSubGeometryLodDistance 1 1 50
+GeometryTemplate.setSubGeometryLodDistance 1 2 130
+GeometryTemplate.setSubGeometryLodDistance 2 0 30
+GeometryTemplate.setSubGeometryLodDistance 2 1 60
+GeometryTemplate.setMaterialReflectionScale 0 0 0 1
+GeometryTemplate.setMaterialReflectionScale 0 0 1 1
+GeometryTemplate.setMaterialReflectionScale 0 0 2 0.06
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0
+GeometryTemplate.setMaterialReflectionScale 1 0 1 0.2
+GeometryTemplate.setMaterialReflectionScale 1 0 2 0.7
+GeometryTemplate.setSpecularStaticGloss 1 0 0 0
+GeometryTemplate.setSpecularStaticGloss 1 0 1 1
+GeometryTemplate.setSpecularStaticGloss 1 0 2 2
+GeometryTemplate.setSpecularStaticGloss 1 1 1 1
+GeometryTemplate.setSpecularStaticGloss 1 1 2 2
+GeometryTemplate.setSpecularStaticGloss 1 1 3 2
+GeometryTemplate.setSpecularStaticGloss 1 2 1 2
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe PlayerControlObject usthe_uh60
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1350
+ObjectTemplate.armor.hitPoints 1350
+ObjectTemplate.armor.defaultMaterial 31
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 10
+rem 18
+ObjectTemplate.armor.waterDamageDelay 0.01
+ObjectTemplate.armor.deepWaterDamageDelay 0.01
+ObjectTemplate.armor.waterLevel -0.5
+ObjectTemplate.armor.deepWaterLevel -0.5
+ObjectTemplate.armor.explosionForce  4
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 110
+ObjectTemplate.armor.explosionRadius  4
+ObjectTemplate.armor.explosionMaterial 70
+ObjectTemplate.armor.wreckExplosionForce 3.5
+ObjectTemplate.armor.wreckExplosionDamage 80
+ObjectTemplate.armor.wreckExplosionRadius 3.5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 500
+ObjectTemplate.armor.timeToStayAsWreck 15
+ObjectTemplate.armor.criticalDamage 151
+ObjectTemplate.armor.destroyOnSpectacularDeath 1
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_heli_lightsmoke -0.63/0.92/-2.32 0/0/0
+ObjectTemplate.armor.addArmorEffect 40 e_dstate_heli_heavysmoke -0.63/0.92/-2.32 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_heli_firesmoke -0.63/0.92/-2.32 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_heli_Generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_uh60 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_heli_Generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_heli_wrecksmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_static_fire 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_sAmb_OnlySmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_heli_firesmoke -0.63/0.92/-2.32 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage heli_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_blackhawk"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_Transport_Heli.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.addShowOnCamMode 2
+ObjectTemplate.vehicleHud.guiIndex 27
+ObjectTemplate.vehicleHud.vehicleIconPos 63/18
+ObjectTemplate.vehicleHud.vehicleType 2
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\uh60.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry USTHE_UH60
+ObjectTemplate.setCollisionMesh USTHE_UH60
+ObjectTemplate.mapMaterial 0 Armor_6_helicopter 31
+ObjectTemplate.mapMaterial 1 Glass_vehicle 1006
+ObjectTemplate.mapMaterial 2 cloth_carpet 1016
+ObjectTemplate.mapMaterial 3 penetrablemetal_thin 1019
+ObjectTemplate.mapMaterial 4 cardboard 1015
+ObjectTemplate.mapMaterial 5 wreck 60
+ObjectTemplate.mapMaterial 6 Rubber 102
+ObjectTemplate.mapMaterial 7 Rubber 7
+ObjectTemplate.drag 2
+ObjectTemplate.mass 7500
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate UH60
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_Ambient
+ObjectTemplate.addTemplate S_usthe_uh60_AmbientDamaged
+ObjectTemplate.addTemplate USTHE_UH60_Camera
+ObjectTemplate.setPosition 0.724/0.559/2.971
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate USTHE_UH60_Left_Gunner
+ObjectTemplate.setPosition -1.59995/0.0539999/1.73018
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate USTHE_UH60_Right_Gunner
+ObjectTemplate.setPosition 1.49502/0.054/1.62222
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate USTHE_UH60_CoPilot
+ObjectTemplate.setPosition 0.966236/0.429811/0.578036
+ObjectTemplate.setRotation -29.7601/-0.188795/-0.33633
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 0/0.158639/-0.507811
+ObjectTemplate.addTemplate USTHE_UH60_Passenger2
+ObjectTemplate.setPosition -1/0.02/-0.5
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate USTHE_UH60_Passenger1
+ObjectTemplate.setPosition 1/0.02/-0.5
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate USTHE_UH60_EntryPoint
+ObjectTemplate.setPosition 0/-0.546823/2.32709
+ObjectTemplate.addTemplate USTHE_UH60_TailRotor
+ObjectTemplate.setPosition 0.17/2.18/-9.951
+ObjectTemplate.setRotation 0/0/13
+ObjectTemplate.addTemplate USTHE_UH60_MainRotor
+ObjectTemplate.setPosition 0/2/0
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate USTHE_UH60_flarelauncher
+ObjectTemplate.addTemplate usthe_uh60_EntryPoint_R
+ObjectTemplate.setPosition -7.63652e-007/-1.266/-0.269596
+ObjectTemplate.addTemplate usthe_uh60_RotorHead1
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.addTemplate usthe_uh60_WingL
+ObjectTemplate.setPosition -1/0/1
+ObjectTemplate.setRotation 0/0/-10
+ObjectTemplate.addTemplate usthe_uh60_WingR
+ObjectTemplate.setPosition 1/0/1
+ObjectTemplate.setRotation 0/0/10
+ObjectTemplate.addTemplate usthe_uh60_Rudder
+ObjectTemplate.setPosition 0/0/-9.9943
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate usthe_uh60_BodyWing
+ObjectTemplate.setPosition 0/-1/0
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate usthe_uh60_EntryPoint_mid
+ObjectTemplate.setPosition 0/-0.0130529/-0.975863
+ObjectTemplate.addTemplate uh60_SpawnPoint
+rem -------------------------------------
+
+ObjectTemplate.setSoldierExitLocation 2/-0.6/2.5 0/0/0
+ObjectTemplate.regulateYawInput PIYaw
+ObjectTemplate.regulateYaw -0.2/0.2
+ObjectTemplate.regulateVerticalPosInput PIThrottle
+ObjectTemplate.regulateVerticalPos -0.5/2
+ObjectTemplate.maxVertRegAngle 35
+ObjectTemplate.noVertRegAngle 55
+ObjectTemplate.seatInformation USTHE_UH60 0.768997/0.336132/3.34108 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter UH60
+ObjectTemplate.sprintFactor 1
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_cockpit_loop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Spring USTHE_UH60_FWheelL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_FWheelL_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 35
+ObjectTemplate.setDamping 5
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_FWheelL_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring USTHE_UH60_FWheelR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_FWheelR_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 35
+ObjectTemplate.setDamping 5
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_FWheelR_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring USTHE_UH60_WheelB
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_WheelB_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 5
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_WheelB_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle USTHE_UH60_TailFlap
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_TailFlap_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_TailFlap_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Engine USTHE_UH60_MainEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_MainEngine_RotationRpm
+ObjectTemplate.addTemplate S_USTHE_UH60_MainEngine_Idle
+ObjectTemplate.addTemplate S_USTHE_UH60_MainEngine_Rpm1
+ObjectTemplate.addTemplate S_USTHE_UH60_MainEngine_Rpm2
+ObjectTemplate.addTemplate S_USTHE_UH60_MainEngine_Load
+rem -------------------------------------
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 0.1
+ObjectTemplate.setDifferential 0
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalDampAngle 0.001
+ObjectTemplate.horizontalDampAngleFactor 0.01
+ObjectTemplate.defaultAngleOfAttack 6.6
+ObjectTemplate.maxAngleOfAttack 16
+ObjectTemplate.attackSpeed 12
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_MainEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_MainEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_MainEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_MainEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_MainEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Engine USTHE_UH60_TailEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_TailEngine_RotationRpm
+ObjectTemplate.addTemplate S_USTHE_UH60_TailEngine_Idle
+ObjectTemplate.setPosition -8.44106e-009/2.12742/-0.193109
+ObjectTemplate.addTemplate S_USTHE_UH60_TailEngine_Rpm1
+ObjectTemplate.setPosition -1.00659e-008/2.11299/-0.230282
+ObjectTemplate.addTemplate S_USTHE_UH60_TailEngine_Rpm2
+ObjectTemplate.addTemplate S_USTHE_UH60_TailEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/2000
+ObjectTemplate.setInputToRoll PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 40
+ObjectTemplate.setDifferential 35
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.decreaseAngleToZero 1
+ObjectTemplate.pureRotational 1
+ObjectTemplate.spinWhenNoEngineInAir 0.4
+ObjectTemplate.noEffectAtPerpSpeed 60
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_TailEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_TailEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_tail_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.00772201/0.781853/0/0.996139/0.793436/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003861/0.895753/0/0.996139/0.895753/0/
+ObjectTemplate.position -8.44106e-009/2.12742/-0.193109
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_TailEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/heli_mid_range.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 30
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_TailEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_TailEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle USTHE_UH60__LLavett
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60__LLavett_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60__LLavett_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle USTHE_UH60__RLavett
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60__RLavett_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60__RLavett_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera USTHE_UH60_Camera
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -120/-20/0
+ObjectTemplate.setMaxRotation 80/20/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.cameraShakeStartSpeed 85
+ObjectTemplate.cameraShakeMaxSpeed 100
+ObjectTemplate.nosePos 0/0/2.75
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 30
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create PlayerControlObject USTHE_UH60_Left_Gunner
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_blackhawk"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 53/7
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate UH60_Gunner_1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_Left_Gunner_Ambient
+ObjectTemplate.addTemplate S_USTHE_UH60_Left_Gunner_AmbientDamaged
+ObjectTemplate.addTemplate HMG_M134
+ObjectTemplate.setPosition -0.121869/-0.0817503/-0.302458
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-0.5/1 -90/0/0
+ObjectTemplate.seatInformation USTHE_UH60_Left_Gunner -0.0977462/0.36105/-0.50508 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Air/USTHE_UH60/LeftGunnerAnimationSystem.inc
+ObjectTemplate.soundFilter UH60
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.listenerObstruction 0.3
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Left_Gunner_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_cockpit_loop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.25
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Left_Gunner_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create PlayerControlObject USTHE_UH60_Right_Gunner
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_blackhawk"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 53/20
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate UH60_Gunner_2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_Right_Gunner_Ambient
+ObjectTemplate.addTemplate S_USTHE_UH60_Right_Gunner_AmbientDamaged
+ObjectTemplate.addTemplate HMG_M134
+ObjectTemplate.setPosition 0.00223381/-0.0790486/-0.204546
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-0.5/1 90/0/0
+ObjectTemplate.seatInformation USTHE_UH60_Right_Gunner 0.0120234/0.42962/-0.414831 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Air/USTHE_UH60/RightGunnerAnimationSystem.inc
+ObjectTemplate.soundFilter UH60
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.listenerObstruction 0.3
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Right_Gunner_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_cockpit_loop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.25
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Right_Gunner_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create PlayerControlObject USTHE_UH60_CoPilot
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_blackhawk"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 45/20
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate UH60_copilot
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_CoPilot_Ambient
+ObjectTemplate.addTemplate S_USTHE_UH60_CoPilot_AmbientDamaged
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0.5/-0.5/-1.1 98/0/0
+ObjectTemplate.seatInformation USTHE_UH60_CoPilot 0.0933478/0.00773716/-1.78814e-007 135.811/-2.64173/4.76464
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Air/usthe_uh60/3p_passenger_chair_animSys.inc
+ObjectTemplate.soundFilter UH60
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.listenerObstruction 0.3
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_CoPilot_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_cockpit_loop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_CoPilot_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create PlayerControlObject USTHE_UH60_Passenger2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_blackhawk"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 39/7
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate UH60_Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_Passenger2_Ambient
+ObjectTemplate.addTemplate S_USTHE_UH60_Passenger2_AmbientDamaged
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0.5/-0.5/1.1 -98/0/0
+ObjectTemplate.seatInformation USTHE_UH60_Passenger2 0.170559/0.230338/0.182244 -10.7415/-11.2455/-0.819398
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.seatLeftRotationLimit -15
+ObjectTemplate.seatRightRotationLimit 40
+ObjectTemplate.soundFilter UH60
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Passenger2_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_cockpit_loop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.25
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Passenger2_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create PlayerControlObject USTHE_UH60_Passenger1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_blackhawk"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 39/20
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate UH60_Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USTHE_UH60_Passenger1_Ambient
+ObjectTemplate.addTemplate S_USTHE_UH60_Passenger1_AmbientDamaged
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/-0.5/1 90/0/0
+ObjectTemplate.seatInformation USTHE_UH60_Passenger1 -0.0494366/0.242464/0.240858 -8.96134/-5.84925/0.132369
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.seatLeftRotationLimit -25
+ObjectTemplate.seatRightRotationLimit 30
+ObjectTemplate.soundFilter UH60
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Passenger1_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_cockpit_loop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.25
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_USTHE_UH60_Passenger1_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.create EntryPoint USTHE_UH60_EntryPoint
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create GenericFireArm usthe_uh60_flarelauncher
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 6
+ObjectTemplate.fire.addBarrelName usthe_uh60_flarelauncher_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 6
+ObjectTemplate.ammo.minimumTimeUntilReload 2.5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadTime 4.5
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Fire1P
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Fire3P
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_BoltClick
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_TriggerClick
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Reload1P
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Reload3P
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Deploy1P
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Deploy3P
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Zoom
+ObjectTemplate.addTemplate usthe_uh60_flarelauncher_barrel
+ObjectTemplate.setPosition 1.45376/-0.75/-2
+ObjectTemplate.setRotation 30/0/0
+ObjectTemplate.addTemplate usthe_uh60_flarelauncher_barrel
+ObjectTemplate.setPosition 1.45226/-0.75/-2
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate usthe_uh60_flarelauncher_barrel
+ObjectTemplate.setPosition 1.42073/-0.75/-2
+ObjectTemplate.setRotation 150/0/0
+ObjectTemplate.addTemplate usthe_uh60_flarelauncher_barrel
+ObjectTemplate.setPosition -1.39861/-0.75/-2
+ObjectTemplate.setRotation -30/0/0
+ObjectTemplate.addTemplate usthe_uh60_flarelauncher_barrel
+ObjectTemplate.setPosition -1.41346/-0.75/-2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate usthe_uh60_flarelauncher_barrel
+ObjectTemplate.setPosition -1.4298/-0.75/-2
+ObjectTemplate.setRotation -150/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate usthe_uh60_flarelauncher_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 10
+
+ObjectTemplate.create GenericProjectile usthe_uh60_flarelauncher_Projectile
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_flarelauncher_Projectile_Looping
+ObjectTemplate.addTemplate e_flare_decoy
+ObjectTemplate.addTemplate HeatObject_flare
+ObjectTemplate.addTemplate WindAffector
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 38
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 50
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 5
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_launcher_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Bundle usthe_uh60_flarelauncher_barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_flarelauncher_Projectile_Looping
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.create EntryPoint usthe_uh60_EntryPoint_R
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 5.5
+
+ObjectTemplate.create RotationalBundle usthe_uh60_RotorHead1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_RotorHead1_RotationRpm
+ObjectTemplate.addTemplate usthe_uh60_RotorHead2
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-6/-3
+ObjectTemplate.setMaxRotation 0/6/3
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_RotorHead1_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle usthe_uh60_RotorHead2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_RotorHead2_RotationRpm
+ObjectTemplate.addTemplate usthe_uh60_Rotor
+ObjectTemplate.setRotation 0/-86/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-6/-3
+ObjectTemplate.setMaxRotation 0/6/3
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/1000/-1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_RotorHead2_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine usthe_uh60_Rotor
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 30
+ObjectTemplate.windRadialFalloff 20
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_Rotor_RotationRpm
+ObjectTemplate.addTemplate S_usthe_uh60_Rotor_Idle
+ObjectTemplate.setPosition -10/-7.68678e-008/1.75853
+ObjectTemplate.addTemplate S_usthe_uh60_Rotor_Rpm1
+ObjectTemplate.setPosition 0/1.78602/1.24192
+ObjectTemplate.addTemplate S_usthe_uh60_Rotor_Rpm2
+ObjectTemplate.setPosition 10/-7.68678e-008/1.75853
+ObjectTemplate.addTemplate S_usthe_uh60_Rotor_Load
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 300
+ObjectTemplate.setDifferential 250
+ObjectTemplate.setGearUp 0.99
+ObjectTemplate.setGearDown 0.01
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalSpeedMagnifier 1.5
+ObjectTemplate.horizontalDampAngle 0.1
+ObjectTemplate.horizontalDampAngleFactor 0.001
+ObjectTemplate.defaultAngleOfAttack 2
+ObjectTemplate.maxAngleOfAttack 12
+ObjectTemplate.attackSpeed 5
+ObjectTemplate.decreaseAngleToZeroVerticalVel 0.5
+ObjectTemplate.dampHorizontalVel 5
+ObjectTemplate.dampHorizontalVelFactor -0.5
+ObjectTemplate.canReverse 0
+ObjectTemplate.audio.transformationRelativeRoot 1
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Rotor_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Rotor_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/5/0/0.799228/0/0.494208/0.799228/0/0.644788/0.996139/0/0.776062/1.03668/0/0.996139/1.03668/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003861/1/0/0.494208/1/0/0.752896/1/0/0.988417/1/0/
+ObjectTemplate.position 0/-7.68678e-008/1.75853
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Rotor_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_rpm2.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.003/0.354/0/1/1.313/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/0.01/0/0.216/0.548/0/0.518/0.746/0/0.8/1/0/
+ObjectTemplate.position 0/1.78602/1.24192
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 50
+
+beginrem
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+rem ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_bass.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+rem ObjectTemplate.pitchEnvelope 0/1/0/1.1/0/1.5/0/0.53861/0/0.861004/1.1/0/
+rem ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0/0/0/0.200772/0.756757/0/0.988417/0.953668/0/
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/5/0/0.799228/0/0.494208/0.799228/0/0.644788/0.996139/0/0.776062/1.03668/0/0.996139/1.03668/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003861/1/0/0.494208/1/0/0.752896/1/0/0.988417/1/0/
+ObjectTemplate.position 0/1.78602/1.24192
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 15
+endrem
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Rotor_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/5/0/0.799228/0/0.494208/0.799228/0/0.644788/0.996139/0/0.776062/1.03668/0/0.996139/1.03668/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003861/1/0/0.494208/1/0/0.752896/1/0/0.988417/1/0/
+ObjectTemplate.position 0/-7.68678e-008/1.75853
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 9
+ObjectTemplate.soundRadius 3
+
+beginrem
+endrem
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Rotor_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing usthe_uh60_WingL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_WingL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_WingL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing usthe_uh60_WingR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_WingR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_WingR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing usthe_uh60_Rudder
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing usthe_uh60_BodyWing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usthe_uh60_BodyWing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_usthe_uh60_BodyWing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint usthe_uh60_EntryPoint_mid
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 4
+
+
+ObjectTemplate.create SpawnPoint uh60_SpawnPoint
+ObjectTemplate.modifiedByUser Dodek
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 0
+

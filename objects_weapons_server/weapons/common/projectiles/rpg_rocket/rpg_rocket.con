@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh rpg_rocket
+CollisionManager.createTemplate rpg_rocket
+
+ObjectTemplate.create GenericProjectile rpg_rocket
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMYP:jeremypr
+ObjectTemplate.collisionMesh rpg_rocket
+ObjectTemplate.mapMaterial 0 lambert1 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry rpg_rocket
+
+include rpg_rocket.tweak

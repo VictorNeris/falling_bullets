@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_mexp_L_gravel
+ObjectTemplate.createdInEditor 1
+
+include e_mexp_L_gravel.tweak

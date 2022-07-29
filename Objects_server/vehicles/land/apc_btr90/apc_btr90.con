@@ -1,0 +1,189 @@
+GeometryTemplate.create BundledMesh apc_btr90
+CollisionManager.createTemplate apc_btr90
+
+ObjectTemplate.create PlayerControlObject apc_btr90
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEI-2:mei
+ObjectTemplate.collisionMesh apc_btr90
+ObjectTemplate.mapMaterial 0 Armour 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 cloth_penetrable 0
+ObjectTemplate.mapMaterial 3 metal_penetrable 0
+ObjectTemplate.mapMaterial 4 wreck 0
+ObjectTemplate.mapMaterial 5 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry apc_btr90
+ObjectTemplate.addTemplate APC_BTR90_hudPass
+ObjectTemplate.setPosition 0/0.0763/0
+ObjectTemplate.addTemplate APC_BTR90__Turret
+ObjectTemplate.setPosition 0/1.6324/0.9962
+ObjectTemplate.addTemplate APC_BTR90_Engine
+ObjectTemplate.setPosition 0/0.2429/0
+
+ObjectTemplate.create SimpleObject APC_BTR90_hudPass
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create RotationalBundle APC_BTR90__Turret
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate APC_BTR90__BarrelBase
+ObjectTemplate.setPosition -0.0091/0.2448/0.9827
+ObjectTemplate.addTemplate APC_BTR90_RocketLauncher_tube
+ObjectTemplate.setPosition 0/0.6989/-0.0119
+ObjectTemplate.addTemplate APC_BTR90_hud_Spring
+ObjectTemplate.setPosition -0.2927/0.7170/0.5446
+ObjectTemplate.addTemplate Coaxial_mg_mec
+ObjectTemplate.setPosition -0.115659/0/0.303786
+
+ObjectTemplate.create RotationalBundle APC_BTR90__BarrelBase
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate APC_BTR90_AP_Barrel
+ObjectTemplate.setPosition 0.0628/0.0068/0.0186
+ObjectTemplate.addTemplate APC_BTR90_HE_Barrel
+ObjectTemplate.setPosition 0.0628/0.0068/0.0186
+ObjectTemplate.addTemplate APC_BTR90_Canister_Barrel
+ObjectTemplate.setPosition 0.0628/0.0068/0.0186
+
+
+ObjectTemplate.create GenericFireArm APC_BTR90_AP_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create GenericFireArm APC_BTR90_HE_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create GenericFireArm APC_BTR90_Canister_Barrel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create RotationalBundle APC_BTR90_RocketLauncher_tube
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create RotationalBundle APC_BTR90_hud_Spring
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate APC_BTR90_hud
+ObjectTemplate.setPosition 0/-0.0255/-0.0648
+
+ObjectTemplate.create RotationalBundle APC_BTR90_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Engine APC_BTR90_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate APC_BTR90_nav_RFwheel
+ObjectTemplate.setPosition 1.3216/-0.3276/2.6156
+ObjectTemplate.addTemplate APC_BTR90_nav_LFwheel
+ObjectTemplate.setPosition -1.3216/-0.3276/2.6156
+ObjectTemplate.addTemplate APC_BTR90_nav_RFwheel_01
+ObjectTemplate.setPosition 1.3216/-0.3276/1.0644
+ObjectTemplate.addTemplate APC_BTR90_nav_LFwheel_01
+ObjectTemplate.setPosition -1.3216/-0.3276/1.0644
+ObjectTemplate.addTemplate APC_BTR90_RBwheel_01
+ObjectTemplate.setPosition 1.3216/-0.3276/-0.9214
+ObjectTemplate.addTemplate APC_BTR90_RBwheel
+ObjectTemplate.setPosition 1.3216/-0.3276/-2.4524
+ObjectTemplate.addTemplate APC_BTR90_LBwheel
+ObjectTemplate.setPosition -1.3216/-0.3145/-2.4525
+ObjectTemplate.addTemplate APC_BTR90_LBwheel_01
+ObjectTemplate.setPosition -1.3216/-0.3276/-0.9214
+
+ObjectTemplate.create RotationalBundle APC_BTR90_nav_RFwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate APC_BTR90_RFwheel
+
+ObjectTemplate.create Spring APC_BTR90_RFwheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create RotationalBundle APC_BTR90_nav_LFwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate APC_BTR90_LFwheel
+
+ObjectTemplate.create Spring APC_BTR90_LFwheel
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create RotationalBundle APC_BTR90_nav_RFwheel_01
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+ObjectTemplate.addTemplate APC_BTR90_RFwheel_01
+
+ObjectTemplate.create Spring APC_BTR90_RFwheel_01
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create RotationalBundle APC_BTR90_nav_LFwheel_01
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+ObjectTemplate.addTemplate APC_BTR90_LFwheel_01
+
+ObjectTemplate.create Spring APC_BTR90_LFwheel_01
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring APC_BTR90_RBwheel_01
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring APC_BTR90_RBwheel
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring APC_BTR90_LBwheel
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring APC_BTR90_LBwheel_01
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+include apc_btr90.tweak

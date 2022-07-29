@@ -1,0 +1,6 @@
+GeometryTemplate.create BundledMesh silencer_moh
+
+ObjectTemplate.create GenericFireArm silencer_moh
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRANDON-PC:Brandon
+ObjectTemplate.geometry silencer_moh

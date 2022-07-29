@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh repairtool
+
+ObjectTemplate.create GenericFireArm repairtool
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BF3M:BF3M
+ObjectTemplate.geometry repairtool
+
+include repairtool.tweak

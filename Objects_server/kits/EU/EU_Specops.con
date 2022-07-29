@@ -1,0 +1,58 @@
+ObjectTemplate.create Kit EU_Specops
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Specops
+ObjectTemplate.aiTemplate Specops
+ObjectTemplate.geometry eu_kits
+ObjectTemplate.geometry.kit 0
+ObjectTemplate.geometry.dropGeom 10
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.unlockIndex 4
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 30
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_famas_s
+ObjectTemplate.addTemplate be_pis_p226_supp
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate c4_explosives
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockEUSpecops_1
+ObjectTemplate.addTemplate UnlockEUSpecops_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SPECIALFORCES"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Specops_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Specops.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockEUSpecops_1
+ObjectTemplate.addTemplate bf4_famas_m145_s
+Objecttemplate.replaceItem bf4_famas_s
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockEUSpecops_2
+ObjectTemplate.addTemplate bf4_l85a2_reflex_s
+Objecttemplate.replaceItem bf4_famas_m145_s
+ObjectTemplate.unlockLevel 2
+

@@ -1,0 +1,27 @@
+hudBuilder.createSplitNode		IngameHud M145Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3626
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3627
+hudBuilder.setNodeInTime		0.17
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode 		M145Hud M145HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+rem hudBuilder.createPictureNode 		M145Hud M145RDS 284 147 232 308
+rem hudBuilder.setPictureNodeTexture 	Ingame\PonyCrossHair\M145_rds.dds
+
+hudBuilder.createSplitNode		IngameHud M145CrosshairHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3626
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3627
+hudBuilder.setNodeInTime		0.17
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+
+hudBuilder.createPictureNode 		M145CrosshairHud M145CrosshairMarks 284 147 232 308
+hudBuilder.setPictureNodeTexture 	Ingame\PonyCrossHair\M145_ret.dds
+

@@ -1,0 +1,20 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+ObjectTemplate.activeSafe GroundEffectBundle geb_muzzle
+ObjectTemplate.modifiedByUser "Cassio"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 118
+ObjectTemplate.maxTriggerDistance 1
+
+
+
+ObjectTemplate.activeSafe GroundEffectBundle geb_muzzle_sniper
+ObjectTemplate.modifiedByUser "Cassio"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 119
+ObjectTemplate.maxTriggerDistance 1.8

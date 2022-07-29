@@ -1,0 +1,1599 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/5/8 14:48]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0.4
+GeometryTemplate.setMaterialReflectionScale 1 0 1 1.3
+GeometryTemplate.setMaterialReflectionScale 1 0 2 1
+GeometryTemplate.setMaterialReflectionScale 1 1 0 0.4
+GeometryTemplate.setMaterialReflectionScale 1 1 1 1.3
+GeometryTemplate.setMaterialReflectionScale 1 2 1 1.3
+GeometryTemplate.setMaterialReflectionScale 1 3 1 0.25
+GeometryTemplate.setSpecularStaticGloss 1 0 0 0
+GeometryTemplate.setSpecularStaticGloss 1 0 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 2 2
+GeometryTemplate.setSpecularStaticGloss 1 1 0 0.5
+GeometryTemplate.setSpecularStaticGloss 1 1 1 3
+GeometryTemplate.setSpecularStaticGloss 1 1 2 2
+GeometryTemplate.setSpecularStaticGloss 1 2 1 2
+GeometryTemplate.setSpecularStaticGloss 1 3 1 2
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject ahe_z10
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 875
+ObjectTemplate.armor.hitPoints 875
+ObjectTemplate.armor.defaultMaterial 31
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 10
+rem 18
+ObjectTemplate.armor.waterDamageDelay 1
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce  4
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 110
+ObjectTemplate.armor.explosionRadius  4
+ObjectTemplate.armor.explosionMaterial 70
+ObjectTemplate.armor.wreckExplosionForce 3.5
+ObjectTemplate.armor.wreckExplosionDamage 80
+ObjectTemplate.armor.wreckExplosionRadius 3.5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 15
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.destroyOnSpectacularDeath 1
+ObjectTemplate.armor.addArmorEffect 60 e_dstate_heli_lightsmoke 0.41/0.7379/-2.7982 0/-2/0
+rem ObjectTemplate.armor.addArmorEffect 60 e_dstate_heli_tailspinf01 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 35 e_dstate_heli_heavysmoke 0.41/0.7379/-2.7982 0/-2/0
+ObjectTemplate.armor.addArmorEffect 35 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+rem e_dstate_heli_tailspinf1 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_dstate_heli_firesmoke -0.63/0.71/-2.454 0/-7.5/0
+ObjectTemplate.armor.addArmorEffect 15 e_vexp_ammo02 -0.35/0.92/-1.6 0/0/0
+rem ObjectTemplate.armor.addArmorEffect 15 e_dstate_heli_tailspinf2 0.666751/1.10109/-20.2373 90/0/0
+rem ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 5 e_dstate_heli_firesmoke -0.63/0.71/-2.454 0/-7.5/0
+ObjectTemplate.armor.addArmorEffect 5 e_vexp_ammo01 -0.35/0.92/-1.6 0/0/0
+rem ObjectTemplate.armor.addArmorEffect 5 e_dstate_heli_tailspinf4 0.666/1.101/-20.237 90/0/0
+ObjectTemplate.armor.addArmorEffect 5 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 5 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 5 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 5 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_heli_Generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_z10 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_heli_Generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_heli_wrecksmoke 0/0.939/-0.753 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+beginrem
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_heli_lightsmoke -0.63/0.92/-2.16 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_heli_heavysmoke -0.63/0.92/-2.16 0/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect 15 e_dstate_heli_firesmoke -0.63/0.92/-2.16 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_heli_Generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_z10 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_heli_Generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_heli_wrecksmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_static_fire 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_sAmb_OnlySmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_heli_firesmoke -0.63/0.92/-2.32 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_tailspin 0.666751/1.10109/-20.2373 90/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+endrem
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage heli_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_z10"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_attack_Heli.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 49/13
+ObjectTemplate.vehicleHud.vehicleType 2
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\Z10_Mangusta.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry ahe_z10
+ObjectTemplate.setCollisionMesh ahe_z10
+ObjectTemplate.mapMaterial 0 heli_armour 31
+ObjectTemplate.mapMaterial 1 Windows 1006
+ObjectTemplate.mapMaterial 2 wreck 60
+ObjectTemplate.mapMaterial 3 rubber1 102
+ObjectTemplate.mapMaterial 4 ahe_z10_colormapgloss 0
+ObjectTemplate.drag 1
+ObjectTemplate.dragModifier 1/1/0.75
+ObjectTemplate.mass 5000
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Ahe_Z10
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_Ambient
+ObjectTemplate.addTemplate S_ahe_z10_AmbientDamaged
+ObjectTemplate.addTemplate ahe_z10_mainrotor
+ObjectTemplate.setPosition 0/1.79349/0
+ObjectTemplate.addTemplate ahe_z10_tailrotor
+ObjectTemplate.setPosition -0.52084/1.38956/-8.30315
+ObjectTemplate.addTemplate ahe_z10_PilotCamera
+ObjectTemplate.setPosition 0/1.13/1.6073
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate ahe_z10_S8Launcher
+ObjectTemplate.addTemplate ahe_z10_FlareLauncher
+ObjectTemplate.addTemplate ahe_z10_EntryPoint_Pilot
+ObjectTemplate.setPosition 0/-0.771761/3.18289
+ObjectTemplate.addTemplate ahe_z10_BodyWingVertical
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate ahe_z10_EntryPoint_rear
+ObjectTemplate.setPosition 0/0.621796/-0.687591
+ObjectTemplate.addTemplate ahe_z10_RotorHead1
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.addTemplate ahe_z10_Rudder
+ObjectTemplate.setPosition 0/0/-8
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate ahe_z10_WingL
+ObjectTemplate.setPosition -1/0/1
+ObjectTemplate.setRotation 0/0/-10
+ObjectTemplate.addTemplate ahe_z10_WingR
+ObjectTemplate.setPosition 1/0/1
+ObjectTemplate.setRotation 0/0/10
+ObjectTemplate.addTemplate ahe_z10_TailEngine
+ObjectTemplate.setPosition 0/0/-8.24206
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition -1.05327e-005/0.89549/-1.36261
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/-0.8/2 0/0/0
+ObjectTemplate.regulateYawInput PIYaw
+ObjectTemplate.regulateYaw -0.2/0.2
+ObjectTemplate.regulateVerticalPosInput PIThrottle
+ObjectTemplate.regulateVerticalPos -0.5/2
+ObjectTemplate.maxVertRegAngle 35
+ObjectTemplate.noVertRegAngle 55
+ObjectTemplate.seatInformation ahe_z10 0/1.07657/1.58883 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.sprintFactor 0
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Ambient
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_AmbientDamaged
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Spring AHE_Z10_LWheel
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_LWheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 80
+ObjectTemplate.setDamping 3
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_LWheel_Rotation
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Spring AHE_Z10_RWheel
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_RWheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 80
+ObjectTemplate.setDamping 5
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_RWheel_Rotation
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Spring AHE_Z10_TailWheel
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_TailWheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 5
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_TailWheel_Rotation
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe PlayerControlObject AHE_Z10_COgunner
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_z10"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 62/13
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PASSENGER_CONTROLS_switchToGuidedMissiles"
+ObjectTemplate.HelpHud.helpSoundKey "switchToGuidedMissiles"
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.aiTemplate Ahe_Z10_Gunner
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_COgunner_Ambient
+ObjectTemplate.addTemplate S_AHE_Z10_COgunner_AmbientDamaged
+ObjectTemplate.addTemplate ahe_z10_HJ8Launcher_TV
+ObjectTemplate.setPosition 1.9025/0.08606/-4.37096
+ObjectTemplate.setRotation 0/5/0
+ObjectTemplate.addTemplate ahe_z10_HJ8LauncherCamera
+ObjectTemplate.setPosition 1.9025/0.08606/-3.37096
+ObjectTemplate.setRotation 0/5/0
+ObjectTemplate.addTemplate ahe_z10_cameramount
+ObjectTemplate.setPosition 2.35689e-005/1.06377/-1.62483
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.7/-0.3/-2.2 0/0/0
+ObjectTemplate.seatInformation ahe_z10_cogunner 0/1.00612/-1.27101 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftCoPilot_B_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.specialToggleWeaponInput PIAltFire
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.controlsCategory VCLand
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_COgunner_Ambient
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_COgunner_AmbientDamaged
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe RotationalBundle AHE_Z10_GunTurret
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_GunTurret_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/0/0
+ObjectTemplate.setMaxRotation 100/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.regulateYaw 0.15/-0.1
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_GunTurret_RotationRpm
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/gun_rotate.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.5/1.5/0/2/0.005/1.033/0.5/1/1.201/0.5/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0/0/0/0.414/1/0/
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe RotationalBundle AHE_Z10_GunBarrels_Base
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_GunBarrels_Base_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/60/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulateYaw 0.15/-0.1
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_GunBarrels_Base_RotationRpm
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/gun_rotate.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.5/1.5/0/2/0.003/1/0.5/1/1.203/0.5/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0/0/0/0.396/1/0/
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe RotationalBundle AHE_Z10_GunBarrels
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_GunBarrels_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1750
+ObjectTemplate.setDeAcceleration 0/0/650
+ObjectTemplate.setInputToRoll PIFire
+ObjectTemplate.setUseDeAcceleration 1
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_GunBarrels_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe GenericFireArm AHE_Z10_Gun
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\Cobra_gun.tga
+ObjectTemplate.weaponHud.guiIndex 40
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireStartDelay CRD_NONE/0.227/0/0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 50
+ObjectTemplate.ammo.reloadTime 2
+rem ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 8
+ObjectTemplate.recoil.cameraRecoilSize 0.5
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.5
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:ToggleCameraComp ---
+ObjectTemplate.createComponent ToggleCameraComp
+ObjectTemplate.zoom.startCameraId 0
+ObjectTemplate.zoom.startCameraViewMode 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Ahe_Z10_Gun
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Fire1P
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Fire3P
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_BoltClick
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_TriggerClick
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_SwitchFireRate
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Reload1P
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Reload3P
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Deploy1P
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Deploy3P
+ObjectTemplate.addTemplate S_AHE_Z10_Gun_Zoom
+ObjectTemplate.addTemplate e_muzz_minigun
+ObjectTemplate.addTemplate e_shellejection_25mm
+ObjectTemplate.setPosition -0.126661/-0.199208/-2.01702
+rem -------------------------------------
+ObjectTemplate.projectileTemplate scout_heli_25mm_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 400
+ObjectTemplate.itemIndex 1
+ObjectTemplate.isSelectable 0
+ObjectTemplate.heatAddWhenFire 0.015
+ObjectTemplate.coolDownPerSec 0.2
+ObjectTemplate.overheatPenalty 1.25
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Fire1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/auto_cannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Fire3P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/cobra_auto_cannon_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 4
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_BoltClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_TriggerClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_SwitchFireRate
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Reload1P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Reload3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Deploy1P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Deploy3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Zoom
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Gun_Projectile_Looping
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe RotationalBundle AHE_Z10_Sensors
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_Sensors_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/0/0
+ObjectTemplate.setMaxRotation 100/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Sensors_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create GenericFireArm ahe_z10_HJ8Launcher_TV
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\Ataka_missile.tga
+ObjectTemplate.weaponHud.crosshairIcon Ingame/Vehicles/Icons/Hud/Air/Attack/Su34/TVGuided/tvGuided_Crosshair.tga
+ObjectTemplate.weaponHud.crosshairIconSize 128
+ObjectTemplate.weaponHud.altCrosshairIcon Ingame/Vehicles/Icons/Hud/Air/Attack/Su34/TVGuided/tvGuided_Crosshair.tga
+ObjectTemplate.weaponHud.hudName "HJ8 TV"
+ObjectTemplate.weaponHud.guiIndex 54
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.enableMouse 1
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 54
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 60
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 15
+ObjectTemplate.ammo.nrOfMags 8
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 8
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 1.01
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PASSENGER_CONTROLS_TVGUIDED_clickToGuide"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PASSENGER_CONTROLS_TVGUIDED_clickToGuide"
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:ToggleCameraComp ---
+ObjectTemplate.createComponent ToggleCameraComp
+ObjectTemplate.zoom.startCameraId 11
+ObjectTemplate.zoom.startCameraViewMode 1
+ObjectTemplate.zoom.useProjectileCamera 1
+ObjectTemplate.zoom.allowUntoggledFire 0
+rem ---EndComp ---
+rem ---BeginComp:LPTargetComp ---
+ObjectTemplate.createComponent LPTargetComp
+ObjectTemplate.target.maxDistance 9999
+ObjectTemplate.target.setTargetAtMaxDistance 1
+ObjectTemplate.target.targetSystem TSTVGuided
+ObjectTemplate.target.useCameraDirectionToTarget 1
+ObjectTemplate.target.targetObjectTemplate UniqueTarget
+ObjectTemplate.target.disableFireWhenActiveMissile 1
+ObjectTemplate.target.disableGuidanceOnReload 0
+ObjectTemplate.target.disableGuidanceOnReload 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Fire1P
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Fire3P
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_BoltClick
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_TriggerClick
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_SwitchFireRate
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Reload1P
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Reload3P
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Deploy1P
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Deploy3P
+ObjectTemplate.addTemplate S_ahe_z10_HJ8Launcher_TV_Zoom
+rem -------------------------------------
+ObjectTemplate.projectileTemplate agm114_hellfire_tv
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 45
+ObjectTemplate.itemIndex 2
+ ObjectTemplate.isSelectable 0
+ObjectTemplate.blockInputOnRotBundle AHE_Z10_GunTurret
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Fire1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/aav_tunguska/sounds/mono/missile_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Fire3P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/aav_tunguska/sounds/mono/missile_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6.5
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_BoltClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_TriggerClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_SwitchFireRate
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Reload1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Reload3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Deploy1P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Deploy3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8Launcher_TV_Zoom
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Camera ahe_z10_HJ8LauncherCamera
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_HJ8LauncherCamera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/-10/0
+ObjectTemplate.setMaxRotation 100/60/0
+ObjectTemplate.setPivotPosition 0/0/-0.3
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.CameraId 11
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.cameraShakeStartSpeed 85
+ObjectTemplate.cameraShakeMaxSpeed 100
+ObjectTemplate.worldFOV 0.6
+ObjectTemplate.insideFOV 0.6
+ObjectTemplate.worldFOV 0.6
+ObjectTemplate.insideFOV 0.6
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/1/1
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+ObjectTemplate.cockpitSubGeom 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_HJ8LauncherCamera_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create RotationalBundle ahe_z10_cameramount
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_cameramount_RotationRpm
+ObjectTemplate.addTemplate ahe_z10_GunnerCamera
+ObjectTemplate.setPosition 0/0/0.15
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/0/0
+ObjectTemplate.setMaxRotation 100/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.regulateYaw 0.15/-0.1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_cameramount_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Camera ahe_z10_GunnerCamera
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_GunnerCamera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/60/0
+ObjectTemplate.setPivotPosition 0/0/-0.15
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.15/-0.1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.nosePos 0/0/4.5
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 28
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 0/2/1
+ObjectTemplate.insideStaticSunColor 0.321569/0.321569/0.321569
+ObjectTemplate.insideStaticSunDamageColor 0.941177/0/0.023529
+ObjectTemplate.insideDamageFrequency 6
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.286275/0.286275/0.286275
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_GunnerCamera_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe RotationalBundle AHE_Z10_Tail
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AHE_Z10_Tail_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_AHE_Z10_Tail_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Camera ahe_z10_PilotCamera
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_PilotCamera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -100/-20/0
+ObjectTemplate.setMaxRotation 100/15/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.nosePos 0/0/3.25
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 28
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 2/3/2
+ObjectTemplate.insideStaticSunColor 0.05098/0.058824/0.05098
+ObjectTemplate.insideStaticSunDamageColor 0.843137/0/0
+ObjectTemplate.insideDamageFrequency 6
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.105882/0.152941/0.14902
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_PilotCamera_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create GenericFireArm ahe_z10_S8Launcher
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.guiIndex 39
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addBarrelName ahe_z10_S8Launcher_Barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 6
+ObjectTemplate.ammo.magSize 19
+ObjectTemplate.ammo.reloadTime 8
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+rem ---BeginComp:MultiFireArmTargetComp ---
+ObjectTemplate.createComponent MultiFireArmTargetComp
+ObjectTemplate.target.lockAngle 45
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate Ahe_Z10_Rockets
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Fire1P
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Fire3P
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_BoltClick
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_TriggerClick
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_SwitchFireRate
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Reload1P
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Reload3P
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Deploy1P
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Deploy3P
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Zoom
+ObjectTemplate.addTemplate ahe_z10_S8Launcher_Barrel
+ObjectTemplate.setPosition 1.059/-0.102/1.246
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate ahe_z10_S8Launcher_Barrel
+ObjectTemplate.setPosition -1.059/-0.102/1.246
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate ahe_z10_S8Launcher_Barrel
+ObjectTemplate.setPosition 1.217/-0.157/1.246
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate ahe_z10_S8Launcher_Barrel
+ObjectTemplate.setPosition -1.217/-0.157/1.246
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate ahe_z10_S8Launcher_Barrel
+ObjectTemplate.setPosition 1.116/-0.365/1.246
+ObjectTemplate.setRotation 0/4/0
+ObjectTemplate.addTemplate ahe_z10_S8Launcher_Barrel
+ObjectTemplate.setPosition -1.116/-0.365/1.246
+ObjectTemplate.setRotation 0/4/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate hydra_70
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 150
+ObjectTemplate.itemIndex 1
+
+beginrem
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile ahe_z10_S8Launcher_Projectile
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 55
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 200
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry hydra_70
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 55
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_S8Launcher_Projectile_Looping
+ObjectTemplate.addTemplate e_dumbrocket_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.material 55
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerSizeModifier 0
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 333
+endrem
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Fire1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/aav_tunguska/sounds/mono/missile_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Fire3P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/aav_tunguska/sounds/mono/missile_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6.5
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_BoltClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_TriggerClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_SwitchFireRate
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Reload1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Reload3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Deploy1P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Deploy3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Zoom
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Bundle ahe_z10_S8Launcher_Barrel
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_muzz_rocketpod
+ObjectTemplate.setPosition 0/0/-1.23
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_S8Launcher_Projectile_Looping
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+
+ObjectTemplate.create GenericFireArm ahe_z10_FlareLauncher
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 6
+ObjectTemplate.fire.addBarrelName ahe_z10_Flare_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 6
+ObjectTemplate.ammo.minimumTimeUntilReload 5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Fire1P
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Fire3P
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_BoltClick
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_TriggerClick
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Reload1P
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Reload3P
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Deploy1P
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Deploy3P
+ObjectTemplate.addTemplate S_ahe_z10_FlareLauncher_Zoom
+ObjectTemplate.addTemplate ahe_z10_Flare_barrel
+ObjectTemplate.setPosition 0.896/-0.346/-0.676
+ObjectTemplate.setRotation 30/0/0
+ObjectTemplate.addTemplate ahe_z10_Flare_barrel
+ObjectTemplate.setPosition 0.806/-0.346/-0.977
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ahe_z10_Flare_barrel
+ObjectTemplate.setPosition 0.747/-0.346/-1.1
+ObjectTemplate.setRotation 150/0/0
+ObjectTemplate.addTemplate ahe_z10_Flare_barrel
+ObjectTemplate.setPosition -0.694416/-0.346/-0.83584
+ObjectTemplate.setRotation -30/0/0
+ObjectTemplate.addTemplate ahe_z10_Flare_barrel
+ObjectTemplate.setPosition -0.652554/-0.346/-0.858338
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ahe_z10_Flare_barrel
+ObjectTemplate.setPosition -0.691481/-0.346/-1.0299
+ObjectTemplate.setRotation -150/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate ahe_z10_flareLauncher_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 10
+
+ObjectTemplate.create GenericProjectile ahe_z10_flareLauncher_Projectile
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_flareLauncher_Projectile_Looping
+ObjectTemplate.addTemplate e_flare_decoy
+ObjectTemplate.addTemplate HeatObject_flare
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 38
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 50
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 5
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Fire1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_launcher_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Fire3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_BoltClick
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_TriggerClick
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Reload1P
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Reload3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Deploy1P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Deploy3P
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_FlareLauncher_Zoom
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create RotationalBundle ahe_z10_Flare_barrel
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_Flare_barrel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Flare_barrel_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_flareLauncher_Projectile_Looping
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create EntryPoint ahe_z10_EntryPoint_Pilot
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.5
+
+ObjectTemplate.create Wing ahe_z10_BodyWingVertical
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_BodyWingVertical_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_BodyWingVertical_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create EntryPoint ahe_z10_EntryPoint_rear
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.5
+
+ObjectTemplate.create RotationalBundle ahe_z10_RotorHead1
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_RotorHead1_RotationRpm
+ObjectTemplate.addTemplate ahe_z10_RotorHead2
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-8.25/-7
+ObjectTemplate.setMaxRotation 0/8/5.5
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_RotorHead1_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create RotationalBundle ahe_z10_RotorHead2
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_RotorHead2_RotationRpm
+ObjectTemplate.addTemplate ahe_z10_Rotor
+ObjectTemplate.setRotation 0/-86/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-8.25/-7
+ObjectTemplate.setMaxRotation 0/8/5.5
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/1000/-1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_RotorHead2_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Engine ahe_z10_Rotor
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 30
+ObjectTemplate.windRadialFalloff 20
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_Rotor_RotationRpm
+ObjectTemplate.addTemplate S_ahe_z10_Rotor_Idle
+ObjectTemplate.setPosition 0/-6.9743e-008/1.59553
+ObjectTemplate.addTemplate S_ahe_z10_Rotor_Rpm1
+ObjectTemplate.setPosition 0/2.41404/0.738026
+ObjectTemplate.addTemplate S_ahe_z10_Rotor_Rpm2
+ObjectTemplate.addTemplate S_ahe_z10_Rotor_Load
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 250
+ObjectTemplate.setDifferential 400
+ObjectTemplate.setGearUp 0.99
+ObjectTemplate.setGearDown 0.01
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalSpeedMagnifier 2
+ObjectTemplate.horizontalDampAngle 0.1
+ObjectTemplate.horizontalDampAngleFactor 0.001
+ObjectTemplate.defaultAngleOfAttack 2
+ObjectTemplate.maxAngleOfAttack 12
+ObjectTemplate.attackSpeed 10
+ObjectTemplate.decreaseAngleToZeroVerticalVel 0.5
+ObjectTemplate.dampHorizontalVel 5
+ObjectTemplate.dampHorizontalVelFactor -0.7
+ObjectTemplate.canReverse 0
+ObjectTemplate.audio.transformationRelativeRoot 1
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Rotor_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Rotor_Idle
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_havoc/sounds/havoc_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.015444/0.944015/0/0.779923/0.573359/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.003861/0.494209/0/0.667954/0.830116/0/0.745174/1/0/
+ObjectTemplate.position 0/-6.9743e-008/1.59553
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 25
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Rotor_Rpm1
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/jet_whine.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.274131/0.857143/0/0.664093/1.05405/0/0.783784/1.49421/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.509652/0.660232/0/0.660232/0.598456/0/0.764479/0.76834/0/
+ObjectTemplate.position 0/2.41404/0.738026
+ObjectTemplate.minDistance 8
+ObjectTemplate.halfVolumeDistance 17
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Rotor_Rpm2
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Rotor_Load
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Wing ahe_z10_Rudder
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Wing ahe_z10_WingL
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_WingL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_WingL_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Wing ahe_z10_WingR
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_WingR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_WingR_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.create Engine ahe_z10_TailEngine
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_z10_TailEngine_RotationRpm
+ObjectTemplate.addTemplate S_ahe_z10_TailEngine_Idle
+ObjectTemplate.setPosition 2.10498e-008/1.38944/0.481563
+ObjectTemplate.addTemplate S_ahe_z10_TailEngine_Rpm1
+ObjectTemplate.addTemplate S_ahe_z10_TailEngine_Rpm2
+ObjectTemplate.addTemplate S_ahe_z10_TailEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/2000
+ObjectTemplate.setInputToRoll PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 80
+ObjectTemplate.setDifferential 45
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.decreaseAngleToZero 1
+ObjectTemplate.pureRotational 1
+ObjectTemplate.spinWhenNoEngineInAir 0.4
+ObjectTemplate.noEffectAtPerpSpeed 60
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_TailEngine_RotationRpm
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_TailEngine_Idle
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_tail_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.00772201/0.781853/0/0.996139/0.793436/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003861/0.895753/0/0.996139/0.895753/0/
+ObjectTemplate.position 2.10498e-008/1.38944/0.481563
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_TailEngine_Rpm1
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_TailEngine_Rpm2
+ObjectTemplate.modifiedByUser pho
+
+ObjectTemplate.activeSafe Sound S_ahe_z10_TailEngine_Load
+ObjectTemplate.modifiedByUser pho
+

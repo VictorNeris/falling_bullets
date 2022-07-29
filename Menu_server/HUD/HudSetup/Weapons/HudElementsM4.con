@@ -1,0 +1,74 @@
+hudBuilder.createSplitNode		IngameHud M4Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 4
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 53
+hudBuilder.setNodeInTime		0.12
+hudBuilder.setNodeOutTime		0.1
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createSplitNode		M4Hud M4AltHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 53
+
+hudBuilder.createPictureNode 		M4AltHud M4AltCrosshair 374 274 52 52
+rem 380 275 41 52
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/RedDot.dds
+
+hudBuilder.createSplitNode		M4Hud M4CrossHud
+hudBuilder.setNodeColor 		1 1 1 1
+hudBuilder.setNodeAlphaVariable		CrossHairColorAlpha
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 4
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairUp 398 285 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setNodePosVariable 		1 CrosshairUpPos
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairDown 393 315 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setPictureNodeRotation 	180
+hudBuilder.setNodePosVariable 		1 CrosshairDownPos
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairLeft 385 294 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setPictureNodeRotation 	90
+hudBuilder.setNodePosVariable 		0 CrosshairLeftPos
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairRight 415 299 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setPictureNodeRotation 	270
+hudBuilder.setNodePosVariable 		0 CrosshairRightPos
+
+beginrem
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairUp 393 315 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setPictureNodeRotation 	180
+hudBuilder.setNodePosVariable 		1 CrosshairUpPos
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairDown 398 285 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setNodePosVariable 		1 CrosshairDownPos
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairLeft 416 299 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setPictureNodeRotation 	270
+hudBuilder.setNodePosVariable 		0 CrosshairLeftPos
+
+hudBuilder.createPictureNode 		M4CrossHud M4CrosshairRight 386 294 8 8
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_CrossHair_single.tga
+hudBuilder.setPictureNodeRotation 	90
+hudBuilder.setNodePosVariable 		0 CrosshairRightPos
+endrem
+
+beginrem
+hudBuilder.createPictureNode 		M4Hud M4HitHitIndication 386 286 28 28
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicatorl.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable		HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		DemoRecInterfaceShow
+endrem
+
+
+hudBuilder.createPictureNode 		M4Hud M4HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow

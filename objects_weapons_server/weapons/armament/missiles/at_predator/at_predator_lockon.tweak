@@ -1,0 +1,93 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/10 10:26]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile at_predator_lockon
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 2
+ObjectTemplate.detonation.explosionForce 7
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.endEffectTemplate e_exp_medium
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTLaser
+ObjectTemplate.seek.trackingDelay 0.2
+ObjectTemplate.seek.maxAngleLock 90
+ObjectTemplate.seek.maxDistLock 2000
+ObjectTemplate.seek.directionBonus 0.5
+ObjectTemplate.seek.reLockTime 30
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 1.5
+ObjectTemplate.follow.maxPitch 1.5
+ObjectTemplate.follow.changePitch 0.25
+ObjectTemplate.follow.changeYaw 0.2
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry at_predator
+ObjectTemplate.setCollisionMesh at_predator
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.drag 7
+ObjectTemplate.mass 10
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 52
+rem -------------------------------------
+ObjectTemplate.addTemplate S_at_predator_Looping
+ObjectTemplate.addTemplate e_predator_trail
+ObjectTemplate.setPosition 0/0/-0.42
+ObjectTemplate.addTemplate houselight_big_LightSource
+ObjectTemplate.setPosition 0/0/-0.42
+ObjectTemplate.addTemplate e_bhit_20mm_metalsolid
+ObjectTemplate.addTemplate e_bhit_l_metalsolid
+ObjectTemplate.addTemplate e_bhit_minigun_metalsolid
+ObjectTemplate.addTemplate e_bhit_s_metalsolid
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.material 52
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.minDamage 1300
+ObjectTemplate.damage 1300
+ObjectTemplate.damageOwner 0
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 175
+ObjectTemplate.startDelay 0.2
+
+ObjectTemplate.activeSafe Sound S_at_predator_Looping
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+

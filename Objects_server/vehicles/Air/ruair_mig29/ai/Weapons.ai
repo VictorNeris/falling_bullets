@@ -1,0 +1,41 @@
+rem *** Weaponory ***
+
+rem * Machine gun *
+weaponTemplate.create Mig29MachineGun
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 600.0
+weaponTemplate.setStrength Infantry    9.0
+weaponTemplate.setStrength LightArmour 28.0
+weaponTemplate.setStrength HeavyArmour 24.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  50.0
+weaponTemplate.setStrength Airplane    50.0
+weaponTemplate.allowedDeviation 25.0
+
+rem * AAM *
+weaponTemplate.create Mig29Archer
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 600.0
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  7.0
+weaponTemplate.setStrength Airplane    9.0
+weaponTemplate.allowedDeviation 15.0
+
+rem * Bombs *
+weaponTemplate.create Mig29Bombs
+weaponTemplate.indirect 1
+weaponTemplate.minRange 30.0
+weaponTemplate.maxRange 500.0
+weaponTemplate.setStrength Infantry    8
+weaponTemplate.setStrength LightArmour 31
+weaponTemplate.setStrength HeavyArmour 25
+weaponTemplate.setStrength NavalArmour 3
+weaponTemplate.setStrength Helicopter  1
+weaponTemplate.setStrength Airplane    1
+weaponTemplate.allowedDeviation 15.0
+

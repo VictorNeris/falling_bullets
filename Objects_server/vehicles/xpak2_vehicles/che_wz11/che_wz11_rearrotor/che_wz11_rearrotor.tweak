@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/10 7:10]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor che_wz11_rearrotor
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.modifiedByUser "chrisel"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry che_wz11_rearrotor
+ObjectTemplate.setCollisionMesh che_wz11_rearrotor
+ObjectTemplate.mapMaterial 0 rearrotor 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.changeLodAt 0.2
+ObjectTemplate.tolerance 0.003125
+ObjectTemplate.rotationSpeedMod 1
+ObjectTemplate.rotationSpeedModBlur 0.1
+ObjectTemplate.rotationAxle 1
+ObjectTemplate.engineName che_wz11_TailEngine
+

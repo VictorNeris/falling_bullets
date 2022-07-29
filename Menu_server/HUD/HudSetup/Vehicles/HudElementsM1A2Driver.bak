@@ -1,0 +1,216 @@
+REM - Big thanks to Red Devil from BFSP for finding a ctd bug in here! :)
+
+hudBuilder.createSplitNode VehicleHuds M1A2Hud 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 14 
+hudBuilder.setNodeLogicShowVariable OR GuiIndex 150 
+hudBuilder.setNodeLogicShowVariable OR GuiIndex 151 
+
+rem -----------------------------------mainhud--------------------------------------------------- 
+
+rem hudBuilder.createPictureNode M1A2Hud driverscreen 0 0 800 600 
+rem hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2hudscreen6.tga 
+rem hudBuilder.addNodeBlendEffect 7 2 
+rem ------------------------------------------------------------------------ 
+
+rem RD hudBuilder.createPictureNode M1A2Hud drivertextbg 120 490 560 48 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2hudtextBG03b.tga 
+rem RD hudBuilder.addNodeBlendEffect 7 2 
+
+rem RD hudBuilder.createPictureNode M1A2Hud mainText 120 490 560 48 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2hudMAINtext.tga 
+rem RD hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+rem RD hudBuilder.addNodeBlendEffect 7 2 
+
+rem ------------------------------------------------------------------- 
+
+rem hudBuilder.createPictureNode M1A2Hud driverhud 0 0 800 600 
+rem hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2hud05e.tga 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2hud.tga 
+
+rem ------------------------------------HE reload------------------------------------------------------- 
+
+hudBuilder.createSplitNode M1A2Hud HEReload 
+hudBuilder.setNodeShowVariable PrimaryReloadTimeShow 
+hudBuilder.setNodeLogicShowVariable NOT PrimaryHeatShow 1 
+hudBuilder.setNodeInTime 0.3 
+hudBuilder.setNodeOutTime 0.3 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 150 
+hudBuilder.addNodeAlphaShowEffect 
+
+hudBuilder.createBarNode M1A2Hud HEReloadTime 2 640 484 128 32 
+hudBuilder.setBarNodeTexture 1 Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2_HEhudshell02.tga 
+hudBuilder.setBarNodeValueVariable PrimaryReloadTime 
+hudBuilder.setBarNodeSnap 8 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 150 
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ------------------------------------KE reload------------------------------------------------------- 
+
+hudBuilder.createSplitNode M1A2Hud KEReload 
+hudBuilder.setNodeShowVariable PrimaryReloadTimeShow 
+hudBuilder.setNodeLogicShowVariable NOT PrimaryHeatShow 1 
+hudBuilder.setNodeInTime 0.3 
+hudBuilder.setNodeOutTime 0.3 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 151 
+hudBuilder.addNodeAlphaShowEffect 
+
+hudBuilder.createBarNode M1A2Hud KEReloadTime 2 640 484 128 32
+hudBuilder.setBarNodeTexture 1 Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2_KEhudshell02.tga 
+hudBuilder.setBarNodeValueVariable PrimaryReloadTime 
+hudBuilder.setBarNodeSnap 8 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 151 
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ----------------------------- Compass ------------------------------------------------------- 
+
+hudBuilder.createCompassNode M1A2Hud M1A2Compass 3 167 496 126 16 1 0 
+hudBuilder.setCompassNodeTexture 1 Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2_compass.tga 
+hudBuilder.setCompassNodeTextureSize 256 16 
+hudBuilder.setCompassNodeBorder 0 0 0 76 
+hudBuilder.setCompassNodeValueVariable VehicleAngle 
+hudBuilder.setCompassNodeOffset 19 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+hudBuilder.createPictureNode M1A2Hud M1A2arrow 222 500 12 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\arrow.tga 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.addNodeBlendEffect 7 2 
+
+hudBuilder.createPictureNode			M1A2Hud M1A2label 580 157 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M1A2\Hertz.dds
+hudBuilder.setNodeColor    			0 0.8 0 1
+
+rem ----------------------------- Speed ------------------------------------------------------- 
+
+hudBuilder.createTextNode M1A2Hud M1A2SpeedValue 530 35 40 10 
+hudBuilder.setTextNodeStyle Fonts/vehicleHudFont_6.dif 1 
+hudBuilder.setTextNodeStringVariable SpeedString 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+rem RD hudBuilder.createPictureNode M1A2Hud M1A2Speed 503 32 40 16 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\speed.tga 
+rem RD hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+rem RD hudBuilder.addNodeBlendEffect 7 2 
+
+hudBuilder.createPictureNode M1A2Hud M1A2Kmh 575 32 32 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\kmh.tga 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ----------------------------- Torque ------------------------------------------------------- 
+
+hudBuilder.createTextNode M1A2Hud M1A2TorquePercentValue 371 499 40 10 
+hudBuilder.setTextNodeStyle Fonts/vehicleHudFont_6.dif 1 
+hudBuilder.setTextNodeStringVariable TorqueString 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+hudBuilder.createPictureNode M1A2Hud M1A2Torque 325 496 64 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\torque.tga 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.addNodeBlendEffect 7 2 
+
+hudBuilder.createPictureNode M1A2Hud M1A2Percent 415 496 16 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\percent.tga 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ------------------------------HE shellammo------------------------------------------------------ 
+
+hudBuilder.createPictureNode M1A2Hud HEscreenammoText 640 536 128 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2HEammo_text.tga 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2custom\HEammo.tga 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 150 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+hudBuilder.createTextNode M1A2Hud HEscreenammoAmmo 715 539 25 10 
+hudBuilder.setTextNodeStyle Fonts/vehicleHudFont_6.dif 1 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 150 
+hudBuilder.setTextNodeStringVariable PrimaryAmmoString 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+hudBuilder.createTextNode M1A2Hud HEscreenammoCount 750 539 25 10 
+hudBuilder.setTextNodeStyle Fonts/vehicleHudFont_6.dif 2 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 150 
+hudBuilder.setTextNodeStringVariable PrimaryClipString 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+
+rem ------------------------------KE shellammo------------------------------------------------------ 
+
+hudBuilder.createPictureNode M1A2Hud KEscreenammoText 640 536 128 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2KEammo_text.tga 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2custom\KEammo.tga 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 151 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+hudBuilder.createTextNode M1A2Hud KEscreenammoAmmo 715 539 25 10 
+hudBuilder.setTextNodeStyle Fonts/vehicleHudFont_6.dif 1 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 151 
+hudBuilder.setTextNodeStringVariable PrimaryAmmoString 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+hudBuilder.createTextNode M1A2Hud KEscreenammoCount 750 539 25 10 
+hudBuilder.setTextNodeStyle Fonts/vehicleHudFont_6.dif 2 
+hudBuilder.setNodeLogicShowVariable EQUAL GuiIndex 151 
+hudBuilder.setTextNodeStringVariable PrimaryClipString 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+
+
+rem ------------------------------crosshair------------------------- 
+
+hudBuilder.createPictureNode		M1A2Hud M1A2Crosshair1 272 236 256 128 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\M1A2\NeuCross.tga
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+beginrem
+hudBuilder.createPictureNode M1A2Hud M1A2Crosshair1 272 264 256 128 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\crosshair.tga 
+hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+hudBuilder.addNodeBlendEffect 7 2 
+endrem
+
+rem -------------------------------------- Hit Indication---------------------------------------------------- 
+
+hudBuilder.createPictureNode M1A2Hud M1A2HitIndication 370 235 64 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2_HitIndicator.tga 
+hudBuilder.setNodeColor 0.9 0.05 0.05 1 
+hudBuilder.setNodeAlphaVariable HitIndicatorIconAlpha 
+hudBuilder.setNodeShowVariable HitIndicatorIconShow 
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ------------range to target text---------------
+
+beginrem
+hudBuilder.createPictureNode		M1A2Hud M1A2RangeText 150 490 128 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\M1A2\range_toTarget_text.tga
+hudBuilder.setNodeColor			0 0.8 0 0.9
+
+hudBuilder.createTextNode		M1A2Hud M1A2RangeLabel 275 492 101 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeStringVariable	TargetDistanceString
+hudBuilder.setNodeColor			0 0.8 0 0.9
+endrem
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		M1A2Hud M1A2DirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+
+hudBuilder.createPictureNode		M1A2Hud M1A2TurretBase 451 497 64 64
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		0 0.8 0 1
+
+hudBuilder.createPictureNode		M1A2DirectionHud M1A2TurretBarrel 451 497 64 64
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		0 0.8 0 1
+
+hudBuilder.createPictureNode			M1A2Hud M1A2Coax 626 405 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M1A2\CoaXLabel.dds
+hudBuilder.setNodeColor				0 0.8 0 1

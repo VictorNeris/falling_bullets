@@ -1,0 +1,600 @@
+rem -----------------------------------------------------------------------
+rem ------------------------------ GAMELOGIC ------------------------------
+rem -----------------------------------------------------------------------
+
+
+
+Sound.addSound activate_voip
+ObjectTemplate.soundFilename Common/Sound/Hud/activate_voip.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound deactivate_voip
+ObjectTemplate.soundFilename Common/Sound/Hud/deactivate_voip.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound order_smoke
+ObjectTemplate.soundFilename Common/Sound/order_smoke.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.reverbLevel 0.1
+ObjectTemplate.minDistance 4
+
+Sound.addSound lowOnTickets
+ObjectTemplate.soundFilename Common/Sound/Hud/lowOnTickets.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound failedExitVehicle
+rem ObjectTemplate.soundFilename Common/Sound/Hud/lowOnTickets.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+rem -----------------------------------------------------------------------
+rem --------------------- AWARD & PROMOTION STINGERS ----------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound promotionStinger
+ObjectTemplate.soundFilename Common/Sound/Promotion.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.95
+ObjectTemplate.pan 0.5
+
+
+
+Sound.addSound awardStinger
+ObjectTemplate.soundFilename Common/Sound/Award.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.95
+ObjectTemplate.pan 0.5
+
+
+
+rem -----------------------------------------------------------------------
+rem -------------------------------- MENU ---------------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound sniperzoom
+ObjectTemplate.soundFilename Common/Sound/menu/sniperzoom.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.35
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound mapAction
+ObjectTemplate.soundFilename Common/Sound/menu/mapAction.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.48
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound rosePress
+ObjectTemplate.soundFilename Common/Sound/menu/rosePress.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.45
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound roseOver
+ObjectTemplate.soundFilename Common/Sound/menu/roseOver.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.37
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound weaponOver
+ObjectTemplate.soundFilename Common/Sound/menu/weaponOver.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.32
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound weaponSelect
+ObjectTemplate.soundFilename Common/Sound/menu/weaponSelect.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.45
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound kitOver
+ObjectTemplate.soundFilename Common/Sound/menu/kitOver.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.3
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound kitSelect
+ObjectTemplate.soundFilename Common/Sound/menu/kitSelect.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound US_TeamSelect
+ObjectTemplate.soundFilename Common/Sound/menu/kitSelect.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound MEC_TeamSelect
+ObjectTemplate.soundFilename Common/Sound/menu/kitSelect.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound CH_TeamSelect
+ObjectTemplate.soundFilename Common/Sound/menu/kitSelect.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 0.5
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound RDS_switch
+ObjectTemplate.soundFilename Common/Sound/hud/rds_01.wav,Common/Sound/hud/rds_02.wav,Common/Sound/hud/rds_03.wav,Common/Sound/hud/rds_04.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+rem -----------------------------------------------------------------------
+rem ----------------------------- HUD SOUNDS   ----------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound HUD_TargetTrack
+ObjectTemplate.soundFilename Common/Sound/Hud/TargetTrack.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.35
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_TargetLock
+ObjectTemplate.soundFilename Common/Sound/Hud/TargetLock.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Air_to_Air_Heatseeker_Track
+ObjectTemplate.soundFilename Common/Sound/Hud/Growler_Track.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1.2
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Air_to_Air_Heatseeker_Lock
+ObjectTemplate.soundFilename Common/Sound/Hud/Growler_Lock.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.43
+ObjectTemplate.pitch 1.2
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.soundFilename Common/Sound/Hud/heatseeker_track_warning.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.soundFilename Common/Sound/Hud/heatseeker_lock_warning.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_LaserGuided_Lock
+ObjectTemplate.soundFilename Common/Sound/Hud/Laser_lock.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Laser_Track_Warning
+ObjectTemplate.soundFilename Common/Sound/Hud/Laser_warning.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_AT_Lock
+ObjectTemplate.soundFilename Common/Sound/Hud/AT_Lock.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.6
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Satellite_scan
+ObjectTemplate.soundFilename Common/Sound/Hud/Satellite_scan.ogg
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.38
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Satellite_target
+ObjectTemplate.soundFilename Common/Sound/Hud/Satellite_target.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound HUD_Artillery_fail
+ObjectTemplate.soundFilename Common/Sound/Hud/Artillery_fail.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+rem -----------------------------------------------------------------------
+rem ------------------------- REPAIR HEAL RESUPPLY ------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound S_Repair
+ObjectTemplate.soundFilename common/sound/Repair_loop.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.reverbLevel 1 
+
+
+Sound.addSound S_Heal
+ObjectTemplate.soundFilename common/sound/Heal_loop.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.stopType 2
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.reverbLevel 1 
+
+
+
+Sound.addSound S_Medipack_pickup
+ObjectTemplate.soundFilename common/sound/pick_up_medipack.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.reverbLevel 1 
+
+
+
+Sound.addSound S_Resupply
+ObjectTemplate.soundFilename common/sound/Resupply_loop.wav
+ObjectTemplate.loopCount 0
+ObjectTemplate.stopType 2
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.reverbLevel 1 
+
+
+rem -----------------------------------------------------------------------
+rem ------------------------------ SPRINT ---------------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound S_SprintBreath
+ObjectTemplate.soundFilename "objects/soldiers/common/sound/SprintBreath.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.98
+ObjectTemplate.reverbLevel 1 
+
+
+rem -----------------------------------------------------------------------
+rem ------------------------------ INJURY ---------------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound S_Injury
+ObjectTemplate.soundFilename common/sound/Die/ouch_01.wav,common/sound/Die/ouch_02.wav,common/sound/Die/ouch_03.wav,common/sound/Die/ouch_04.wav,common/sound/Die/ouch_05.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 1
+ObjectTemplate.reverbLevel 1 
+
+
+
+rem -----------------------------------------------------------------------
+rem ------------------------- WEAPONS OVERHEAT ----------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound S_Weapon_Handheld_Overheat
+ObjectTemplate.soundFilename common/sound/weapon_handheld_overheat.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.9
+ObjectTemplate.reverbLevel 1
+
+Sound.addSound S_Weapon_Vehicle_Overheat
+ObjectTemplate.soundFilename common/sound/weapon_handheld_overheat.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.pitch 0.65
+ObjectTemplate.volume 1
+ObjectTemplate.reverbLevel 1
+
+
+rem -----------------------------------------------------------------------
+rem ------------------------- AMBIENCE----------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound Commander_US_ambience
+ObjectTemplate.soundFilename Common/Sound/CommanderAmbience.ogg
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound Commander_CH_ambience
+ObjectTemplate.soundFilename Common/Sound/CommanderAmbience.ogg
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound Commander_MEC_ambience
+ObjectTemplate.soundFilename Common/Sound/CommanderAmbience.ogg
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+Sound.addSound Commander_EU_ambience
+ObjectTemplate.soundFilename Common/Sound/CommanderAmbience.ogg
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.1
+
+rem -----------------------------------------------------------------------
+rem ----------------------------- WIN AND LOOSE JINGLES ----------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound us_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/us_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound us_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/us_loose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound ch_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/ch_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound ch_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/ch_loose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound mec_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/mec_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound mec_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/mec_loose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound eu_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/eu_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound eu_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/eu_lose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound chinsurgent_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/rebel_loose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound chinsurgent_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/rebel_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound sas_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/brit_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound sas_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/brit_lose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound seal_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/us_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound seal_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/us_loose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound meinsurgent_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/mec_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound meinsurgent_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/mec_loose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound spetz_win
+ObjectTemplate.soundFilename Common/Sound/Menu/music/russian_win.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound spetz_loose
+ObjectTemplate.soundFilename Common/Sound/Menu/music/russian_lose.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+rem -----------------------------------------------------------------------
+rem ----------------------------- INGAME MUSIC ----------------------------
+rem -----------------------------------------------------------------------
+
+beginRem
+Sound.addSound music
+ObjectTemplate.soundFilename
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 0.2
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+endRem
+
+rem -----------------------------------------------------------------------
+rem ----------------------------- TAUNTS ----------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound taunt_1
+ObjectTemplate.soundFilename Common/Sound/taunt1.ogg,Common/Sound/taunt2.ogg,Common/Sound/taunt3.ogg
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 1
+ObjectTemplate.reverbLevel 0.1
+ObjectTemplate.minDistance 4
+
+rem -----------------------------------------------------------------------
+rem --------------------------- HIT INDICATION ----------------------------
+rem -----------------------------------------------------------------------
+
+Sound.addSound hitIndicator
+ObjectTemplate.soundFilename Common/Material/Impact/hit_marker/hit_marker_01.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 3
+ObjectTemplate.pan 0.1
+ObjectTemplate.reverbLevel 0
+
+Sound.addSound hitIndicator1
+ObjectTemplate.soundFilename Common/Material/Impact/hit_marker/hit_marker_01.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.stopType 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.volume 3
+ObjectTemplate.pan 0.9
+ObjectTemplate.reverbLevel 0

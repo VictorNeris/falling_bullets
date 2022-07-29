@@ -1,0 +1,24 @@
+hudBuilder.createSplitNode		IngameHud HD33Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3636
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3637
+hudBuilder.addNodeBlendEffect		7 2
+hudBuilder.setNodeInTime		0.15
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+
+hudBuilder.createPictureNode 		HD33Hud HD33HitIndication 385 285 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+hudBuilder.createSplitNode		HD33Hud HD33AltHud
+
+hudBuilder.createPictureNode 		HD33AltHud HD33AltCrosshair 380 275 41 52
+hudBuilder.setPictureNodeTexture 	Ingame\PonyCrossHair\HD33_ret.dds
+
+hudBuilder.createSplitNode		HD33Hud GenericWeaponHD33Hudtemp
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable		CrossHairColorAlpha
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3636
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3637

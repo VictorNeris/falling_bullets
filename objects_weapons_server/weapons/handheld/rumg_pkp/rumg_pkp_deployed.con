@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rumg_pkp_deployed
+
+ObjectTemplate.create GenericFireArm rumg_pkp_deployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DNAPC:�������������
+ObjectTemplate.geometry rumg_pkp_deployed
+
+include rumg_pkp_deployed.tweak

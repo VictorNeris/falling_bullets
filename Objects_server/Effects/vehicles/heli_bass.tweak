@@ -1,0 +1,23 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/11/10 0:15]
+ObjectTemplate.activeSafe AirDraftEffectBundle heli_bass
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 115
+rem begin Auto-generated effectProperties-part.
+ObjectTemplate.AlphaIntensityRange 0.5/1
+ObjectTemplate.AlphaIntensityFromAltitude 20/0
+ObjectTemplate.AlphaIntensityFromEngine 0/1
+ObjectTemplate.EmitScaleFactorRange 0.3/1
+ObjectTemplate.EmitScaleFactorFromAltitude 30/5
+ObjectTemplate.EmitSpeedScaleRange 0.3/1
+ObjectTemplate.EmitSpeedScaleFromEngine 0/1
+ObjectTemplate.AgeScaleFactorRange 1/1
+ObjectTemplate.StartAgeRange 0/0
+rem end Auto-generated effectProperties-part.
+ObjectTemplate.maxDistance 20
+ObjectTemplate.startDistance 20
+ObjectTemplate.engineInfluence 0.85
+

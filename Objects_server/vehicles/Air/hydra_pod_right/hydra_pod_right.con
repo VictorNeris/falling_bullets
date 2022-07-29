@@ -1,0 +1,10 @@
+GeometryTemplate.create BundledMesh hydra_pod_right
+collisionManager.createTemplate hydra_pod_right
+
+ObjectTemplate.create SimpleObject hydra_pod_right
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator USER-KOMPUTER:W_RAZIE_BSODA
+ObjectTemplate.geometry hydra_pod_right
+ObjectTemplate.collisionMesh hydra_pod_right
+
+include hydra_pod_right.tweak

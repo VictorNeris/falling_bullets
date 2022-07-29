@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh m2
+
+ObjectTemplate.create GenericFireArm m2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.geometry hmg_m2hb
+
+include m2.tweak

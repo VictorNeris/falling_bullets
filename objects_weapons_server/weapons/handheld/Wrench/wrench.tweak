@@ -1,0 +1,161 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/1 12:1]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm wrench
+ObjectTemplate.creator TLO-1:tlo
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.setNetworkableInfo HandFireArmsInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_M16m203.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\wrench.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\wrench.tga
+ObjectTemplate.weaponHud.hudName "WEAPON_NAME_wrench"
+ObjectTemplate.weaponHud.guiIndex 56
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasMag 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 60
+ObjectTemplate.fire.addFireRate 2
+rem ---EndComp ---
+rem ---BeginComp:ReplenishingAmmoComp ---
+ObjectTemplate.createComponent ReplenishingAmmoComp
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.changeMagAt 1
+ObjectTemplate.ammo.minimumTimeUntilReload 0.5
+ObjectTemplate.ammo.abilityDrain 0
+ObjectTemplate.ammo.abilityRadius 2.5
+ObjectTemplate.ammo.abilityStrength 3.5
+ObjectTemplate.ammo.abilityCost 0.3
+ObjectTemplate.ammo.abilityMaterial 84
+ObjectTemplate.ammo.replenishingType RTHeal
+ObjectTemplate.ammo.onlyActiveWhileFiring 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_WRENCH_fixStuff"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_WRENCH_fixStuff"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 1
+rem ---EndComp ---
+ObjectTemplate.geometry wrench
+ObjectTemplate.setCollisionMesh wrench
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate wrench_AI
+rem -------------------------------------
+ObjectTemplate.addTemplate S_wrench_Fire1P
+ObjectTemplate.addTemplate S_wrench_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_wrench_Fire3P
+ObjectTemplate.addTemplate S_wrench_BoltClick
+ObjectTemplate.addTemplate S_wrench_TriggerClick
+ObjectTemplate.addTemplate S_wrench_SwitchFireRate
+ObjectTemplate.addTemplate S_wrench_Reload1P
+ObjectTemplate.addTemplate S_wrench_Reload3P
+ObjectTemplate.addTemplate S_wrench_Deploy1P
+ObjectTemplate.addTemplate S_wrench_Deploy3P
+ObjectTemplate.addTemplate S_wrench_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/Wrench/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/Wrench/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate BlankProjectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 6
+ObjectTemplate.delayToUse 0.958
+
+ObjectTemplate.activeSafe Sound S_wrench_Fire1P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "common/sound/repair_loop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_wrench_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "common/sound/repair_loop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_wrench_Fire3P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "common/sound/repair_loop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_wrench_BoltClick
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_wrench_TriggerClick
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_wrench_SwitchFireRate
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_wrench_Reload1P
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_wrench_Reload3P
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_wrench_Deploy1P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "objects/weapons/handheld/wrench/sounds/wrench_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.51
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_wrench_Deploy3P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "objects/weapons/handheld/wrench/sounds/wrench_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.51
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_wrench_Zoom
+ObjectTemplate.modifiedByUser tda
+

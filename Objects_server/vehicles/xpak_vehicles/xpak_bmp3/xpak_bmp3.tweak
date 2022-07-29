@@ -1,0 +1,1536 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/10/21 3:15]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject xpak_bmp3
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 800
+ObjectTemplate.armor.hitPoints 800
+ObjectTemplate.armor.defaultMaterial 72
+ObjectTemplate.armor.hpLostWhileUpSideDown 125
+ObjectTemplate.armor.hpLostWhileInWater 100
+ObjectTemplate.armor.hpLostWhileInDeepWater 335
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 1
+ObjectTemplate.armor.deepWaterDamageDelay 0
+ObjectTemplate.armor.waterLevel 0.4
+ObjectTemplate.armor.deepWaterLevel 0.7
+ObjectTemplate.armor.explosionForce  4
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 110
+ObjectTemplate.armor.explosionRadius  4
+ObjectTemplate.armor.explosionMaterial 70
+ObjectTemplate.armor.wreckExplosionForce 3.5
+ObjectTemplate.armor.wreckExplosionDamage 80
+ObjectTemplate.armor.wreckExplosionRadius 3.5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 15
+ObjectTemplate.armor.criticalDamage 201
+ObjectTemplate.armor.hideChildrenOnSpectacularDeath 1
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_land_lightsmoke -0.8/1/-2.5 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_land_Mediumsmoke -0.8/1/-2.5 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_land_heavysmoke -0.8/1.1/-2.5 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_tank 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_xpak_bmp3 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_land_sparks -1.559/-0.197/-2.535 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_dstate_static_fire 0.554/1/-0.295 0/0/0
+ObjectTemplate.armor.addArmorEffect -1 e_sAmb_fire -0.8/1/-3.298 0/0/0
+ObjectTemplate.armor.addArmorEffect -50 e_vexp_tank 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -50 e_sAmb_OnlySmoke -0.8/1/-3.298 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_tank_2nd 0/0/0 0/0/0
+
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage apc_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_bmp3"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_APC.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.hasTurretIcon 1
+ObjectTemplate.vehicleHud.vehicleIconPos 40/13
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 1
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\VI_xpak_bmp3.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+ObjectTemplate.geometry xpak_bmp3
+ObjectTemplate.setCollisionMesh xpak_bmp3
+ObjectTemplate.mapMaterial 0 AnimatedUV 86
+ObjectTemplate.mapMaterial 1 Armor_4_tank_sides 30
+ObjectTemplate.mapMaterial 2 Armor_5_tank_front 29
+ObjectTemplate.mapMaterial 3 Armor_3_tank_rear_top 28
+ObjectTemplate.mapMaterial 4 wreck1 60
+ObjectTemplate.mapMaterial 5 rubber 22
+ObjectTemplate.drag 2
+ObjectTemplate.mass 3500
+ObjectTemplate.centerOfCollisionOffset 0/1/0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate btr90
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_Ambient
+ObjectTemplate.addTemplate S_xpak_bmp3_AmbientDamaged
+ObjectTemplate.addTemplate xpak_bmp3_EntryPoint_Driver
+ObjectTemplate.addTemplate xpak_bmp3_PCO_Pass1
+ObjectTemplate.setPosition 0.0424938/-0.813379/-1.76456
+ObjectTemplate.setRotation -85.0778/0/0
+ObjectTemplate.addTemplate xpak_bmp3_PCO_Pass2
+ObjectTemplate.setPosition 0.0671201/-0.840732/-1.81881
+ObjectTemplate.setRotation -82.3786/0/0
+ObjectTemplate.addTemplate xpak_bmp3_PCO_Pass3
+ObjectTemplate.setPosition 0.0453649/-0.797152/-1.67495
+ObjectTemplate.setRotation -86.5329/0/0
+ObjectTemplate.addTemplate xpak_bmp3_PCO_Pass4
+ObjectTemplate.setPosition 0.052118/-0.787514/-1.63854
+ObjectTemplate.setRotation -85.6991/0/0
+ObjectTemplate.addTemplate e_amphib_wake
+ObjectTemplate.setPosition -0.000418288/-0.544602/3.63928
+ObjectTemplate.addTemplate e_sinking_vehicle
+ObjectTemplate.addTemplate xpak_bmp3_FloatingBundle_FL
+ObjectTemplate.setPosition -1/1.9/4
+ObjectTemplate.addTemplate xpak_bmp3_FloatingBundle_FR
+ObjectTemplate.setPosition 1/1.9/4
+ObjectTemplate.addTemplate xpak_bmp3_FloatingBundle_RL
+ObjectTemplate.setPosition -1/1.9/-4
+ObjectTemplate.addTemplate xpak_bmp3_FloatingBundle_RR
+ObjectTemplate.setPosition 1/1.9/-4
+ObjectTemplate.addTemplate xpak_bmp3_Wing_Vertical_Body
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate xpak_bmp3_Rudder
+ObjectTemplate.setPosition 0/-1/-4
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate xpak_bmp3_Water_Engine
+ObjectTemplate.setPosition 0/-1.46/-3.7
+ObjectTemplate.setRotation 0/0/-90
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/1/0 0/0/0
+ObjectTemplate.altSoldierExitPosition 3/1/1
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.shakeFactor 4
+ObjectTemplate.sprintFactor 1
+ObjectTemplate.setVehicleType VTApc
+ObjectTemplate.listenerObstruction 0.6
+ObjectTemplate.groundContactVolume 1
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 3/1/1
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_turret
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_turret_RotationRpm
+ObjectTemplate.addTemplate antennasm
+ObjectTemplate.setPosition -0.842492/0.519787/-0.850518
+ObjectTemplate.setRotation 5.86799e-010/-2.39999/2.56345
+ObjectTemplate.addTemplate antennasm
+ObjectTemplate.setPosition 0.856939/0.516225/-0.847316
+ObjectTemplate.setRotation 0.189496/-3.57979/-3.03209
+ObjectTemplate.addTemplate xpak_bmp3_SmokeLauncher
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 40/0/0
+ObjectTemplate.setAcceleration 800/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.capMaxSpeed 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_turret_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/aav_tunguska/sounds/mono/turret.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.84
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.003/0.865/0.1/0.579/1.072/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0.322/0/0.574/0.893/0/
+ObjectTemplate.minDistance 1.5
+ObjectTemplate.halfVolumeDistance 3
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_barrels
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_barrels_RotationRpm
+ObjectTemplate.addTemplate Coaxial_mg_china
+ObjectTemplate.setPosition 0.136529/0.113224/2.21219
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/3/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/320/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch -0.08/0.55
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_barrels_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_hud
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_hud_RotationRpm
+ObjectTemplate.addTemplate xpak_bmp3_CameraDriver
+ObjectTemplate.setPosition -0.36114/0.208165/0.36576
+ObjectTemplate.setRotation -0.666223/-0.232443/0.0511809
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/3/0
+ObjectTemplate.setMaxSpeed 40/40/0
+ObjectTemplate.setAcceleration 800/320/0
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_hud_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera xpak_bmp3_CameraDriver
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_CameraDriver_RotationRpm
+ObjectTemplate.addTemplate xpak_bmp3_Maingun
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/-1/0
+ObjectTemplate.setMaxRotation 1/1/0
+ObjectTemplate.setMaxSpeed 10/10/0
+ObjectTemplate.setAcceleration 10/10/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.restoreRotationOnExit 1
+ObjectTemplate.followStiffness 4
+ObjectTemplate.chaseDistance 17
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/8.5
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/2
+ObjectTemplate.insideStaticSunColor 0/0/0
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 7
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0/0/0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_CameraDriver_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create GenericFireArm xpak_bmp3_Maingun
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.hudName " BMP-3"
+ObjectTemplate.weaponHud.guiIndex 161
+rem 7
+rem 37
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.hasRangeFinder 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 30
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 40
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 12
+ObjectTemplate.recoil.recoilSpeed 10
+ObjectTemplate.recoil.recoilSpeedGB 2.5
+ObjectTemplate.recoil.recoilForce 90
+ObjectTemplate.recoil.cameraRecoilSpeed 12
+ObjectTemplate.recoil.cameraRecoilSize 2
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.setFireDev 4 0 0
+ObjectTemplate.deviation.minDev 0.25
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate T90MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Fire1P
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Fire3P
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_BoltClick
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_TriggerClick
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_SwitchFireRate
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Reload1P
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Reload3P
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Deploy1P
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Deploy3P
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Zoom
+ObjectTemplate.addTemplate e_muzz_tank
+ObjectTemplate.setPosition 0/-0.146312/5.00614
+rem -------------------------------------
+ObjectTemplate.projectileTemplate xpak_bmp3_Maingun_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 150
+
+ObjectTemplate.create GenericProjectile xpak_bmp3_Maingun_Projectile
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionForce 15
+ObjectTemplate.detonation.explosionDamage 125
+ObjectTemplate.detonation.endEffectTemplate e_exp_medium
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 43
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_Maingun_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+ObjectTemplate.material 43
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 3
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerTemplate p_tracer_tank
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 500
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/tnk_type98/sounds/t98_cannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.95
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/tnk_type98/sounds/t98_cannon_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 20
+ObjectTemplate.soundRadius 1
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.41
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/tnk_type98/sounds/t98_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Maingun_Projectile_Looping
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create GenericFireArm xpak_bmp3_SmokeLauncher
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 2
+ObjectTemplate.fire.addBarrelName xpak_bmp3_SmokeLauncher_Barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 2
+ObjectTemplate.ammo.minimumTimeUntilReload 13
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 6
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Fire1P
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Fire3P
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_BoltClick
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_TriggerClick
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Reload1P
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Reload3P
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Deploy1P
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Deploy3P
+ObjectTemplate.addTemplate S_xpak_bmp3_SmokeLauncher_Zoom
+ObjectTemplate.addTemplate xpak_bmp3_SmokeLauncher_Barrel
+ObjectTemplate.setPosition 1.5112/0.7897/0.26157
+ObjectTemplate.setRotation 40/-20/0
+ObjectTemplate.addTemplate xpak_bmp3_SmokeLauncher_Barrel
+ObjectTemplate.setPosition -1.5112/0.7897/0.26157
+ObjectTemplate.setRotation -40/-20/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Smokeflare
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 12
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_SmokeLauncher_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Bundle xpak_bmp3_SmokeLauncher_Barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+
+ObjectTemplate.activeSafe Engine TNK_bmp3_Engine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Engine_RotationRpm
+ObjectTemplate.addTemplate S_TNK_bmp3_Engine_Idle
+ObjectTemplate.addTemplate S_TNK_bmp3_Engine_Rpm1
+ObjectTemplate.addTemplate S_TNK_bmp3_Engine_Rpm2
+ObjectTemplate.addTemplate S_TNK_bmp3_Engine_Load
+ObjectTemplate.addTemplate e_exhaust
+ObjectTemplate.setPosition -0.0112315/-0.515222/-3.35271
+ObjectTemplate.addTemplate e_exhaust_startup
+ObjectTemplate.setPosition -2.4389e-007/-0.40849/-3.51662
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 1/0/1
+ObjectTemplate.setAcceleration 25/0/2
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 5
+ObjectTemplate.setDifferential 12
+ObjectTemplate.setGearUp 0.9
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.trackTurnAcceleration 30
+ObjectTemplate.trackTurnSpeed 1.2
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Engine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/m1a2_tracks.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/3/0.003/0.637/0.1/0.688/0.961/0.1/0.997/0.961/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.025/0/0/0.32/1/0/
+ObjectTemplate.minDistance 4.5
+ObjectTemplate.halfVolumeDistance 7
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Engine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak_vehicles/xpak_bmp3/sounds/bmp_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1/0/2/0.003861/0.714286/0/0.984556/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003861/0.571429/0/0.857143/1/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Engine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/jep_paratrooper/sounds/mono/rpm_load.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1/0/2/0.003861/0.633205/0/0.996139/0.934363/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003861/0/0/0.675676/1/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Engine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Engine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Rwheel_01
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+ObjectTemplate.animatedUVTranslation 1
+ObjectTemplate.animatedUVTranslationSpeed 0/0
+ObjectTemplate.animatedUVTranslationMax 0/0.189
+ObjectTemplate.animatedUVTranslationSize 0/6.8
+ObjectTemplate.animatedUVTranslationReverse 0
+ObjectTemplate.animatedUVTranslationIndex 6
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Rwheel_01_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.33/0/0
+ObjectTemplate.addTemplate web_trackedSmoke
+ObjectTemplate.setPosition -1.50984/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Rwheel_01_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Rwheel_02
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Rwheel_02_Rotation
+ObjectTemplate.addTemplate web_tracked
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Rwheel_02_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Rwheel_03
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Rwheel_03_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Rwheel_03_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Rwheel_04
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.animatedUVTranslation 1
+ObjectTemplate.animatedUVTranslationSpeed 0/0
+ObjectTemplate.animatedUVTranslationMax 0.01/0
+ObjectTemplate.animatedUVTranslationSize 16/0
+ObjectTemplate.animatedUVTranslationReverse 1
+ObjectTemplate.animatedUVTranslationIndex 4
+ObjectTemplate.animatedUVRotation 1
+ObjectTemplate.animatedUVRotationRadius 0.3
+ObjectTemplate.animatedUVRotationScale 0.5/1
+ObjectTemplate.animatedUVRotationIndex 3
+ObjectTemplate.animatedUVRotationReverse 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Rwheel_04_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Rwheel_04_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Rwheel_05
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Rwheel_05_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Rwheel_05_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Rwheel_06
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Rwheel_06_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition 0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Rwheel_06_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Lwheel_01
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+ObjectTemplate.animatedUVTranslation 1
+ObjectTemplate.animatedUVTranslationSpeed 0/0
+ObjectTemplate.animatedUVTranslationMax 0/0.189
+ObjectTemplate.animatedUVTranslationSize 0/6.8
+ObjectTemplate.animatedUVTranslationReverse 0
+ObjectTemplate.animatedUVTranslationIndex 5
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Lwheel_01_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Lwheel_01_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Lwheel_02
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Lwheel_02_Rotation
+ObjectTemplate.addTemplate web_tracked
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Lwheel_02_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Lwheel_03
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Lwheel_03_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Lwheel_03_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Lwheel_04
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.animatedUVTranslation 1
+ObjectTemplate.animatedUVTranslationSpeed 0/0
+ObjectTemplate.animatedUVTranslationMax 0.01/0
+ObjectTemplate.animatedUVTranslationSize 16/0
+ObjectTemplate.animatedUVTranslationReverse 1
+ObjectTemplate.animatedUVTranslationIndex 4
+ObjectTemplate.animatedUVRotation 1
+ObjectTemplate.animatedUVRotationRadius 0.3
+ObjectTemplate.animatedUVRotationScale 0.5/1
+ObjectTemplate.animatedUVRotationIndex 1
+ObjectTemplate.animatedUVRotationReverse 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Lwheel_04_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Lwheel_04_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Lwheel_05
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Lwheel_05_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Lwheel_05_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring TNK_bmp3_Lwheel_06
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_Lwheel_06_Rotation
+ObjectTemplate.addTemplate web_tracked
+ObjectTemplate.setPosition -0.33/0/0
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 2
+ObjectTemplate.rotateUV 1
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_Lwheel_06_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_RDriweWheel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 1
+ObjectTemplate.rotateAsAnimatedUVObject TNK_bmp3_Rwheel_04
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_RDriweWheel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_RDriweWheel_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_LDriweWheel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 128
+ObjectTemplate.rotateAsAnimatedUV 1
+ObjectTemplate.rotateAsAnimatedUVReverse 1
+ObjectTemplate.rotateAsAnimatedUVObject TNK_bmp3_Lwheel_04
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_LDriweWheel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_LDriweWheel_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_sidegun_L
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_sidegun_L_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_sidegun_L_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle TNK_bmp3_sidegun_R
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_TNK_bmp3_sidegun_R_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_TNK_bmp3_sidegun_R_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe SimpleObject TNK_bmp3_interior
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.create EntryPoint xpak_bmp3_EntryPoint_Driver
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 5
+
+ObjectTemplate.create PlayerControlObject xpak_bmp3_PCO_Pass1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_bmp3"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_APC.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.hasTurretIcon 1
+ObjectTemplate.vehicleHud.vehicleIconPos 20/20
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 0
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\VI_xpak_bmp3.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass1_Ambient
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass1_AmbientDamaged
+ObjectTemplate.addTemplate xpak_bmp3_CameraPass1
+ObjectTemplate.setPosition -0.304383/1.3981/0.640103
+ObjectTemplate.setRotation 168.684/11.688/-0.240388
+ObjectTemplate.addTemplate xpak_bmp3_EntryPointPass1
+ObjectTemplate.setPosition -5.82288e-009/2.98023e-007/0.433684
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/1/-2 0/0/0
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+ObjectTemplate.seatInformation xpak_bmp3_PCO_Pass1 0/1.01909/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/xpak_vehicles/xpak_bmp3/bmp3_Pass1AnimationSystem.inc
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass1_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass1_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera xpak_bmp3_CameraPass1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_CameraPass1_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/-10/0
+ObjectTemplate.setMaxRotation 5/20/0
+ObjectTemplate.setMaxSpeed 50/50/0
+ObjectTemplate.setAcceleration 2000/2000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.1/-0.1
+ObjectTemplate.cameraShakeStartSpeed 20
+ObjectTemplate.cameraShakeMaxSpeed 30
+ObjectTemplate.bounceLength 0.1
+ObjectTemplate.bounceStrength 15
+ObjectTemplate.bounceDamping 15
+ObjectTemplate.followStiffness 4
+ObjectTemplate.chaseDistance 17
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/9
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/0.75
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_CameraPass1_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint xpak_bmp3_EntryPointPass1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.8
+
+ObjectTemplate.create PlayerControlObject xpak_bmp3_PCO_Pass2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_bmp3"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_APC.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.hasTurretIcon 1
+ObjectTemplate.vehicleHud.vehicleIconPos 12/20
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 0
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\VI_xpak_bmp3.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass2_Ambient
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass2_AmbientDamaged
+ObjectTemplate.addTemplate xpak_bmp3_CameraPass2
+ObjectTemplate.setPosition 0.404022/1.36267/0.682887
+ObjectTemplate.setRotation -178.614/6.17114/0.0646542
+ObjectTemplate.addTemplate xpak_bmp3_EntryPointPass2
+ObjectTemplate.setPosition -7.07835e-009/2.38419e-007/0.282067
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/1/-3 0/0/0
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+ObjectTemplate.seatInformation xpak_bmp3_PCO_Pass2 0/1.02506/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/xpak_vehicles/xpak_bmp3/bmp3_Pass2AnimationSystem.inc
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass2_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass2_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera xpak_bmp3_CameraPass2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_CameraPass2_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -5/-10/0
+ObjectTemplate.setMaxRotation 45/20/0
+ObjectTemplate.setMaxSpeed 50/50/0
+ObjectTemplate.setAcceleration 2000/2000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.1/-0.1
+ObjectTemplate.cameraShakeStartSpeed 20
+ObjectTemplate.cameraShakeMaxSpeed 30
+ObjectTemplate.bounceLength 0.1
+ObjectTemplate.bounceStrength 15
+ObjectTemplate.bounceDamping 15
+ObjectTemplate.followStiffness 4
+ObjectTemplate.chaseDistance 17
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/9
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/0.75
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_CameraPass2_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint xpak_bmp3_EntryPointPass2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.8
+
+ObjectTemplate.create PlayerControlObject xpak_bmp3_PCO_Pass3
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_bmp3"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_APC.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.hasTurretIcon 1
+ObjectTemplate.vehicleHud.vehicleIconPos 12/8
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 0
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\VI_xpak_bmp3.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger3
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass3_Ambient
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass3_AmbientDamaged
+ObjectTemplate.addTemplate xpak_bmp3_CameraPass3
+ObjectTemplate.setPosition 0.359233/1.30745/-0.593938
+ObjectTemplate.setRotation -21.3907/3.42198/0.0462683
+ObjectTemplate.addTemplate xpak_bmp3_EntryPointPass3
+ObjectTemplate.setPosition -1.33915e-012/-5.96046e-008/-0.0921233
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 3/1/-2 0/0/0
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+ObjectTemplate.seatInformation xpak_bmp3_PCO_Pass3 0/0.937842/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/xpak_vehicles/xpak_bmp3/bmp3_Pass3AnimationSystem.inc
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass3_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass3_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera xpak_bmp3_CameraPass3
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_CameraPass3_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/-10/0
+ObjectTemplate.setMaxRotation 5/20/0
+ObjectTemplate.setMaxSpeed 50/50/0
+ObjectTemplate.setAcceleration 2000/2000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.1/-0.1
+ObjectTemplate.cameraShakeStartSpeed 20
+ObjectTemplate.cameraShakeMaxSpeed 30
+ObjectTemplate.bounceLength 0.1
+ObjectTemplate.bounceStrength 15
+ObjectTemplate.bounceDamping 15
+ObjectTemplate.followStiffness 4
+ObjectTemplate.chaseDistance 17
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/9
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/0.75
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_CameraPass3_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint xpak_bmp3_EntryPointPass3
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.8
+
+ObjectTemplate.create PlayerControlObject xpak_bmp3_PCO_Pass4
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_bmp3"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_APC.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.hasTurretIcon 1
+ObjectTemplate.vehicleHud.vehicleIconPos 20/8
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 0
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\VI_xpak_bmp3.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.firstWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Laser_Track_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserlockicon.tga
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate Lav25Passenger4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass4_Ambient
+ObjectTemplate.addTemplate S_xpak_bmp3_PCO_Pass4_AmbientDamaged
+ObjectTemplate.addTemplate xpak_bmp3_CameraPass4
+ObjectTemplate.setPosition -0.355767/1.25273/-0.384993
+ObjectTemplate.setRotation 13.2753/1.95145/1.31839
+ObjectTemplate.addTemplate xpak_bmp3_EntryPointPass4
+ObjectTemplate.setPosition 7.93809e-014/-1.78814e-007/-0.0677476
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 3/1/-3 0/0/0
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+ObjectTemplate.exitSpeedMod 0
+ObjectTemplate.seatInformation xpak_bmp3_PCO_Pass4 0/0.953614/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/xpak_vehicles/xpak_bmp3/bmp3_Pass4AnimationSystem.inc
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 3/1/-5
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass4_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_PCO_Pass4_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera xpak_bmp3_CameraPass4
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_CameraPass4_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -5/-10/0
+ObjectTemplate.setMaxRotation 45/20/0
+ObjectTemplate.setMaxSpeed 50/50/0
+ObjectTemplate.setAcceleration 2000/2000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch 0.1/-0.1
+ObjectTemplate.cameraShakeStartSpeed 20
+ObjectTemplate.cameraShakeMaxSpeed 30
+ObjectTemplate.bounceLength 0.1
+ObjectTemplate.bounceStrength 15
+ObjectTemplate.bounceDamping 15
+ObjectTemplate.followStiffness 4
+ObjectTemplate.chaseDistance 17
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/9
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/0.75
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_CameraPass4_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint xpak_bmp3_EntryPointPass4
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.8
+
+ObjectTemplate.create FloatingBundle xpak_bmp3_FloatingBundle_FL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_FloatingBundle_FL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 3.04
+ObjectTemplate.setFloatMaxLift 7.5
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_FloatingBundle_FL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create FloatingBundle xpak_bmp3_FloatingBundle_FR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_FloatingBundle_FR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 3.04
+ObjectTemplate.setFloatMaxLift 7.5
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_FloatingBundle_FR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create FloatingBundle xpak_bmp3_FloatingBundle_RL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_FloatingBundle_RL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 3.04
+ObjectTemplate.setFloatMaxLift 7.5
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_FloatingBundle_RL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create FloatingBundle xpak_bmp3_FloatingBundle_RR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.dragModifier 4000/4000/4000
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_FloatingBundle_RR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setHullHeight 3.04
+ObjectTemplate.setFloatMaxLift 7.5
+ObjectTemplate.setFloatMinLift 0
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_FloatingBundle_RR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing xpak_bmp3_Wing_Vertical_Body
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_Wing_Vertical_Body_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.1
+ObjectTemplate.setFlapLift 0
+ObjectTemplate.setLiftRegulated 1
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Wing_Vertical_Body_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing xpak_bmp3_Rudder
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_Rudder_RotationRpm
+ObjectTemplate.addTemplate xpak_bmp3_Water_Engine
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/45/0
+ObjectTemplate.setMaxSpeed 0/1000/0
+ObjectTemplate.setAcceleration 0/75/0
+ObjectTemplate.setInputToPitch PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2.5
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine xpak_bmp3_Water_Engine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_bmp3_Water_Engine_RotationRpm
+ObjectTemplate.addTemplate S_xpak_bmp3_Water_Engine_Idle
+ObjectTemplate.addTemplate S_xpak_bmp3_Water_Engine_Rpm1
+ObjectTemplate.addTemplate S_xpak_bmp3_Water_Engine_Rpm2
+ObjectTemplate.addTemplate S_xpak_bmp3_Water_Engine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 300/1/10
+ObjectTemplate.setAcceleration 300/0.1/10
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 4
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.1
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Water_Engine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Water_Engine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Water_Engine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Water_Engine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak_bmp3_Water_Engine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+

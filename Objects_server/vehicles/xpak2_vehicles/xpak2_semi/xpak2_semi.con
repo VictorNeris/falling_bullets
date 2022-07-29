@@ -1,0 +1,94 @@
+GeometryTemplate.create BundledMesh xpak2_semi
+CollisionManager.createTemplate xpak2_semi
+
+ObjectTemplate.create PlayerControlObject xpak2_semi
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMY:jeremypr
+ObjectTemplate.collisionMesh xpak2_semi
+ObjectTemplate.mapMaterial 0 semibody 0
+ObjectTemplate.mapMaterial 1 plasticthings 0
+ObjectTemplate.mapMaterial 2 rubberthings 0
+ObjectTemplate.mapMaterial 3 glasswindows 0
+ObjectTemplate.mapMaterial 4 wreckcollision 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry xpak2_semi
+ObjectTemplate.addTemplate xpak2_semi_SteeringWheel
+ObjectTemplate.setPosition -0.3920/0.8632/0.7258
+ObjectTemplate.setRotation 0/48.6000/0
+ObjectTemplate.addTemplate xpak2_semi_engine
+
+ObjectTemplate.create RotationalBundle xpak2_semi_SteeringWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Engine xpak2_semi_engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate xpak2_semi_nav_RFwheel
+ObjectTemplate.setPosition 0.9190/-0.7917/1.8610
+ObjectTemplate.addTemplate xpak2_semi_nav_LFwheel
+ObjectTemplate.setPosition -0.9290/-0.7919/1.8610
+ObjectTemplate.addTemplate xpak2_semi_LRFwheel
+ObjectTemplate.setPosition -0.9050/-0.5953/-2.5750
+ObjectTemplate.addTemplate xpak2_semi_LRBwheel
+ObjectTemplate.setPosition -0.9050/-0.5953/-3.7070
+ObjectTemplate.addTemplate xpak2_semi_RRFwheel
+ObjectTemplate.setPosition 0.8950/-0.5953/-2.5750
+ObjectTemplate.addTemplate xpak2_semi_RRBwheel
+ObjectTemplate.setPosition 0.8950/-0.5953/-3.7070
+
+ObjectTemplate.create RotationalBundle xpak2_semi_nav_RFwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate xpak2_semi_RFwheel
+
+ObjectTemplate.create Spring xpak2_semi_RFwheel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create RotationalBundle xpak2_semi_nav_LFwheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate xpak2_semi_LFwheel
+
+ObjectTemplate.create Spring xpak2_semi_LFwheel
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring xpak2_semi_LRFwheel
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring xpak2_semi_LRBwheel
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring xpak2_semi_RRFwheel
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring xpak2_semi_RRBwheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+include xpak2_semi.tweak

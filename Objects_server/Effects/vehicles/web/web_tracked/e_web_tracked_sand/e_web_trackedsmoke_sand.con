@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_web_trackedSmoke_sand
+ObjectTemplate.createdInEditor 1
+
+include E_web_trackedSmoke_sand.tweak

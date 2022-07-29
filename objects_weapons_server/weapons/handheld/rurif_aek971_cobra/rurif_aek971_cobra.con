@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rurif_aek971_cobra
+
+ObjectTemplate.create GenericFireArm rurif_aek971_cobra
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GAMEPC:Eversmen
+ObjectTemplate.geometry rurif_aek971_cobra
+
+include rurif_aek971_cobra.tweak

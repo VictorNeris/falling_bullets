@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh sas_mask
+
+ObjectTemplate.create MaskObject sas_mask
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry sas_mask
+ObjectTemplate.maskType MOTGasMask
+
+

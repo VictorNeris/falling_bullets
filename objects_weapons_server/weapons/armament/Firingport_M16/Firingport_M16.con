@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Firingport_M16
+
+include Firingport_M16.tweak
+

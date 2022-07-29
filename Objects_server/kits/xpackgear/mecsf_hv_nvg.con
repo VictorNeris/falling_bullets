@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh mecsf_hv_nvg
+
+ObjectTemplate.create MaskObject mecsf_hv_nvg
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry mecsf_hv_nvg
+ObjectTemplate.maskType MOTNightVisionGoggles
+
+

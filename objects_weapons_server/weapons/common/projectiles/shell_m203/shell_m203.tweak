@@ -1,0 +1,25 @@
+rem *** Generated with Bf2Editor.exe [created: 2003/10/21 13:57]
+ObjectTemplate.active shell_m203
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.createComponent DefaultRicochetComp
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.createComponent DefaultProjSoundComp
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry shell_m203
+ObjectTemplate.collisionMesh shell_m203
+ObjectTemplate.mapMaterial 0 Grenade_rifle 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.collisionGroups 8
+rem -------------------------------------
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.setPosition 0/0/-0.01682
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_UNIFORM/3/0/0
+ObjectTemplate.material -1
+
+ObjectTemplate.active S_shell_m203_Looping
+

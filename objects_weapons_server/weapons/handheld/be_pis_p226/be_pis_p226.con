@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh be_pis_p226
+
+ObjectTemplate.create GenericFireArm be_pis_p226
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator USER-ой:User
+ObjectTemplate.geometry be_pis_p226
+
+include be_pis_p226.tweak

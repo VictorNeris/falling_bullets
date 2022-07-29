@@ -1,0 +1,250 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+ObjectTemplate.activeSafe EffectBundle e_muzz_M95
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_M95_Start
+ObjectTemplate.addTemplate em_Muzz_sniper_3p
+ObjectTemplate.addTemplate em_muzz_sniper_lightSource
+ObjectTemplate.setPosition 0/0/0.120361
+ObjectTemplate.addTemplate em_muzz_sniper_smokepuff
+ObjectTemplate.addTemplate em_muzz_sniper_microFlashglow_3p
+ObjectTemplate.setPosition 0/0/0.05392
+ObjectTemplate.addTemplate em_muzz_sniper_microFlashglow_1p
+ObjectTemplate.addTemplate em_muzz_sniper_quickflame_3p
+ObjectTemplate.addTemplate em_muzz_M95_SideSmokeR_s
+ObjectTemplate.addTemplate em_muzz_M95_SideSmokeL_s
+ObjectTemplate.addTemplate e_muzz_M95_dist1
+ObjectTemplate.addTemplate e_muzz_M95_dist2
+rem ObjectTemplate.addTemplate e_distdel_sniper
+rem ObjectTemplate.addTemplate e_echo_sniper
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_M95_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/M95/M95_dist.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1000
+ObjectTemplate.soundRadius 1
+
+
+
+
+
+
+ObjectTemplate.create EffectBundle e_muzz_M95_dist1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_M95_dist1_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_M95_dist1_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/M95/M95_dist1.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 1
+
+
+
+ObjectTemplate.create EffectBundle e_muzz_M95_dist2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_M95_dist2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_M95_dist2_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/M95/M95_dist2.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 70
+ObjectTemplate.halfVolumeDistance 140
+ObjectTemplate.soundRadius 1
+
+
+
+ObjectTemplate.create SpriteParticleSystem em_muzz_M95_SideSmokeR_s
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.showInFirstPerson 1
+ObjectTemplate.showInThirdPerson 1
+ObjectTemplate.emitPrio High
+ObjectTemplate.lodDistance High
+ObjectTemplate.qualityLevel High
+ObjectTemplate.emitterType Standard
+ObjectTemplate.isLocalSystem 0
+ObjectTemplate.emitRadius 0/0/0
+ObjectTemplate.emitRangeX CRD_NONE/0/0/0
+ObjectTemplate.emitRangeY CRD_NONE/0/0/0
+ObjectTemplate.emitRangeZ CRD_NONE/0/0/0
+ObjectTemplate.randomRadialDirection 360
+ObjectTemplate.radialDirection 0
+ObjectTemplate.emitFrequency 80
+ObjectTemplate.preWarmTime 0
+ObjectTemplate.emitTime 0.12
+ObjectTemplate.emitDelay 0
+ObjectTemplate.isLooping 0
+ObjectTemplate.emitSpeed 20
+ObjectTemplate.emitDirection 1/0/0
+ObjectTemplate.timeToLive 0.15
+ObjectTemplate.randomTimeToLive 0.05
+ObjectTemplate.windAffectionFactor 0
+ObjectTemplate.forceToWaterSurface 0
+ObjectTemplate.waterSurfaceOffset 0.03
+ObjectTemplate.rotationGraph 0/-1/0/1
+ObjectTemplate.alignRotationToSpeed 0
+ObjectTemplate.transparencyGraph -0.77/0/0.53/0.26
+ObjectTemplate.gravity 0
+ObjectTemplate.gravityGraph 0/0/0/1
+ObjectTemplate.airResistanceGraph 0/0/0/1
+ObjectTemplate.emitSpeedGraph -0.19/-0.04/-0.13/1
+ObjectTemplate.randomSpeed 5
+ObjectTemplate.randomDirectionAngle 0/0/0
+ObjectTemplate.airResistance 0.2
+ObjectTemplate.collisionEnable 0
+ObjectTemplate.collisionSpeedAlongNormal 0.7
+ObjectTemplate.collisionSpeedAlongPlane 0.8
+ObjectTemplate.randomSize 0.1
+ObjectTemplate.particleMaxSize 1
+ObjectTemplate.sizeGraph 0/0.61/0.27/0.13
+ObjectTemplate.randomIntensity 0.1
+ObjectTemplate.lightMapIntensityOffset 0.5
+ObjectTemplate.color1 0.952941/0.952941/0.952941
+ObjectTemplate.color2 0.807843/0.807843/0.807843
+ObjectTemplate.colorBlendGraph 0/0/1/0
+ObjectTemplate.alphaCull 0.1
+ObjectTemplate.particleType Sorted
+ObjectTemplate.drawOrder Back
+ObjectTemplate.randomRotation 1
+ObjectTemplate.randomRotationSpeed 0.5
+ObjectTemplate.rotationSpeed -0.5
+ObjectTemplate.pivotOffset 0/0
+ObjectTemplate.selfShadowIntensity 0.6
+ObjectTemplate.textureName objects\effects\textures\animated\Anim_smoke
+ObjectTemplate.animationEnable 1
+ObjectTemplate.animationSpeed 4
+ObjectTemplate.animationPlayOnce 0
+ObjectTemplate.setAnimationFrameWidthRelative 0.5
+ObjectTemplate.setAnimationFrameHeightRelative 0.5
+ObjectTemplate.animationRandomizedStartFrame 1
+ObjectTemplate.animationFrameCount 4
+ObjectTemplate.animationFrameCountX 2
+
+ObjectTemplate.create SpriteParticleSystem em_muzz_M95_SideSmokeL_s
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.showInFirstPerson 1
+ObjectTemplate.showInThirdPerson 1
+ObjectTemplate.emitPrio High
+ObjectTemplate.lodDistance High
+ObjectTemplate.qualityLevel High
+ObjectTemplate.emitterType Standard
+ObjectTemplate.isLocalSystem 0
+ObjectTemplate.emitRadius 0/0/0
+ObjectTemplate.emitRangeX CRD_NONE/0/0/0
+ObjectTemplate.emitRangeY CRD_NONE/0/0/0
+ObjectTemplate.emitRangeZ CRD_NONE/0/0/0
+ObjectTemplate.randomRadialDirection 360
+ObjectTemplate.radialDirection 0
+ObjectTemplate.emitFrequency 80
+ObjectTemplate.preWarmTime 0
+ObjectTemplate.emitTime 0.12
+ObjectTemplate.emitDelay 0
+ObjectTemplate.isLooping 0
+ObjectTemplate.emitSpeed 20
+ObjectTemplate.emitDirection -1/0/0
+ObjectTemplate.timeToLive 0.15
+ObjectTemplate.randomTimeToLive 0.05
+ObjectTemplate.windAffectionFactor 0
+ObjectTemplate.forceToWaterSurface 0
+ObjectTemplate.waterSurfaceOffset 0.03
+ObjectTemplate.rotationGraph 0/-1/0/1
+ObjectTemplate.alignRotationToSpeed 0
+ObjectTemplate.transparencyGraph -0.77/0/0.53/0.26
+ObjectTemplate.gravity 0
+ObjectTemplate.gravityGraph 0/0/0/1
+ObjectTemplate.airResistanceGraph 0/0/0/1
+ObjectTemplate.emitSpeedGraph -0.19/-0.04/-0.13/1
+ObjectTemplate.randomSpeed 5
+ObjectTemplate.randomDirectionAngle 0/0/0
+ObjectTemplate.airResistance 0.2
+ObjectTemplate.collisionEnable 0
+ObjectTemplate.collisionSpeedAlongNormal 0.7
+ObjectTemplate.collisionSpeedAlongPlane 0.8
+ObjectTemplate.randomSize 0.1
+ObjectTemplate.particleMaxSize 1
+ObjectTemplate.sizeGraph 0/0.61/0.27/0.13
+ObjectTemplate.randomIntensity 0.1
+ObjectTemplate.lightMapIntensityOffset 0.5
+ObjectTemplate.color1 0.952941/0.952941/0.952941
+ObjectTemplate.color2 0.807843/0.807843/0.807843
+ObjectTemplate.colorBlendGraph 0/0/1/0
+ObjectTemplate.alphaCull 0.1
+ObjectTemplate.particleType Sorted
+ObjectTemplate.drawOrder Back
+ObjectTemplate.randomRotation 90
+ObjectTemplate.randomRotationSpeed 0.5
+ObjectTemplate.rotationSpeed -0.5
+ObjectTemplate.pivotOffset 0/0
+ObjectTemplate.selfShadowIntensity 0.6
+ObjectTemplate.textureName objects\effects\textures\animated\Anim_smoke
+ObjectTemplate.animationEnable 1
+ObjectTemplate.animationSpeed 4
+ObjectTemplate.animationPlayOnce 0
+ObjectTemplate.setAnimationFrameWidthRelative 0.5
+ObjectTemplate.setAnimationFrameHeightRelative 0.5
+ObjectTemplate.animationRandomizedStartFrame 1
+ObjectTemplate.animationFrameCount 4
+ObjectTemplate.animationFrameCountX 2

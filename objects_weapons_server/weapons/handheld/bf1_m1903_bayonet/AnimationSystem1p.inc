@@ -1,0 +1,205 @@
+animationSystem.cameraSpring.use 1
+animationSystem.cameraSpring.amplitude 0.02/0.01/0.045
+animationSystem.cameraSpring.zoomDamping 2.5/2.5/0
+animationSystem.cameraSpring.stiffness 10/10/10
+animationSystem.cameraSpring.move 2/2/2
+animationSystem.cameraSpring.look 1/1
+animationSystem.cameraSpring.fire 0/0/20
+
+rem *** Animations ***
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_deploy.baf
+animationManager.looping 0
+animationManager.length 0.6
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_fire_single.baf
+animationManager.looping 0
+animationManager.length 0.95
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_run.baf
+animationManager.length 0.708333
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_sprint.baf
+animationManager.length 0.666667
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_stand.baf
+
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_run_prone.baf
+animationManager.length 0.8
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_toprone.baf
+animationManager.length 1
+animationSystem.createAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_toprone_rev.baf
+animationManager.length 1.2
+
+rem *** Bundles ***
+animationSystem.createBundle deploy
+animationBundle.isLooping 0
+animationBundle.fadeInTime 0.001
+animationBundle.fadeOutTime 0.3
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_deploy.baf
+
+animationSystem.createBundle Fire
+animationBundle.isLooping 0
+animationBundle.abruptPlayback 1
+animationBundle.fadeInTime 0
+animationBundle.fadeOutTime 0.2
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_fire_single.baf
+
+animationSystem.createBundle reload
+animationBundle.isLooping 0
+animationBundle.fadeOutTime 0.2
+
+animationSystem.createBundle run
+animationBundle.fadeOutTime 0.25
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_run.baf
+
+animationSystem.createBundle sprint
+animationBundle.fadeInTime 0.35
+animationBundle.fadeOutTime 0.3
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_sprint.baf
+
+animationSystem.createBundle still
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_stand.baf
+
+animationSystem.createBundle run_prone
+animationBundle.fadeOutTime 0.3
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_run_prone.baf
+
+animationSystem.createBundle still_prone
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_stand.baf
+
+animationSystem.createBundle toProne
+animationBundle.isLooping 0
+animationBundle.fadeInTime 0.001
+animationBundle.fadeOutTime 0.3
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_toprone.baf
+animationBundle.addEvent effect:8
+animationBundle.setEventStartTime effect:8 0
+
+animationSystem.createBundle toProneReverse
+animationBundle.isLooping 0
+animationBundle.fadeInTime 0.001
+animationBundle.fadeOutTime 0.3
+animationBundle.addAnimation Objects/Weapons/Handheld/bf1_m1903_bayonet/Animations/1p/1p_bayonet_toprone_rev.baf
+animationBundle.addEvent effect:9
+animationBundle.setEventStartTime effect:9 0
+
+rem *** Triggers ***
+animationSystem.createTrigger Trigger still_stand_t
+animationTrigger.addBundle still
+animationTrigger.addChild idle
+
+animationSystem.createTrigger Trigger still_crouch_t
+animationTrigger.addBundle still
+animationTrigger.addChild idle
+
+animationSystem.createTrigger Trigger still_prone_t
+animationTrigger.addBundle still_prone
+animationTrigger.addChild idle
+
+animationSystem.createTrigger PoseTrigger still
+animationTrigger.addChild still_stand_t
+animationTrigger.addChild still_crouch_t
+animationTrigger.addChild still_prone_t
+animationTrigger.addChild still_prone_t
+
+animationSystem.createTrigger MovementTrigger move_stand_t
+animationTrigger.addBundle run
+animationTrigger.valueHolder 1p_move
+
+animationSystem.createTrigger MovementTrigger move_crouch_t
+animationTrigger.addBundle run
+animationTrigger.valueHolder 1p_move
+
+animationSystem.createTrigger MovementTrigger move_prone_t
+animationTrigger.addBundle run_prone
+animationTrigger.valueHolder 1p_move
+
+animationSystem.createTrigger PoseTrigger move
+animationTrigger.addChild move_stand_t
+animationTrigger.addChild move_crouch_t
+animationTrigger.addChild move_prone_t
+animationTrigger.addChild move_prone_t
+
+animationSystem.createTrigger MovementTrigger sprint
+animationTrigger.addBundle sprint
+animationTrigger.valueHolder 1p_sprint
+
+animationSystem.createTrigger MessageTrigger fire
+animationTrigger.addBundle fire
+animationTrigger.message 1
+
+animationSystem.createTrigger MessageTrigger changeFirerate
+animationTrigger.addBundle changeFirerate
+animationTrigger.message 8
+
+animationSystem.createTrigger MessageTrigger reload
+animationTrigger.addBundle reload
+animationTrigger.message 2
+
+animationSystem.createTrigger Trigger normal
+animationTrigger.addChild still
+animationTrigger.addChild move
+animationTrigger.addChild sprint
+animationTrigger.addChild fire
+animationTrigger.addChild changeFirerate
+animationTrigger.addChild reload
+
+animationSystem.createTrigger SwitchMessageTrigger root
+animationTrigger.addChild zoom
+animationTrigger.addChild normal
+animationTrigger.addBundle zoomTransition
+animationTrigger.message 4
+
+animationSystem.createTrigger Trigger fromProne_zoom
+animationTrigger.addBundle zoom_still
+
+animationSystem.createTrigger Trigger fromProne_normal
+animationTrigger.addBundle toProneReverse
+
+animationSystem.createTrigger SwitchMessageTrigger fromProne
+animationTrigger.addChild fromProne_zoom
+animationTrigger.addChild fromProne_normal
+animationTrigger.message 4
+
+animationSystem.createTrigger Trigger stillToProne_zoom
+animationTrigger.addBundle zoom_still
+
+animationSystem.createTrigger Trigger stillToProne_normal
+animationTrigger.addBundle toProne
+
+animationSystem.createTrigger SwitchMessageTrigger stillToProne
+animationTrigger.addChild stillToProne_zoom
+animationTrigger.addChild stillToProne_normal
+animationTrigger.message 4
+
+animationSystem.createTrigger SwitchMessageTrigger forwardToProne
+animationTrigger.addChild stillToProne_zoom
+animationTrigger.addChild stillToProne_normal
+animationTrigger.message 4
+
+animationSystem.createTrigger SwitchMessageTrigger backwardToProne
+animationTrigger.addChild stillToProne_zoom
+animationTrigger.addChild stillToProne_normal
+animationTrigger.message 4
+
+animationSystem.createTrigger SwitchMessageTrigger leftToProne
+animationTrigger.addChild stillToProne_zoom
+animationTrigger.addChild stillToProne_normal
+animationTrigger.message 4
+
+animationSystem.createTrigger SwitchMessageTrigger rightToProne
+animationTrigger.addChild stillToProne_zoom
+animationTrigger.addChild stillToProne_normal
+animationTrigger.message 4
+
+animationSystem.createTrigger Trigger specialMoves
+animationTrigger.addChild fromProne
+animationTrigger.addChild stillToProne
+animationTrigger.addChild forwardToProne
+animationTrigger.addChild backwardToProne
+animationTrigger.addChild leftToProne
+animationTrigger.addChild rightToProne
+
+animationSystem.createTrigger Trigger startup
+animationTrigger.addBundle deploy
+
+animationSystem.createTrigger Trigger completeTree
+animationTrigger.addChild root
+animationTrigger.addChild startup
+animationTrigger.addChild specialMoves

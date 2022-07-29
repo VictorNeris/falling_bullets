@@ -1,0 +1,179 @@
+GeometryTemplate.create BundledMesh xpak2_hmmwv
+CollisionManager.createTemplate xpak2_hmmwv
+
+ObjectTemplate.create PlayerControlObject xpak2_hmmwv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMY:jeremypr
+ObjectTemplate.collisionMesh xpak2_hmmwv
+ObjectTemplate.mapMaterial 0 Armor_1_metal_plating1 0
+ObjectTemplate.mapMaterial 1 Glass_bulletproof 0
+ObjectTemplate.mapMaterial 2 lightglass 0
+ObjectTemplate.mapMaterial 3 Metal_plate_thin 0
+ObjectTemplate.mapMaterial 4 PenetrableCloth_carpet 0
+ObjectTemplate.mapMaterial 5 Cardboard_box 0
+ObjectTemplate.mapMaterial 6 WRECK 0
+ObjectTemplate.mapMaterial 7 Rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry xpak2_hmmwv
+ObjectTemplate.addTemplate xpak2_HMMWV_Steeringwheel
+ObjectTemplate.setPosition -0.6993/0.3424/0.5893
+ObjectTemplate.setRotation 0/25.0000/0
+ObjectTemplate.addTemplate xpak2_HMMWV_CupolaBase
+ObjectTemplate.setPosition 0/-0.2991/-0.1348
+ObjectTemplate.addTemplate xpak2_HMMWV_Drivetrain_RF
+ObjectTemplate.setPosition 0.6298/-0.3998/1.7659
+ObjectTemplate.addTemplate xpak2_HMMWV_Drivetrain_LF
+ObjectTemplate.setPosition -0.6271/-0.3998/1.7659
+ObjectTemplate.addTemplate xpak2_HMMWV_Drivetrain_LR
+ObjectTemplate.setPosition -0.6460/-0.3997/-1.5269
+ObjectTemplate.addTemplate xpak2_HMMWV_Drivetrain_RR
+ObjectTemplate.setPosition 0.6463/-0.3998/-1.5269
+ObjectTemplate.addTemplate xpak2_HMMWV_Engine
+ObjectTemplate.setPosition 0/-0.2962/0
+
+ObjectTemplate.create RotationalBundle xpak2_HMMWV_Steeringwheel
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create PlayerControlObject xpak2_HMMWV_CupolaBase
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate xpak2_HMMWV_Cupola
+ObjectTemplate.setPosition 0/1.2748/-0.0013
+
+ObjectTemplate.create RotationalBundle xpak2_HMMWV_Cupola
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.addTemplate xpak2_HMMWV_Lav
+ObjectTemplate.setPosition 0/0.3655/0.6135
+
+ObjectTemplate.create RotationalBundle xpak2_HMMWV_Lav
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Bundle xpak2_HMMWV_Drivetrain_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate xpak2_HMMWV_Spring_RF
+ObjectTemplate.setPosition -0.1014/0.1284/0.0504
+ObjectTemplate.addTemplate xpak2_HMMWV_Hub_RF
+ObjectTemplate.setPosition 0.0401/0.0383/0.0091
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Spring_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Hub_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Bundle xpak2_HMMWV_Drivetrain_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+ObjectTemplate.addTemplate xpak2_HMMWV_Spring_LF
+ObjectTemplate.setPosition 0.0994/0.1284/0.0505
+ObjectTemplate.addTemplate xpak2_HMMWV_Hub_LF
+ObjectTemplate.setPosition -0.1979/0/0
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Spring_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Hub_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Bundle xpak2_HMMWV_Drivetrain_LR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate xpak2_HMMWV_Spring_LR
+ObjectTemplate.setPosition 0.1060/0.1284/-0.0351
+ObjectTemplate.addTemplate xpak2_HMMWV_Hub_LR
+ObjectTemplate.setPosition -0.0352/0.0383/0.0096
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Spring_LR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Hub_LR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Bundle xpak2_HMMWV_Drivetrain_RR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+ObjectTemplate.addTemplate xpak2_HMMWV_Spring_RR
+ObjectTemplate.setPosition -0.1057/0.1284/-0.0351
+ObjectTemplate.addTemplate xpak2_HMMWV_Hub_RR
+ObjectTemplate.setPosition 0.0355/0.0383/0.0096
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Spring_RR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create SimpleObject xpak2_HMMWV_Hub_RR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Engine xpak2_HMMWV_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+ObjectTemplate.addTemplate xpak2_HMMWV_nav_RF
+ObjectTemplate.setPosition 0.8879/-0.2299/1.7659
+ObjectTemplate.addTemplate xpak2_HMMWV_nav_LF
+ObjectTemplate.setPosition -0.8752/-0.2299/1.7659
+ObjectTemplate.addTemplate xpak2_HMMWV_Wheel_LR
+ObjectTemplate.setPosition -0.8752/-0.2299/-1.5269
+ObjectTemplate.addTemplate xpak2_HMMWV_Wheel_RR
+ObjectTemplate.setPosition 0.8879/-0.2299/-1.5269
+
+ObjectTemplate.create RotationalBundle xpak2_HMMWV_nav_RF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+ObjectTemplate.addTemplate xpak2_HMMWV_Wheel_RF
+
+ObjectTemplate.create Spring xpak2_HMMWV_Wheel_RF
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create RotationalBundle xpak2_HMMWV_nav_LF
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+ObjectTemplate.addTemplate xpak2_HMMWV_Wheel_LF
+
+ObjectTemplate.create Spring xpak2_HMMWV_Wheel_LF
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring xpak2_HMMWV_Wheel_LR
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create Spring xpak2_HMMWV_Wheel_RR
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+include xpak2_hmmwv.tweak

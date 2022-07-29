@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh chsni_type88
+CollisionManager.createTemplate chsni_type88
+
+ObjectTemplate.create GenericFireArm chsni_type88
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh chsni_type88
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry chsni_type88
+
+include chsni_type88.tweak

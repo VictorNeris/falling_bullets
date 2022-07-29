@@ -1,0 +1,7 @@
+GeometryTemplate.create BundledMesh MG_Saw_HoloSight
+
+ObjectTemplate.create GenericFireArm MG_Saw_HoloSight
+ObjectTemplate.creator DORAGONKONG:KingKong
+ObjectTemplate.geometry MG_Saw_HoloSight
+
+include MG_Saw_HoloSight.tweak

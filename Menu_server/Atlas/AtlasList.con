@@ -1,0 +1,5 @@
+hudManager.addTextureAtlas "MemeAtlas_CQB.tai"
+hudManager.addTextureAtlas "MemeAtlas.tai"
+hudManager.addTextureAtlas "AIXAtlas.tai"
+hudManager.addTextureAtlas "Xpack1Atlas.tai"
+hudManager.addTextureAtlas "AGM_MinimapIcon.tai"

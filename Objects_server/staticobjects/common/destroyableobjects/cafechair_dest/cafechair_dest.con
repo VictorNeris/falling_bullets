@@ -1,0 +1,14 @@
+GeometryTemplate.create BundledMesh cafechair_dest
+CollisionManager.createTemplate cafechair_dest
+
+ObjectTemplate.create DestroyableObject cafechair_dest
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ENI-2:eni
+ObjectTemplate.collisionMesh cafechair_dest
+ObjectTemplate.mapMaterial 0 plastic 0
+ObjectTemplate.mapMaterial 1 metal_solid 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry cafechair_dest
+
+include cafechair_dest.tweak

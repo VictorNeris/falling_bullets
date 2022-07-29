@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh sg_870combat_slug
+
+ObjectTemplate.create GenericFireArm sg_870combat_slug
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARS:theta
+ObjectTemplate.geometry sg_870combat_slug
+
+include sg_870combat_slug.tweak

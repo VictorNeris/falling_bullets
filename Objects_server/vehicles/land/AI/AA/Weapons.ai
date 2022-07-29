@@ -1,0 +1,13 @@
+weaponTemplate.create AAMainGun
+weaponTemplate.indirect 0
+weaponTemplate.minRange 3.0
+weaponTemplate.maxRange 800.0
+weaponTemplate.setStrength Infantry  0.0
+weaponTemplate.setStrength LightArmour 12.0
+weaponTemplate.setStrength HeavyArmour 11.0
+weaponTemplate.setStrength NavalArmour 10.0
+weaponTemplate.setStrength Helicopter  30.0
+weaponTemplate.setStrength AirPlane    8.0
+weaponTemplate.setExplosionRadius 3.0
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.setSoundSphereRadius 800.0

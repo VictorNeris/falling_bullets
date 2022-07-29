@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh antennasm
+
+ObjectTemplate.create AntennaObject antennasm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.geometry antennasm
+
+include antennasm.tweak

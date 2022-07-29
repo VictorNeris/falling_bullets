@@ -1,0 +1,24 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/10 7:10]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor she_ec635_mainrotor
+ObjectTemplate.creator KHE-2:khe
+ObjectTemplate.modifiedByUser "chrisel"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry she_ec635_mainrotor
+ObjectTemplate.setCollisionMesh she_ec635_mainrotor
+ObjectTemplate.mapMaterial 0 rotorcollision 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.15
+ObjectTemplate.tolerance 2.98022e-009
+ObjectTemplate.rotationSpeedMod -0.5
+ObjectTemplate.rotationSpeedModBlur -0.05
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName she_ec635_MainEngine
+

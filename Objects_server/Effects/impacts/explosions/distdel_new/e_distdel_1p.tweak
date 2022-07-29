@@ -1,0 +1,243 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/15 9:42]
+ObjectTemplate.activeSafe EffectBundle e_distdel_1p
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_Start
+ObjectTemplate.addTemplate e_distdel_1p_1
+ObjectTemplate.addTemplate e_distdel_1p_2
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NORMAL/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NORMAL/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create Emitter e_distdel_1p_1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_obj1
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_distdel_1p_2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_obj2
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+
+
+
+
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.activeSafe EffectBundle e_distdel_1p_556
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_556_Start
+ObjectTemplate.addTemplate e_distdel_1p_556_1
+ObjectTemplate.addTemplate e_distdel_1p_556_2
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NORMAL/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NORMAL/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create Emitter e_distdel_1p_556_1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_556_obj1
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_distdel_1p_556_2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_556_obj2
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.activeSafe EffectBundle e_distdel_1p_762
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_556_Start
+ObjectTemplate.addTemplate e_distdel_1p_762_1
+ObjectTemplate.addTemplate e_distdel_1p_762_2
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NORMAL/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NORMAL/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create Emitter e_distdel_1p_762_1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_762_obj1
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_distdel_1p_762_2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_762_obj2
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.activeSafe EffectBundle e_distdel_1p_m14
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_556_Start
+ObjectTemplate.addTemplate e_distdel_1p_m14_1
+ObjectTemplate.addTemplate e_distdel_1p_m14_2
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NORMAL/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NORMAL/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create Emitter e_distdel_1p_m14_1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_m14_obj1
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_distdel_1p_m14_2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_m14_obj2
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.activeSafe EffectBundle e_distdel_1p_127
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_556_Start
+ObjectTemplate.addTemplate e_distdel_1p_127_1
+ObjectTemplate.addTemplate e_distdel_1p_127_2
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NORMAL/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NORMAL/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create Emitter e_distdel_1p_127_1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_127_obj1
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter e_distdel_1p_127_2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template e_distdel_1p_127_obj2
+ObjectTemplate.positionalSpeedInDof CRD_NORMAL/40/60/0
+ObjectTemplate.positionalSpeedInUp CRD_NORMAL/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-100/100/100
+ObjectTemplate.startRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotation CRD_NORMAL/0/0/0
+ObjectTemplate.zRotationSnap 1

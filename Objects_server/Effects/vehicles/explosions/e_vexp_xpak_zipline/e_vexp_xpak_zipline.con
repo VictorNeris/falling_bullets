@@ -1,0 +1,49 @@
+GeometryTemplate.create BundledMesh e_vexp_xpak_zipline
+
+ObjectTemplate.create EffectBundle e_vexp_xpak_zipline
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.addTemplate wreck_zipline_leg1
+ObjectTemplate.setPosition -0.2176/0.1987/0.0297
+ObjectTemplate.setRotation 94.5800/-82.6254/-96.0991
+ObjectTemplate.addTemplate wreck_zipline_leg2
+ObjectTemplate.setPosition -0.3790/0.3440/0
+ObjectTemplate.addTemplate wreck_zipline_main
+
+ObjectTemplate.create Emitter wreck_zipline_leg1
+ObjectTemplate.template p_wreck_zipline_leg1
+
+ObjectTemplate.create Particle p_wreck_zipline_leg1
+ObjectTemplate.collisionMesh e_vexp_xpak_zipline
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_zipline
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter wreck_zipline_leg2
+ObjectTemplate.template p_wreck_zipline_leg2
+
+ObjectTemplate.create Particle p_wreck_zipline_leg2
+ObjectTemplate.collisionMesh e_vexp_xpak_zipline
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_zipline
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter wreck_zipline_main
+ObjectTemplate.template p_wreck_zipline_main
+
+ObjectTemplate.create Particle p_wreck_zipline_main
+ObjectTemplate.collisionMesh e_vexp_xpak_zipline
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_zipline
+ObjectTemplate.geometryPart 2
+
+include e_vexp_xpak_zipline.tweak

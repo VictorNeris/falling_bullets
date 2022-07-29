@@ -1,0 +1,16 @@
+GeometryTemplate.create BundledMesh saddlegun
+CollisionManager.createTemplate saddlegun
+
+ObjectTemplate.create GenericFireArm saddlegun
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DESKTOP-7Q6SHI0:DEVELOP013
+ObjectTemplate.collisionMesh saddlegun
+ObjectTemplate.mapMaterial 0 saddlegun 0
+ObjectTemplate.mapMaterial 1 mount 0
+ObjectTemplate.mapMaterial 2 Alpha 0
+ObjectTemplate.mapMaterial 3 visionking 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry saddlegun
+
+include saddlegun.tweak

@@ -1,0 +1,157 @@
+GeometryTemplate.setSubGeometryLodDistance 1 0 10
+GeometryTemplate.setSubGeometryLodDistance 1 1 20
+
+ObjectTemplate.active spetz_soldier
+ObjectTemplate.networkableInfo BasicInfo
+ObjectTemplate.hasMobilePhysics 1
+rem ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.collisionGroups 16
+ObjectTemplate.CullRadiusScale 12.5
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.aiTemplate Soldier
+
+rem For adding lightflare at item index 7 --jkj 
+ObjectTemplate.inventorySize 10
+
+ObjectTemplate.manDownCameraOffsetInDof 0.11
+ObjectTemplate.manDownCameraOffsetInUp  0.5
+ObjectTemplate.ragdollLandedDelay 4
+
+include objects/soldiers/common/light_soldier.tweak
+
+rem ObjectTemplate.addTemplate HeatObject_flare
+
+rem ObjectTemplate.drag 1.0
+rem ObjectTemplate.mass 100
+rem ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.SprintRecoverTime 17
+rem ObjectTemplate.SprintDissipationTime 99999
+rem ObjectTemplate.SprintLimit 0.05
+rem ObjectTemplate.SprintLossAtJump 0
+rem ObjectTemplate.gasMaskSprintFactor 2.0
+rem ObjectTemplate.Grip 20
+
+include ../Common/light_soldier.tweak
+rem ---BeginComp:Armor ---
+rem ObjectTemplate.createComponent Armor
+rem ObjectTemplate.armor.maxHitPoints 100
+rem ObjectTemplate.armor.hitPoints 100
+rem ObjectTemplate.armor.defaultMaterial 24
+rem ObjectTemplate.armor.wreckhitpoints 320
+rem ObjectTemplate.armor.explosionForceMod 25
+rem ObjectTemplate.armor.explosionForceMax 1000
+rem ObjectTemplate.armor.TimeToStayAsWreck 30
+rem ObjectTemplate.armor.timeToStayAfterDestroyed 1
+rem ObjectTemplate.armor.angleMod 1
+rem ObjectTemplate.armor.wreckExplosionForceMod 0
+rem ObjectTemplate.armor.wreckExplosionForceMax 0
+rem ObjectTemplate.armor.addArmorEffect 0 e_bhit_l_sold_head 0/0/0 0/0/0
+rem ObjectTemplate.armor.addArmorEffect 0 e_bhit_l_sold_bodyarmor 0/0/0 0/0/0
+rem ObjectTemplate.armor.addArmorEffect 0 e_bhit_s_sold_head 0/0/0 0/0/0
+rem ObjectTemplate.armor.addArmorEffect 0 e_bhit_s_sold_bodyarmor 0/0/0 0/0/0
+rem ObjectTemplate.armor.addArmorEffect 99 e_heal_soldier 0/0/0 0/0/0
+rem ---EndComp ---
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage infantry_spotted
+rem ---EndComp ---
+
+ObjectTemplate.collisionMesh Soldier_CollisionMesh
+rem *** Animation ****
+ObjectTemplate.skeleton1P Objects/Soldiers/Common/Animations/1p_setup.ske
+ObjectTemplate.skeleton3P Objects/Soldiers/Common/Animations/3p_setup.ske
+ObjectTemplate.animationSystem1P Objects/Soldiers/Common/Animations/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Soldiers/Common/Animations/AnimationSystem3p.inc
+rem Stand
+ObjectTemplate.poseCameraPosition 0 0/0.47/0.1
+rem Crouch
+ObjectTemplate.poseCameraPosition 1 0/-0.05/0.1
+rem Prone
+ObjectTemplate.poseCameraPosition 2 0/-0.63/0.1
+
+rem boneName, material, offset, radius, length
+ObjectTemplate.setSkeletonCollisionBone left_upperleg 24 0/0.03/0 0.09 -0.35 
+ObjectTemplate.setSkeletonCollisionBone right_upperleg 24 0/0.03/0 0.09 0.35
+
+ObjectTemplate.setSkeletonCollisionBone left_lowerleg 77 0/0.03/0.02 0.08 -0.32 
+ObjectTemplate.setSkeletonCollisionBone right_lowerleg 77 0/0.03/0.02 0.08 0.32 
+
+ObjectTemplate.setSkeletonCollisionBone head 25 0/-0.02/0.02 0.07 -0.08 
+ObjectTemplate.setSkeletonCollisionBone spine2 24 0/-0.05/-0.03 0.15 -0.16 
+ObjectTemplate.setSkeletonCollisionBone spine3 24 0/-0.03/0.02 0.16 -0.05 
+
+ObjectTemplate.setSkeletonCollisionBone right_shoulder 77 0.01/0.03/0 0.06 0.2 
+ObjectTemplate.setSkeletonCollisionBone right_low_arm 77 -0.01/0.03/0 0.045 0.18 
+
+ObjectTemplate.setSkeletonCollisionBone left_shoulder 77 0.01/0.03/0 0.06 -0.2 
+ObjectTemplate.setSkeletonCollisionBone left_low_arm 77 -0.01/0.03/0 0.045 -0.18 
+
+ObjectTemplate.addTemplate SoldierCamera
+ObjectTemplate.setPosition 0/4.1/0
+ObjectTemplate.addTemplate e_sold_swim
+
+ObjectTemplate.active S_spetz_soldier_Death
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename common/sound/Die/Die_01.wav,common/sound/Die/Die_02.wav,common/sound/Die/Die_03.wav,common/sound/Die/Die_04.wav,common/sound/Die/Die_05.wav,common/sound/Die/Die_06.wav,common/sound/Die/Die_07.wav,common/sound/Die/Die_08.wav,common/sound/Die/Die_09.wav,common/sound/Die/Die_10.wav,common/sound/Die/Die_11.wav,common/sound/Die/Die_12.wav,common/sound/Die/Die_13.wav,common/sound/Die/Die_14.wav,common/sound/Die/Die_15.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 1 
+ObjectTemplate.reverbLevel 0.8
+ObjectTemplate.position 0/0.8/0
+ObjectTemplate.pitch 0.98
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/0/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 6
+
+
+ObjectTemplate.active S_spetz_soldier_Revive
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename Objects/Soldiers/Common/Sound/Cough/cough_01.wav,Objects/Soldiers/Common/Sound/Cough/cough_02.wav,Objects/Soldiers/Common/Sound/Cough/cough_03.wav,Objects/Soldiers/Common/Sound/Cough/cough_04.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 0.75 
+ObjectTemplate.reverbLevel 0.8
+ObjectTemplate.position 0/0/0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.01/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/0/
+ObjectTemplate.minDistance 1.5
+
+
+ObjectTemplate.active S_spetz_soldier_Swim
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename Objects/Soldiers/Common/Sound/Swim/swim_stroke_01.wav,Objects/Soldiers/Common/Sound/Swim/swim_stroke_02.wav,Objects/Soldiers/Common/Sound/Swim/swim_stroke_03.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 0.86
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.01/
+ObjectTemplate.minDistance 2
+
+
+ObjectTemplate.active S_spetz_soldier_Swim_Sprint
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename Objects/Soldiers/Common/Sound/Swim/swim_sprint_01.wav,Objects/Soldiers/Common/Sound/Swim/swim_sprint_02.wav,Objects/Soldiers/Common/Sound/Swim/swim_sprint_03.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 0.96
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.01/
+ObjectTemplate.minDistance 2
+
+
+ObjectTemplate.active S_spetz_soldier_Swim_Still
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename Objects/Soldiers/Common/Sound/Swim/swim_still_01.wav,Objects/Soldiers/Common/Sound/Swim/swim_still_02.wav,Objects/Soldiers/Common/Sound/Swim/swim_still_03.wav
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 0.73 
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.01/
+ObjectTemplate.minDistance 1.5
+

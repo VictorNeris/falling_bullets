@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_sniper_trail
+ObjectTemplate.createdInEditor 1
+
+include e_sniper_trail.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_dist_hgr
+ObjectTemplate.createdInEditor 1
+
+include e_dist_hgr.tweak

@@ -1,0 +1,32 @@
+hudBuilder.createSplitNode		VehicleHuds TankSight
+
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 701
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 702
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 330
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 331
+
+rem ------------------------------------------------
+
+hudBuilder.createPictureNode		TankSight TankScope 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90Sight.dds
+
+
+hudBuilder.createPictureNode		TankSight TankGlow 634 57 128 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\glow.dds
+hudBuilder.setNodeColor    		1 0 0 1
+
+rem ------------------------------------------------
+
+hudBuilder.createSplitNode		VehicleHuds M1Sight
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 141
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 142
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 150
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 151
+
+hudBuilder.createPictureNode		M1Sight M1Scope 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90Sight.dds
+
+hudBuilder.createPictureNode		M1Sight M1Glow 634 57 128 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\glow.dds
+hudBuilder.setNodeColor    		0 0.8 0 1
+

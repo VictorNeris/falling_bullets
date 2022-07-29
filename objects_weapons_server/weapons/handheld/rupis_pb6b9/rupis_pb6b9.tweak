@@ -1,0 +1,231 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/1/4 7:47]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.4
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm rupis_pb6b9
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 8
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\pr_pis_makarov.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\pr_pis_makarov.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\pr_pis_makarov.dds
+ObjectTemplate.weaponHud.hudName "PB-6B9"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 23
+rem ObjectTemplate.weaponHud.minVisualDeviation 3
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.02/0
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0/0.0474132/0.133542
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/pistol_mags.tweak
+rem ObjectTemplate.ammo.nrOfMags 19
+ObjectTemplate.ammo.magSize 8
+ObjectTemplate.ammo.reloadTime 3
+rem ObjectTemplate.ammo.reloadWithoutPlayer 0
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/09_00x19mm_pistol_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.goBackOnRecoil 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.4/0.3/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.5/0.5/0
+rem ObjectTemplate.recoil.zoomModifier 0.8
+rem ObjectTemplate.recoil.recoilGraphFrameCount 12
+rem ObjectTemplate.recoil.recoilGraphExponent 5
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/pistol_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay .05
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/lowzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.08
+ObjectTemplate.zoom.zoomLod 1
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 1.09
+rem ---EndComp ---
+ObjectTemplate.geometry rupis_pb6b9
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate pistol_supp_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_rupis_pb6b9_Fire1P
+ObjectTemplate.addTemplate S_rupis_pb6b9_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_rupis_pb6b9_Fire3P
+ObjectTemplate.setPosition 0.001/0.026/0.188
+ObjectTemplate.addTemplate S_rupis_pb6b9_BoltClick
+ObjectTemplate.addTemplate S_rupis_pb6b9_TriggerClick
+ObjectTemplate.addTemplate S_rupis_pb6b9_SwitchFireRate
+ObjectTemplate.addTemplate S_rupis_pb6b9_Reload1P
+ObjectTemplate.addTemplate S_rupis_pb6b9_Reload3P
+ObjectTemplate.setPosition 0/-0.076/-0.049
+ObjectTemplate.addTemplate S_rupis_pb6b9_Deploy1P
+ObjectTemplate.addTemplate S_rupis_pb6b9_Deploy3P
+ObjectTemplate.addTemplate S_rupis_pb6b9_Zoom
+ObjectTemplate.addTemplate e_muzz_handgunSilenced
+ObjectTemplate.setPosition 0/0.0351048/0.137087
+ObjectTemplate.addTemplate e_shellejection_9mm
+ObjectTemplate.setPosition 0/0.0411352/0.00742364
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/rupis_makarov/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/uspis_92fs/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 9mm_pistol
+ObjectTemplate.velocity 320
+ObjectTemplate.itemIndex 2
+ObjectTemplate.delayToUse 0.4
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Fire1P
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/gepis_p226/sounds/fire_1p_supp.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Fire3P
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/gepis_p226/sounds/fire_3p_supp.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0100162/0.635312
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 9
+
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_BoltClick
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rupis_makarov/sounds/mono/bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.49
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_TriggerClick
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rupis_makarov/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.35
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_SwitchFireRate
+ObjectTemplate.modifiedByUser "Stinger"
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Reload1P
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rupis_makarov/sounds/pistol_p228_reload_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Reload3P
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.49
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.076/-0.049
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Deploy1P
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.46
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Deploy3P
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.49
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_rupis_pb6b9_Zoom
+ObjectTemplate.modifiedByUser "Stinger"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.35
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

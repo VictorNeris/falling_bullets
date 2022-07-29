@@ -1,0 +1,19 @@
+rem ====================================================================
+rem ======================= Sniper Deviation File ======================
+rem ====================================================================
+	ObjectTemplate.createComponent SoldierDeviationComp
+	
+	ObjectTemplate.deviation.minDev 0.1429
+
+	ObjectTemplate.deviation.setFireDev 0.0952 0.0952 0.001
+	ObjectTemplate.deviation.setTurnDev 0.071 10 10 0.1
+	ObjectTemplate.deviation.setSpeedDev 1.43 0.125 0.15 0.5
+	ObjectTemplate.deviation.setMiscDev 2 2 0.05
+	ObjectTemplate.deviation.devModStand 1.2
+	ObjectTemplate.deviation.devModCrouch 1.1
+	ObjectTemplate.deviation.devModLie 1
+	ObjectTemplate.deviation.devModZoom 0.35
+
+rem firing     1 MOA ~ 1
+rem precison   0.5 MOA
+rem movement   1.5

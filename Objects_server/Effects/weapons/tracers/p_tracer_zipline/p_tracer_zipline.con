@@ -1,0 +1,8 @@
+GeometryTemplate.create MeshParticleMesh p_tracer_zipline
+
+ObjectTemplate.create Particle p_tracer_zipline
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.geometry p_tracer_zipline
+
+include p_tracer_zipline.tweak

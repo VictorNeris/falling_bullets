@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle NFDY_THREE
+ObjectTemplate.createdInEditor 1
+
+include NFDY_THREE.tweak

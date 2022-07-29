@@ -1,0 +1,29 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+ObjectTemplate.activeSafe EffectBundle e_distdel_mp5
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_mp5_Start
+ObjectTemplate.setPosition 0/200/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/8/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_distdel_mp5_Start
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.soundFilename "objects/sounds/distdels/distdel_mp5.wav,objects/sounds/distdels/distdel_mp5_2.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.03/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 500

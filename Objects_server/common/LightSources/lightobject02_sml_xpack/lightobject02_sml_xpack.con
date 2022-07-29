@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle lightobject02_sml_xpack
+ObjectTemplate.createdInEditor 1
+
+include lightobject02_sml_xpack.tweak

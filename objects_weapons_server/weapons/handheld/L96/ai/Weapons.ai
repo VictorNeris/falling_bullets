@@ -1,0 +1,13 @@
+rem *** Add Usrif_m4 ***
+weaponTemplate.create l96_ai
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 1000.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    6.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0

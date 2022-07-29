@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh nagant_sniper
+
+ObjectTemplate.create GenericFireArm nagant_sniper
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator Lone-Wolf93
+ObjectTemplate.geometry nagant_sniper
+
+include nagant_sniper.tweak

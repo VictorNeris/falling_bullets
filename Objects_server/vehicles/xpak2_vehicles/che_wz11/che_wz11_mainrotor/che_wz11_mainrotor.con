@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh che_wz11_mainrotor
+CollisionManager.createTemplate che_wz11_mainrotor
+
+ObjectTemplate.create Rotor che_wz11_mainrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.collisionMesh che_wz11_mainrotor
+ObjectTemplate.mapMaterial 0 mainrotor 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry che_wz11_mainrotor
+
+include che_wz11_mainrotor.tweak

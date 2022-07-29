@@ -1,0 +1,15 @@
+GeometryTemplate.create BundledMesh mg_xm22_deployed
+CollisionManager.createTemplate mg_xm22
+
+ObjectTemplate.create GenericFireArm mg_xm22_deployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DEVELOP013:DEVELOP013
+ObjectTemplate.collisionMesh mg_fnpara
+ObjectTemplate.mapMaterial 0 mg_xm22 0
+ObjectTemplate.mapMaterial 1 mg_xm22_Mag 0
+ObjectTemplate.mapMaterial 2 mg_xm22_Sigh 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mg_xm22
+
+include mg_xm22_deployed.tweak

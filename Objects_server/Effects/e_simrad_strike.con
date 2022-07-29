@@ -1,0 +1,70 @@
+ObjectTemplate.create EffectBundle e_simrad_strike
+rem -------------------------------------
+ObjectTemplate.addTemplate em_bomb_deployer
+ObjectTemplate.setPosition 0/150/0
+ObjectTemplate.addTemplate em_bomb_deployer
+ObjectTemplate.setPosition 10/250/10
+ObjectTemplate.addTemplate em_bomb_deployer
+ObjectTemplate.setPosition -10/400/-10
+ObjectTemplate.addTemplate em_bomb_deployer
+ObjectTemplate.setPosition -10/450/10
+ObjectTemplate.addTemplate em_bomb_deployer
+ObjectTemplate.setPosition 10/500/-10
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/0/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create Emitter em_bomb_deployer
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template bomb
+ObjectTemplate.looping 0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.lodDistance 5000
+ObjectTemplate.delay CRD_NONE/0/0/0
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+
+
+
+
+ObjectTemplate.create PlayerControlObject bomb
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 2050
+ObjectTemplate.armor.hitPoints 2050
+ObjectTemplate.armor.defaultMaterial 44
+ObjectTemplate.armor.waterLevel 0
+ObjectTemplate.armor.explosionForce 30
+ObjectTemplate.armor.explosionDamage 2000
+ObjectTemplate.armor.explosionRadius 10
+ObjectTemplate.armor.explosionMaterial 44
+ObjectTemplate.armor.wreckHitPoints 0
+ObjectTemplate.armor.addArmorEffect 2 e_exp_large 0/0/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.setCollisionMesh mec_250_bomb
+ObjectTemplate.material 44
+ObjectTemplate.mass 250
+ObjectTemplate.gravityModifier 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate e_tow_trail
+ObjectTemplate.addTemplate e_tank_trail
+

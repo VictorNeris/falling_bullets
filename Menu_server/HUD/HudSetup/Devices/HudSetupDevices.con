@@ -1,0 +1,6 @@
+rem ** Set up Devices HUD's **
+
+run HudElementsC4Place.con
+
+
+

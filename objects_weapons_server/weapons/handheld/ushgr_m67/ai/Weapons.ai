@@ -1,0 +1,20 @@
+rem *** Add ushgr_m67_AI ***
+weaponTemplate.create ushgr_m67_AI
+weaponTemplate.indirect 0
+weaponTemplate.isThrown 1
+weaponTemplate.minRange 15.0
+weaponTemplate.maxRange 50.0
+weaponTemplate.optimalRangePercentage 60
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    1.5
+weaponTemplate.setStrength LightArmour 1.0
+weaponTemplate.setStrength HeavyArmour 0.5
+weaponTemplate.setStrength NavalArmour 0
+weaponTemplate.setStrength Helicopter  0
+weaponTemplate.setStrength AirPlane    0
+weaponTemplate.setSoundSphereRadius  0.0
+weaponTemplate.setExplosionRadius 6.0
+weaponTemplate.allowedDeviation 15
+weaponTemplate.deviation 20
+weaponTemplate.deviationCorrectionTime 5.0
+weaponTemplate.setFiresThroughTransparent 0

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_bhit_l_metalthin
+ObjectTemplate.createdInEditor 1
+
+include e_bhit_l_metalthin.tweak

@@ -1,0 +1,59 @@
+ObjectTemplate.create Kit EU_Assault
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.kitType Assault
+ObjectTemplate.aiTemplate Assault
+ObjectTemplate.geometry eu_kits
+ObjectTemplate.geometry.kit 5	
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.dropHeadwear helmet
+ObjectTemplate.unlockIndex 1
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 30	
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_l85a2
+ObjectTemplate.addTemplate glock17
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate hgr_smoke
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockEUAssault_1
+ObjectTemplate.addTemplate UnlockEUAssault_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_ASSAULT"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Light_Assault_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Light_Assault.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.abilityIcon 		"Ingame\Weapons\Icons\Hud\SpecialKitIcons\kevlarVest.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockEUAssault_1
+ObjectTemplate.addTemplate bf4_l85a2_m145
+ObjectTemplate.replaceItem bf4_l85a2
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockEUAssault_2
+ObjectTemplate.addTemplate bf3_g3a3
+ObjectTemplate.replaceItem bf4_l85a2_m145
+ObjectTemplate.unlockLevel 2

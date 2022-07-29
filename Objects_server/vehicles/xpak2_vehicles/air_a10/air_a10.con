@@ -1,0 +1,172 @@
+GeometryTemplate.create BundledMesh air_a10
+CollisionManager.createTemplate air_a10
+
+ObjectTemplate.create PlayerControlObject air_a10
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NICKW:nickwh
+ObjectTemplate.collisionMesh air_a10
+ObjectTemplate.mapMaterial 0 Airplane 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 wreck 0
+ObjectTemplate.mapMaterial 3 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry air_a10
+ObjectTemplate.addTemplate AIR_A10_reargears01
+ObjectTemplate.setPosition 0/0.2504/5.1184
+ObjectTemplate.addTemplate AIR_A10_frontgear
+ObjectTemplate.setPosition 0.4609/-0.2002/4.4576
+ObjectTemplate.addTemplate AIR_A10_elevators
+ObjectTemplate.setPosition 0/0.4443/-6.9429
+ObjectTemplate.addTemplate AIR_A10_rearhatch01
+ObjectTemplate.setPosition 0/-0.0075/-0.5300
+ObjectTemplate.addTemplate AIR_A10_Fhatch01
+ObjectTemplate.setPosition 0.4610/-0.1246/6.4282
+ObjectTemplate.addTemplate AIR_A10_Fhatch02
+ObjectTemplate.setPosition 0.2918/-0.0813/4.5405
+ObjectTemplate.addTemplate AIR_A10_L_Rudder
+ObjectTemplate.setPosition -2.8668/1.3646/-7.1012
+ObjectTemplate.setRotation 0/3.5321/-90.0000
+ObjectTemplate.addTemplate AIR_A10_R_Rudder
+ObjectTemplate.setPosition 2.8668/1.3646/-7.1012
+ObjectTemplate.setRotation 0/3.5321/-90.0000
+ObjectTemplate.addTemplate AIR_A10_L_Flap
+ObjectTemplate.setPosition -6.4616/0.5469/-0.4743
+ObjectTemplate.setRotation 0/0/-3.7410
+ObjectTemplate.addTemplate AIR_A10_R_Flap
+ObjectTemplate.setPosition 6.4616/0.5474/-0.4743
+ObjectTemplate.setRotation 0/0/3.7600
+ObjectTemplate.addTemplate AIR_A10_Avenger
+ObjectTemplate.setPosition -0.0670/-0.0555/7.8434
+
+ObjectTemplate.create LandingGear AIR_A10_reargears01
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate AIR_A10_reargears02
+ObjectTemplate.setPosition 0.0012/-0.6531/-4.6221
+
+ObjectTemplate.create LandingGear AIR_A10_reargears02
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate AIR_A10_rearhatch02
+ObjectTemplate.setPosition -0.0012/-0.8545/-1.3967
+ObjectTemplate.addTemplate AIR_A10_Lwheel
+ObjectTemplate.setPosition -2.6353/-0.9889/-1.0162
+ObjectTemplate.addTemplate AIR_A10_Rwheel
+ObjectTemplate.setPosition 2.6367/-0.9889/-1.0162
+
+ObjectTemplate.create LandingGear AIR_A10_rearhatch02
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Spring AIR_A10_Lwheel
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Spring AIR_A10_Rwheel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create LandingGear AIR_A10_frontgear
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate AIR_A10_frontgear_Rot
+ObjectTemplate.setPosition -0.1821/-0.6903/0.8137
+ObjectTemplate.setRotation 0/-4.2649/0
+
+ObjectTemplate.create RotationalBundle AIR_A10_frontgear_Rot
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate AIR_A10_Fwheel
+ObjectTemplate.setPosition 0.0083/-0.6434/-0.0215
+
+ObjectTemplate.create Spring AIR_A10_Fwheel
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create RotationalBundle AIR_A10_elevators
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create LandingGear AIR_A10_rearhatch01
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create LandingGear AIR_A10_Fhatch01
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create LandingGear AIR_A10_Fhatch02
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Wing AIR_A10_L_Rudder
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Wing AIR_A10_R_Rudder
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Wing AIR_A10_L_Flap
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Wing AIR_A10_R_Flap
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create RotationalBundle AIR_A10_Avenger
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+include air_a10.tweak

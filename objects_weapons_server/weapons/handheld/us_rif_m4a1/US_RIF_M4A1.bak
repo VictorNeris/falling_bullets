@@ -1,0 +1,245 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/14 17:21]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.25
+GeometryTemplate.setSpecularStaticGloss 0 0 0 0.15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm US_RIF_M4A1
+ObjectTemplate.creator TLO-1:tlo
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\M4A1_3Dicon.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\M4A1_3Dicon.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\M4A1_3Dicon.dds
+ObjectTemplate.weaponHud.hudName "M4 Carbine"
+ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 302
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 23
+ObjectTemplate.weaponHud.minVisualDeviation 2
+ObjectTemplate.weaponHud.disableOnSprint 0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 9
+ObjectTemplate.ammo.reloadTime 3.0
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.goBackOnRecoil 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/1.2/0.5/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.4/0.3/0
+ObjectTemplate.recoil.zoomModifier 0.7
+ObjectTemplate.recoil.recoilGraphFrameCount 15
+ObjectTemplate.recoil.recoilGraphExponent 6
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+include ../../common/deviation/carbine_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.3
+ObjectTemplate.zoom.zoomLod 0
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.7
+rem ---EndComp ---
+ObjectTemplate.geometry US_RIF_M4A1
+ObjectTemplate.setCollisionMesh US_RIF_M4A1
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate ar_carbine_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Fire1P
+ObjectTemplate.setPosition -0.00154155/0.0174675/0.474922
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Fire1P_Outdoor
+ObjectTemplate.setPosition -0.000946715/0.0175849/0.474557
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Fire3P
+ObjectTemplate.setPosition -0.00107837/0.0164062/0.474377
+ObjectTemplate.addTemplate S_US_RIF_M4A1_BoltClick
+ObjectTemplate.setPosition 0/0.0271776/-0.108983
+ObjectTemplate.addTemplate S_US_RIF_M4A1_TriggerClick
+ObjectTemplate.setPosition 0/-0.0442018/-0.0382003
+ObjectTemplate.addTemplate S_US_RIF_M4A1_SwitchFireRate
+ObjectTemplate.setPosition 0/-0.0181397/-0.0909292
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Reload1P
+ObjectTemplate.setPosition 0/-0.063823/0.0222512
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Reload3P
+ObjectTemplate.setPosition 0/-0.0582734/0.0158555
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Deploy1P
+ObjectTemplate.setPosition 0/0.0595026/-0.0856211
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Deploy3P
+ObjectTemplate.setPosition 0/0.0159245/-0.0538461
+ObjectTemplate.addTemplate S_US_RIF_M4A1_Zoom
+ObjectTemplate.setPosition 0/0.0913384/-0.0160701
+ObjectTemplate.addTemplate e_muzz_m4
+ObjectTemplate.setPosition 0/0.0151088/0.496909
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.00545883/0.0205752/0.0176413
+ObjectTemplate.setRotation -10/0/11
+rem ======================================== Accessories ================================
+rem ---------------Sight-----------------
+ObjectTemplate.addTemplate eotech2
+ObjectTemplate.setPosition 0.000/0.007/-0.06
+rem -------------------------------------
+rem ======================================================================================
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/us_rif_m4a1/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/usrif_m16a2/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 556_45_carbine
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 884
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.6
+include ../../common/heat/ar_heat.tweak
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Fire1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/us_rif_m4a1/sounds/m4_fire_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.035/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position -0.00154155/0.0174675/0.474922
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Fire3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/us_rif_m4a1/sounds/m4_fire_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.035/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position -0.00107837/0.0164062/0.474377
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 15
+ObjectTemplate.soundRadius 1.5
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_BoltClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_TriggerClick
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_SwitchFireRate
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0181397/-0.0909292
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Reload1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/us_rif_m4a1/sounds/ar_m4_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.063823/0.0222512
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Reload3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0582734/0.0158555
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 8
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Deploy1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0595026/-0.0856211
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Deploy3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0159245/-0.0538461
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_US_RIF_M4A1_Zoom
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

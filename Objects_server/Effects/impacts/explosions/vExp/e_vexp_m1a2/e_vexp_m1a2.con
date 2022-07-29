@@ -1,0 +1,91 @@
+GeometryTemplate.create BundledMesh e_vexp_m1a2
+
+ObjectTemplate.create EffectBundle e_vexp_m1a2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.addTemplate em_vexp_m1a2_track01
+ObjectTemplate.setPosition -1.5533/-0.3897/1.7776
+ObjectTemplate.addTemplate em_vexp_m1a2_track02
+ObjectTemplate.setPosition -1.3540/-0.3060/3.1570
+ObjectTemplate.addTemplate em_vexp_m1a2_plate
+ObjectTemplate.setPosition -1.3875/0.8360/2.5253
+ObjectTemplate.addTemplate em_vexp_m1a2_hatch
+ObjectTemplate.setPosition 0.5522/2.3286/-0.7164
+ObjectTemplate.addTemplate em_vexp_m1a2_turret
+ObjectTemplate.setPosition 0/0.8271/0.1737
+ObjectTemplate.addTemplate em_vexp_m1a2_wheel
+ObjectTemplate.setPosition -1.3902/0.0646/3.0630
+
+ObjectTemplate.create Emitter em_vexp_m1a2_track01
+ObjectTemplate.template p_vexp_m1a2_track01
+
+ObjectTemplate.create Particle p_vexp_m1a2_track01
+ObjectTemplate.collisionMesh e_vexp_m1a2
+ObjectTemplate.mapMaterial 0 wreck_collision 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_m1a2
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter em_vexp_m1a2_track02
+ObjectTemplate.template p_vexp_m1a2_track02
+
+ObjectTemplate.create Particle p_vexp_m1a2_track02
+ObjectTemplate.collisionMesh e_vexp_m1a2
+ObjectTemplate.mapMaterial 0 wreck_collision 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_m1a2
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter em_vexp_m1a2_plate
+ObjectTemplate.template p_vexp_m1a2_plate
+
+ObjectTemplate.create Particle p_vexp_m1a2_plate
+ObjectTemplate.collisionMesh e_vexp_m1a2
+ObjectTemplate.mapMaterial 0 wreck_collision 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_m1a2
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Emitter em_vexp_m1a2_hatch
+ObjectTemplate.template p_vexp_m1a2_hatch
+
+ObjectTemplate.create Particle p_vexp_m1a2_hatch
+ObjectTemplate.collisionMesh e_vexp_m1a2
+ObjectTemplate.mapMaterial 0 wreck_collision 0
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_m1a2
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Emitter em_vexp_m1a2_turret
+ObjectTemplate.template p_vexp_m1a2_turret
+
+ObjectTemplate.create Particle p_vexp_m1a2_turret
+ObjectTemplate.collisionMesh e_vexp_m1a2
+ObjectTemplate.mapMaterial 0 wreck_collision 0
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_m1a2
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Emitter em_vexp_m1a2_wheel
+ObjectTemplate.template p_vexp_m1a2_wheel
+
+ObjectTemplate.create Particle p_vexp_m1a2_wheel
+ObjectTemplate.collisionMesh e_vexp_m1a2
+ObjectTemplate.mapMaterial 0 wreck_collision 0
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_m1a2
+ObjectTemplate.geometryPart 5
+
+include e_vexp_m1a2.tweak

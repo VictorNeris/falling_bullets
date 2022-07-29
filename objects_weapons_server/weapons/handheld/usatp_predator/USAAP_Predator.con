@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh usatp_predator
+CollisionManager.createTemplate usatp_predator
+
+ObjectTemplate.create GenericFireArm usaap_predator
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JLU-1:jlu
+ObjectTemplate.collisionMesh usatp_predator
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry usatp_predator
+
+include usaap_predator.tweak

@@ -1,0 +1,16 @@
+GeometryTemplate.create BundledMesh sr_m82a3
+CollisionManager.createTemplate sr_m82a3
+
+ObjectTemplate.create GenericFireArm sr_m82a3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DEVELOP013:DEVELOP013
+ObjectTemplate.collisionMesh sr_m82a3
+ObjectTemplate.mapMaterial 0 SR_M82A3 0
+ObjectTemplate.mapMaterial 1 SR_m95_scope 0
+ObjectTemplate.mapMaterial 2 ScopeGlass01 0
+ObjectTemplate.mapMaterial 3 SR_M82A3_Clip 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sr_m82a3
+
+include sr_m82a3.tweak

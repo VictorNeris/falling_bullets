@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chrif_type63
+
+ObjectTemplate.create GenericFireArm chrif_type63
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARS:theta
+ObjectTemplate.geometry chrif_type63
+
+include chrif_type63.tweak

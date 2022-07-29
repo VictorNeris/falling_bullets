@@ -1,0 +1,5 @@
+
+ObjectTemplate.ammo.nrOfMags 3
+rem ObjectTemplate.ammo.reloadAmount 200
+rem ObjectTemplate.ammo.reloadTime 0.1
+ObjectTemplate.ammo.reloadWithoutPlayer 0

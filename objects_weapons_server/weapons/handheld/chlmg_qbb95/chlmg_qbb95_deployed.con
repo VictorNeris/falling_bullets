@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chlmg_qbb95_deployed
+
+ObjectTemplate.create GenericFireArm chlmg_qbb95_deployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Main
+ObjectTemplate.geometry chlmg_qbb95_deployed
+
+include chlmg_qbb95_deployed.tweak

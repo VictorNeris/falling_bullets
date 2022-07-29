@@ -1,0 +1,9 @@
+ObjectTemplate.create Particle p_shell_m203
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.mapMaterial 0 shellcasing_smallarms 125
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry shell_m203
+
+include p_shell_m203.tweak

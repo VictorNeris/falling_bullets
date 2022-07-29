@@ -1,0 +1,12 @@
+hudBuilder.createSplitNode		IngameHud GenericWeapon1Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 00
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode 		GenericWeapon1Hud GenericWeapon1HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+hudBuilder.createPictureNode 		GenericWeapon1Hud GenericWeapon1RedDot 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/null.dds

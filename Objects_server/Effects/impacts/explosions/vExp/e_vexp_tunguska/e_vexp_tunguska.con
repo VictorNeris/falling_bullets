@@ -1,0 +1,77 @@
+GeometryTemplate.create BundledMesh e_vexp_tunguska
+
+ObjectTemplate.create EffectBundle e_vexp_tunguska
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.addTemplate em_vexp_tunguska_radar
+ObjectTemplate.setPosition 0.0040/1.7677/3.0110
+ObjectTemplate.addTemplate em_vexp_tunguska_dish
+ObjectTemplate.setPosition -0.0055/3.0133/0.5198
+ObjectTemplate.addTemplate em_vexp_tunguska_gunmount
+ObjectTemplate.setPosition 0.9674/2.3171/0.4740
+ObjectTemplate.addTemplate em_vexp_tunguska_launchertube
+ObjectTemplate.setPosition -1.1282/2.5072/1.4058
+ObjectTemplate.addTemplate em_vexp_tunguska_turret
+ObjectTemplate.setPosition -0.0200/1.9920/0.9662
+
+ObjectTemplate.create Emitter em_vexp_tunguska_radar
+ObjectTemplate.template p_vexp_tunguska_radar
+
+ObjectTemplate.create Particle p_vexp_tunguska_radar
+ObjectTemplate.collisionMesh e_vexp_tunguska
+ObjectTemplate.mapMaterial 0 tunguska_wreck 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_tunguska
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter em_vexp_tunguska_dish
+ObjectTemplate.template p_vexp_tunguska_dish
+
+ObjectTemplate.create Particle p_vexp_tunguska_dish
+ObjectTemplate.collisionMesh e_vexp_tunguska
+ObjectTemplate.mapMaterial 0 tunguska_wreck 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_tunguska
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter em_vexp_tunguska_gunmount
+ObjectTemplate.template p_vexp_tunguska_gunmount
+
+ObjectTemplate.create Particle p_vexp_tunguska_gunmount
+ObjectTemplate.collisionMesh e_vexp_tunguska
+ObjectTemplate.mapMaterial 0 tunguska_wreck 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_tunguska
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Emitter em_vexp_tunguska_launchertube
+ObjectTemplate.template p_vexp_tunguska_launchertube
+
+ObjectTemplate.create Particle p_vexp_tunguska_launchertube
+ObjectTemplate.collisionMesh e_vexp_tunguska
+ObjectTemplate.mapMaterial 0 tunguska_wreck 0
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_tunguska
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Emitter em_vexp_tunguska_turret
+ObjectTemplate.template p_vexp_tunguska_turret
+
+ObjectTemplate.create Particle p_vexp_tunguska_turret
+ObjectTemplate.collisionMesh e_vexp_tunguska
+ObjectTemplate.mapMaterial 0 tunguska_wreck 0
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_tunguska
+ObjectTemplate.geometryPart 4
+
+include e_vexp_tunguska.tweak

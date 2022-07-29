@@ -1,0 +1,33 @@
+GeometryTemplate.create BundledMesh xpak_jetski
+CollisionManager.createTemplate xpak_jetski
+
+ObjectTemplate.create PlayerControlObject xpak_jetski
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.collisionMesh xpak_jetski
+ObjectTemplate.mapMaterial 0 penetrable_metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry xpak_jetski
+ObjectTemplate.addTemplate xpak_jetski_arm
+ObjectTemplate.setPosition 0/0.3670/0.9570
+ObjectTemplate.setRotation 0/25.0000/0
+
+ObjectTemplate.create RotationalBundle xpak_jetski_arm
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate xpak_jetski_handles
+ObjectTemplate.setPosition 0/0.1510/-0.9100
+
+ObjectTemplate.create RotationalBundle xpak_jetski_handles
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+include xpak_jetski.tweak

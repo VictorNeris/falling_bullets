@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh bayonet_thrown
+CollisionManager.createTemplate bayonet_thrown
+
+ObjectTemplate.create GenericFireArm bayonet_thrown
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.collisionMesh bayonet_thrown
+ObjectTemplate.mapMaterial 0 Collision_Material 48
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry bayonet_thrown
+
+include bayonet_thrown.tweak

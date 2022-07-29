@@ -1,0 +1,90 @@
+hudBuilder.createSplitNode			VehicleHuds Ah1zCoPilotHud
+hudBuilder.setNodeLogicShowVariable 		EQUAL GuiIndex 25
+hudBuilder.setNodeLogicShowVariable 		OR GuiIndex 26
+
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+
+hudBuilder.createPictureNode 		Ah1zCoPilotHud Ah1zCoPilotHitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.333 0.639 0.341 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+hudBuilder.addNodeBlendEffect			7 2
+
+rem --------------------------------------TV Guided-----------------------------------------------------------
+
+hudBuilder.createSplitNode			Ah1zCoPilotHud Ah1zTVHud
+hudBuilder.setNodeLogicShowVariable 		EQUAL GuiIndex 25
+
+beginrem
+hudBuilder.createPictureNode		Ah1zTVHud Ah1zTVLines 129 72 560 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\LaserGuided\laserHudTvlines.tga
+hudBuilder.setNodeColor		 	0 0 0 0.5
+
+endrem
+
+hudBuilder.createPictureNode		Ah1zTVHud Ah1zTvHud -113 39 1024 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\LaserGuided\laserHud.tga
+hudBuilder.setNodeColor		 	0 0 0 1
+
+
+hudBuilder.createPictureNode		Ah1zTVHud Ah1zTVFrame 0 0 1024 1024
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\LaserGuided\laserFrame.tga
+
+
+hudBuilder.createBarNode 		Ah1zTVHud Ah1zBombFuel 3 365 488 130 7
+hudbuilder.setBarNodeTexture		1 Ingame/GeneralIcons/full.tga
+hudbuilder.setBarNodeTexture		2 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	BombFuel
+hudBuilder.setNodeColor		 	0 0 0 1
+
+hudBuilder.createPictureNode		Ah1zTVHud Ah1zTVCrosshair 274 183 256 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\TVGuided\tvGuided_Trackbox.tga
+hudBuilder.setNodeColor		 	0 0 0 1
+
+
+hudBuilder.createObjectSelectionNode 		Ah1zTVHud Ah1zTVTargetSelectNode 110 70 580 460
+hudBuilder.setObjectSelectionNodePointerSize 	128 128
+
+
+hudBuilder.createTextNode			Ah1zTVHud Ah1zTVTargetLabel0 100 100 40 10  
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0 0 0 1
+
+hudBuilder.createObjectMarkerNode 		Ah1zTVHud Ah1zTVTargetMarker 126 73 548 452
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\TVGuided\tvGuided_TargetCross.tga
+hudBuilder.setObjectMarkerNodeTextureSize	2 32 32
+hudBuilder.setObjectMarkerNodeObjects 		1
+hudBuilder.setObjectMarkerNodeLockOnType	-1
+hudBuilder.setObjectMarkerNodeLockText 		1 Ah1zTVTargetLabel
+hudBuilder.setObjectMarkerNodeLockTextOffset	-32 8
+hudBuilder.addObjectMarkerNodeLockTextNode	Ah1zTVTargetLabel0
+hudBuilder.setNodeColor		 		0 0 0 1
+
+hudBuilder.setActiveObject			Ah1zTVHud Ah1zTVTargetLabel0TextNode 
+hudBuilder.setTextNodeStringVariable		Ah1zTVTargetLabel0String
+hudBuilder.setActiveObject			Ah1zTVHud Ah1zTVTargetLabel0
+hudBuilder.setNodeShowVariable 			Ah1zTVTargetLabel0Show
+
+hudBuilder.createPictureNode			Ah1zTVHud Ah1zTVFeed 350 469 128 16
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\TVGuided\tvGuidedtext_MissileCameraFeed.dds
+hudBuilder.setNodeColor				0 0 0 1
+hudBuilder.setNodeShowVariable 			TVBlink
+
+rem ---------------------------------------- Friendly marker-----------------------------------------------------------------
+
+hudBuilder.createObjectMarkerNode 		Ah1zTVHud Ah1zTVFriendlyMarker 120 100 560 400
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\HeatSeeking\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 32 32
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setNodeColor		 		0.333 0.639 0.341 1
+
+rem --------------------------------------GunnerCross-------------------
+
+hudBuilder.createPictureNode		Ah1zCoPilotHud Ah1zGunnerCross 369 269 64 64
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\ah1z_gunnercross.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 26
+hudBuilder.addNodeBlendEffect			7 2

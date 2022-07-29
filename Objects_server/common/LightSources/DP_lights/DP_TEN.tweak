@@ -1,0 +1,46 @@
+rem *** Generated with 3dsmax [created: 7/28/2005 3:02:22 PM]
+ObjectTemplate.activeSafe Bundle DP_TEN
+ObjectTemplate.modifiedByUser jeffro
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate DP_TEN_LightSource
+rem -------------------------------------
+
+ObjectTemplate.create LightSource DP_TEN_LightSource
+ObjectTemplate.modifiedByUser jeffro
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.lightType Point
+ObjectTemplate.isDynamic 0
+ObjectTemplate.castsStaticShadow 0
+ObjectTemplate.castsDynamicShadow 0
+ObjectTemplate.selfLights 0
+ObjectTemplate.selfShadows 0
+ObjectTemplate.supportsPerVertex 1
+ObjectTemplate.supportsPerPixel 1
+ObjectTemplate.supportsGlow 1
+ObjectTemplate.supportsEmitter 1
+ObjectTemplate.affectLightmappedObjects 1
+ObjectTemplate.affectingType 0
+ObjectTemplate.attenuationRange1 0.5
+ObjectTemplate.attenuationRange2 8.0
+ObjectTemplate.color 1.0/1.0/1.0
+ObjectTemplate.speccolor 1/1/1
+ObjectTemplate.HDRIntensity 1
+ObjectTemplate.coneAngle1 6
+ObjectTemplate.coneAngle2 6
+ObjectTemplate.projectorTexture 
+ObjectTemplate.projectorFov 1.0472
+ObjectTemplate.projectorAspect 1
+ObjectTemplate.projectorNear 0.001
+ObjectTemplate.projectorFar 5
+ObjectTemplate.enabled 1
+ObjectTemplate.fov 20
+ObjectTemplate.objectShadows 1
+ObjectTemplate.shadowIntensity 1.0
+ObjectTemplate.softness 0
+ObjectTemplate.intensity 0.8
+ObjectTemplate.flicker 0
+ObjectTemplate.scale 1/1/1

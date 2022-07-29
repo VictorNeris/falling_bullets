@@ -1,0 +1,10 @@
+ObjectTemplate.create GenericProjectile arrow_explosive
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMYP:jeremypr
+ObjectTemplate.collisionMesh arrow
+ObjectTemplate.mapMaterial 0 lambert1 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry arrow
+
+include arrow_explosive.tweak

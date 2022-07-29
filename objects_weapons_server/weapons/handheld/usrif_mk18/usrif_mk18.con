@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh usrif_mk18
+
+ObjectTemplate.create GenericFireArm usrif_mk18
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DNAPC:Администратор
+ObjectTemplate.geometry usrif_mk18
+
+include usrif_mk18.tweak

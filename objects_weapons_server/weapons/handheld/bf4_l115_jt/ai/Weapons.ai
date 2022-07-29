@@ -1,0 +1,164 @@
+rem *** Add recon_6x ***
+weaponTemplate.create recon_6x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 125.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+
+rem *** Add recon_7x ***
+weaponTemplate.create recon_7x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 150.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+
+rem *** Add recon_8x ***
+weaponTemplate.create recon_8x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 200.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+
+rem *** Add recon_20x ***
+weaponTemplate.create recon_20x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 400.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+
+rem *** Add recon_40x ***
+weaponTemplate.create recon_40x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 800.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+
+rem *** Add recon_s_6x ***
+weaponTemplate.create recon_s_6x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 125.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+weaponTemplate.soundRadius 0
+
+rem *** Add recon_s_7x ***
+weaponTemplate.create recon_s_7x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 150.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+weaponTemplate.soundRadius 0
+
+rem *** Add recon_s_8x ***
+weaponTemplate.create recon_s_8x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 200.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+weaponTemplate.soundRadius 0
+
+rem *** Add recon_s_20x ***
+weaponTemplate.create recon_s_20x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 400.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+weaponTemplate.soundRadius 0
+
+rem *** Add recon_s_40x ***
+weaponTemplate.create recon_s_40x
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0
+weaponTemplate.maxRange 800.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    10.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 0
+weaponTemplate.deviation 0
+weaponTemplate.soundRadius 0

@@ -1,0 +1,68 @@
+# MemeAtlas_CQB.tai
+# 
+# 
+# <filename>		<atlas filename>, <atlas idx>, <woffset>, <hoffset>, <width>, <height>
+# 
+# Texture <filename> can be found in texture atlas <atlas filename>, i.e.,
+# <group><idx>.dds with texture coordinates boundary given by:
+#   A = ( <woffset>, <hoffset> )
+#   B = ( <woffset> + <width>, <hoffset> + <height> )
+# 
+# where coordinates (0,0) and (1,1) of the original texture map correspond
+# to coordinates A and B, respectively, in the texture atlas.
+
+
+Menu/HUD/Texture/ingame/player/icons/hud/HUD_blood.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0, 0, 0.3125, 0.9375
+Menu/HUD/Texture/ingame/player/icons/hud/hitIndicator.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.3125, 0, 0.125, 0.5
+
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track01.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.4375, 0.859375, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track02.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track03.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.078125, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track05.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.15625, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track06.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.234375, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track07.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.3125, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track08.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.390625, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/Track04.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.46875, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/ghook.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.546875, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/p220.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.625, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/pipe_wrench.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.703125, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/type89a.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.78125, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/type89a.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.505859, 0.859375, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/cqb_an94.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/cqb_an94.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.078125, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/type89b.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.15625, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/stan.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.234375, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/CQB_RPG7.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.3125, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/CQB_RPG7.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.390625, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/ingram.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.46875, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/ingram.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.546875, 0.0683594, 0.078125
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/Selection/type64.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.625, 0.0683594, 0.078125
+Menu/HUD/Texture/ingame/Crosshair/holosight.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.380859, 0.65625, 0.03125, 0.125
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_GTR.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.380859, 0.5, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_Cub.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.380859, 0.578125, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_Type96.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.380859, 0.78125, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_YPY.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.380859, 0.849609, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_HMV.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.703125, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_e-bike.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.771484, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_lighttrack.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.574219, 0.839844, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/VehicleIcons/HUD_Shovel.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.642578, 0, 0.0390625, 0.0683594
+Menu/HUD/Texture/ingame/Flags/Icons/Minimap/JP/miniMap_CP.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.5, 0.0161133, 0.0644531
+Menu/HUD/Texture/ingame/Flags/Icons/Minimap/JP/miniMap_CPBase.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.578125, 0.0161133, 0.0644531
+Menu/HUD/Texture/ingame/Flags/Icons/Minimap/SF/miniMap_CP.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.412109, 0.65625, 0.0161133, 0.0644531
+Menu/HUD/Texture/ingame/Flags/Icons/Minimap/SF/miniMap_CPBase.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.78125, 0.0161133, 0.0644531
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/cqb_an94_mini.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.3125, 0.890625, 0.0283203, 0.0332031
+Menu/HUD/Texture/ingame/Flags/Icons/Hud/Score/SF/scoreBoard_Flag.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.34082, 0.890625, 0.0112305, 0.0292969
+Menu/HUD/Texture/ingame/Flags/Icons/Hud/Score/JP/scoreBoard_Flag.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.352051, 0.890625, 0.0112305, 0.0292969
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/Km.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.363281, 0.890625, 0.0107422, 0.0273438
+Menu/HUD/Texture/ingame/Flags/Icons/Minimap/JP/miniMap_Flag.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.428223, 0.65625, 0.0078125, 0.03125
+Menu/Nametag/JP/miniMap_CP.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.428223, 0.6875, 0.0078125, 0.03125
+Menu/Nametag/JP/miniMap_CPBase.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.412109, 0.720703, 0.0078125, 0.03125
+Menu/HUD/Texture/ingame/Flags/Icons/Minimap/SF/miniMap_Flag.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.720703, 0.0078125, 0.03125
+Menu/Nametag/SF/miniMap_CP.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.427734, 0.720703, 0.0078125, 0.03125
+Menu/Nametag/SF/miniMap_CPBase.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.849609, 0.0078125, 0.03125
+Menu/HUD/Texture/ingame/vehicles/Icons/MiniMap/mini_Shovel.dds		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.427734, 0.849609, 0.0078125, 0.03125
+Menu/HUD/Texture/ingame/vehicles/Icons/MiniMap/mini_target.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.880859, 0.0078125, 0.03125
+Menu/HUD/Texture/ingame/vehicles/Icons/MiniMap/mini_Cub.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.412109, 0.751953, 0.00732422, 0.0292969
+Menu/HUD/Texture/ingame/vehicles/Icons/Hud/MenuIcons/menuIcon_Cub.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.419922, 0.751953, 0.00732422, 0.0292969
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/SpecialKitIcons/ghook.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.427734, 0.751953, 0.00732422, 0.0292969
+Menu/HUD/Texture/Ingame/Weapons/Icons/Hud/SpecialKitIcons/CQB_RPG7_mini.tga		Menu\Atlas\MemeAtlas_CQB.dds, 0, 0.427734, 0.880859, 0.00732422, 0.0292969

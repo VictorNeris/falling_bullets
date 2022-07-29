@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh ar_416carbine
+
+ObjectTemplate.create GenericFireArm ar_416carbine_supp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator XP_PC:Administrator
+ObjectTemplate.geometry ar_416carbine
+
+include ar_416carbine_supp.tweak
+

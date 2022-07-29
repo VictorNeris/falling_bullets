@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh kni_knife
+CollisionManager.createTemplate kni_knife
+
+ObjectTemplate.create GenericFireArm kni_knife
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.collisionMesh kni_knife
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry kni_knife
+
+include kni_knife.tweak

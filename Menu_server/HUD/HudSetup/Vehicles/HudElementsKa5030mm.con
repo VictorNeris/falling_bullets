@@ -1,0 +1,115 @@
+hudBuilder.createSplitNode		VehicleHuds Ka5030mmHud 
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 310
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 307
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createCompassNode 		Ka5030mmHud Ka5030mmCompass 3 362 364 75 20 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_Compas.tga
+hudBuilder.setCompassNodeTextureSize	256 16
+hudBuilder.setCompassNodeBorder		0 0 0 78
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+
+hudBuilder.createPictureNode		Ka5030mmHud Ka5030mmCompassArrow 396 380 8 8
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_Arrow.tga
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+rem ------ Crosshair ------
+
+hudBuilder.createPictureNode		Ka5030mmHud Ka5030mmCrosshair 387 340 27 9
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_horizon.tga
+hudBuilder.setNodeColor		 	0 0.8 0 1
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 36
+
+hudBuilder.createPictureNode		Ka5030mmHud Ka5030mmLaserGuided 280 248 240 240
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_reflCircle.tga
+hudBuilder.setNodeColor		 	1 1 1 1
+
+hudBuilder.createPictureNode		Ka5030mmHud Ka5030mmLaserHud 371 339 60 30
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_Hud.dds
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+hudBuilder.createPictureNode			Ka5030mmHud Ka5030mmLaserC 368 305 12 12
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_C.dds
+hudBuilder.setNodeColor				0 0.8 0 1
+hudBuilder.setPictureNodeCenterPoint 	        0 0
+
+rem -------- range to target ------
+
+hudBuilder.createTextNode			Ka5030mmHud Ka5030mmRange0Label 345 384 112 74 
+hudBuilder.setTextNodeStyle			Fonts/digitalSmallNumbers.dif 0
+hudBuilder.setTextNodeStringVariable		TargetDistanceString
+hudBuilder.setNodeColor				0 0.8 0 1
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+
+hudBuilder.createPictureNode		Ka5030mmHud Ka5030mmTorqueBar 354 323 28 64
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_TorqueBar.tga
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+hudBuilder.createCompassNode 		Ka5030mmHud Ka5030mmTorqueArrow 0 365 304 32 163 0 1
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_ArrowHoriz.tga
+hudBuilder.setCompassNodeTextureSize	8 8
+hudBuilder.setCompassNodeBorder		0 -30 0 0
+hudBuilder.setCompassNodeValueVariable	TorqueAngle
+hudBuilder.setCompassNodeOffset		-60
+hudBuilder.setCompassNodeSnapOffset	13 13 0 0
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+rem ------ Speed/Alt ------
+
+hudBuilder.createTextNode		Ka5030mmHud Ka5030mmSpeedValue 333 318 40 10
+hudBuilder.setTextNodeStyle		Fonts/digitalSmallNumbers.dif 1
+hudBuilder.setTextNodeStringVariable	SpeedString
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+hudBuilder.createTextNode		Ka5030mmHud Ka5030mmAltitudeValue 410 302 40 10
+hudBuilder.setTextNodeStyle		Fonts/digitalSmallNumbers.dif 0
+hudBuilder.setTextNodeStringVariable	AltitudeString
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+hudBuilder.createTextNode			Ka5030mmHud Ka5030mmLaserTargetLabel0 100 100 40 10  
+hudBuilder.setTextNodeStyle			Fonts/digitalSmallNumbers.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createTextNode			Ka5030mmHud Ka5030mmLaserTargetLabel1 100 120 40 10
+hudBuilder.setTextNodeStyle			Fonts/digitalSmallNumbers.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createTextNode			Ka5030mmHud Ka5030mmLaserTargetLabel2 100 140 40 10
+hudBuilder.setTextNodeStyle			Fonts/digitalSmallNumbers.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createTextNode			Ka5030mmHud Ka5030mmLaserTargetLabel3 100 160 40 10
+hudBuilder.setTextNodeStyle			Fonts/digitalSmallNumbers.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createObjectMarkerNode 		Ka5030mmHud Ka5030mmLaserTargetMarker 357 282 85 112
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Air\Attack\Su34\HeatSeeking\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_CircleTarget.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_CircleLocked.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 12 12
+hudBuilder.setObjectMarkerNodeTextureSize	1 12 12
+hudBuilder.setObjectMarkerNodeTextureSize	2 17 17
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setObjectMarkerNodeLockText 		1 Ka5030mmLaserTargetLabel
+hudBuilder.addObjectMarkerNodeLockTextNode	Ka5030mmLaserTargetLabel0 
+hudBuilder.addObjectMarkerNodeLockTextNode	Ka5030mmLaserTargetLabel1 
+hudBuilder.addObjectMarkerNodeLockTextNode	Ka5030mmLaserTargetLabel2 
+hudBuilder.addObjectMarkerNodeLockTextNode	Ka5030mmLaserTargetLabel3 
+hudBuilder.setNodeColor		 		0 0.8 0 1
+
+hudBuilder.createPictureNode			Ka5030mmHud Ka5030mmLaserLock 390 287 22 22
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_CrosshairLocked.dds
+hudBuilder.setNodeColor				0 0.8 0 1 
+hudBuilder.setPictureNodeRotateVariable         VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	        0 0
+
+hudBuilder.createPictureNode			Ka5030mmHud Ka5030mmLaserMissileLaunch 370 290 12 12
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Air\Attack\Ka50\Pilot\Ka50Pilot_LaunchToTarget.dds
+hudBuilder.setNodeColor				0 0.8 0 1 
+hudBuilder.setPictureNodeCenterPoint 	        0 0

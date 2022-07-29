@@ -1,0 +1,198 @@
+rem *** AUTOMATICALLY TRIGGERED VOICE MESSAGES ***
+
+rem                                  
+rem *** R U L E S   R E L A T E D ***
+rem                                  
+
+gamelogic.messages.addMessage "AUTO_RULES_welostacp"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_welostacp.ogg" "" ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_welostacp_alt.ogg" "" ""
+
+gamelogic.messages.addMessage "AUTO_RULES_wecapturedacp"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_wecapturedacp.ogg" "" ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_wecapturedacp_alt.ogg" "" ""
+
+gamelogic.messages.addMessage "AUTO_RULES_enemycapturedacp"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_enemycapturedacp.ogg" AUTO_RULES_enemycapturedacp ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_enemycapturedacp_alt.ogg" AUTO_RULES_enemycapturedacp_alt ""
+
+
+gamelogic.messages.addMessage "AUTO_RULES_youbeenrecommendedforaward"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_youbeenrecommendedforaward.ogg" AUTO_RULES_youbeenrecommendedforaward ""
+
+gamelogic.messages.addMessage "AUTO_RULES_youbeenrecommendedforpromotion"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_youbeenrecommendedforpromotion.ogg" AUTO_RULES_youbeenrecommendedforpromotion ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_youbeenrecommendedforpromotion_alt.ogg" AUTO_RULES_youbeenrecommendedforpromotion_alt ""
+
+
+gamelogic.messages.addMessage "AUTO_RULES_ticketlevel_2"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_runningreallylowonreinforcements.ogg" AUTO_RULES_runningreallylowonreinforcements ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_runningreallylowonreinforcements_alt.ogg" AUTO_RULES_runningreallylowonreinforcements_alt ""
+
+
+gamelogic.messages.addMessage "AUTO_RULES_ticketlevel_1"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_runninglowonreinforcements.ogg" AUTO_RULES_runninglowonreinforcements ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_runninglowonreinforcements_alt.ogg" AUTO_RULES_runninglowonreinforcements_alt ""
+
+gamelogic.messages.addMessage "AUTO_RULES_ticketbleedstart"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_ticketbleedstart.ogg" AUTO_RULES_ticketbleedstart ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_ticketbleedstart_alt.ogg" AUTO_RULES_ticketbleedstart_alt ""
+
+
+gamelogic.messages.addMessage "AUTO_RULES_ticketbleedend"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_ticketbleedend.ogg" AUTO_RULES_ticketbleedend ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_RULES_ticketbleedend_alt.ogg" AUTO_RULES_ticketbleedend_alt ""
+
+
+
+rem                    
+rem *** V O T I N G ***
+rem                    
+
+gamelogic.messages.addMessage "AUTO_VOTING_votedoutfrombattlefield"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_VOTING_votedoutfrombattlefield.ogg" AUTO_VOTING_votedoutfrombattlefield ""
+
+gamelogic.messages.addMessage "AUTO_VOTING_votedoutfromcommander"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_VOTING_votedoutfromcommander.ogg" AUTO_VOTING_votedoutfromcommander ""
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_VOTING_votedoutfromcommander_alt.ogg" AUTO_VOTING_votedoutfromcommander_alt ""
+
+
+
+
+
+
+rem                                          
+rem *** M O O D   A N D   G A M E P L A Y ***
+rem                                          
+
+gamelogic.messages.addMessage "AUTO_MOODGP_friendlyfire"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_friendlyfire.ogg" AUTO_MOODGP_TM_friendlyfire "grunt/no_filter/AUTO_MOODGP_TM_friendlyfire.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_friendlyfire_alt.ogg" AUTO_MOODGP_TM_friendlyfire_alt "grunt/no_filter/AUTO_MOODGP_TM_friendlyfire_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_friendlyfire.ogg" AUTO_MOODGP_SL_friendlyfire "squadleader/no_filter/AUTO_MOODGP_SL_friendlyfire.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_friendlyfire_alt.ogg" AUTO_MOODGP_SL_friendlyfire_alt "squadleader/no_filter/AUTO_MOODGP_SL_friendlyfire_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_friendlyfire.ogg" AUTO_MOODGP_C_friendlyfire "commander/no_filter/AUTO_MOODGP_C_friendlyfire.ogg" 3
+
+gamelogic.messages.addMessage "AUTO_MOODGP_throwingfraggrenade"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_throwingfraggrenade.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_throwingfraggrenade.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_throwingfraggrenade_alt.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_throwingfraggrenade_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_throwingfraggrenade.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_throwingfraggrenade.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_throwingfraggrenade_alt.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_throwingfraggrenade_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_throwingfraggrenade.ogg" "" "commander/no_filter/AUTO_MOODGP_C_throwingfraggrenade.ogg" 3
+
+gamelogic.messages.addMessage "AUTO_MOODGP_throwingsmokegrenade"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_throwingsmokegrenade.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_throwingsmokegrenade.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_throwingsmokegrenade_alt.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_throwingsmokegrenade_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_throwingsmokegrenade.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_throwingsmokegrenade.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_throwingsmokegrenade_alt.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_throwingsmokegrenade_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_throwingsmokegrenade.ogg" "" "commander/no_filter/AUTO_MOODGP_C_throwingsmokegrenade.ogg" 3
+
+
+gamelogic.messages.addMessage "AUTO_MOODGP_incominggrenade"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_incominggrenade.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_incominggrenade.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_incominggrenade_alt.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_incominggrenade_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_incominggrenade.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_incominggrenade.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_incominggrenade_alt.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_incominggrenade_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_incominggrenade.ogg" "" "commander/no_filter/AUTO_MOODGP_C_incominggrenade.ogg" 3
+
+
+gamelogic.messages.addMessage "AUTO_MOODGP_reloading"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_reloading.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_reloading.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_reloading_alt.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_reloading_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_reloading.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_reloading.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_reloading_alt.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_reloading_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_reloading.ogg" "" "commander/no_filter/AUTO_MOODGP_C_reloading.ogg" 3
+
+gamelogic.messages.addMessage "out_of_heal"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_outofmedic.ogg" AUTO_MOODGP_TM_outofmedic "grunt/no_filter/AUTO_MOODGP_TM_outofmedic.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_outofmedic_alt.ogg" AUTO_MOODGP_TM_outofmedic_alt "grunt/no_filter/AUTO_MOODGP_TM_outofmedic_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_outofmedic.ogg" AUTO_MOODGP_SL_outofmedic "squadleader/no_filter/AUTO_MOODGP_SL_outofmedic.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_outofmedic_alt.ogg" AUTO_MOODGP_SL_outofmedic_alt "squadleader/no_filter/AUTO_MOODGP_SL_outofmedic_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_outofmedic.ogg" AUTO_MOODGP_C_outofmedic "commander/no_filter/AUTO_MOODGP_C_outofmedic.ogg" 3
+
+gamelogic.messages.addMessage "out_of_ammo"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_outofammo.ogg" AUTO_MOODGP_TM_outofammo "grunt/no_filter/AUTO_MOODGP_TM_outofammo.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_outofammo_alt.ogg" AUTO_MOODGP_TM_outofammo_alt "grunt/no_filter/AUTO_MOODGP_TM_outofammo_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_outofammo.ogg" AUTO_MOODGP_SL_outofammo "squadleader/no_filter/AUTO_MOODGP_SL_outofammo.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_outofammo_alt.ogg" AUTO_MOODGP_SL_outofammo_alt "squadleader/no_filter/AUTO_MOODGP_SL_outofammo_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_outofammo.ogg" AUTO_MOODGP_C_outofammo "commander/no_filter/AUTO_MOODGP_C_outofammo.ogg" 3
+
+gamelogic.messages.addMessage "recharging"
+gamelogic.messages.addRadioVoice "grunt"       "grunt/no_filter/AUTO_MOODGP_TM_recharging.ogg" AUTO_MOODGP_TM_recharging "grunt/no_filter/AUTO_MOODGP_TM_recharging.ogg" 3
+gamelogic.messages.addRadioVoice "grunt"       "grunt/no_filter/AUTO_MOODGP_TM_recharging_alt.ogg" AUTO_MOODGP_TM_recharging_alt "grunt/no_filter/AUTO_MOODGP_TM_recharging_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_recharging.ogg" AUTO_MOODGP_SL_recharging "squadleader/no_filter/AUTO_MOODGP_SL_recharging.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_recharging_alt.ogg" AUTO_MOODGP_SL_recharging_alt "squadleader/no_filter/AUTO_MOODGP_SL_recharging_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_recharging.ogg" AUTO_MOODGP_C_recharging "commander/no_filter/AUTO_MOODGP_C_recharging.ogg" 3
+
+gamelogic.messages.addMessage "revive"
+gamelogic.messages.addRadioVoice "grunt" 	"grunt/no_filter/AUTO_MOODGP_TM_mandownscream.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_mandownscream.ogg" 1
+gamelogic.messages.addRadioVoice "grunt" 	"grunt/no_filter/AUTO_MOODGP_TM_mandownscream_alt.ogg" "" "grunt/no_filter/AUTO_MOODGP_TM_mandownscream_alt.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/no_filter/AUTO_MOODGP_SL_mandownscream.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_mandownscream.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/no_filter/AUTO_MOODGP_SL_mandownscream_alt.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_mandownscream_alt.ogg" 1
+gamelogic.messages.addRadioVoice "commander"  "squadleader/no_filter/AUTO_MOODGP_SL_mandownscream.ogg" "" "squadleader/no_filter/AUTO_MOODGP_SL_mandownscream.ogg" 1
+
+
+rem * Automated message sent when sending a missile away.
+gamelogic.messages.addMessage "missile_away"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_missilefired.ogg" AUTO_MOODGP_TM_missilefired "grunt/filter/AUTO_MOODGP_TM_missilefired.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_missilefired_alt.ogg" AUTO_MOODGP_TM_missilefired_alt "grunt/filter/AUTO_MOODGP_TM_missilefired_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_missilefired.ogg" AUTO_MOODGP_SL_missilefired  "squadleader/filter/AUTO_MOODGP_SL_missilefired.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_missilefired_alt.ogg" AUTO_MOODGP_SL_missilefired_alt "squadleader/filter/AUTO_MOODGP_SL_missilefired_alt.ogg" 3
+
+
+gamelogic.messages.addMessage "leaving_the_combat_area"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_MOODGP_leavingcombatarea.ogg" AUTO_MOODGP_leavingcombatarea
+gamelogic.messages.addRadioVoice "commander" "commander/filter/AUTO_MOODGP_leavingcombatarea_alt.ogg" AUTO_MOODGP_leavingcombatarea_alt
+
+gamelogic.messages.addMessage "get_up"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_goodtogo.ogg" AUTO_MOODGP_TM_goodtogo "grunt/no_filter/AUTO_MOODGP_TM_goodtogo.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_goodtogo_alt.ogg" AUTO_MOODGP_TM_goodtogo_alt "grunt/no_filter/AUTO_MOODGP_TM_goodtogo_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_goodtogo.ogg" AUTO_MOODGP_SL_goodtogo "squadleader/no_filter/AUTO_MOODGP_SL_goodtogo.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_goodtogo_alt.ogg" AUTO_MOODGP_SL_goodtogo_alt "squadleader/no_filter/AUTO_MOODGP_SL_goodtogo_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_goodtogo.ogg" AUTO_MOODGP_C_goodtogo "commander/no_filter/AUTO_MOODGP_C_goodtogo.ogg" 3
+
+gamelogic.messages.addMessage "AUTO_MOODGP_usingshockpaddles"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_usingshockpaddles.ogg" AUTO_MOODGP_TM_usingshockpaddles "grunt/no_filter/AUTO_MOODGP_TM_usingshockpaddles.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_usingshockpaddles.ogg" AUTO_MOODGP_SL_usingshockpaddles "squadleader/no_filter/AUTO_MOODGP_SL_usingshockpaddles.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_usingshockpaddles.ogg" AUTO_MOODGP_C_usingshockpaddles "commander/no_filter/AUTO_MOODGP_C_usingshockpaddles.ogg" 3
+
+
+gamelogic.messages.addMessage "AUTO_MOODGP_healhere"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_healhere.ogg" AUTO_MOODGP_TM_healhere "grunt/no_filter/AUTO_MOODGP_TM_healhere.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_healhere_alt.ogg" AUTO_MOODGP_TM_healhere_alt "grunt/no_filter/AUTO_MOODGP_TM_healhere_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_healhere.ogg" AUTO_MOODGP_SL_healhere "squadleader/no_filter/AUTO_MOODGP_SL_healhere.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_healhere_alt.ogg" AUTO_MOODGP_SL_healhere_alt "squadleader/no_filter/AUTO_MOODGP_SL_healhere_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "commander/no_filter/AUTO_MOODGP_C_healhere.ogg" AUTO_MOODGP_C_healhere "commander/no_filter/AUTO_MOODGP_C_healhere.ogg" 3
+
+
+gamelogic.messages.addMessage "AUTO_MOODGP_ammohere"
+gamelogic.messages.addRadioVoice "grunt" "" AUTO_MOODGP_TM_ammohere "grunt/no_filter/AUTO_MOODGP_TM_ammohere.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "" AUTO_MOODGP_TM_ammohere_alt "grunt/no_filter/AUTO_MOODGP_TM_ammohere_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "" AUTO_MOODGP_SL_ammohere "squadleader/no_filter/AUTO_MOODGP_SL_ammohere.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "" AUTO_MOODGP_SL_ammohere_alt "squadleader/no_filter/AUTO_MOODGP_SL_ammohere_alt.ogg" 3
+gamelogic.messages.addRadioVoice "commander"  "" AUTO_MOODGP_C_ammohere "commander/no_filter/AUTO_MOODGP_C_ammohere.ogg" 3
+
+
+
+
+rem * Automated message sent when a target is aquired.
+gamelogic.messages.addMessage "target_aquired"
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_gotlock.ogg" AUTO_MOODGP_TM_gotlock "grunt/filter/AUTO_MOODGP_TM_gotlock.ogg" 3
+gamelogic.messages.addRadioVoice "grunt" "grunt/no_filter/AUTO_MOODGP_TM_gotlock_alt.ogg" AUTO_MOODGP_TM_gotlock_alt "grunt/filter/AUTO_MOODGP_TM_gotlock_alt.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_gotlock.ogg" AUTO_MOODGP_SL_gotlock "squadleader/filter/AUTO_MOODGP_SL_gotlock.ogg" 3
+gamelogic.messages.addRadioVoice "squadleader" "squadleader/no_filter/AUTO_MOODGP_SL_gotlock_alt.ogg" AUTO_MOODGP_SL_gotlock_alt "squadleader/filter/AUTO_MOODGP_SL_gotlock_alt.ogg" 3
+
+
+
+rem                    
+rem *** S Q U A D S ***
+rem                    
+
+
+rem                
+rem *** S P A M ***
+rem                
+
+gamelogic.messages.addMessage "spam"
+gamelogic.messages.addRadioVoice "grunt" 	"commander/filter/AUTO_RULES_radiospam.ogg" "" ""
+gamelogic.messages.addRadioVoice "squadleader" 	"commander/filter/AUTO_RULES_radiospam.ogg" "" ""
+gamelogic.messages.addRadioVoice "commander" 	"commander/filter/AUTO_RULES_radiospam.ogg" "" ""

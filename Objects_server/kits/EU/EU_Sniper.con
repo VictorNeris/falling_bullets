@@ -1,0 +1,59 @@
+ObjectTemplate.create Kit EU_Sniper
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Sniper
+ObjectTemplate.aiTemplate Sniper
+ObjectTemplate.geometry eu_kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 16
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.unlockIndex 6
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 30	
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf3_g3a3_m145
+ObjectTemplate.addTemplate be_pis_p226_supp
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate USMIN_Claymore
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockEUSniper_1
+ObjectTemplate.addTemplate UnlockEUSniper_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SNIPER"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Sniper_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Sniper.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage		"sniper_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockEUSniper_1
+ObjectTemplate.addTemplate L96
+ObjectTemplate.replaceItem bf3_g3a3_m145
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockEUSniper_2
+ObjectTemplate.addTemplate bf4_l115_riflescope
+ObjectTemplate.replaceItem L96
+ObjectTemplate.unlockLevel 2
+
+
+

@@ -1,0 +1,244 @@
+rem *** Generated with Bf2Editor.exe [created: 2013/5/1 15:30]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm chrif_qbz03
+ObjectTemplate.creator owner:ineffably
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 10
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\qbz03.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\qbz03.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\qbz03.dds
+ObjectTemplate.weaponHud.hudName "QBZ-03"
+ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 28
+ObjectTemplate.weaponHud.minVisualDeviation 7
+ObjectTemplate.weaponHud.disableOnSprint 0
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.06/0
+ObjectTemplate.fire.roundsPerMinute 600
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 9
+ObjectTemplate.ammo.magSize 30
+ObjectTemplate.ammo.reloadTime 3.6
+ObjectTemplate.ammo.reloadWithoutPlayer 0
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/1.47/0.49/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.38/0.38/0
+ObjectTemplate.recoil.zoomModifier 0.65
+ObjectTemplate.recoil.goBackOnRecoil 1
+ObjectTemplate.recoil.recoilGraphFrameCount 5
+ObjectTemplate.recoil.recoilGraphExponent 5
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.25
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/assaultrifle_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay 0.05
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/mediumzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.4
+ObjectTemplate.zoom.zoomLod 0
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.740
+rem 1.35
+rem ObjectTemplate.zoom.mouseSpeedMod 0.7
+rem rem ObjectTemplate.zoom.mouseSpeedMod 0.6
+rem ---EndComp ---
+ObjectTemplate.geometry chrif_qbz03
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate ar_iron_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_chrif_qbz03_Fire1P
+ObjectTemplate.addTemplate S_chrif_qbz03_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_chrif_qbz03_Fire3P
+ObjectTemplate.setPosition -0.001/0.015/0.6
+ObjectTemplate.addTemplate S_chrif_qbz03_BoltClick
+ObjectTemplate.addTemplate S_chrif_qbz03_TriggerClick
+ObjectTemplate.addTemplate S_chrif_qbz03_SwitchFireRate
+ObjectTemplate.addTemplate S_chrif_qbz03_Reload1P
+ObjectTemplate.addTemplate S_chrif_qbz03_Reload3P
+ObjectTemplate.setPosition 0/-0.018/0.032
+ObjectTemplate.addTemplate S_chrif_qbz03_Deploy1P
+ObjectTemplate.addTemplate S_chrif_qbz03_Deploy3P
+ObjectTemplate.addTemplate S_chrif_qbz03_Zoom
+ObjectTemplate.addTemplate e_muzz_ak101
+ObjectTemplate.setPosition 0.000722243/-0.000984684/0.582375
+rem ObjectTemplate.setPosition -0.0015/0.0134/0.5821
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.0140295/-0.00116067/0.0694686
+rem ObjectTemplate.setPosition 0.0181/0.0328/0.0764
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/chrif_qbz03/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/rurif_ak47/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 580_42_rifle
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 860
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.9
+include ../../common/heat/ar_heat.tweak
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Fire1P
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_qbz03/Sounds/qbz03_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.025/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Fire3P
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_qbz03/Sounds/qbz03_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 10
+
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_BoltClick
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.92
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_TriggerClick
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.92
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_SwitchFireRate
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Reload1P
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_qbz03/sounds/qbz03_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.92
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Reload3P
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_ak47/sounds/AK47_Reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.47
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.018/0.032
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Deploy1P
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.94
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Deploy3P
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_chrif_qbz03_Zoom
+ObjectTemplate.modifiedByUser "phale"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+

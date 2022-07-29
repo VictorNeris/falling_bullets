@@ -1,0 +1,24 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/3/29 7:12]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor she_littlebird_mainrotor
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "chrisel"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry she_littlebird_mainrotor
+ObjectTemplate.setCollisionMesh she_littlebird_mainrotor
+ObjectTemplate.mapMaterial 0 mainrotor_col 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate ade_heliDraft
+rem -------------------------------------
+ObjectTemplate.changeLodAt 0.15
+ObjectTemplate.tolerance 9.5367e-008
+ObjectTemplate.rotationSpeedMod -0.5
+ObjectTemplate.rotationSpeedModBlur -0.05
+ObjectTemplate.rotationAxle 0
+ObjectTemplate.engineName she_littlebird_MainEngine
+

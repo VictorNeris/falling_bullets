@@ -1,0 +1,76 @@
+GeometryTemplate.create BundledMesh che_wz11
+CollisionManager.createTemplate che_wz11
+
+ObjectTemplate.create PlayerControlObject che_wz11
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NICKW:nickwh
+ObjectTemplate.collisionMesh che_wz11
+ObjectTemplate.mapMaterial 0 armor 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 col_wreck 0
+ObjectTemplate.mapMaterial 3 landingrail 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry che_wz11
+ObjectTemplate.addTemplate CHE_WZ11_Gun
+ObjectTemplate.addTemplate CHE_WZ11_Damper1
+ObjectTemplate.setPosition -1.1707/-1.3575/-2.0919
+ObjectTemplate.addTemplate CHE_WZ11_Damper2
+ObjectTemplate.setPosition 1.1710/-1.3575/1.9038
+ObjectTemplate.addTemplate CHE_WZ11_Damper3
+ObjectTemplate.setPosition 1.1710/-1.3575/-2.0919
+ObjectTemplate.addTemplate CHE_WZ11_Damper4
+ObjectTemplate.setPosition -1.1707/-1.3575/1.9038
+
+ObjectTemplate.create Bundle CHE_WZ11_Gun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate CHE_WZ11_R_Barrel
+ObjectTemplate.setPosition 1.3439/-1.0668/0.4286
+ObjectTemplate.addTemplate CHE_WZ11_L_Barrel
+ObjectTemplate.setPosition -1.3439/-1.0668/0.4286
+
+ObjectTemplate.create Bundle CHE_WZ11_R_Barrel
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Bundle CHE_WZ11_L_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Spring CHE_WZ11_Damper1
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+ObjectTemplate.create Spring CHE_WZ11_Damper2
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create Spring CHE_WZ11_Damper3
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create Spring CHE_WZ11_Damper4
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+include che_wz11.tweak

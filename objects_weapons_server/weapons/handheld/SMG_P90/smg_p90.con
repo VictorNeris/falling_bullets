@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh smg_p90
+CollisionManager.createTemplate smg_p90
+
+ObjectTemplate.create GenericFireArm smg_p90
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JULIO:julioce
+ObjectTemplate.collisionMesh smg_p90
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry smg_p90
+
+include smg_p90.tweak

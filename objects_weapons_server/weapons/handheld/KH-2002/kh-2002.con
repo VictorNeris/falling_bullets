@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh kh-2002
+
+ObjectTemplate.create GenericFireArm kh-2002
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator AU-PC:Au
+ObjectTemplate.geometry kh-2002
+
+include kh-2002.tweak

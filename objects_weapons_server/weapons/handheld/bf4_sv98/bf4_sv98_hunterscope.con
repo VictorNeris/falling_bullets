@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh bf4_sv98_hunterscope
+
+ObjectTemplate.create GenericFireArm bf4_sv98_hunterscope
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.geometry bf4_sv98_hunterscope
+
+include bf4_sv98_hunterscope.tweak

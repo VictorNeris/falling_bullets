@@ -1,0 +1,497 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/9/21 6:28]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject xpak_atv
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1000
+ObjectTemplate.armor.hitPoints 1000
+ObjectTemplate.armor.defaultMaterial 110
+ObjectTemplate.armor.hpLostWhileUpSideDown 150
+ObjectTemplate.armor.hpLostWhileInWater 35
+ObjectTemplate.armor.hpLostWhileInDeepWater 100
+ObjectTemplate.armor.hpLostWhileCriticalDamage 12
+ObjectTemplate.armor.waterDamageDelay 1
+ObjectTemplate.armor.deepWaterDamageDelay 0
+ObjectTemplate.armor.waterLevel 0.3
+ObjectTemplate.armor.deepWaterLevel 0.5
+ObjectTemplate.armor.explosionForce  4
+ObjectTemplate.armor.explosionForceMod 15
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 110
+ObjectTemplate.armor.explosionRadius  4
+ObjectTemplate.armor.explosionMaterial 70
+ObjectTemplate.armor.wreckExplosionForce 3.5
+ObjectTemplate.armor.wreckExplosionForce 3.5
+ObjectTemplate.armor.wreckExplosionDamage 80
+ObjectTemplate.armor.wreckExplosionRadius 3.5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 750
+ObjectTemplate.armor.timeToStayAsWreck 15
+ObjectTemplate.armor.criticalDamage 76
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_land_xsmllightsmoke 0.00243857/0.363759/0.895282 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_land_xsmlMediumSmoke -2.70734e-005/0.355242/0.758229 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_land_xsmlheavysmoke 3.6137e-005/0.351176/0.739887 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_GenericDebris 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_xpak_atv 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_dstate_static_fire -1.13941e-005/-0.00433688/-0.118894 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_sAmb_wreckfire 9.34751e-007/0.0550603/-0.201062 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_GenericDebris 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage vehicle_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_atv"
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\HUD\Minimap\MM_xpak_atv.dds
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 32/14
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 3
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\HUD\VehicleIcons\VI_xpak_Atv.tga
+rem ---EndComp ---
+ObjectTemplate.geometry xpak_atv
+ObjectTemplate.setCollisionMesh xpak_atv
+ObjectTemplate.mapMaterial 0 penetrable_metal 111
+ObjectTemplate.mapMaterial 1 wreck_col 60
+ObjectTemplate.mapMaterial 2 atv_cgfx 22
+ObjectTemplate.mapMaterial 3 rubber 22
+ObjectTemplate.mass 500
+ObjectTemplate.drag 1
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.floaterMod 0.5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate xpak_atv_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_Ambient
+ObjectTemplate.addTemplate S_xpak_atv_AmbientDamaged
+ObjectTemplate.addTemplate xpak_atv_EntryPoint
+ObjectTemplate.setPosition -0.01273/0.208619/-0.145242
+ObjectTemplate.addTemplate xpak_atv_EntryPoint
+ObjectTemplate.setPosition -0.0523807/0.163402/-0.21217
+ObjectTemplate.addTemplate e_exhaust_small_startup
+ObjectTemplate.setPosition -0.251669/0.306281/-0.895463
+ObjectTemplate.addTemplate e_exhaust_small
+ObjectTemplate.setPosition -0.260978/0.301841/-0.883519
+ObjectTemplate.addTemplate e_amphib_wake
+ObjectTemplate.setPosition -0.0262229/-0.532941/0.65987
+ObjectTemplate.addTemplate e_sinking_vehicle
+ObjectTemplate.addTemplate Car_horn
+ObjectTemplate.addTemplate antennasm
+ObjectTemplate.setPosition 0.433233/0.523619/-0.91414
+ObjectTemplate.addTemplate cameraMount
+ObjectTemplate.setPosition 0/1/-0.15
+rem ObjectTemplate.addTemplate e_atv_headlight
+rem ObjectTemplate.setPosition 0/0.73937/0.46652
+ObjectTemplate.addTemplate Xpak_ATV_Rear_Passenger 	 	
+ObjectTemplate.setPosition 0.141075/1.56413/-0.291669 	 	
+ObjectTemplate.setRotation 172.502/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1/0.5/0 0/0/0
+ObjectTemplate.altSoldierExitPosition 0/0.5/-2
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.seatInformation xpak_atv 0/1.18391/-0.139631 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/xpak_vehicles/xpak_atv/ATVAnimationSystem.inc
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 0/0.5/-2
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_Ambient
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_AmbientDamaged
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe RotationalBundle xpak_atv_steering
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft -0.350955/0.291574/-0.195039
+ObjectTemplate.ik.rotationLeft -3.3493/-30/-160
+ObjectTemplate.ik.poleVectorLeft -0.635084/-0.11638/-1.56818
+ObjectTemplate.ik.positionRight 0.32353/0.292346/-0.199229
+ObjectTemplate.ik.rotationRight 160/30/0
+ObjectTemplate.ik.poleVectorRight 0.764235/-0.0576837/-1.49874
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_steering_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 180/0/0
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setInputToPitch PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_steering_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Engine xpak_atv_engine
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.hasRelativeOffset 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.isSleeping 1
+ObjectTemplate.relativePositionOffset 0/-0.2/0
+ObjectTemplate.collisionGroups 36
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_engine_RotationRpm
+ObjectTemplate.addTemplate S_xpak_atv_engine_Idle
+ObjectTemplate.addTemplate S_xpak_atv_engine_Rpm1
+ObjectTemplate.addTemplate S_xpak_atv_engine_Rpm2
+ObjectTemplate.addTemplate S_xpak_atv_engine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/10000
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETNewCar2
+ObjectTemplate.setTorque 180
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.85
+ObjectTemplate.setGearDown 0.5
+ObjectTemplate.setGearChangeTime 0.7
+ObjectTemplate.setGearRatios 5.3 3.5 2.5 1.5 1
+ObjectTemplate.spinWhenNoEngineInAir 1
+ObjectTemplate.newCar2.minRpm 1000
+ObjectTemplate.newCar2.maxRpm 5000
+ObjectTemplate.newCar2.useClutchedTorque 1
+ObjectTemplate.newCar2.wheelInertia 25
+ObjectTemplate.newCar2.engineFeedbackMod 0.38
+ObjectTemplate.newCar2.brakeTorque 2000
+ObjectTemplate.newCar2.engineBrakeTorque 750
+ObjectTemplate.newCar2.frictionTorque 100
+ObjectTemplate.newCar2.frictionMod 1.5
+ObjectTemplate.newCar2.slopeTorqueMod 0.1
+ObjectTemplate.newCar2.wheelLongFrictionMod 1
+ObjectTemplate.newCar2.wheelLongDriveFrictionMod 1
+ObjectTemplate.newCar2.wheelLongPeakAt 0.1
+ObjectTemplate.newCar2.wheelLongMinDynamicFriction 0.7
+ObjectTemplate.newCar2.wheelLongScale 0.05
+ObjectTemplate.newCar2.wheelLatFrictionMod 1.3
+ObjectTemplate.newCar2.wheelLatDriveFrictionMod 1.5
+ObjectTemplate.newCar2.wheelLatPeakAt 0.1
+ObjectTemplate.newCar2.wheelLatMinDynamicFriction 0.7
+ObjectTemplate.newCar2.wheelLatScale 0.05
+ObjectTemplate.audio.newStyleAudio 1
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_engine_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_engine_Idle
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak_vehicles/xpak_atv/sounds/sart_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.89
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.003/1.116/0.1/0.838/2.22/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0.708/0/0.97/0.52/0/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_engine_Rpm1
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak_vehicles/xpak_atv/sounds/high_rpm.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.64
+ObjectTemplate.pitch 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.003861/0.608108/0/0.988417/1.5/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0/0/0/0.162162/0.722008/0/0.996139/0.895753/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_engine_Rpm2
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak_vehicles/xpak_atv/sounds/high_rpm.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1.1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.003/0.416/0.1/0.997/1.167/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/3/0.005/0/0/0.294/0.718/0/0.982/0.754/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_engine_Load
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe RotationalBundle xpak_atv_nav_FR
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_nav_FR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 1/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_nav_FR_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Spring xpak_atv_wheel_FR
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 4
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_wheel_FR_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_wheel_FR_Rotation
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe RotationalBundle xpak_atv_nav_FL
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_nav_FL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 1/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_nav_FL_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Spring xpak_atv_wheel_FL
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 4
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_wheel_FL_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_wheel_FL_Rotation
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Spring xpak_atv_wheel_RR
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_wheel_RR_Rotation
+ObjectTemplate.addTemplate web_wheelBig
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_wheel_RR_Rotation
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.activeSafe Spring xpak_atv_wheel_RL
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 8
+ObjectTemplate.material 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_wheel_RL_Rotation
+ObjectTemplate.addTemplate web_wheelBig
+rem -------------------------------------
+ObjectTemplate.setStrength 17
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_wheel_RL_Rotation
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.create EntryPoint xpak_atv_EntryPoint
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create RotationalBundle CameraMount
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_CameraMount_RotationRpm
+ObjectTemplate.addTemplate driverCamera
+ObjectTemplate.addTemplate xpak_atv_Camera
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-15
+ObjectTemplate.setMaxRotation 0/0/15
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.regulateRoll 0.1/-0.1
+
+ObjectTemplate.activeSafe Sound S_CameraMount_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.create Camera driverCamera
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_driverCamera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -50/-30/0
+ObjectTemplate.setMaxRotation 50/30/0
+ObjectTemplate.setMaxSpeed 100/100/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.followStiffness 6
+ObjectTemplate.chaseDistance 15
+ObjectTemplate.chaseAngle 0.15
+ObjectTemplate.chaseOffset 0/1/7
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/0.75
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_driverCamera_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.create Camera xpak_atv_Camera
+ObjectTemplate.modifiedByUser "rickgi"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak_atv_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -60/-35/0
+ObjectTemplate.setMaxRotation 60/8/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.followStiffness 6
+ObjectTemplate.chaseDistance 5
+ObjectTemplate.chaseAngle 0.1
+ObjectTemplate.chaseOffset 0/2.2/-1
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.worldFOV 1.2
+ObjectTemplate.insideFOV 1.2
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection -0.25/-0.5/0.75
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_xpak_atv_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "rickgi"
+
+ObjectTemplate.create PlayerControlObject Xpak_ATV_Rear_Passenger
+ObjectTemplate.modifiedByUser "FAS"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_hmmwv"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 5/13
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate HmmwvRearPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Xpak_ATV_Rear_Passenger_Ambient
+ObjectTemplate.addTemplate S_Xpak_ATV_Rear_Passenger_AmbientDamaged
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.8/-1/-1.2 -180/0/0
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.seatInformation Xpak_ATV_Rear_Passenger 0.144036/-0.321512/0.8192 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.seatLeftRotationLimit -15
+ObjectTemplate.seatRightRotationLimit 15
+ObjectTemplate.soundFilter vehicle
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_Xpak_ATV_Rear_Passenger_Ambient
+ObjectTemplate.modifiedByUser "FAS"
+
+ObjectTemplate.activeSafe Sound S_Xpak_ATV_Rear_Passenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "FAS"

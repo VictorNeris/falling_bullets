@@ -1,0 +1,124 @@
+hudBuilder.createSplitNode		VehicleHuds TunguskaHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 8
+rem hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode			TunguskaHud TunguskaCrossHair 272 172 256 256
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\Tunguska\crosshair.tga
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		TunguskaHud TunguskaScope 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Simcardo\Vehicles\Icons\Hud\Land\T90Sight.dds
+
+hudBuilder.createPictureNode		TunguskaHud TunguskaGlow 634 57 128 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\glow.dds
+hudBuilder.setNodeColor    		1 0 0 1
+
+hudBuilder.createTextNode			TunguskaHud MarkerLabel0 100 100 40 10  
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+
+hudBuilder.createTextNode			TunguskaHud MarkerLabel1 100 120 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+
+hudBuilder.createTextNode			TunguskaHud MarkerLabel2 100 140 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+
+hudBuilder.createTextNode			TunguskaHud MarkerLabel3 100 160 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+
+hudBuilder.createObjectMarkerNode 		TunguskaHud TunguskaMarker 67 167 665 265
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\Tunguska\friendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\Tunguska\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Land\Tunguska\locked.tga
+hudBuilder.setObjectMarkerNodeTexture 		3 Ingame\Vehicles\Icons\Hud\Land\Tunguska\rangeLine.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	1 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	2 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	3 16 256
+hudBuilder.setObjectMarkerNodeObjects 		4
+rem hudBuilder.setObjectMarkerNodeWeapon 		1
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeLockText 		1 MarkerLabel
+hudBuilder.setObjectMarkerNodeLockTextOffset	-32 8
+hudBuilder.addObjectMarkerNodeLockTextNode	MarkerLabel0
+hudBuilder.addObjectMarkerNodeLockTextNode	MarkerLabel1
+hudBuilder.addObjectMarkerNodeLockTextNode	MarkerLabel2
+hudBuilder.addObjectMarkerNodeLockTextNode	MarkerLabel3
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel0TextNode
+hudBuilder.setTextNodeStringVariable		MarkerLabel0String
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel0
+hudBuilder.setNodeShowVariable 			MarkerLabel0Show
+
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel1TextNode 
+hudBuilder.setTextNodeStringVariable		MarkerLabel1String
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel1
+hudBuilder.setNodeShowVariable 			MarkerLabel1Show
+
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel2TextNode
+hudBuilder.setTextNodeStringVariable		MarkerLabel2String
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel2
+hudBuilder.setNodeShowVariable 			MarkerLabel2Show
+
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel3TextNode  
+hudBuilder.setTextNodeStringVariable		MarkerLabel3String
+hudBuilder.setActiveObject			TunguskaHud MarkerLabel3
+hudBuilder.setNodeShowVariable 			MarkerLabel3Show
+
+hudBuilder.createPictureNode			TunguskaHud TunguskaHeatLock 353 460 128 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\Tunguska\missileLock.tga
+hudBuilder.setNodeColor				0.952 0.243 0.019 1
+hudBuilder.setNodeShowVariable 			TunguskaMarkerObjectMarkerNodeLockedShow
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+
+hudBuilder.createPictureNode 		TunguskaHud TunguskaHitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.952 0.243 0.019 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		TunguskaHud TunguskaDirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+
+hudBuilder.createPictureNode		TunguskaHud TunguskaTurretBase 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		TunguskaDirectionHud TunguskaTurretBarrel 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		0.952 0.243 0.019 1
+
+rem ------------compass-------------------------
+
+hudBuilder.createCompassNode 		TunguskaHud TunguskaCompass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Navigation\compass2.tga
+hudBuilder.setCompassNodeTextureSize	801 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+rem ------------range to target text---------------
+
+hudBuilder.createPictureNode		TunguskaHud TunguskaRangeText 62 451 80 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90rangetotarget_text.tga
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		TunguskaHud TunguskaRangeLabel 149 454 101 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeStringVariable	TargetDistanceString
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2

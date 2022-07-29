@@ -1,0 +1,81 @@
+
+rem *** Add gun ***
+weaponTemplate.create USTNK_M1A2_HE_Gun
+rem weaponTemplate.WeaponFire PIFire
+WeaponTemplate.WeaponActivate PIMenuSelect1
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 300.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setStrength Infantery  2.0
+weaponTemplate.setStrength LightArmour 7.0
+weaponTemplate.setStrength HeavyArmour 5.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  1.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 3.0
+weaponTemplate.setExplosionRadius 13.0
+weaponTemplate.setFiresThroughTransparent 0
+
+
+weaponTemplate.create USTNK_M1A2_KE_Gun
+rem weaponTemplate.WeaponFire PIFire
+WeaponTemplate.WeaponActivate PIMenuSelect2
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 150.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setStrength Infantery  0.0
+weaponTemplate.setStrength LightArmour 2.0
+weaponTemplate.setStrength HeavyArmour 50.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.5
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 2.0
+weaponTemplate.setExplosionRadius 5.0
+weaponTemplate.setFiresThroughTransparent 0
+
+weaponTemplate.create USTNK_M1A2_Guided
+rem weaponTemplate.WeaponFire PIFire
+WeaponTemplate.WeaponActivate PIMenuSelect3
+weaponTemplate.indirect 0
+weaponTemplate.minRange 50.0
+weaponTemplate.maxRange 800.0
+weaponTemplate.setStrength Infantery  0.0
+weaponTemplate.setStrength LightArmour 1.5
+weaponTemplate.setStrength HeavyArmour 40.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.allowedDeviation 2.0
+weaponTemplate.setExplosionRadius 5.0
+weaponTemplate.setFiresThroughTransparent 0
+
+weaponTemplate.create USTNK_M1A2_Canister
+WeaponTemplate.WeaponActivate PIMenuSelect4
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 300.0
+weaponTemplate.setStrength Infantery  14.0
+weaponTemplate.setStrength LightArmour 2.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 3.0
+weaponTemplate.setStrength Helicopter  1.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.allowedDeviation 3.0
+
+rem *** coaxial Browning Machine Gun ***
+weaponTemplate.create Coaxial_Browning_tnk_AI
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 200.0
+weaponTemplate.weaponFire PIAltFire
+weaponTemplate.setStrength Infantry    50.0
+weaponTemplate.setStrength LightArmour  2.0
+weaponTemplate.setStrength HeavyArmour  0.0
+weaponTemplate.setStrength NavalArmour  0.0
+weaponTemplate.setStrength Helicopter   4.0
+weaponTemplate.setStrength AirPlane     0.0
+weaponTemplate.allowedDeviation 5.0
+weaponTemplate.deviation 15.0

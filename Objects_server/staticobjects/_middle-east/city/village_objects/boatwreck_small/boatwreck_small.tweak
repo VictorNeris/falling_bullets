@@ -1,0 +1,25 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/6 14:18]
+GeometryTemplate.setSubGeometryLodDistance 0 0 20
+GeometryTemplate.setSubGeometryLodDistance 0 1 35
+GeometryTemplate.setSubGeometryLodDistance 0 2 50
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject boatwreck_small
+ObjectTemplate.creator MFR-1:mfr
+ObjectTemplate.modifiedByUser god
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry boatwreck_small
+ObjectTemplate.setCollisionMesh boatwreck_small
+ObjectTemplate.mapMaterial 0 wood_penetrable 1003
+ObjectTemplate.mapMaterial 1 wood_solid 15
+ObjectTemplate.mapMaterial 2 Wood_thin 14
+ObjectTemplate.mass 50
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.isSleeping 1
+ObjectTemplate.setNetworkableInfo BasicInfo
+

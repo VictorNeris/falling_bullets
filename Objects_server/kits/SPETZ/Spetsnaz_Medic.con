@@ -1,0 +1,70 @@
+ObjectTemplate.create Kit Spetsnaz_Medic	
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Medic
+ObjectTemplate.aiTemplate Medic
+ObjectTemplate.geometry spetz1_kits
+ObjectTemplate.geometry.kit 1
+ObjectTemplate.geometry.dropGeom 11
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.abilityRestoreRate 0.05
+ObjectTemplate.abilityInVehicleRadius 7
+ObjectTemplate.abilityInVehicleStrength 0.5
+ObjectTemplate.abilityInVehicleMaterial 73
+ObjectTemplate.unlockIndex 3
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_aek971
+ObjectTemplate.addTemplate rupis_gsh18
+
+ObjectTemplate.addTemplate USHGR_M67
+rem ObjectTemplate.addTemplate bf3_defibrillator
+ObjectTemplate.addTemplate medikit
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockSpetsMedic_1
+ObjectTemplate.addTemplate UnlockSpetsMedic_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.hasHealingAbility 1
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 			"HUD_TEXT_MENU_SPAWN_KIT_MEDIC"
+ObjectTemplate.vehicleHud.miniMapIcon			"Ingame\Kits\Icons\kit_Medic_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon			"Ingame\Kits\Icons\kit_Medic.tga"
+ObjectTemplate.vehicleHud.spottedIcon 			"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound			S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound			S_Injury
+ObjectTemplate.sprintStaminaDissipationFactor 0.2
+ObjectTemplate.vehicleHud.vehicleType		7
+
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_KIT_MEDIC_inVehicle"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_KIT_MEDIC_inVehicle"
+rem ---EndComp ---
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockSpetsMedic_1
+ObjectTemplate.addTemplate bf4_aek971_pkas
+ObjectTemplate.replaceItem bf4_aek971
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSpetsMedic_2
+ObjectTemplate.addTemplate bf4_aek971_pso1
+ObjectTemplate.replaceItem bf4_aek971_pkas
+ObjectTemplate.unlockLevel 2

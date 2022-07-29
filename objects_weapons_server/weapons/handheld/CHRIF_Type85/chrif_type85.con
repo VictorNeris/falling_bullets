@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh chrif_type85
+CollisionManager.createTemplate chrif_type85
+
+ObjectTemplate.create GenericFireArm chrif_type85
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.collisionMesh chrif_type85
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry chrif_type85
+
+include chrif_type85.tweak

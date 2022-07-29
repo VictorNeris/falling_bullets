@@ -1,0 +1,1174 @@
+hudBuilder.createSplitNode		IngameHud CommanderInterfaceBottom
+hudBuilder.setNodeShowVariable 		CommanderShow
+hudBuilder.setNodeInTime		0.3
+hudBuilder.setNodeOutTime		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 30
+
+hudBuilder.createSplitNode		IngameHud CommanderInterfaceLeft
+hudBuilder.setNodeShowVariable 		CommanderShow
+hudBuilder.setNodeInTime		0.3
+hudBuilder.setNodeOutTime		0.3
+hudBuilder.addNodeMoveShowEffect	0 241
+
+hudBuilder.createSplitNode		IngameHud CommanderInterfaceTop
+hudBuilder.setNodeShowVariable 		CommanderShow
+hudBuilder.setNodeInTime		0.3
+hudBuilder.setNodeOutTime		0.3
+hudBuilder.addNodeMoveShowEffect	-1.57 30
+
+hudBuilder.createSplitNode		IngameHud CommanderInterfaceMap
+hudBuilder.setNodeShowVariable 		CommanderShow
+hudBuilder.setNodeLogicShowVariable	AND MapFullSize 1
+hudBuilder.setNodeInTime		0.5
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeAlphaShowEffect
+
+rem -------------------------  TopDown blend filter for color and inverted effect ---------------------------
+
+rem hudBuilder.createPictureNode 		IngameHud CommanderBlendFilter 0 0 800 600
+rem hudBuilder.setNodeColor		  	0 0 0 0
+rem hudBuilder.setNodeShowVariable 		CommanderShow
+rem hudBuilder.setNodeLogicShowVariable		EQUAL MinimapZoomDisplay 2
+rem hudBuilder.addNodeBlendEffect		4 7
+
+rem ---------------------------------------- Squad map items------------------------------------------------------
+
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapTopLeftAngle 250 31 21 21
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commander_mapAngle.tga
+hudBuilder.setNodeColor		  	1 1 1 0.7
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapTopRightAngle 769 31§ 21 21
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commander_mapAngle.tga
+hudBuilder.setPictureNodeRotation 	270
+hudBuilder.setNodeColor		  	1 1 1 0.7
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapBottomLeftAngle 250 548 21 21
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commander_mapAngle.tga
+hudBuilder.setPictureNodeRotation 	90
+hudBuilder.setNodeColor		  	1 1 1 0.7
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapBottomRightAngle 769 548 21 21
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commander_mapAngle.tga
+hudBuilder.setPictureNodeRotation 	180
+hudBuilder.setNodeColor		  	1 1 1 0.7
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapZoom0Indicator 740 470 29 73
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commanderZoom_1x.tga
+hudBuilder.setNodeColor		  	1 1 1 0.7
+hudBuilder.setNodeLogicShowVariable	EQUAL MinimapZoomDisplay 0
+hudBuilder.setNodeLogicShowVariable	AND MapFullSize 1
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapZoom1Indicator 740 470 29 73
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commanderZoom_2x.tga
+hudBuilder.setNodeColor		  	1 1 1 0.7
+hudBuilder.setNodeLogicShowVariable	EQUAL MinimapZoomDisplay 1
+hudBuilder.setNodeLogicShowVariable	AND MapFullSize 1
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapZoom2Indicator 740 470 29 73
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commanderZoom_3x.tga
+hudBuilder.setNodeColor		  	1 1 1 0.7
+hudBuilder.setNodeLogicShowVariable	EQUAL MinimapZoomDisplay 2
+hudBuilder.setNodeLogicShowVariable	AND MapFullSize 1
+
+hudBuilder.createPictureNode 		CommanderInterfaceMap CommanderMapTrackingIndicator 720 40 59 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\commanderTracking.tga
+hudBuilder.setNodeColor		  	1 1 1 0.7
+hudBuilder.setNodeLogicShowVariable	EQUAL MinimapZoomDisplay 2
+hudBuilder.setNodeLogicShowVariable	OR MinimapZoomDisplay 1
+hudBuilder.setNodeLogicShowVariable	AND CommanderTracking 1
+hudBuilder.setNodeInTime		0.2
+hudBuilder.setNodeOutTime		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+
+rem ---------------------------------------- Squad list------------------------------------------------------
+
+hudBuilder.createPictureNode 		CommanderInterfaceLeft CommanderLeftBackground 0 0 240 152
+hudBuilder.setPictureNodeBorder		0 0 0 1
+hudBuilder.setPictureNodeBorderColor  	0.243 0.227 0.168 1
+hudBuilder.setNodeColor 	      	0.415 0.415 0.337 1
+
+hudBuilder.createListNode 		CommanderInterfaceLeft CommanderSquadList 0 152 240 217 24 1
+hudBuilder.setListNodeRowSpacing  	0
+hudBuilder.setListNodeData		6
+hudBuilder.setListNodeFont 		Fonts/commanderSquadListFont_8.dif 0
+hudBuilder.setListNodeFont 		Fonts/digitalNumbers.dif 1
+hudBuilder.setListNodeConCmd		1 CommanderMenu.singleClick
+hudBuilder.setListNodeConCmd		1 "sound.playSound weaponSelect"
+hudBuilder.setListNodeConCmd		2 CommanderMenu.doubleClick
+hudBuilder.setListNodeConCmd		3 CommanderMenu.rightClick
+hudBuilder.setListNodeConCmd		4 CommanderMenu.deselect
+hudBuilder.setListNodeSelectColor	1 1 1 0
+hudBuilder.setListNodeBackgroundColor   0.415 0.415 0.337 1
+hudBuilder.setListNodeBorder 		1 0 0 1
+hudBuilder.setListNodeBorderColor   	0.243 0.227 0.168 1
+
+rem ---------------------------------------- Commander Chat ------------------------------------------------------
+
+hudBuilder.createPictureNode 		CommanderInterfaceLeft CommanderChatTopBackground 0 369 240 250
+hudBuilder.setPictureNodeBorder		0 0 0 1
+hudBuilder.setPictureNodeBorderColor  	0.243 0.227 0.168 1
+hudBuilder.setNodeColor		 	0.415 0.415 0.337 1
+
+hudBuilder.createListNode 		CommanderInterfaceLeft CommanderChatList 2 368 235 185 13 1
+hudBuilder.setListNodeData		7
+hudBuilder.setListNodeFont 		Fonts/ingameChatFontOutline_8.dif 0
+hudBuilder.setListNodeFont 		Fonts/ingameChatFontLocalOutline_8.dif 1
+hudBuilder.setListNodeConCmd		4 CommanderMenu.deselect
+hudBuilder.setListNodeSelectColor	1 1 1 0
+hudBuilder.setListNodeBackgroundColor   0.415 0.415 0.337 1
+
+hudBuilder.createPictureNode 		CommanderInterfaceLeft CommanderChatTopBackgroundBorder 1 369 237 67
+hudBuilder.setPictureNodeBorder		1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	1 1 1 0.6
+hudBuilder.setNodeColor		 	0.415 0.415 0.337 0
+
+hudBuilder.createPictureNode 		CommanderInterfaceLeft CommanderChatSayBorder 2 560 236 18
+hudBuilder.setPictureNodeBorder		1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0.243 0.227 0.168 1
+hudBuilder.setNodeColor		 	0 0 0 0
+
+hudBuilder.createEditNode 		CommanderInterfaceLeft CommanderSay 5 562 234 10
+hudBuilder.setEditNodeFont 		Fonts/ingameChatFontOutline_8.dif 0
+hudBuilder.setEditNodeData 		3
+hudBuilder.setEditNodeString		3
+hudBuilder.setEditNodeMaxLength		100
+hudBuilder.setNodeColor 		1 1 1 1
+hudBuilder.setNodeShowVariable 		SayAllShow
+hudBuilder.setNodeLogicShowVariable 	OR SayTeamShow 1
+hudBuilder.setNodeLogicShowVariable 	OR SaySquadShow 1
+
+rem ---------------------------------------- Top elements ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderInterfaceTop LevelInfo 0 0 800 20
+
+hudBuilder.createPictureNode 		CommanderInterfaceTop TopCommanderBackground 0 0 800 20
+hudBuilder.setPictureNodeBorder	0 1 0 0
+hudBuilder.setPictureNodeBorderColor  	0.243 0.227 0.168 1
+hudBuilder.setNodeColor 	       	0.415 0.415 0.337 1
+
+hudBuilder.createButtonNode 		CommanderInterfaceTop DummyButtonTop 0 0 800 20
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	       	0 0 0 0
+
+rem -------------------------------------------Top Lines----------------------------------
+
+hudBuilder.createPictureNode 		LevelInfo ScoreLine 239 0 1 20
+hudBuilder.setNodeColor 	      0.243 0.227 0.168 1
+
+hudBuilder.createPictureNode 		LevelInfo TimeLine 422 0 1 20
+hudBuilder.setNodeColor 	      0.243 0.227 0.168 1
+
+hudBuilder.createPictureNode 		LevelInfo TicketLine 612 0 1 20
+hudBuilder.setNodeColor 	      0.243 0.227 0.168 1
+
+rem -----------------------------------ControlPoints-------------------------------------------------
+
+hudBuilder.createPictureNode 		 LevelInfo CommanderFriendlyFlag 655 3 18 12
+hudBuilder.setPictureNodeVariableTexture FriendlyFlagIconPathString
+hudBuilder.setPictureNodeBorder	 1 1 1 1
+hudBuilder.setPictureNodeBorderColor  0 0 0 1
+
+hudBuilder.createTextNode		LevelInfo CommanderFriendlyCPs 676 3 20 20
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 2
+hudBuilder.setTextNodeStringVariable  FriendlyCPString
+hudBuilder.setNodeColor 		0.392 0.678 1 1
+
+hudBuilder.createTextNode		LevelInfo CommanderNeutralCPs 697 3 20 20
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 0
+hudBuilder.setTextNodeStringVariable  NeutralCPString
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createTextNode		LevelInfo CommanderEnemyCPs 724 3 20 20
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 1
+hudBuilder.setTextNodeStringVariable  EnemyCPString
+hudBuilder.setNodeColor 		1 0.262 0.262 1
+
+hudBuilder.createPictureNode 		 LevelInfo CommanderEnemyFlag 745 3 18 12
+hudBuilder.setPictureNodeVariableTexture EnemyFlagIconPathString
+hudBuilder.setPictureNodeBorder	 1 1 1 1
+hudBuilder.setPictureNodeBorderColor  0 0 0  1
+
+rem -----------------------------------------Level---------------------------------------------------
+
+hudBuilder.createTextNode		LevelInfo LevelLabel 0 0 72 20
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 1
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_LOCATION
+hudBuilder.setNodeColor 		0.768 0.749 0.560 1
+
+hudBuilder.createTextNode		LevelInfo ActiveLevelPath 78 0 164 20
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 2
+hudBuilder.setTextNodeStringVariable 	ActiveLevel
+hudBuilder.setNodeColor 		0.768 0.749 0.560 1
+
+rem -----------------------------------------Ticket Info---------------------------------------------------
+
+hudBuilder.createTextNode		LevelInfo CommanderFriendlyTickets 627 3 25 10
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 1
+hudBuilder.setTextNodeStringVariable   FriendlyTicketsString
+hudBuilder.setNodeColor 		0.392 0.678 1 1
+
+hudBuilder.createTextNode		LevelInfo CommanderEnemyTickets 768 3 25 10
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 1
+hudBuilder.setTextNodeStringVariable  EnemyTicketsString
+hudBuilder.setNodeColor 		1 0.262 0.262 1
+
+rem -----------------------------------------Time Info---------------------------------------------------
+
+hudBuilder.createSplitNode		LevelInfo CommanderTimeInfo
+hudBuilder.setNodeShowVariable		TimeInfoShow
+
+hudBuilder.createTextNode		CommanderTimeInfo GameTimeLabel 423 0 96 20
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 1
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_TIMELEFT
+hudBuilder.setNodeColor 		0.768 0.749 0.596 1
+
+hudBuilder.createTextNode		CommanderTimeInfo GameTime 523 3 89 20
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 2
+hudBuilder.setTextNodeStringVariable 	LevelTime
+hudBuilder.setNodeColor 		0.768 0.749 0.560 1
+
+rem -----------------------------------------Score Info---------------------------------------------------
+
+hudBuilder.createTextNode		LevelInfo CommanderScoreLabel 240 0 92 20
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 1
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_SCORE
+hudBuilder.setNodeColor 		0.768 0.749 0.596 1
+
+hudBuilder.createTextNode		LevelInfo CommanderScore 336 3 86 20
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 2
+hudBuilder.setTextNodeStringVariable 	LocalScore
+hudBuilder.setNodeColor 		0.768 0.749 0.596 1
+
+rem ---------------------------------------- Commander Map ------------------------------------------------------
+
+hudBuilder.createMiniMapNode 		CommanderInterfaceLeft CommanderMiniMap 0 20 137 132
+
+hudBuilder.createPictureNode 		CommanderInterfaceLeft  CommanderMapGrid 0 20 137 132
+hudBuilder.setPictureNodeTexture 	Ingame/Minimap/map_commanderGrid.tga
+hudBuilder.setNodeColor		  	1 1 1 1
+hudBuilder.setPictureNodeBorder		0 0 0 1
+hudBuilder.setPictureNodeBorderColor  	0.243 0.227 0.168 1
+
+rem ---------------------------------------- Commander Tools ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderInterfaceLeft CommanderTools 137 20 103 132
+
+hudBuilder.createPictureNode 		CommanderTools CommanderButtonsBackground 0 0 103 132
+hudBuilder.setPictureNodeBorder	0 0 0 1
+hudBuilder.setNodeColor 	      0.415 0.415 0.337 0
+hudBuilder.setPictureNodeBorderColor  0.243 0.227 0.168 1
+
+rem ---------------------------------------- Satellite ------------------------------------------------------
+
+hudBuilder.createTransformNode		CommanderTools Satellite 4 2 103 25
+
+hudBuilder.createPictureNode 		Satellite CommanderSatelliteBackground 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Up.tga
+
+hudBuilder.createTextNode		Satellite CommanderSatelliteLabelNormal 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_SCAN
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT MinimapSatelliteReloading 1
+
+hudBuilder.createButtonNode 		Satellite CommanderSatelliteButton 0 1 86 23
+hudBuilder.setButtonNodeTexture 	1 Ingame/GeneralIcons/empty.tga
+hudBuilder.setButtonNodeConCmd		"Commander.satellite" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+
+hudBuilder.createBarNode 		Satellite CommanderSatelliteTime 2 0 1 86 23
+hudBuilder.setBarNodeTexture		1 Ingame/Commander/buttonBig_Down.tga
+hudBuilder.setBarNodeValueVariable	MinimapSatelliteTimeUntilReloaded
+hudBuilder.setBarNodeBorder		0 0 1 1
+hudBuilder.setNodeColor 	      	1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0 0 0 0
+hudBuilder.setNodeShowVariable		MinimapSatelliteReloading
+
+hudBuilder.createTextNode		Satellite CommanderSatelliteLabelReloading 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_SCAN
+hudBuilder.setNodeColor 	      	0.137 0.137 0.109 1
+hudBuilder.setNodeShowVariable		MinimapSatelliteReloading
+hudBuilder.setNodeInTime 		0.6
+hudBuilder.setNodeOutTime 		0.6
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		Satellite CommanderSatelliteArmor 0 89 2 5 23
+hudBuilder.setBarNodeTexture 		1 ""
+hudBuilder.setBarNodeValueVariable	SatelliteArmor
+hudBuilder.setBarNodeBorder         	1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0.137 0.137 0.109 1
+hudBuilder.setNodeColor 	      	0.768 0.749 0.596 1
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderNoSatelliteShow 1
+
+rem ---------------------------------------- Artillery ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderTools Artillery 4 27 103 25
+
+hudBuilder.createPictureNode 		Artillery CommanderArtilleryBackground 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Up.tga
+
+hudBuilder.createTextNode		Artillery CommanderArtilleryLabelNormal 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_STRIKE
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT ArtilleryReloading 1
+
+hudBuilder.createSplitNode		Artillery ArtilleryActive
+hudBuilder.setNodeShowVariable 		ArtilleryState
+hudBuilder.setNodeLogicShowVariable 	OR CommanderNoArtilleryShow 1
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		ArtilleryActive CommanderArtilleryActive 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Down.tga
+
+hudBuilder.createTextNode		ArtilleryActive CommanderArtilleryLabelActive 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_STRIKE
+hudBuilder.setNodeShowVariable 		ArtilleryState
+
+hudBuilder.createButtonNode 		Artillery CommanderArtilleryButton 0 1 86 23
+hudBuilder.setButtonNodeTexture 	1 Ingame/GeneralIcons/empty.tga
+hudBuilder.setButtonNodeConCmd		"Commander.toggleArtilleryState" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeAltConCmd	 "CommanderMenu.deselect" 0
+
+hudBuilder.createBarNode 		Artillery CommanderArtilleryTime 2 0 1 86 23
+hudBuilder.setBarNodeTexture		1 Ingame/Commander/buttonBig_Down.tga
+hudBuilder.setBarNodeValueVariable	ArtilleryTimeUntilReloaded
+hudBuilder.setBarNodeBorder		0 0 1 1
+hudBuilder.setNodeColor 	      	1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0 0 0 0
+hudBuilder.setNodeShowVariable		ArtilleryReloading
+
+hudBuilder.createTextNode		Artillery CommanderArtilleryLabelReloading 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_STRIKE
+hudBuilder.setNodeColor 	      	0.137 0.137 0.109 1
+hudBuilder.setNodeShowVariable		ArtilleryReloading
+hudBuilder.setNodeInTime 		0.6
+hudBuilder.setNodeOutTime 		0.6
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		Artillery CommanderArtilleryArmor 0 89 2 5 23
+hudBuilder.setBarNodeTexture 		1 ""
+hudBuilder.setBarNodeValueVariable	ArtilleryArmor
+hudBuilder.setBarNodeBorder         	1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0.137 0.137 0.109 1
+hudBuilder.setNodeColor 	      	0.768 0.749 0.596 1
+hudBuilder.setNodeLogicShowVariable 	NOT CommanderNoArtilleryShow 1
+
+
+rem ---------------------------------------- UAV ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderTools UAV 4 52 103 25
+
+hudBuilder.createPictureNode 		UAV CommanderUAVBackground 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Up.tga
+
+hudBuilder.createTextNode		UAV CommanderUAVLabelNormal 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_UAV
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT MinimapUAVReloading 1
+
+hudBuilder.createSplitNode		UAV UAVActive
+hudBuilder.setNodeShowVariable 		MinimapUAVState 
+hudBuilder.setNodeLogicShowVariable  	OR CommanderNoUAVShow 1
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		UAVActive CommanderUAVActive 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Down.tga
+
+hudBuilder.createTextNode		UAVActive CommanderUAVLabelActive 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_UAV
+hudBuilder.setNodeShowVariable 		MinimapUAVState
+
+hudBuilder.createButtonNode 		UAV CommanderUAVButton	0 1 86 23
+hudBuilder.setButtonNodeTexture 	1 Ingame/GeneralIcons/empty.tga
+hudBuilder.setButtonNodeConCmd		"Commander.toggleUAVState" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+
+hudBuilder.createBarNode 		UAV CommanderUAVTime 2 0 1 86 23
+hudBuilder.setBarNodeTexture		1 Ingame/Commander/buttonBig_Down.tga
+hudBuilder.setBarNodeValueVariable	MinimapUAVTimeUntilReloaded
+hudBuilder.setBarNodeBorder		0 0 1 1
+hudBuilder.setNodeColor 	      	1 1 1 1
+hudBuilder.setPictureNodeBorderColor    0 0 0 0
+hudBuilder.setNodeShowVariable		MinimapUAVReloading
+
+hudBuilder.createTextNode		UAV CommanderUAVLabelReloading 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_UAV
+hudBuilder.setNodeColor 	      	0.137 0.137 0.109 1
+hudBuilder.setNodeShowVariable		MinimapUAVReloading
+hudBuilder.setNodeInTime 		0.6
+hudBuilder.setNodeOutTime 		0.6
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		UAV CommanderUAVArmor 0 89 2 5 23
+hudBuilder.setBarNodeTexture 		1 ""
+hudBuilder.setBarNodeValueVariable	UAVArmor
+hudBuilder.setBarNodeBorder         	1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0.137 0.137 0.109 1
+hudBuilder.setNodeColor 	      	0.768 0.749 0.596 1
+hudBuilder.setNodeLogicShowVariable 	NOT CommanderNoUAVShow 1
+
+
+rem ---------------------------------------- Supplies ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderTools Supplies 4 77 103 25
+
+hudBuilder.createPictureNode 		Supplies CommanderSuppliesBackground 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Up.tga
+
+hudBuilder.createTextNode		Supplies CommanderSuppliesLabelNormal 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_SUPPLIES
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT SupplyReloading 1
+
+hudBuilder.createSplitNode		Supplies SuppliesActive
+hudBuilder.setNodeShowVariable      	SupplyState 
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		SuppliesActive CommanderSuppliesActive 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Down.tga
+
+hudBuilder.createTextNode		SuppliesActive CommanderSuppliesLabelActive 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_SUPPLIES
+
+hudBuilder.createButtonNode 		Supplies CommanderSuppliesButton 0 1 86 23
+hudBuilder.setButtonNodeTexture 	1 Ingame/GeneralIcons/empty.tga
+hudBuilder.setButtonNodeConCmd		"Commander.toggleSupplyState" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+
+hudBuilder.createBarNode 		Supplies CommanderSupplyTime 2 0 1 86 23
+hudBuilder.setBarNodeTexture		1 Ingame/Commander/buttonBig_Down.tga
+hudBuilder.setBarNodeValueVariable	SupplyTimeUntilReloaded
+hudBuilder.setBarNodeBorder		0 0 1 1
+hudBuilder.setNodeColor 	      	1 1 1 1
+hudBuilder.setPictureNodeBorderColor    0 0 0 0
+hudBuilder.setNodeShowVariable		SupplyReloading 
+
+hudBuilder.createTextNode		Supplies CommanderSuppliesLabelReloading 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_SUPPLIES
+hudBuilder.setNodeColor 	      	0.137 0.137 0.109 1
+hudBuilder.setNodeShowVariable		SupplyReloading 
+hudBuilder.setNodeInTime 		0.6
+hudBuilder.setNodeOutTime 		0.6
+hudBuilder.addNodeAlphaShowEffect
+
+
+rem ---------------------------------------- VehicleDrop ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderTools VehicleDrop 4 102 103 25
+
+hudBuilder.createPictureNode 		VehicleDrop CommanderVehicleDropBackground 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Up.tga
+
+hudBuilder.createTextNode		VehicleDrop CommanderVehicleDropLabelNormal 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_VEHICLEDROP
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT VehicleDropReloading 1
+
+hudBuilder.createSplitNode		VehicleDrop VehicleDropActive
+hudBuilder.setNodeShowVariable      	VehicleDropState 
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		VehicleDropActive CommanderVehicleDropActive 0 1 86 23
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonBig_Down.tga
+
+hudBuilder.createTextNode		VehicleDropActive CommanderVehicleDropLabelActive 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_VEHICLEDROP
+
+hudBuilder.createButtonNode 		VehicleDrop CommanderVehicleDropButton 0 1 86 23
+hudBuilder.setButtonNodeTexture 	1 Ingame/GeneralIcons/empty.tga
+hudBuilder.setButtonNodeConCmd		"Commander.toggleVehicleDropState" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+
+hudBuilder.createBarNode 		VehicleDrop CommanderVehicleDropTime 2 0 1 86 23
+hudBuilder.setBarNodeTexture		1 Ingame/Commander/buttonBig_Down.tga
+hudBuilder.setBarNodeValueVariable	VehicleDropTimeUntilReloaded
+hudBuilder.setBarNodeBorder		0 0 1 1
+hudBuilder.setNodeColor 	      	1 1 1 1
+hudBuilder.setPictureNodeBorderColor    0 0 0 0
+hudBuilder.setNodeShowVariable		VehicleDropReloading 
+
+hudBuilder.createTextNode		VehicleDrop CommanderVehicleDropLabelReloading 0 4 86 23
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_VEHICLEDROP
+hudBuilder.setNodeColor 	      	0.137 0.137 0.109 1
+hudBuilder.setNodeShowVariable		VehicleDropReloading 
+hudBuilder.setNodeInTime 		0.6
+hudBuilder.setNodeOutTime 		0.6
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		VehicleDrop CommanderVehiclesAvailable 0 89 2 5 23
+hudBuilder.setBarNodeTexture 		1 ""
+hudBuilder.setBarNodeValueVariable	VehiclesAvailable
+hudBuilder.setBarNodeBorder         	1 1 1 1
+hudBuilder.setPictureNodeBorderColor  	0.137 0.137 0.109 1
+hudBuilder.setNodeColor 	      	0.768 0.749 0.596 1
+hudBuilder.setNodeLogicShowVariable 	NOT CommanderNoVehicleDropShow 1
+
+
+rem ---------------------------------------- Bottom Elements ------------------------------------------------------
+
+hudBuilder.createPictureNode 		CommanderInterfaceBottom BottomCommanderBackground 0 577 800 25
+hudBuilder.setPictureNodeBorder		1 0 0 0
+hudBuilder.setPictureNodeBorderColor  	0.243 0.227 0.168 1
+hudBuilder.setNodeColor 	       	0.415 0.415 0.337 1
+
+hudBuilder.createButtonNode 		CommanderInterfaceBottom DummyButtonBottom 0 577 750 25
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	       	0 0 0 0
+
+hudBuilder.createTransformNode		CommanderInterfaceLeft CommanderChatButtons 0 580 560 15
+
+beginrem --------------------------------------- Side Lines -----------------------------------------------
+
+hudBuilder.createPictureNode	CommanderChatButtons ChatLine 0 -3 239 1
+hudBuilder.setNodeColor 	0.243 0.227 0.168 1
+endrem
+
+rem ---------------------------------------- Chat buttons ------------------------------------------------------
+
+hudBuilder.createPictureNode 		CommanderChatButtons CommanderSayAllBackground  3 0 76 16
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonChat_Up.tga 
+
+hudBuilder.createTextNode		CommanderChatButtons CommanderSayAllLabelInactive 3 -1 76 16
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_ALL
+hudBuilder.setNodeColor 		1 0.792 0.043 1
+
+hudBuilder.createButtonNode		CommanderChatButtons CommanderSayAll 3 0 76 16
+hudBuilder.setButtonNodeTexture 	1 ""
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeConCmd		"hudManager.enableSayAllChatBox 1" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	       	1 1 1 0
+
+hudBuilder.createSplitNode		CommanderChatButtons SayAllActiveSplit
+hudBuilder.setNodeShowVariable      	SayAllShow
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		SayAllActiveSplit CommanderSayAllActive  3 0 76 16
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonChat_Down.tga 
+
+hudBuilder.createTextNode		SayAllActiveSplit CommanderSayAllLabelActive 3 -1 76 16
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_ALL
+
+rem -------------------------------------------Team
+
+hudBuilder.createPictureNode 		CommanderChatButtons CommanderSayTeamBackground  82 0 76 16
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonChat_Up.tga
+
+hudBuilder.createTextNode		CommanderChatButtons CommanderSayTeamLabel 82 -1 76 16
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_TEAM
+hudBuilder.setNodeColor 		1 0.792 0.043 1
+
+hudBuilder.createButtonNode		CommanderChatButtons CommanderSayTeam 82 0 76 16
+hudBuilder.setButtonNodeTexture 	1 ""
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeConCmd		"hudManager.enableSayTeamChatBox 1" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	       	1 1 1 0
+
+hudBuilder.createSplitNode		CommanderChatButtons SayTeamActiveSplit
+hudBuilder.setNodeShowVariable      	SayTeamShow
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		SayTeamActiveSplit CommanderSayTeamActive  82 0 76 16
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonChat_Down.tga
+
+hudBuilder.createTextNode		SayTeamActiveSplit CommanderSayTeamLabelActive 82 -1 76 16
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_TEAM
+
+rem -------------------------------------------Squad
+
+hudBuilder.createPictureNode 		CommanderChatButtons CommanderSaySquadBackground  161 0 76 16
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonChat_Up.tga 
+
+hudBuilder.createTextNode		CommanderChatButtons CommanderSaySquadLabel 161 -1 76 16
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_SQUAD
+hudBuilder.setNodeColor 		1 0.792 0.043 1
+
+hudBuilder.createButtonNode		CommanderChatButtons CommanderSaySquad 161 0 76 16
+hudBuilder.setButtonNodeTexture 	1 ""
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeConCmd		"hudManager.enableSaySquadChatBox 1" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 1 1 0
+
+hudBuilder.createSplitNode		CommanderChatButtons SaySquadActiveSplit
+hudBuilder.setNodeShowVariable      	SaySquadShow
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		SaySquadActiveSplit CommanderSaySquadActive 161 0 76 16
+hudBuilder.setPictureNodeTexture 	Ingame/Commander/buttonChat_Down.tga 
+
+hudBuilder.createTextNode		SaySquadActiveSplit CommanderSaySquadLabelActive 161 -1 76 16
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_SQUAD
+
+rem ------------------------------------- Map filter buttons ------------------------------------------------------
+
+hudBuilder.createTransformNode	CommanderInterfaceBottom MapFilterButtons 241 580 562 15
+
+hudBuilder.createTransformNode	MapFilterButtons MapFilterKits 0 1 270 15
+
+beginrem
+hudBuilder.createTextNode		MapFilterKits FilterKitsLabel -20 -1 23 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_PLAYERS
+hudBuilder.setNodeColor 	      	0.768 0.749 0.596 1
+endrem
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter0Background 6 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter0 6  0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame/Kits/Icons/kit_SpecOps.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 0" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter0ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter0Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter0ActiveSplit Mapfilter0Active 6  0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter0ActiveSplit Mapfilter0SelectedIcon 6  0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame/Kits/Icons/kit_SpecOps.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter1Background 24 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter1 24 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame/Kits/Icons/kit_Sniper.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 1" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter1ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter1Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter1ActiveSplit Mapfilter1Active 24 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter1ActiveSplit Mapfilter1SelectedIcon 24 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame/Kits/Icons/kit_Sniper.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter2Background 42 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter2 42 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame/Kits/Icons/kit_Light_Assault.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 2" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter2ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter2Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter2ActiveSplit Mapfilter2Active 42 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter2ActiveSplit Mapfilter2SelectedIcon 42 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame/Kits/Icons/kit_Light_Assault.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter3Background 60 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter3 60 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame/Kits/Icons/kit_Heavy_Assault.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 3" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter3ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter3Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter3ActiveSplit Mapfilter3Active 60 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter3ActiveSplit Mapfilter3SelectedIcon 60 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame/Kits/Icons/kit_Heavy_Assault.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter4Background 78 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter4 78 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame/Kits/Icons/kit_Engineer.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 4" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter4ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter4Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter4ActiveSplit Mapfilter4Active 78 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter4ActiveSplit Mapfilter4SelectedIcon 78 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame/Kits/Icons/kit_Engineer.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter5Background 96 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter5 96 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame/Kits/Icons/kit_Medic.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 5" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter5ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter5Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter5ActiveSplit Mapfilter5Active 96 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter5ActiveSplit Mapfilter5SelectedIcon 96 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame/Kits/Icons/kit_Medic.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter6Background 114 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter6 114 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Kits\Icons\kit_ATAA.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 6" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter6ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter6Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter6ActiveSplit Mapfilter6Active 114 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter6ActiveSplit Mapfilter6SelectedIcon 114 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Kits\Icons\kit_ATAA.tga
+
+rem --------------------------------------SquadLeaders--------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter7Background 133 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter7 133 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Kits\Icons\kit_Squad.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintKit 7" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter7ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter7Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter7ActiveSplit Mapfilter7Active 133 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter7ActiveSplit Mapfilter7SelectedIcon 133 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Kits\Icons\kit_Squad.tga
+
+rem -----------------------------------Allkits-----------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits Mapfilter8Background 150 0 53 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits Mapfilter8 150 0 53 15
+hudBuilder.setButtonNodeTexture 	1 ""
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintAllKits" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	0 0 0 0
+
+hudBuilder.createTextNode		MapFilterKits ALLKitsActiveLabel 150 -1 53 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_ALL
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT MinimapMapFilter9Active 1
+
+hudBuilder.createSplitNode		MapFilterKits Mapfilter8ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter9Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter8ActiveSplit Mapfilter8Active 150 0 53 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Down.tga
+
+hudBuilder.createTextNode		Mapfilter8ActiveSplit NoKitsActiveLabel 150 -1 53 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_ALL
+
+rem ----------------------------------ShowKitIcons------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterKits ToggleShowKitsBackground 208 0 59 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterKits ToggleShowKits 208 0 59 15
+hudBuilder.setButtonNodeTexture 	1 ""
+hudBuilder.setNodeColor 	      	0 0 0 0
+hudBuilder.setButtonNodeConCmd		"MiniMap.toggleShowKits" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+
+hudBuilder.createTextNode		MapFilterKits ShowKitsActive 208 -1 59 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_FILTERS_KITS
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT MinimapShowKitsOnMap 1
+
+hudBuilder.createSplitNode		MapFilterKits ShowKitsInActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapShowKitsOnMap
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		ShowKitsInActiveSplit ShowAllKitsInactive 208 0 59 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Down.tga
+
+hudBuilder.createTextNode		ShowKitsInActiveSplit ShowKitsInActive 208 -1 59 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_FILTERS_KITS
+
+rem ------------------------------------Vehicles----------------------------------------------------------
+
+
+hudBuilder.createTransformNode		MapFilterButtons MapFilterVehicles 269 1 292 20
+
+beginrem 
+hudBuilder.createTextNode		MapFilterVehicles FilterVehiclesLabel -14 -1 60 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_FILTERS_VEHCILES
+hudBuilder.setNodeColor 	      	0.768 0.749 0.596 1
+endrem
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles Mapfilter9Background 8 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter9 8 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_tank.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 0" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter9ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter10Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter9ActiveSplit Mapfilter9SelectedIcon 8 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter9ActiveSplit Mapfilter9Active 8 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_tank.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles Mapfilter10Background 26 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter10 26 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 1" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter10ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter11Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter10ActiveSplit Mapfilter10Active 26 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter10ActiveSplit Mapfilter10SelectedIcon 26 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_apc.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles Mapfilter11Background 44 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter11 44 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 2" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter11ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter12Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter11ActiveSplit Mapfilter11Active 44 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter11ActiveSplit Mapfilter11SelectedIcon 44 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles Mapfilter12Background 62 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter12 62 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_jeep.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 3" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter12ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter13Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter12ActiveSplit Mapfilter12Active 62 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter12ActiveSplit Mapfilter12SelectedIcon 62 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_jeep.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 	      	MapFilterVehicles Mapfilter13Background 80 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter13 80 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_plane.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 4" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter13ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter14Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter13ActiveSplit Mapfilter13Active 80 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter13ActiveSplit Mapfilter13SelectedIcon 80 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_plane.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles Mapfilter14Background 98 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter14 98 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_antiair.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 5" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter14ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter15Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter14ActiveSplit Mapfilter14Active 98 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter14ActiveSplit Mapfilter14SelectedIcon 98 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_antiair.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles Mapfilter15Background 116 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles Mapfilter15 116 0 15 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_boat.tga
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintVehicle 6" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+
+hudBuilder.createSplitNode		MapFilterVehicles Mapfilter15ActiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter16Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		Mapfilter15ActiveSplit Mapfilter15Active 116 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonFilter_Down.tga
+
+hudBuilder.createPictureNode 		Mapfilter15ActiveSplit Mapfilter15SelectedIcon 116 0 15 15
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_boat.tga
+
+rem ----------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles ShowAllVehiclesBackground 134 0 64 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles ShowAllVehicles 134 0 64 15
+hudBuilder.setButtonNodeTexture 	1 ""
+hudBuilder.setButtonNodeConCmd		"MiniMap.setPaintAllVehicles" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setButtonNodeConCmd		"CommanderMenu.deselect" 0
+hudBuilder.setButtonNodeAltConCmd	"CommanderMenu.deselect" 0
+hudBuilder.setNodeColor 	      	0 0 0 0
+
+hudBuilder.createTextNode		MapFilterVehicles ShowAllVehiclesActive 134 -1 64 15
+hudBuilder.setTextNodeStyle		Fonts/hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_ALL
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+hudBuilder.setNodeLogicShowVariable	NOT MinimapMapFilter18Active 1
+
+hudBuilder.createSplitNode		MapFilterVehicles ShowAllVehiclesInactiveSplit
+hudBuilder.setNodeShowVariable      	MinimapMapFilter18Active
+hudBuilder.setNodeInTime 		0.2
+hudBuilder.setNodeOutTime 		0.2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		ShowAllVehiclesInactiveSplit ShowAllVehiclesInactiveBackground 134 0 64 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Down.tga
+
+hudBuilder.createTextNode		ShowAllVehiclesInactiveSplit  ShowAllVehiclesInactive 134 -1 64 15
+hudBuilder.setTextNodeStyle		Fonts\hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_COMMUNICATION_ALL
+
+rem -------------------------------------------Bottom Lines----------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles VehicleLine 0 -3 1 25
+hudBuilder.setNodeColor 	      0.243 0.227 0.168 1
+
+hudBuilder.createPictureNode 		MapFilterVehicles ResignLine 201 -3 1 25
+hudBuilder.setNodeColor 	      0.243 0.227 0.168 1
+
+
+rem ---------------------------------------- CommanderOptions ------------------------------------------------------
+
+hudBuilder.createPictureNode 		MapFilterVehicles CommanderResignBackground 206 0 81 15
+hudBuilder.setPictureNodeTexture 	Ingame\Commander\buttonChat_Up.tga
+
+hudBuilder.createButtonNode 		MapFilterVehicles CommanderResign 206 0 81 15
+hudBuilder.setButtonNodeTexture 	1 Ingame\GeneralIcons\empty.tga
+hudBuilder.setButtonNodeConCmd		"Commander.commanderResign" 3
+hudBuilder.setButtonNodeConCmd		"sound.playSound weaponSelect" 0
+hudBuilder.setNodeColor 	      	1 1 1 0
+
+hudBuilder.createTextNode		MapFilterVehicles CommanderResignLabel 206 -1 81 15
+hudBuilder.setTextNodeStyle		Fonts\hudFontLocalBold_9.dif 0
+hudBuilder.setTextNodeString		HUD_TEXT_COMMANDER_RESIGN
+hudBuilder.setNodeColor 	      	1 0.792 0.043 1
+

@@ -1,0 +1,463 @@
+rem *** VOICE MESSAGES COMMANDER & SL ***
+
+
+rem                          
+rem *** C O M M A N D E R ***
+rem                          
+
+rem * Automated message sent when you have been assigned as commander .
+gamelogic.messages.addMessage "commander_assign"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_welcomecommander.ogg" COMMSL_COMMANDER_welcomecommander
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_welcomecommander_alt.ogg" COMMSL_COMMANDER_welcomecommander_alt
+
+rem * Automated message sent when your satellite already activated. <- huh?
+gamelogic.messages.addMessage "commander_resign"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_commanderposavailable.ogg" COMMSL_COMMANDER_commanderposavailable
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_commanderposavailable_alt.ogg" COMMSL_COMMANDER_commanderposavailable_alt
+
+rem * Automated message sent when your satellite already activated. <- huh??
+gamelogic.messages.addMessage "new_commander"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_newcommander.ogg" COMMSL_COMMANDER_newcommander
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_newcommander_alt.ogg" COMMSL_COMMANDER_newcommander_alt
+
+
+rem * This support is currently not available since there is no Commander in your team
+gamelogic.messages.addMessage "no_commander_available"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_nocommanderavailable.ogg" COMMSL_COMMANDER_nocommanderavailable
+
+
+gamelogic.messages.addMessage "establish_cameralink"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_establishcameralink.ogg" COMMSL_COMMANDER_establishcameralink
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMMANDER_establishcameralink_alt.ogg" COMMSL_COMMANDER_establishcameralink_alt
+
+rem                    
+rem *** S Q U A D S ***
+rem                    
+
+rem * Automated message sent when your satellite already activated. <- men för fan på kommentarerna, sluta copy/pastea nu. :]
+gamelogic.messages.addMessage "new_squadleader"
+gamelogic.messages.addRadioVoice "squadLeader" "commander/filter/COMMSL_SQUAD_assignedsl.ogg" COMMSL_SQUAD_assignedsl
+gamelogic.messages.addRadioVoice "squadLeader" "commander/filter/COMMSL_SQUAD_assignedsl_alt.ogg" COMMSL_SQUAD_assignedsl_alt
+
+rem * Automated message sent when your satellite already activated.
+gamelogic.messages.addMessage "new_squad"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SQUAD_newslassigned.ogg" COMMSL_SQUAD_newslassigned
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SQUAD_newslassigned_alt.ogg" COMMSL_SQUAD_newslassigned_alt
+
+gamelogic.messages.addMessage "no_sql_response"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SQUAD_noslresponse.ogg" COMMSL_SQUAD_noslresponse
+
+gamelogic.messages.addMessage "COMMSL_SQUAD_squadneedsaleader"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SQUAD_squadneedsaleader.ogg" COMMSL_SQUAD_squadneedsaleader
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SQUAD_squadneedsaleader_alt.ogg" COMMSL_SQUAD_squadneedsaleader_alt
+
+
+
+rem * 
+
+gamelogic.messages.addMessage "Squad One"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadone.ogg" COMMSL_SQUAD_joinedsquadone "squadleader/No_filter/COMMSL_SQUAD_joinedsquadone.ogg" 1
+
+gamelogic.messages.addMessage "Squad two"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadtwo.ogg" COMMSL_SQUAD_joinedsquadtwo "squadleader/No_filter/COMMSL_SQUAD_joinedsquadtwo.ogg" 1
+
+gamelogic.messages.addMessage "Squad three"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadthree.ogg" COMMSL_SQUAD_joinedsquadthree "squadleader/No_filter/COMMSL_SQUAD_joinedsquadthree.ogg" 1
+
+gamelogic.messages.addMessage "Squad four"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadfour.ogg" COMMSL_SQUAD_joinedsquadfour "squadleader/No_filter/COMMSL_SQUAD_joinedsquadfour.ogg" 1
+
+gamelogic.messages.addMessage "Squad five"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadfive.ogg" COMMSL_SQUAD_joinedsquadfive "squadleader/No_filter/COMMSL_SQUAD_joinedsquadfive.ogg" 1
+
+gamelogic.messages.addMessage "Squad six"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadsix.ogg" COMMSL_SQUAD_joinedsquadsix "squadleader/No_filter/COMMSL_SQUAD_joinedsquadsix.ogg" 1
+
+gamelogic.messages.addMessage "Squad seven"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadseven.ogg" COMMSL_SQUAD_joinedsquadseven "squadleader/No_filter/COMMSL_SQUAD_joinedsquadseven.ogg" 1
+
+gamelogic.messages.addMessage "Squad eight"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadeight.ogg" COMMSL_SQUAD_joinedsquadeight "squadleader/No_filter/COMMSL_SQUAD_joinedsquadeight.ogg" 1
+
+gamelogic.messages.addMessage "Squad nine"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadnine.ogg" COMMSL_SQUAD_joinedsquadnine "squadleader/No_filter/COMMSL_SQUAD_joinedsquadnine.ogg" 1
+
+gamelogic.messages.addMessage "Squad ten"
+gamelogic.messages.addRadioVoice "squadLeader" "squadleader/filter/COMMSL_SQUAD_joinedsquadten.ogg" COMMSL_SQUAD_joinedsquadten "squadleader/No_filter/COMMSL_SQUAD_joinedsquadten.ogg" 1
+
+
+
+
+
+
+
+
+
+rem                      
+rem *** B R I D G E S ***
+rem                      
+
+gamelogic.messages.addMessage "COMSL_BRIDGES_bridgedestroyed"
+gamelogic.messages.addRadioVoice "commander" "squadleader/filter/COMSL_BRIDGES_bridgedestroyed.ogg" COMSL_BRIDGES_bridgedestroyed
+gamelogic.messages.addRadioVoice "commander" "squadleader/filter/COMSL_BRIDGES_bridgedestroyed_alt.ogg" COMSL_BRIDGES_bridgedestroyed_alt
+
+gamelogic.messages.addMessage "COMSL_BRIDGES_bridgerepaired"
+gamelogic.messages.addRadioVoice "commander" "squadleader/filter/COMSL_BRIDGES_bridgerepaired.ogg" COMSL_BRIDGES_bridgerepaired
+gamelogic.messages.addRadioVoice "commander" "squadleader/filter/COMSL_BRIDGES_bridgerepaired_alt.ogg" COMSL_BRIDGES_bridgerepaired_alt
+
+rem                                    
+rem *** S A T E L L I T E   S C A N ***
+rem                                    
+
+
+rem * For the commander, when he is starting the satellite scan
+gamelogic.messages.addMessage "satellite_scan_initiated"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satellitescaninitiated.ogg" COMMSL_SCAN_satelliescaninitiated
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satellitescaninitiated_alt.ogg" COMMSL_SCAN_satelliescaninitiated_alt
+
+rem * Sent to the team when the commander starts the satellite scan. notification tell the players that they will soon recieve data about enemy positions.
+gamelogic.messages.addMessage "COMMSL_SCAN_satellitetransmitting"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satellitetransmitting.ogg" COMMSL_SCAN_satellitetransmitting
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satellitetransmitting_alt.ogg" COMMSL_SCAN_satellitetransmitting_alt
+
+rem * Satellite stops its transmission
+gamelogic.messages.addMessage "satellite_link_breaking"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satscanlinkbreaking.ogg" COMMSL_SCAN_satscanlinkbreaking
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satscanlinkbreaking_alt.ogg"  COMMSL_SCAN_satscanlinkbreaking_alt
+
+rem * When the commander tries to launch a scan when the timer on the satellite is still running
+gamelogic.messages.addMessage "satellite_not_ready"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satnotreadyforscan.ogg" COMMSL_SCAN_satnotreadyforscan
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satnotreadyforscan_alt.ogg" COMMSL_SCAN_satnotreadyforscan_alt
+
+rem * Automated message sent when your satellite has been destroyed.
+gamelogic.messages.addMessage "satellite_destroyed"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_trailercondred.ogg" COMMSL_SCAN_trailercondred
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_trailercondred_alt.ogg" COMMSL_SCAN_trailercondred_alt
+
+rem * Automated message sent when your satellite has been repaired.
+gamelogic.messages.addMessage "satellite_repaired"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_trailerrepaired.ogg" COMMSL_SCAN_trailerrepaired
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_trailerrepaired_alt.ogg" COMMSL_SCAN_trailerrepaired_alt
+
+rem * Automated message sent when your satellite is not available.
+gamelogic.messages.addMessage "satellite_unavailable"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_trailerdestroyed.ogg" COMMSL_SCAN_trailerdestroyed
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_trailerdestroyed_alt.ogg" COMMSL_SCAN_trailerdestroyed_alt
+
+rem * Automated message sent when your satellite already activated.
+gamelogic.messages.addMessage "satellite_in_use"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satnotreadyforscan.ogg" COMMSL_SCAN_satnotreadyforscan
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_satnotreadyforscan_alt.ogg" COMMSL_SCAN_satnotreadyforscan_alt
+
+rem * An automated warning sent to the entire team when the enemy is starting a satellite scan. It's a warning tell the team that their current position is exposed to the enemy.
+gamelogic.messages.addMessage "COMMSL_SCAN_warningenemysatscan"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_warningenemysatscan.ogg" COMMSL_SCAN_warningenemysatscan
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_warningenemysatscan_alt.ogg" COMMSL_SCAN_warningenemysatscan_alt
+
+gamelogic.messages.addMessage "COMMSL_SCAN_requesttrailerrepairs"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_requesttrailerrepairs.ogg" COMMSL_SCAN_requesttrailerrepairs
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SCAN_requesttrailerrepairs_alt.ogg" COMMSL_SCAN_requesttrailerrepairs_alt
+
+
+
+
+rem                          
+rem *** A R T I L L E R Y ***
+rem                          
+
+
+rem * Automated message sent when your artillery has fired.
+gamelogic.messages.addMessage "artillery_fire"
+gamelogic.messages.addRadioVoice "grunt" "commander/filter/COMMSL_ARTILLERY_artillerylaunch.ogg" COMMSL_ARTILLERY_artillerylaunch
+gamelogic.messages.addRadioVoice "grunt" "commander/filter/COMMSL_ARTILLERY_artillerylaunch_alt.ogg" COMMSL_ARTILLERY_artillerylaunch_alt
+gamelogic.messages.addRadioVoice "squadleader" "commander/filter/COMMSL_ARTILLERY_artillerylaunch.ogg" COMMSL_ARTILLERY_artillerylaunch
+gamelogic.messages.addRadioVoice "squadleader" "commander/filter/COMMSL_ARTILLERY_artillerylaunch_alt.ogg" COMMSL_ARTILLERY_artillerylaunch_alt
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artillerylaunch.ogg" COMMSL_ARTILLERY_artillerylaunch
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artillerylaunch_alt.ogg" COMMSL_ARTILLERY_artillerylaunch_alt
+
+rem * Automated message sent when your artillery is under attack.
+gamelogic.messages.addMessage "COMMSL_ARTILLERY_artillerycondred"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artillerycondred.ogg" COMMSL_ARTILLERY_artillerycondred
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artillerycondred_alt.ogg" COMMSL_ARTILLERY_artillerycondred_alt
+
+rem * Automated message sent when your artillery has been destroyed.
+gamelogic.messages.addMessage "artillery_destroyed"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artillerycondred.ogg" COMMSL_ARTILLERY_artillerydestroyed
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artillerycondred_alt.ogg" COMMSL_ARTILLERY_artillerydestroyed_alt
+
+rem * Automated message sent when your artillery has been repaired.
+gamelogic.messages.addMessage "artillery_repaired"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artilleryrepaired.ogg" COMMSL_ARTILLERY_artilleryrepaired
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artilleryrepaired_alt.ogg" COMMSL_ARTILLERY_artilleryrepaired_alt
+
+rem * Automated message sent when your artillery request is accepted.
+gamelogic.messages.addMessage "artillery_accept"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artrequestaccepted.ogg" COMMSL_ARTILLERY_artrequestaccepted
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artrequestaccepted_alt.ogg" COMMSL_ARTILLERY_artrequestaccepted_alt
+
+rem * Automated message sent when your artillery request is denied.
+gamelogic.messages.addMessage "artillery_deny"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artrequestdenied.ogg" COMMSL_ARTILLERY_artrequestdenied
+
+rem * Automated message sent when artillery unavailable.
+gamelogic.messages.addMessage "artillery_unavailable"
+gamelogic.messages.addRadioVoice "grunt" "commander/filter/COMMSL_ARTILLERY_artrequestdenied.ogg" COMMSL_ARTILLERY_artrequestdenied
+gamelogic.messages.addRadioVoice "squadleader" "commander/filter/COMMSL_ARTILLERY_artrequestdenied.ogg" COMMSL_ARTILLERY_artrequestdenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artrequestdenied.ogg" COMMSL_ARTILLERY_artrequestdenied
+
+rem * Automated message sent when artillery is already activated.
+gamelogic.messages.addMessage "artillery_in_use"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artrequestautodenied.ogg" COMMSL_ARTILLERY_artrequestautodenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_artrequestautodenied_alt.ogg" COMMSL_ARTILLERY_artrequestautodenied_alt
+
+
+gamelogic.messages.addMessage "COMMSL_ARTILLERY_requestartilleryrepairs"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_requestartilleryrepairs.ogg" COMMSL_ARTILLERY_requestartilleryrepairs
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ARTILLERY_requestartilleryrepairs_alt.ogg" COMMSL_ARTILLERY_requestartilleryrepairs_alt
+
+
+rem              
+rem *** U A V ***
+rem              
+
+
+gamelogic.messages.addMessage "COMMSL_UAV_trailerdamaged"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_trailerdamaged.ogg" COMMSL_UAV_trailerdamaged
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_trailerdamaged_alt.ogg" COMMSL_UAV_trailerdamaged_alt
+
+rem * Automated message sent when your UAV has been destroyed.
+gamelogic.messages.addMessage "uav_destroyed"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_trailerdestroyed.ogg" COMMSL_UAV_trailerdestroyed
+
+rem * Automated message sent when your UAV has been repaired.
+gamelogic.messages.addMessage "uav_repaired"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_trailerrepaired.ogg" COMMSL_UAV_trailerrepaired
+
+
+rem * Automated message sent when your uav request is accepted.
+gamelogic.messages.addMessage "uav_accept"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavrequestaccepted.ogg" COMMSL_UAV_uavrequestaccepted
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavrequestaccepted_alt.ogg" COMMSL_UAV_uavrequestaccepted_alt
+
+rem * Automated message sent when your uav request is denied.
+gamelogic.messages.addMessage "uav_deny"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavrequestdenied.ogg" COMMSL_UAV_uavrequestdenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavrequestdenied_alt.ogg" COMMSL_UAV_uavrequestdenied_alt
+
+rem * Sent to the team when the UAV is airborne and sending. This is just a notification to the team.
+gamelogic.messages.addMessage "COMMSL_UAV_C_uavonline"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_C_uavonline.ogg" COMMSL_UAV_C_uavonline
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_C_uavonline_alt.ogg" COMMSL_UAV_C_uavonline_alt
+
+
+rem * Automated message sent when uav is airborne.
+gamelogic.messages.addMessage "uav_online"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavonline.ogg" COMMSL_UAV_uavonline
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavonline_alt.ogg" COMMSL_UAV_uavonline_alt
+
+rem * Automated message sent when uav is finished.
+gamelogic.messages.addMessage "uav_offline"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavoffline.ogg" COMMSL_UAV_uavoffline
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavoffline_alt.ogg" COMMSL_UAV_uavoffline_alt
+
+rem * Automated message sent when uav unavailable.
+gamelogic.messages.addMessage "uav_in_use"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavrequestautodenied.ogg" COMMSL_UAV_uavrequestautodenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavrequestautodenied_alt.ogg" COMMSL_UAV_uavrequestautodenied_alt
+
+rem * Automated message sent when uav unavailable.
+gamelogic.messages.addMessage "uav_unavailable"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_uavnotavailable.ogg" COMMSL_UAV_uavnotavailable
+
+gamelogic.messages.addMessage "COMMSL_UAV_requestrepairs"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_UAV_requestrepairs.ogg" COMMSL_UAV_requestrepairs
+
+
+
+
+rem                        
+rem *** S U P P L I E S ***
+rem                        
+
+rem * Automated message sent when your supply request is accepted.
+gamelogic.messages.addMessage "supply_accept"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_suprequestaccepted.ogg" COMMSL_SUPPLIES_suprequestaccepted
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_suprequestaccepted_alt.ogg" COMMSL_SUPPLIES_suprequestaccepted_alt
+
+rem * Automated message sent when your supply request is denied.
+gamelogic.messages.addMessage "supply_deny"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_suprequestdenied.ogg" COMMSL_SUPPLIES_suprequestdenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_suprequestdenied_alt.ogg" COMMSL_SUPPLIES_suprequestdenied_alt
+
+rem * Automated message sent when supplies unavailable.
+gamelogic.messages.addMessage "supplies_in_use"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_suprequestautodenied.ogg" COMMSL_SUPPLIES_suprequestautodenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_suprequestautodenied_alt.ogg" COMMSL_SUPPLIES_suprequestautodenied_alt
+
+rem * Automated message sent when supplies is dropped (confirmation to commander).
+gamelogic.messages.addMessage "supplies_dropinitiated"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_dropinitiated.ogg" COMMSL_SUPPLIES_dropinitiated
+
+rem * Automated message sent when supplies is dropped.
+gamelogic.messages.addMessage "supplies_incoming"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMRADIO_supplyheadsup.ogg" COMMSL_COMRADIO_supplyHeadsUp
+
+rem * To commander when he tries to initate a supply drop when on timer.
+gamelogic.messages.addMessage "supplies_not_available"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_notavailable.ogg"  COMMSL_SUPPLIES_notavailable
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_SUPPLIES_notavailable_alt.ogg"  COMMSL_SUPPLIES_notavailable_alt
+
+
+
+
+
+rem                        
+rem *** V E H I C L E   D R O P ***
+rem                        
+
+rem * Automated message sent when your vehicledrop request is accepted.
+gamelogic.messages.addMessage "vehicledrop_accept"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_advrequestaccepted.ogg" COMMSL_ADV_advrequestaccepted
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_advrequestaccepted_alt.ogg" COMMSL_ADV_advrequestaccepted_alt
+
+rem * Automated message sent when your vehicledrop request is denied.
+gamelogic.messages.addMessage "vehicledrop_deny"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_advrequestdenied.ogg" COMMSL_ADV_advrequestdenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_advrequestdenied_alt.ogg" COMMSL_ADV_advrequestdenied_alt
+
+rem * Automated message sent when vehicledrop unavailable.
+gamelogic.messages.addMessage "vehicledrop_in_use"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_suprequestautodenied.ogg" COMMSL_ADV_vehrequestautodenied
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_suprequestautodenied_alt.ogg" COMMSL_ADV_vehrequestautodenied_alt
+
+rem * Automated message sent when vehicledrop is dropped (confirmation to commander).
+gamelogic.messages.addMessage "vehicledrop_dropinitiated"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_dropinitiated.ogg" COMMSL_ADV_dropinitiated 
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_dropinitiated_alt.ogg" COMMSL_ADV_dropinitiated_alt 
+
+rem * Automated message sent when vehicledrop is dropped.
+gamelogic.messages.addMessage "vehicledrop_incoming"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_COMRADIO_vehicleHeadsUp.ogg" COMMSL_COMRADIO_vehicleHeadsUp
+
+rem * To commander when he tries to initate a vehicledrop when on timer.
+gamelogic.messages.addMessage "vehicledrop_not_available"
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_notavailable.ogg"  COMMSL_ADV_notavailable
+gamelogic.messages.addRadioVoice "commander" "commander/filter/COMMSL_ADV_notavailable_alt.ogg"  COMMSL_ADV_notavailable_alt
+
+
+
+rem                                                                          
+rem *** C O M M A N D E R   A N D   S Q U A D   L E A D E R   O R D E R S ***
+rem                                                                          
+
+gamelogic.messages.addMessage "defend"
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_defendthispos.ogg" "" "squadleader/No_filter/COMMSL_SLORDERS_defendthispos.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_defendthispos_alt.ogg" "" "squadleader/No_filter/COMMSL_SLORDERS_defendthispos_alt.ogg" 1
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_defendthispos.ogg" COMMSL_COMORDERS_defendthispos
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_defendthispos_alt.ogg" COMMSL_COMORDERS_defendthispos_alt
+
+gamelogic.messages.addMessage "attack_position"
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_attackthispos.ogg" "" "squadleader/No_filter/COMMSL_SLORDERS_attackthispos.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_attackthispos_alt.ogg" "" "squadleader/No_filter/COMMSL_SLORDERS_attackthispos_alt.ogg" 1
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_attackthispos.ogg" COMMSL_COMORDERS_attackthispos
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_attackthispos_alt.ogg" COMMSL_COMORDERS_attackthispos_alt
+
+gamelogic.messages.addMessage "move"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_movetothispos.ogg" COMMSL_COMORDERS_movetothispos
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_movetothispos_alt.ogg" COMMSL_COMORDERS_movetothispos_alt
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_movetothispos.ogg" COMMSL_SLORDERS_movetothispos "squadleader/No_filter/COMMSL_SLORDERS_movetothispos.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_movetothispos_alt.ogg" COMMSL_SLORDERS_movetothispos_alt "squadleader/No_filter/COMMSL_SLORDERS_movetothispos_alt.ogg" 1
+
+gamelogic.messages.addMessage "repair"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_repairsneededhere.ogg" COMMSL_COMORDERS_repairsneededhere
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_repairthispos.ogg" COMMSL_SLORDERS_repairthispos "squadleader/No_filter/COMMSL_SLORDERS_repairthispos.ogg" 1
+
+gamelogic.messages.addMessage "destroy"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_demolitionsneededhere.ogg" COMMSL_COMORDERS_demolitionsneededhere
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_demolitionsneededhere_alt.ogg" COMMSL_COMORDERS_demolitionsneededhere_alt
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_demolitionsneededhere.ogg" COMMSL_SLORDERS_demolitionsneededhere "squadleader/No_filter/COMMSL_SLORDERS_demolitionsneededhere.ogg" 1
+
+gamelogic.messages.addMessage "req_supply"
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/PLAYER_REQUEST_SL_requestsupplies.ogg" PLAYER_REQUEST_SL_requestsupplies "squadleader/No_filter/PLAYER_REQUEST_SL_requestsupplies.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/PLAYER_REQUEST_SL_requestsupplies_alt.ogg" PLAYER_REQUEST_SL_requestsupplies_alt "squadleader/No_filter/PLAYER_REQUEST_SL_requestsupplies_alt.ogg" 1
+
+gamelogic.messages.addMessage "req_vehicledrop"
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/PLAYER_REQUEST_SL_requestadv.ogg" PLAYER_REQUEST_SL_requestadv "squadleader/No_filter/PLAYER_REQUEST_SL_requestadv.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/PLAYER_REQUEST_SL_requestadv_alt.ogg" PLAYER_REQUEST_SL_requestadv_alt "squadleader/No_filter/PLAYER_REQUEST_SL_requestadv_alt.ogg" 1
+
+gamelogic.messages.addMessage "req_mines"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMORDERS_placemineshere.ogg" COMMSL_COMORDERS_placemineshere
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_minethispos.ogg" COMMSL_SLORDERS_minethispos "squadleader/No_filter/COMMSL_SLORDERS_minethispos.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/COMMSL_SLORDERS_minethispos_alt.ogg" COMMSL_SLORDERS_minethispos_alt "squadleader/No_filter/COMMSL_SLORDERS_minethispos_alt.ogg" 1
+
+gamelogic.messages.addMessage "req_uav"
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/PLAYER_REQUEST_SL_requestuav.ogg" PLAYER_REQUEST_SL_requestuav "squadleader/No_filter/PLAYER_REQUEST_SL_requestuav.ogg" 1
+gamelogic.messages.addRadioVoice "squadleader" 	"squadleader/filter/PLAYER_REQUEST_SL_requestuav_alt.ogg" PLAYER_REQUEST_SL_requestuav_alt "squadleader/No_filter/PLAYER_REQUEST_SL_requestuav_alt.ogg" 1
+
+
+
+
+
+rem                                                                          
+rem *** C O M M A N D E R   R A D I O ***
+rem                                                                          
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_commend"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_commend.ogg" COMMSL_COMRADIO_commend
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_commend_alt.ogg" COMMSL_COMRADIO_commend_alt
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_commend_alt2.ogg" COMMSL_COMRADIO_commend_alt2
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_rebuke"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_rebuke.ogg" COMMSL_COMRADIO_rebuke
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_rebuke_alt.ogg" COMMSL_COMRADIO_rebuke_alt
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_rebuke_alt2.ogg" COMMSL_COMRADIO_rebuke_alt2
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_followorders"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_followorders.ogg" COMMSL_COMRADIO_followorders
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_followorders_alt.ogg" COMMSL_COMRADIO_followorders_alt
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_artilleryheadsup"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_artilleryheadsup.ogg" COMMSL_COMRADIO_artilleryheadsup
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_artilleryavailable"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_artilleryavailable.ogg" COMMSL_COMRADIO_artilleryavailable
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_supplyHeadsUp"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_supplyHeadsUp.ogg" COMMSL_COMRADIO_supplyHeadsUp
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_supplydropavailable"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_supplydropavailable.ogg" COMMSL_COMRADIO_supplydropavailable
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_vehicleHeadsUp"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_vehicleHeadsUp.ogg" COMMSL_COMRADIO_vehicleHeadsUp
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_vehicledropavailable"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_vehicledropavailable.ogg" COMMSL_COMRADIO_vehicledropavailable
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_uavavailable"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_uavavailable.ogg" COMMSL_COMRADIO_uavavailable
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_divide"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_divide.ogg" COMMSL_COMRADIO_divide
+
+gamelogic.messages.addMessage "COMMSL_COMRADIO_sorry"
+gamelogic.messages.addRadioVoice "commander"   	"commander/filter/COMMSL_COMRADIO_sorry.ogg" COMMSL_COMRADIO_sorry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_dynecho_mp5
+ObjectTemplate.createdInEditor 1
+
+include e_dynecho_mp5.tweak

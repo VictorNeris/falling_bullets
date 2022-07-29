@@ -1,0 +1,32 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 10:52]
+ObjectTemplate.activeSafe AirDraftEffectBundle e_bloodtrail
+ObjectTemplate.modifiedByUser "SatNav"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 200
+rem begin Auto-generated effectProperties-part.
+ObjectTemplate.AlphaIntensityRange 0.5/1
+ObjectTemplate.AlphaIntensityUsed 0
+ObjectTemplate.AlphaIntensityFromAltitude 1/0
+ObjectTemplate.AlphaIntensityFromEngine 0/1
+ObjectTemplate.EmitScaleFactorRange 0.3/1
+ObjectTemplate.EmitScaleFactorUsed 0
+ObjectTemplate.EmitScaleFactorFromAltitude 30/5
+ObjectTemplate.EmitSpeedScaleRange 0.3/1
+ObjectTemplate.EmitSpeedScaleUsed 0
+ObjectTemplate.EmitSpeedScaleFromEngine 0/1
+ObjectTemplate.AgeScaleFactorRange 1/1
+ObjectTemplate.AgeScaleFactorUsed 0
+ObjectTemplate.StartAgeRange 0/0
+ObjectTemplate.StartAgeUsed 0
+ObjectTemplate.SoundIntensityRange 1/1
+ObjectTemplate.SoundIntensityUsed 0
+rem end Auto-generated effectProperties-part.
+ObjectTemplate.maxDistance 1
+ObjectTemplate.startDistance 3
+ObjectTemplate.engineInfluence 0
+rem ObjectTemplate.alignEffectTransformation 1
+
+

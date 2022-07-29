@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh seal_hv_mask
+
+ObjectTemplate.create MaskObject seal_hv_mask
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry seal_hv_mask
+ObjectTemplate.maskType MOTGasMask
+

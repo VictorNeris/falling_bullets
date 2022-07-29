@@ -1,0 +1,106 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/15 9:42]
+ObjectTemplate.activeSafe EffectBundle e_muzz_asval
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_asval_Start
+ObjectTemplate.addTemplate em_muzz_handgunSilenced_lightSource
+ObjectTemplate.addTemplate em_muzz_handgunSilenced_smokepuff
+ObjectTemplate.addTemplate em_muzz_handgunSilenced_microFlashglow
+ObjectTemplate.setPosition 0/0/0.00946753
+ObjectTemplate.addTemplate em_muzz_handgunSilenced_microFlashBurst
+ObjectTemplate.setPosition 0/0/0.01
+ObjectTemplate.addTemplate e_muzz_asval_dist1
+ObjectTemplate.addTemplate e_muzz_asval_dist2
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_asval_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/asval/asval_dist.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 7
+ObjectTemplate.soundRadius 1
+
+
+
+ObjectTemplate.create EffectBundle e_muzz_asval_dist1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_asval_dist1_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_asval_dist1_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/asval/asval_dist1.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 4
+ObjectTemplate.soundRadius 1
+
+
+
+ObjectTemplate.create EffectBundle e_muzz_asval_dist2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_asval_dist2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_asval_dist2_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/asval/asval_dist2.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 1
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mp443
+
+ObjectTemplate.create GenericFireArm mp443
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GAMEPC:Eversmen
+ObjectTemplate.geometry mp443
+
+include mp443.tweak

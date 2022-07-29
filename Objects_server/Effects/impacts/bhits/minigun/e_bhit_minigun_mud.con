@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_bhit_minigun_Mud
+ObjectTemplate.createdInEditor 1
+
+include e_bhit_minigun_Mud.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mg_m60_deployed
+
+ObjectTemplate.create GenericFireArm mg_m60_deployed
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARS:theta
+ObjectTemplate.geometry mg_m60_deployed
+
+include mg_m60_deployed.tweak

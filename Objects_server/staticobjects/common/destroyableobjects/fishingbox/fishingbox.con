@@ -1,0 +1,13 @@
+GeometryTemplate.create StaticMesh fishingbox
+CollisionManager.createTemplate fishingbox
+
+ObjectTemplate.create DestroyableObject fishingbox
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.collisionMesh fishingbox
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fishingbox
+
+include fishingbox.tweak

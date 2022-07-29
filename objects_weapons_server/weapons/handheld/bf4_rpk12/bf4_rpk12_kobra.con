@@ -1,0 +1,6 @@
+GeometryTemplate.create BundledMesh bf4_rpk12_kobra
+ObjectTemplate.create GenericFirearm bf4_rpk12_kobra
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.geometry bf4_rpk12_kobra
+include bf4_rpk12_kobra.tweak

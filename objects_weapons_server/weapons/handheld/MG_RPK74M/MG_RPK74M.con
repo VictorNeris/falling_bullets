@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh MG_RPK74M
+
+ObjectTemplate.create GenericFireArm MG_RPK74M
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator Emiliomau
+ObjectTemplate.geometry MG_RPK74M
+
+include MG_RPK74M.tweak

@@ -1,0 +1,5 @@
+ObjectTemplate.create EffectBundle e_predator_trail
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator TSO-1:tso
+
+include e_predator_trail.tweak

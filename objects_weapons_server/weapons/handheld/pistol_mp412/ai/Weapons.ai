@@ -1,0 +1,16 @@
+weaponTemplate.create MP412AI
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.5
+weaponTemplate.maxRange 50.0
+weaponTemplate.optimalRangePercentage 40
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    7.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.deviation 10.0
+weaponTemplate.deviationCorrectionTime 2.0
+weaponTemplate.allowedDeviation 1.0
+weaponTemplate.setSoundSphereRadius 150.0

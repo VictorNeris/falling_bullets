@@ -1,0 +1,66 @@
+hudBuilder.createSplitNode		VehicleHuds T90Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 701
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 702
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ------ Compass ------
+
+hudBuilder.createCompassNode 		T90Hud T90Compass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Navigation\compass2.tga
+hudBuilder.setCompassNodeTextureSize	801 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	1 0 0 1
+
+rem ------------crosshair-------------------------
+
+hudBuilder.createPictureNode		T90Hud T90CrosshairHor 144 294 512 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90CrosshairHorizontal2.dds
+hudBuilder.setNodeColor		 	1 0 0 1
+
+hudBuilder.createPictureNode		T90Hud T90CrosshairVert 332 317 256 128
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90CrosshairVertical2.dds
+hudBuilder.setNodeColor		 	1 0 0 1
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		T90Hud T90DirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+
+hudBuilder.createPictureNode		T90Hud T90TurretBase 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		1 0 0 1
+
+hudBuilder.createPictureNode		T90DirectionHud T90TurretBarrel 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		1 0 0 1
+
+hudBuilder.createPictureNode			T90Hud T90Coax 626 413 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\T90\RUCoaX.dds
+hudBuilder.setNodeColor				1 0 0 1
+
+rem ------------Weapon Type---------------
+
+hudBuilder.createPictureNode			T90Hud T90Gun 626 440 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\T90\GunLabel.dds
+hudBuilder.setNodeLogicShowVariable 		EQUAL GuiIndex 701
+hudBuilder.setNodeColor				1 0 0 1
+
+hudBuilder.createPictureNode			T90Hud T90HGun 626 440 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\T90\HGunLabel.dds
+hudBuilder.setNodeLogicShowVariable 		EQUAL GuiIndex 702
+hudBuilder.setNodeColor				1 0 0 1
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+   
+hudBuilder.createPictureNode 		T90Hud T90HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.925 0.424 0.267 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow

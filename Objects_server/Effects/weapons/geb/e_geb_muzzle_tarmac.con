@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_muzzle_tarmac
+ObjectTemplate.createdInEditor 1
+
+include e_geb_muzzle_tarmac.tweak

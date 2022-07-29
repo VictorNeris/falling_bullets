@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh bf4_l115_s_riflescope
+
+ObjectTemplate.create GenericFireArm bf4_l115_s_riflescope
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator jeight
+ObjectTemplate.geometry bf4_l115_s_riflescope
+
+include bf4_l115_s_riflescope.tweak

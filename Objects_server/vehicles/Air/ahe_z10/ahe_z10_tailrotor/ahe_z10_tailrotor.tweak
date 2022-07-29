@@ -1,0 +1,22 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/2 9:17]
+GeometryTemplate.setSubGeometryLodDistance 0 0 30
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Rotor ahe_z10_tailrotor
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.modifiedByUser lma
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ahe_z10_tailrotor
+ObjectTemplate.setCollisionMesh ahe_z10_tailrotor
+ObjectTemplate.mapMaterial 0 rotor 31
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.changeLodAt 0.4
+ObjectTemplate.tolerance 0.0015625
+ObjectTemplate.rotationSpeedMod -0.8
+ObjectTemplate.rotationSpeedModBlur -0.05
+ObjectTemplate.rotationAxle 1
+ObjectTemplate.engineName ahe_z10_TailEngine
+

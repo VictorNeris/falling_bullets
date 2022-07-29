@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh sr_svd
+
+ObjectTemplate.create GenericFireArm sr_svd
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARS:theta
+ObjectTemplate.geometry sr_svd
+
+include sr_svd.tweak

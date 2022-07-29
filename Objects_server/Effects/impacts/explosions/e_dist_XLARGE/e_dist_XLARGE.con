@@ -1,0 +1,6 @@
+ObjectTemplate.create EffectBundle e_dist_XLARGE
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.create EffectBundle e_dist_bomb
+ObjectTemplate.createdInEditor 1
+
+include e_dist_XLARGE.tweak

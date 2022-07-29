@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile 45_acp
+ObjectTemplate.material 38
+ObjectTemplate.damage 45.3
+ObjectTemplate.minDamage 26.7
+ObjectTemplate.DistToStartLoseDamage 0
+ObjectTemplate.DistToMinDamage 320
+ObjectTemplate.drag 0.005
+ObjectTemplate.mass 0.011
+ObjectTemplate.gravityModifier 1
+include projectiles_common_small.tweak
+include projectiles_tracer_small.tweak
+
+rem 3-3

@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle L_ONE
+ObjectTemplate.createdInEditor 1
+
+include L_ONE.tweak

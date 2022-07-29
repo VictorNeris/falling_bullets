@@ -1,0 +1,126 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/11/25 0:15]
+ObjectTemplate.activeSafe EffectBundle e_vexp_mig29
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_mig29_Start
+ObjectTemplate.addTemplate e_dist_XLARGE
+rem ObjectTemplate.addTemplate em_vexp_mig29_fuselage
+rem ObjectTemplate.setPosition 0.224/0.495/-4.357
+ObjectTemplate.addTemplate em_vexp_mig29_wing
+ObjectTemplate.setPosition -3.3859/4.45022/-5.43131
+ObjectTemplate.addTemplate em_vexp_mig29_engine
+ObjectTemplate.setPosition -0.00805557/0.0573231/-8.6502
+ObjectTemplate.addTemplate em_vexp_mig29_cockpit
+ObjectTemplate.setPosition -0.485151/0/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_vexp_mig29_Start
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/effects/sounds/explosions/f-15_explode.wav,objects/effects/sounds/explosions/tank_explode_02.wav,objects/effects/sounds/explosions/tank_explode_03.wav,objects/effects/sounds/explosions/tank_explode_05.wav,objects/effects/sounds/explosions/wreck_explosion_02.wav,objects/effects/sounds/explosions/wreck_explosion_03.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 25
+ObjectTemplate.halfVolumeDistance 50
+ObjectTemplate.soundRadius 2
+
+beginrem
+ObjectTemplate.create Emitter em_vexp_mig29_fuselage
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_mig29_fuselage
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-4/4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/1/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/3/-3/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+endrem
+
+
+
+ObjectTemplate.create Emitter em_vexp_mig29_wing
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_mig29_wing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-3/3/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-1/1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-1/-3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/3/1/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/5/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mig29_engine
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_mig29_engine
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-1/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/-3/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/-8/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/0/2/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_mig29_cockpit
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_mig29_cockpit
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-2/6/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-3/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/1/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/3/-3/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+

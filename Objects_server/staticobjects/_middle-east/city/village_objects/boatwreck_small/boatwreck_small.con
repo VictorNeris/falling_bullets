@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh boatwreck_small
+CollisionManager.createTemplate boatwreck_small
+
+ObjectTemplate.create SimpleObject boatwreck_small
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GOD-1:god
+ObjectTemplate.collisionMesh boatwreck_small
+ObjectTemplate.mapMaterial 0 wood_penetrable 0
+ObjectTemplate.mapMaterial 1 wood_solid 0
+ObjectTemplate.mapMaterial 2 Wood_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry boatwreck_small
+
+include boatwreck_small.tweak

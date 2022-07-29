@@ -1,0 +1,17 @@
+GeometryTemplate.create StaticMesh fueltankwagon
+CollisionManager.createTemplate fueltankwagon
+
+ObjectTemplate.create DestroyableObject fueltankwagon
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.collisionMesh fueltankwagon
+ObjectTemplate.mapMaterial 0 metal_thin 0
+ObjectTemplate.mapMaterial 1 plastic 0
+ObjectTemplate.mapMaterial 2 metal_solid 0
+ObjectTemplate.mapMaterial 3 glass 0
+ObjectTemplate.mapMaterial 4 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fueltankwagon
+
+include fueltankwagon.tweak

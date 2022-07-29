@@ -1,0 +1,9 @@
+GeometryTemplate.create BundledMesh scar_h
+
+ObjectTemplate.create GenericFireArm scar_h
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DEVELOPM-F64A98:Develop013
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry scar_h
+
+include scar_h.tweak

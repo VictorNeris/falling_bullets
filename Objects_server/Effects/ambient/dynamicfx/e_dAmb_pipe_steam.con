@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_dAmb_pipe_steam
+ObjectTemplate.createdInEditor 1
+
+include e_dAmb_pipe_steam.tweak

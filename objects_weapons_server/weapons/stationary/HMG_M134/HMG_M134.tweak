@@ -1,0 +1,326 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/14 17:21]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe RotationalBundle hmg_m134
+ObjectTemplate.creator MHO-1:mho
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry HMG_M134
+ObjectTemplate.setCollisionMesh HMG_M134
+ObjectTemplate.mapMaterial 0 collisionmaterial 26
+ObjectTemplate.mapMaterial 1 lambert1 26
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_hmg_m134_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/0/0
+ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.regulateYaw -0.1/0.07
+
+ObjectTemplate.activeSafe Sound S_hmg_m134_RotationRpm
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/stationary/igla_djigit/sounds/seat.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1.3
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.5/1.5/0/2/0.003/1/0.5/0.993/1/0.5/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0.007/0/0.748/0.993/0/
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe RotationalBundle HMG_M134_Minigun
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_Minigun_RotationRpm
+ObjectTemplate.addTemplate HMG_M134_Camera
+ObjectTemplate.setPosition -0.119259/0.222/-0.147883
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.regulatePitch -0.1/0.07
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Minigun_RotationRpm
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/stationary/igla_djigit/sounds/seat.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.5/1.5/0/2/0.003/1/0.5/0.993/1/0.5/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0.007/0/0.748/0.993/0/
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe RotationalBundle HMG_M134_Barrels
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_Barrels_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1100
+ObjectTemplate.setDeAcceleration 0/0/300
+ObjectTemplate.setInputToRoll PIFire
+ObjectTemplate.setUseDeAcceleration 1
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Barrels_RotationRpm
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m134/sounds/mono/minigun_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.58
+ObjectTemplate.pitch 1.3
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/2/0.003/0.624/0/0.305/1.005/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0/0/0.368/1/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+
+ObjectTemplate.activeSafe RotationalBundle HMG_M134_Trigger
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_Trigger_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Trigger_RotationRpm
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe RotationalBundle HMG_M134_Safetyswitch
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_Safetyswitch_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Safetyswitch_RotationRpm
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe RotationalBundle HMG_M134_SafetyCover
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_SafetyCover_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_SafetyCover_RotationRpm
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe GenericFireArm HMG_M134_Gun
+ObjectTemplate.modifiedByUser fli
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft -0.20298/-0.0263663/0.159456
+ObjectTemplate.ik.rotationLeft -23.8725/-23.1267/-59.4029
+ObjectTemplate.ik.poleVectorLeft -0.649841/-0.484826/0.104503
+ObjectTemplate.ik.positionRight 0.16188/0.000899149/0.117413
+ObjectTemplate.ik.rotationRight -151.995/24.9264/98.2027
+ObjectTemplate.ik.poleVectorRight 1.89001/-0.836678/-0.228089
+rem ---EndComp ---
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Predator.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_minigun"
+ObjectTemplate.weaponHud.guiIndex 5
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 18
+ObjectTemplate.weaponHud.minVisualDeviation 2
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Handheld_Overheat
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 6000
+ObjectTemplate.fire.fireStartDelay CRD_NONE/0.5/0/0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 5000
+ObjectTemplate.ammo.reloadTime 6
+ObjectTemplate.ammo.autoReload 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 0.3
+ObjectTemplate.recoil.recoilSpeed 30
+ObjectTemplate.recoil.recoilForce 1
+ObjectTemplate.recoil.cameraRecoilSpeed 15
+ObjectTemplate.recoil.cameraRecoilSize 1.1
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.1
+ObjectTemplate.deviation.devModZoom 0.5
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.7
+ObjectTemplate.zoom.zoomDelay 0.2
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate M134
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Fire1P
+ObjectTemplate.setPosition -0.0213995/0/1.16423
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Fire3P
+ObjectTemplate.setPosition -0.0215197/0/1.15986
+ObjectTemplate.addTemplate S_HMG_M134_Gun_BoltClick
+ObjectTemplate.addTemplate S_HMG_M134_Gun_TriggerClick
+ObjectTemplate.addTemplate S_HMG_M134_Gun_SwitchFireRate
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Reload1P
+ObjectTemplate.setPosition 0/0/0.351074
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Reload3P
+ObjectTemplate.setPosition 0/0/0.382778
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Deploy1P
+ObjectTemplate.setPosition 0/0/0.336952
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Deploy3P
+ObjectTemplate.setPosition 0/0/0.371033
+ObjectTemplate.addTemplate S_HMG_M134_Gun_Zoom
+ObjectTemplate.setPosition 0/0/0.373293
+ObjectTemplate.addTemplate e_muzz_minigun
+ObjectTemplate.setPosition -0.021/0.003/1.193
+rem -------------------------------------
+ObjectTemplate.projectileTemplate 762_51_mg
+ObjectTemplate.velocity 850
+ObjectTemplate.heatAddWhenFire 0.000666
+ObjectTemplate.coolDownPerSec 0.01
+ObjectTemplate.overheatPenalty 1.0015
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Fire1P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m134/sounds/mono/minigun_fire1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.015/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Fire3P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m134/sounds/mono/Minigun_fire3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.015/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position -0.0215197/0/1.15986
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_BoltClick
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_TriggerClick
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_SwitchFireRate
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Reload1P
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Reload3P
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Deploy1P
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Deploy3P
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Gun_Zoom
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Projectile_Looping
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.create Camera HMG_M134_Camera
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_HMG_M134_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/-0.5/0
+ObjectTemplate.setMaxRotation 1/0.5/0
+ObjectTemplate.setPivotPosition 0/0/-0.5
+ObjectTemplate.setMaxSpeed 5/5/0
+ObjectTemplate.setAcceleration 2/1/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 0
+ObjectTemplate.insideStaticSunDirection 0/-1/0
+ObjectTemplate.insideStaticSunColor 1/1/1
+ObjectTemplate.insideStaticSunDamageColor 1/0/0
+ObjectTemplate.insideDamageFrequency 3
+ObjectTemplate.insideDamageThreshold 0.15
+ObjectTemplate.insideStaticSunAmbientColor 0.7/0.7/0.7
+
+ObjectTemplate.activeSafe Sound S_HMG_M134_Camera_RotationRpm
+ObjectTemplate.modifiedByUser fli
+

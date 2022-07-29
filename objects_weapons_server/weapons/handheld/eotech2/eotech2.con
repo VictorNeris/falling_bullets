@@ -1,0 +1,6 @@
+GeometryTemplate.create BundledMesh eotech2
+
+ObjectTemplate.create GenericFireArm eotech2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator Twinke Masta
+ObjectTemplate.geometry eotech2

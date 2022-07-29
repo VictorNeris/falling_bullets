@@ -1,0 +1,55 @@
+ObjectTemplate.create Kit common_mec_7
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Sniper
+ObjectTemplate.aiTemplate Sniper
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 6
+ObjectTemplate.geometry.dropGeom 16
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.dropHeadwear mec_helmet
+ObjectTemplate.unlockIndex 6
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate sr_svd
+ObjectTemplate.addTemplate rupis_makarov
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockCommonMec7_1
+ObjectTemplate.addTemplate UnlockCommonMec7_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SNIPER"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Sniper_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Sniper.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"sniper_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockCommonMec7_1
+ObjectTemplate.addTemplate bf4_svd12_pso1
+ObjectTemplate.replaceItem sr_svd
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCommonMec7_2
+ObjectTemplate.addTemplate bf4_ace53sv_jgm4
+ObjectTemplate.replaceItem bf4_svd12_pso1
+ObjectTemplate.unlockLevel 2

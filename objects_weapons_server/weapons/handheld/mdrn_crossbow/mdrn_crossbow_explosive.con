@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mdrn_crossbow
+
+ObjectTemplate.create GenericFireArm mdrn_crossbow_explosive
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BOB_XP:robertha
+ObjectTemplate.geometry mdrn_crossbow
+
+include mdrn_crossbow_explosive.tweak

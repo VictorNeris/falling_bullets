@@ -1,0 +1,139 @@
+
+hudBuilder.createSplitNode		VehicleHuds M6Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 35
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ----- heatseeking---------
+
+hudBuilder.createTextNode			M6Hud M6MarkerLabel0 100 100 40 10  
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createTextNode			M6Hud M6MarkerLabel1 100 120 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createTextNode			M6Hud M6MarkerLabel2 100 140 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createTextNode			M6Hud M6MarkerLabel3 100 160 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createObjectMarkerNode 		M6Hud M6Marker 124 109 553 386
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBoxLocked.tga
+rem hudBuilder.setObjectMarkerNodeTexture 		3 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\rangeLine.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	1 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	2 64 64
+rem hudBuilder.setObjectMarkerNodeTextureSize	3 16 256
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setObjectMarkerNodeWeapon 		1
+hudBuilder.setObjectMarkerNodeLockText 		1 M6MarkerLabel
+hudBuilder.setObjectMarkerNodeLockTextOffset	-32 8
+hudBuilder.addObjectMarkerNodeLockTextNode	M6MarkerLabel0
+hudBuilder.addObjectMarkerNodeLockTextNode	M6MarkerLabel1
+hudBuilder.addObjectMarkerNodeLockTextNode	M6MarkerLabel2
+hudBuilder.addObjectMarkerNodeLockTextNode	M6MarkerLabel3
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel0TextNode 
+hudBuilder.setTextNodeStringVariable		M6MarkerLabel0String
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel0
+hudBuilder.setNodeShowVariable 			M6MarkerLabel0Show
+
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel1TextNode 
+hudBuilder.setTextNodeStringVariable		M6MarkerLabel1String
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel1
+hudBuilder.setNodeShowVariable 			M6MarkerLabel1Show
+
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel2TextNode
+hudBuilder.setTextNodeStringVariable		M6MarkerLabel2String
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel2
+hudBuilder.setNodeShowVariable	 		M6MarkerLabel2Show
+
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel3TextNode
+hudBuilder.setTextNodeStringVariable		M6MarkerLabel3String
+hudBuilder.setActiveObject			M6Hud M6MarkerLabel3
+hudBuilder.setNodeShowVariable	 		M6MarkerLabel3Show
+
+hudBuilder.createPictureNode			M6Hud M6CrossHair 272 236 256 128 
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M1A2\Neucross.dds
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createPictureNode			M6Hud M6range 272 276 256 128 
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\Range.dds
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createPictureNode			M6Hud M6HeatLock 353 460 128 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\missileLock.tga
+hudBuilder.setNodeColor		 		0 0.8 0 1
+hudBuilder.setNodeShowVariable 			M6MarkerObjectMarkerNodeLockedShow
+
+rem ------------compass-------------------------
+
+hudBuilder.createCompassNode 		M6Hud M6Compass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Navigation\compass2.tga
+hudBuilder.setCompassNodeTextureSize	801 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0 0.8 0 1
+
+hudBuilder.createPictureNode			M6Hud M6label 580 157 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M1A2\Hertz.dds
+hudBuilder.setNodeColor    			0 0.8 0 1
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		M6Hud M6DirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+
+hudBuilder.createPictureNode		M6Hud M6TurretBase 451 497 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		0 0.8 0 1
+
+hudBuilder.createPictureNode		M6DirectionHud M6TurretBarrel 451 497 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		0 0.8 0 1
+
+rem -------------------- Weapon type --------------------------------
+
+hudBuilder.createPictureNode			M6Hud M6Coax 626 410 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\Stinger.dds
+hudBuilder.setNodeColor				0 0.8 0 1
+
+hudBuilder.createPictureNode			M6Hud M6cannon 626 440 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\USCannon.dds
+hudBuilder.setNodeColor				0 0.8 0 1
+
+rem -------- range to target ------
+
+beginrem
+hudBuilder.createPictureNode			M6Hud M6RangeText 130 465 128 16 
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\range_toTarget_text.tga
+hudBuilder.setNodeColor				0 0.8 0 1
+   
+hudBuilder.createTextNode			M6Hud M6RangeLabel 255 467 101 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeStringVariable		TargetDistanceString
+hudBuilder.setNodeColor				0 0.8 0 1
+endrem
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+   
+hudBuilder.createPictureNode 		M6Hud M6HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0 0.8 0 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+rem ----------------
+

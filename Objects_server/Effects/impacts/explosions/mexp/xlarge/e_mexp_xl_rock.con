@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_mexp_xl_rock
+ObjectTemplate.createdInEditor 1
+
+include e_mexp_xl_rock.tweak

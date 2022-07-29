@@ -1,0 +1,51 @@
+ObjectTemplate.create Kit CH_Assault
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Assault
+ObjectTemplate.aiTemplate Assault
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 0
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.unlockIndex 1
+ObjectTemplate.cullRadiusScale 2.4
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_qbz95
+ObjectTemplate.addTemplate chpis_qsz92
+
+ObjectTemplate.addTemplate civ_gl1
+ObjectTemplate.addTemplate hgr_smoke
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockCHAssault_1
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_ASSAULT"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Light_Assault_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Light_Assault.tga"
+ObjectTemplate.vehicleHud.abilityIcon 		"Ingame\Weapons\Icons\Hud\SpecialKitIcons\kevlarVest.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockCHAssault_1
+ObjectTemplate.addTemplate chrif_type63
+Objecttemplate.replaceItem bf4_qbz95
+ObjectTemplate.unlockLevel 1

@@ -1,0 +1,6 @@
+ObjectTemplate.setSprintGear1Dampen 0.75
+ObjectTemplate.setSprintGear2Dampen 1.0
+ObjectTemplate.setSprintGear3Dampen 1.9
+ObjectTemplate.setSprintGear4Dampen 3
+ObjectTemplate.setSprintGear5Dampen 4
+

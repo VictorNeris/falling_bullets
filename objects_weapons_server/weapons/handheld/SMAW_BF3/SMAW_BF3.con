@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh SMAW_BF3
+
+ObjectTemplate.create GenericFireArm SMAW_BF3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator REDFOX2017:REDFOX
+ObjectTemplate.geometry SMAW_BF3
+
+include SMAW_BF3.tweak

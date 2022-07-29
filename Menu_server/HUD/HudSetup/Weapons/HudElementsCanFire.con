@@ -1,0 +1,9 @@
+hudBuilder.createSplitNode		IngameHud CanFireHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 62
+
+rem --------------------------------------------Crosshair----------------------------------------------------------
+
+hudBuilder.createPictureNode 		CanFireHud CanFireCrosshair 388 288 24 24
+hudBuilder.setPictureNodeTexture 	Ingame/Weapons/Icons/Hud/Crosshair/Zip1.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable		CrossHairColorAlpha

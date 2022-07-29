@@ -1,0 +1,19 @@
+rem ** Set up communication HUD's **
+
+run HudElementsChat.con
+run HudElementsSquadComm.con
+run HudElementsSquadLeaderComm.con
+run HudElementsCommanderComm.con
+run HudElementsRadioComm.con
+run HudElementsRadioVehicleComm.con
+run HudElementsSpottedComm.con
+run HudElementsDemoRecComm.con
+run HudElementsDemoCameraComm.con
+run HudElementsDemoPlayerName.con
+run Squad.con
+run SquadLeader.con
+run Commander.con
+run Radio.con
+run RadioVehicle.con
+
+

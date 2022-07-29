@@ -1,0 +1,61 @@
+ObjectTemplate.create Kit common_mec_5
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Sniper
+ObjectTemplate.aiTemplate Sniper
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 6
+ObjectTemplate.geometry.dropGeom 16
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.dropHeadwear mec_helmet
+ObjectTemplate.unlockIndex 6
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_asval_pso1
+ObjectTemplate.addTemplate rupis_makarov
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockCommonMec5_1
+ObjectTemplate.addTemplate UnlockCommonMec5_2
+ObjectTemplate.addTemplate UnlockCommonMec5_3
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SNIPER"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Sniper_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Sniper.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"sniper_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockCommonMec5_1
+ObjectTemplate.addTemplate bf4_svd12_pso1_s
+ObjectTemplate.replaceItem bf4_asval_pso1
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCommonMec5_2
+ObjectTemplate.addTemplate bf4_ace53sv_jgm4_s
+ObjectTemplate.replaceItem bf4_svd12_pso1_s
+ObjectTemplate.unlockLevel 2
+
+ObjectTemplate.create ItemContainer UnlockCommonMec5_3
+ObjectTemplate.addTemplate bf4_scar_hsv_acog_s
+ObjectTemplate.replaceItem bf4_ace53sv_jgm4_s
+ObjectTemplate.unlockLevel 3

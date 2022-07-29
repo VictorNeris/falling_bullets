@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh she_littlebird_mainrotor
+CollisionManager.createTemplate she_littlebird_mainrotor
+
+ObjectTemplate.create Rotor she_littlebird_mainrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMY:jeremypr
+ObjectTemplate.collisionMesh she_littlebird_mainrotor
+ObjectTemplate.mapMaterial 0 mainrotor_col 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry she_littlebird_mainrotor
+
+include she_littlebird_mainrotor.tweak

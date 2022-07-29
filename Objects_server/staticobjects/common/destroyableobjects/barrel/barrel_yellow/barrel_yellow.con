@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh barrel_yellow
+CollisionManager.createTemplate barrel_yellow
+
+ObjectTemplate.create DestroyableObject barrel_yellow
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.collisionMesh barrel_yellow
+ObjectTemplate.mapMaterial 0 metal_thin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry barrel_yellow
+
+include barrel_yellow.tweak

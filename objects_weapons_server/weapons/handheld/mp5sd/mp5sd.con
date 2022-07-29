@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mp5sd
+
+ObjectTemplate.create GenericFireArm mp5sd
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRANDON-PC:Brandon
+ObjectTemplate.geometry mp5sd
+
+include mp5sd.tweak

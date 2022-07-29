@@ -1,0 +1,60 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+ObjectTemplate.activeSafe EffectBundle e_dist_XLARGE
+ObjectTemplate.modifiedByUser "Hell-Killer"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_dist_XLARGE_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/4/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_dist_XLARGE_Start
+ObjectTemplate.modifiedByUser "Hell-Killer"
+ObjectTemplate.soundFilename "objects/sounds/explosions/expdistxlarge1.wav,objects/sounds/explosions/expdistxlarge2.wav,objects/sounds/explosions/expdistxlarge3.wav,objects/sounds/explosions/expdistxlarge4.wav,objects/sounds/explosions/expdistxlarge5.wav,objects/sounds/explosions/expdistxlarge6.wav,objects/sounds/explosions/expdistxlarge7.wav,objects/sounds/explosions/expdistxlarge8.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.03/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1500
+
+
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+ObjectTemplate.activeSafe EffectBundle e_dist_bomb
+ObjectTemplate.modifiedByUser "Hell-Killer"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_dist_bomb_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/4/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_dist_bomb_Start
+ObjectTemplate.modifiedByUser "Hell-Killer"
+ObjectTemplate.soundFilename "objects/sounds/distant/exp_bomb_1.wav,objects/sounds/distant/exp_bomb_2.wav,objects/sounds/distant/exp_bomb_3.wav,objects/sounds/distant/exp_bomb_4.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.03/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1500
+
+

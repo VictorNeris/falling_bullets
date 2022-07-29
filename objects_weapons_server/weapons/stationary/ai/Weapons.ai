@@ -1,0 +1,12 @@
+rem *** Heavy Machine Gun ***
+weaponTemplate.create Stationary_M134
+weaponTemplate.indirect 0
+weaponTemplate.minRange 5.0
+weaponTemplate.maxRange 300.0
+weaponTemplate.setStrength Infantry    50.0
+weaponTemplate.setStrength LightArmour  50.0
+weaponTemplate.setStrength HeavyArmour  0.0
+weaponTemplate.setStrength NavalArmour  25.0
+weaponTemplate.setStrength Helicopter   25.0
+weaponTemplate.setStrength AirPlane     10.0
+weaponTemplate.allowedDeviation 15.0

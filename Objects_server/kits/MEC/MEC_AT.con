@@ -1,0 +1,57 @@
+ObjectTemplate.create Kit MEC_AT
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType AT
+ObjectTemplate.aiTemplate AT
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 13
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.unlockIndex 0
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate SMG_PP19
+ObjectTemplate.addTemplate gepis_p226
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate sovat_rpg7
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockMECAT_1
+ObjectTemplate.addTemplate UnlockMECAT_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_ANTITANK"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_ATAA_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_ATAA.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.abilityIcon 		"Ingame\Weapons\Icons\Hud\SpecialKitIcons\kevlarVest.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockMECAT_1
+ObjectTemplate.addTemplate bf4_ace21cqb
+ObjectTemplate.replaceItem SMG_PP19
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECAT_2
+ObjectTemplate.addTemplate bf4_ace21cqb_prisma
+ObjectTemplate.replaceItem bf4_ace21cqb
+ObjectTemplate.unlockLevel 2

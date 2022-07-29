@@ -1,0 +1,77 @@
+GeometryTemplate.create BundledMesh e_vexp_type98
+
+ObjectTemplate.create EffectBundle e_vexp_type98
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.addTemplate em_wreck_type98_barrel
+ObjectTemplate.setPosition -0.0036/1.2311/3.1359
+ObjectTemplate.addTemplate em_wreck_type98_hatch
+ObjectTemplate.setPosition 0.3690/1.9410/-0.0686
+ObjectTemplate.addTemplate em_wreck_type98_turret
+ObjectTemplate.setPosition 0.1100/1.4778/0.2084
+ObjectTemplate.addTemplate em_wreck_type98_wheel
+ObjectTemplate.setPosition 1.1848/0/0
+ObjectTemplate.addTemplate em_wreck_type98_sidearmor
+ObjectTemplate.setPosition 1.6858/0/0
+
+ObjectTemplate.create Emitter em_wreck_type98_barrel
+ObjectTemplate.template p_wreck_type98_barrel
+
+ObjectTemplate.create Particle p_wreck_type98_barrel
+ObjectTemplate.collisionMesh e_vexp_type98
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type98
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter em_wreck_type98_hatch
+ObjectTemplate.template p_wreck_type98_hatch
+
+ObjectTemplate.create Particle p_wreck_type98_hatch
+ObjectTemplate.collisionMesh e_vexp_type98
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type98
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter em_wreck_type98_turret
+ObjectTemplate.template p_wreck_type98_turret
+
+ObjectTemplate.create Particle p_wreck_type98_turret
+ObjectTemplate.collisionMesh e_vexp_type98
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type98
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Emitter em_wreck_type98_wheel
+ObjectTemplate.template p_wreck_type98_wheel
+
+ObjectTemplate.create Particle p_wreck_type98_wheel
+ObjectTemplate.collisionMesh e_vexp_type98
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type98
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Emitter em_wreck_type98_sidearmor
+ObjectTemplate.template p_wreck_type98_sidearmor
+
+ObjectTemplate.create Particle p_wreck_type98_sidearmor
+ObjectTemplate.collisionMesh e_vexp_type98
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type98
+ObjectTemplate.geometryPart 4
+
+include e_vexp_type98.tweak

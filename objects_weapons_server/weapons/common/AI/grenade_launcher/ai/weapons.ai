@@ -1,0 +1,58 @@
+rem 70
+
+weaponTemplate.create gl_ai
+weaponTemplate.indirect 1
+weaponTemplate.minRange 25.0
+weaponTemplate.maxRange 30.0
+weaponTemplate.optimalRangePercentage 100
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    5.0
+weaponTemplate.setStrength LightArmour 4.0
+weaponTemplate.setStrength HeavyArmour 1.0
+weaponTemplate.setStrength NavalArmour 1.0
+weaponTemplate.setStrength Helicopter 0.0
+weaponTemplate.setStrength AirPlane 0.0
+weaponTemplate.deviation 10
+weaponTemplate.deviationCorrectionTime 2
+weaponTemplate.setExplosionRadius 25
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.setSoundSphereRadius 120
+
+
+weaponTemplate.create grenade_ai
+weaponTemplate.indirect 1
+weaponTemplate.isThrown 1
+weaponTemplate.minRange 25.0
+weaponTemplate.maxRange 30.0
+weaponTemplate.optimalRangePercentage 100
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    2
+weaponTemplate.setStrength LightArmour 1
+weaponTemplate.setStrength HeavyArmour 0
+weaponTemplate.setStrength NavalArmour 0
+weaponTemplate.setStrength Helicopter 0.0
+weaponTemplate.setStrength AirPlane 0.0
+weaponTemplate.deviation 10
+weaponTemplate.deviationCorrectionTime 2
+weaponTemplate.setExplosionRadius 25
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.setSoundSphereRadius 120
+
+
+weaponTemplate.create gl_smoke_ai
+weaponTemplate.indirect 1
+weaponTemplate.minRange 40.0
+weaponTemplate.maxRange 100.0
+weaponTemplate.optimalRangePercentage 100
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 1.0
+weaponTemplate.setStrength Helicopter 0.0
+weaponTemplate.setStrength AirPlane 0.0
+weaponTemplate.deviation 10
+weaponTemplate.deviationCorrectionTime 2
+weaponTemplate.setExplosionRadius 5
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.setSoundSphereRadius 70.0

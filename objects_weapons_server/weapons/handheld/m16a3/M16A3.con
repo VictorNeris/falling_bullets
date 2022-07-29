@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh m16a3
+
+ObjectTemplate.create GenericFireArm m16a3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator AU-PC:Au
+ObjectTemplate.geometry m16a3
+
+include m16a3.tweak

@@ -1,0 +1,240 @@
+assault
+    bf4_ak12        (_s)
+        bf4_ak12_pso1
+        bf4_ak12_pkas
+        bf4_ak12_pka
+        bf4_ak12_kobra
+    bf4_groza1
+    usrif_ak103oga
+        bf4_groza1_pso1
+    bf4_groza4
+        bf4_groza4_pka
+    bf4_l85a2       (_s)
+        bf4_l85a2_reflex
+        bf4_l85a2_m145
+        bf4_l85a2_eotech
+        bf4_l85a2_acog
+    bf4_m16a4       (_s)
+        bf4_m16a4_reflex
+        bf4_m16a4_m145
+        bf4_m16a4_eotech
+        bf4_m16a4_acog
+    bf4_m416        (_s)
+        bf4_m416_acog
+        bf4_m416_m145
+        bf4_m416_eotech
+        bf4_m416_reflex
+    bf4_famas       (_s)
+        bf4_famas_m145
+    bf4_aek971      (_s)
+        bf4_aek971_pso1
+        bf4_aek971_pkas
+        bf4_aek971_pka
+        bf4_aek971_kobra
+    bf4_ace23       (_s)
+        bf4_ace23_prisma
+        bf4_ace23_jgm4
+        bf4_ace23_hd33
+        bf4_ace23_coyote
+    ru_rif_ak47
+    rurif_ak74n
+    KH-2002
+    bf4_qbz95
+    aurif_aug
+    vz58p
+    rurrif_an94_kobra
+
+carbine
+    bf4_m4      (_s)
+        bf4_m4_eotech
+        bf4_m4_acog
+        bf4_m4_m145
+        bf4_m4_reflex
+    bf4_type95b
+        bf4_type95b_coyote_s
+    ru_rif_aks74u
+        ru_rif_aks74uBlackSil
+    bf4_aku12       (_s)
+        bf4_aku12_pso1
+        bf4_aku12_pkas
+        bf4_aku12_pka
+        bf4_aku12_kobra
+    bf4_asval
+        bf4_asval_pka
+        bf4_asval_pso1
+    rus_ak9
+    rus_ak105
+    bf4_ace21cqb    (_s)
+        bf4_ace21cqb_prisma
+        bf4_ace21cqb_jgm4
+        bf4_ace21cqb_hd33
+        bf4_ace21cqb_coyote
+    chrif_type63
+    sr_sks
+    sr_sks_pso
+
+battle
+    bf3_g3a3        (_s)
+        bf3_g3a3_acog
+        bf3_g3a3_eotech
+        bf3_g3a3_kobra
+        bf3_g3a3_m145
+        bf3_g3a3_pkas
+    bf4_scar_h      (_s)
+        bf4_scar_h_acog
+        bf4_mk11mod0_acog
+        bf4_scar_h_m145
+        bf4_scar_h_eotech
+        bf4_scar_h_reflex
+    bf4_ace52cqb    (_s)
+        bf4_ace52cqb_prisma
+        bf4_ace52cqb_jgm4
+        bf4_ace52cqb_hd33
+        bf4_ace52cqb_coyote
+    idfrif_galil
+    
+lmg/gpmg
+    bf4_m249        (_s)    (_deployed)
+        bf4_m249_reflex
+        bf4_m249_m145
+        bf4_m249_eotech
+        bf4_m249_acog
+    mg_xm22
+    bf4_mg4         (_s)    (_deployed)
+        bf4_mg4_acog
+        bf4_mg4_m145
+        bf4_mg4_eotech
+        bf4_mg4_reflex
+    mg_fnpara_custom        (_deployed)
+    bf4_type88lmg   (_s)    (_deployed)
+        bf4_type88lmg_prisma
+        bf4_type88lmg_jgm4
+        bf4_type88lmg_hd33
+        bf4_type88lmg_coyote
+    bc2_m60                 (_deployed)
+    bf4_pkp         (_s)    (_deployed)
+        bf4_pkp_pso1
+        bf4_pkp_pkas
+        bf4_pkp_pka
+        bf4_pkp_kobra
+    bf4_m240b       (_s)    (_deployed)
+        bf4_m240b_reflex
+        bf4_m240b_m145
+        bf4_m240b_eotech
+        bf4_m240b_acog
+    rumg_pkm_alt            (_deployed)
+    play4free_mg3           (_deployed)
+    bf4_rpk12       (_s)    (_deployed)
+        bf4_rpk12_pso1
+        bf4_rpk12_pkas
+        bf4_rpk12_pka
+        bf4_rpk12_kobra
+    MG_RPK74M               (_deployed)
+    bf4_rpk         (_s)    (_deployed)
+        bf4_rpk_pso1
+        bf4_rpk_pkas
+        bf4_rpk_pka
+        bf4_rpk_kobra
+    chlmg_qbb95             (_deployed)
+
+sub/pdw
+    mp7
+    de_smg_mp5a2
+    mp5sd
+    smg_uzi
+    smg_p90
+    SMG_PP19
+    bf4_ump45       (_s)
+    smg_mac10
+
+pistol
+    glock17
+    be_pis_p226
+        be_pis_p226_supp
+    pis_m9
+        m9a1
+    gepis_p226
+    rupis_gsh18
+    MP443
+    rupis_makarov
+        rupis_pb6b9
+    pistol_m1911
+    insrg_m1911
+    chpis_qsz92
+        chpis_qsz92_silencer
+    pistol_sawedoff
+    pis_deagle
+    bf4_deagle      (_s)
+
+revolver
+    pistol_mp412
+    insrg_model10
+    Unica6
+    44mag
+
+shotguns
+    SG_870Combat
+    shot_benelli_m1014
+    mohw_aa12
+    SG_Saiga12
+    chsht_protecta
+    chsht_hawk
+
+sniper
+    nagant_sniper
+    bf1_m1903
+        bf1_m1903_sniper
+        bf1_m1903_bayonet
+        bf1_m1903_sniper_bayonet
+    bf4_srr61
+        bf4_srr61_riflescope
+    sr_m95
+    bf4_l115_s_riflescope
+    bf4_l115_s_hunterscope
+    bf4_l115_riflescope
+    bf4_l115_hunterscope
+    vssk
+    sr_m82a3
+    L96
+    bf4_m40
+    bf4_mk11mod0
+        bf4_mk11mod0_acog
+    bf4_sv98
+        bf4_sv98_pks07
+        bf4_sv98_hunterscope
+    chsni_type88
+    sr_svd
+    bf4_svd12       (_s)
+        bf4_svd12_pso1
+        bf4_svd12_pkas
+        bf4_svd12_pka
+        bf4_svd12_kobra
+    bf4_scar_hsv    (_s)
+        bf4_scar_hsv_reflex
+        bf4_scar_hsv_m145
+        bf4_scar_hsv_eotech
+        bf4_scar_hsv_acog
+    bf4_ace53sv     (_s)
+        bf4_ace53sv_prisma
+        bf4_ace53sv_jgm4
+        bf4_ace53sv_hd33
+        bf4_ace53sv_coyote
+        bf4_ace53sv_acog
+    
+
+other
+    USHGR_M67
+    m320_bf3
+    civ_gl1
+    sovat_rpg7
+    SMAW_BF3
+    USATP_Predator
+
+
+
+ObjectTemplate.addTemplate Unlock
+
+ObjectTemplate.create ItemContainer Unlock
+ObjectTemplate.addTemplate 
+Objecttemplate.replaceItem 
+ObjectTemplate.unlockLevel 1

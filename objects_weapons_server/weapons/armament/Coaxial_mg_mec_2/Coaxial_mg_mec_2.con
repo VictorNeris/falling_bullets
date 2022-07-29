@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Coaxial_mg_mec_2
+
+include Coaxial_mg_mec_2.tweak
+

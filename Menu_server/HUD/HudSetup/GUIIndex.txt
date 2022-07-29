@@ -1,0 +1,69 @@
+GUI Index:
+
+1 – LaserPainter (Simrad)
+2 - F15 Laserguided
+3 - F15 Gun
+4 - M4
+5 - Generic Weapon (Crosshair only)
+6 - M16m203
+7 - T90 Crosshair
+8 - Tunguska grisom
+9 - Jackhammer
+10 - F15 TVguided
+11 - F15 Bomb  
+12 - Su34 Bomb
+13 - Su34 Gun
+14 - M1A2 cockpit
+15 - LAV25 cockpit
+16 - Tunguska canons     
+17 - Su34 Wireguided
+18 - F18 Gun
+19 - F18 Bomb  
+20 - F18 Laserguided
+21 - F18 TVguided
+22 - Su34 Laserguided
+23 - IGLA
+24 - Cobra pilot	
+25 - Cobra TVguided
+26 - Cobra Gunner
+27 - Blackhawk pilot
+28 - Havoc pilot
+29 - Havoc TVguided
+30 - ? (Don't use)
+31 - Mig29 Gun
+32 - Mig29 Bomb
+33 - BTR90 Crosshair
+34 - Stinger
+35 - M6 Linebacker cockpit
+36 - Havoc gunner
+37 - Type98 cross
+38 - WZ551 cross
+39 - Z10 pilot
+40 - Z10 gunner
+41 - z8 pilot
+42 - Mi17 Pilot
+43 - Type95AA driver
+44 - J10 Gun
+45 - J10 Bomb
+46 - Su30 Gun
+47 - Su30 Bomb
+48 - Su30 Laserguided
+49 - Su30 Tvguided
+50 - F35 gun
+51 - F35 bomb
+52 - Generic weapon (hit indication)
+53 - AltGui M4 and ak74u
+54 - Z10 TVguided
+55 - WASP defence
+56 - Wrench
+57 - Defibrillator
+58 - Predator
+59 - ATS_TOW/HJ8
+304 - Ka50 pilot
+305 - Ka50s8 rockets
+306 - Ka50vikhr Laserguided
+307 - Ka50vikhr Wireguided
+308 - Ka5030mmOutside Laserguided
+309 - Ka5030mmOutside Tvguided
+310 - Ka5030mm Cannon
+

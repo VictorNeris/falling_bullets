@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chrif_qbz03
+
+ObjectTemplate.create GenericFirearm chrif_qbz03
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator owner:ineffably
+ObjectTemplate.geometry chrif_qbz03
+
+include chrif_qbz03.tweak

@@ -1,0 +1,27 @@
+hudBuilder.createSplitNode		IngameHud JGM4Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3638
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3639
+hudBuilder.setNodeInTime		0.17
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode 		JGM4Hud JGM4HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeRGBVariables		CrossHairColorRed CrossHairColorGreen CrossHairColorBlue
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+rem hudBuilder.createPictureNode 		JGM4Hud JGM4RDS 284 147 232 308
+rem hudBuilder.setPictureNodeTexture 	Ingame\PonyCrossHair\JGM4_rds.dds
+
+hudBuilder.createSplitNode		IngameHud JGM4CrosshairHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 3638
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 3639
+hudBuilder.setNodeInTime		0.17
+hudBuilder.setNodeOutTime		0
+hudBuilder.addNodeMoveShowEffect	1.57 5000000
+
+hudBuilder.createPictureNode 		JGM4CrosshairHud JGM4CrosshairMarks 284 147 232 308
+hudBuilder.setPictureNodeTexture 	Ingame\PonyCrossHair\JGM4_ret.dds
+

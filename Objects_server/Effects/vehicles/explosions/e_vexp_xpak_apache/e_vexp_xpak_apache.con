@@ -1,0 +1,49 @@
+GeometryTemplate.create BundledMesh e_vexp_xpak_apache
+
+ObjectTemplate.create EffectBundle e_vexp_xpak_apache
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.addTemplate em_wreck_Apache_wing
+ObjectTemplate.setPosition 1.3000/-0.5000/0.3166
+ObjectTemplate.addTemplate em_wreck_Apache_tail
+ObjectTemplate.setPosition -0.1400/0.1600/-6.9000
+ObjectTemplate.addTemplate em_wreck_Apache_radar
+ObjectTemplate.setPosition -0.0400/1.8000/0.0700
+
+ObjectTemplate.create Emitter em_wreck_Apache_wing
+ObjectTemplate.template p_wreck_Apache_wing
+
+ObjectTemplate.create Particle p_wreck_Apache_wing
+ObjectTemplate.collisionMesh e_vexp_xpak_apache
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_apache
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter em_wreck_Apache_tail
+ObjectTemplate.template p_wreck_Apache_tail
+
+ObjectTemplate.create Particle p_wreck_Apache_tail
+ObjectTemplate.collisionMesh e_vexp_xpak_apache
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_apache
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter em_wreck_Apache_radar
+ObjectTemplate.template p_wreck_Apache_radar
+
+ObjectTemplate.create Particle p_wreck_Apache_radar
+ObjectTemplate.collisionMesh e_vexp_xpak_apache
+ObjectTemplate.mapMaterial 0 wreck1 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_xpak_apache
+ObjectTemplate.geometryPart 2
+
+include e_vexp_xpak_apache.tweak

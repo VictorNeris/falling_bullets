@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh medikit
+
+ObjectTemplate.create GenericFireArm medikit
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.geometry medikit
+
+include medikit.tweak

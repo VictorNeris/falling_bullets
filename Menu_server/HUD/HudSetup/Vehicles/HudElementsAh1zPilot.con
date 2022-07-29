@@ -1,0 +1,135 @@
+hudBuilder.createSplitNode			VehicleHuds Ah1zPilotHud
+hudBuilder.setNodeLogicShowVariable 		EQUAL GuiIndex 24
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ------ Compass ------
+
+hudBuilder.createCompassNode 		Ah1zPilotHud Ah1zCompass 3 340 100 128 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_compas.tga
+hudBuilder.setCompassNodeTextureSize	256 32
+hudBuilder.setCompassNodeBorder		0 0 0 76
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		19
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zCompassArrow 393 131 16 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_compasarrow.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+rem ------ HorizonBar ------
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zMissileHorizon 272 172 256 8
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\Navigation\horizon.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+hudBuilder.setNodePosVariable		1 AngleOfAttack
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 0
+
+rem ------ Crosshair ------
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zCrosshair 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_crosshair.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+
+hudBuilder.createPictureNode 		Ah1zPilotHud Ah1zPilotHitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.333 0.639 0.341 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+rem ------ Hover ------
+
+hudBuilder.createHoverNode		Ah1zPilotHud Ah1zHover 280 100 240 360
+hudBuilder.setHoverInMiddlePos		385 280
+hudBuilder.setHoverMaxValue		0.5
+hudBuilder.setHoverWidthLength		20 20
+
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zHoverPic 385 279 32 32
+hudBuilder.setNodePosVariable		0 Ah1zHoverHoverNodeXPos
+hudBuilder.setNodePosVariable		1 Ah1zHoverHoverNodeYPos
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_hoverpos.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+hudBuilder.setNodeShowVariable 		Ah1zHoverHoverNodeShow
+
+rem ------ ClimbBar ------
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zClimbBar 520 110 32 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_climbbar.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+hudBuilder.createCompassNode 		Ah1zPilotHud Ah1zClimbBarArrow 0 520 191 16 148 0 1
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_climdarrow.tga
+hudBuilder.setCompassNodeTextureSize	16 256
+hudBuilder.setCompassNodeBorder		0 35 0 0
+hudBuilder.setCompassNodeValueVariable	VehicleElevationSpeedAngle
+hudBuilder.setCompassNodeOffset		-70
+hudBuilder.setCompassNodeSnapOffset	4 4 0 0
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+rem hudBuilder.createCompassNode 		Ah1zPilotHud Ah1zClimbBarArrow 0 520 191 16 148 0 1
+rem hudBuilder.setCompassNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_climdarrow.tga
+rem hudBuilder.setCompassNodeTextureSize	16 256
+rem hudBuilder.setCompassNodeBorder		0 240 0 0
+rem hudBuilder.setCompassNodeValueVariable	VehicleElevationSpeedAngle
+rem hudBuilder.setCompassNodeOffset		-70
+rem hudBuilder.setCompassNodeSnapOffset		4 4 0 0
+rem hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+rem ------ Torque ------
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zTorqueBar 252 189 32 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_torque.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+hudBuilder.createBarNode 		Ah1zPilotHud Ah1zTorque 0 262 198 5 141
+hudbuilder.setBarNodeTexture		1 Ingame/GeneralIcons/full.tga
+hudbuilder.setBarNodeTexture		2 Ingame/GeneralIcons/empty.tga
+hudBuilder.setBarNodeValueVariable 	Torque
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+hudBuilder.createTextNode		Ah1zPilotHud Ah1zTorquePercentValue 251 263 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zTorquePercent 290 261 16 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_procent.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+rem ------ Speed/Alt ------
+
+hudBuilder.createTextNode		Ah1zPilotHud Ah1zSpeedValue 230 372 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	SpeedString
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+hudBuilder.createTextNode		Ah1zPilotHud Ah1zAltitudeValue 506 372 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 0
+hudBuilder.setTextNodeStringVariable	AltitudeString
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+rem ------ Gunner ------
+
+hudBuilder.createPictureNode		Ah1zPilotHud Ah1zGunnerBar 362 380 128 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_gunnerbar.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
+hudBuilder.createCompassNode 		Ah1zPilotHud Ah1zGunnerBarView 3 335 384 123 16 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Ah1z\Ah1z_gunnerwiew.tga
+hudBuilder.setCompassNodeTextureSize	128 16
+hudBuilder.setCompassNodeBorder		0 0 0 22
+hudBuilder.setCompassNodeValueVariable  GunnerAngle
+hudBuilder.setCompassNodeOffset		-61
+rem hudBuilder.setCompassNodeSnapOffset	0 0 8 8
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+

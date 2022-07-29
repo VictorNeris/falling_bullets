@@ -1,0 +1,20 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/1/18 18:9]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject barrel_green
+ObjectTemplate.creator ENI-2:eni
+ObjectTemplate.modifiedByUser eni
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry barrel_green
+ObjectTemplate.setCollisionMesh barrel_green
+ObjectTemplate.mapMaterial 0 metal_thin 20
+ObjectTemplate.mass 10
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.isSleeping 1
+ObjectTemplate.setNetworkableInfo BasicInfo
+

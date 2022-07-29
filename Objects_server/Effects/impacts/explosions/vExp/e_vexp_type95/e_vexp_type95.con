@@ -1,0 +1,35 @@
+GeometryTemplate.create BundledMesh e_vexp_type95
+
+ObjectTemplate.create EffectBundle e_vexp_type95
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.addTemplate em_vexp_type95_dish
+ObjectTemplate.setPosition -0.0195/3.2015/-2.4379
+ObjectTemplate.addTemplate em_vexp_type95_Turret
+ObjectTemplate.setPosition 0.0569/2.0479/-1.3613
+
+ObjectTemplate.create Emitter em_vexp_type95_dish
+ObjectTemplate.template p_vexp_type95_dish
+
+ObjectTemplate.create Particle p_vexp_type95_dish
+ObjectTemplate.collisionMesh e_vexp_type95
+ObjectTemplate.mapMaterial 0 wreck 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type95
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter em_vexp_type95_Turret
+ObjectTemplate.template p_vexp_type95_Turret
+
+ObjectTemplate.create Particle p_vexp_type95_Turret
+ObjectTemplate.collisionMesh e_vexp_type95
+ObjectTemplate.mapMaterial 0 wreck 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry e_vexp_type95
+ObjectTemplate.geometryPart 1
+
+include e_vexp_type95.tweak

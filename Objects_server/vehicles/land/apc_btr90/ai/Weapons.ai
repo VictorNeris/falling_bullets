@@ -1,0 +1,30 @@
+rem *** Weaponory ***
+weaponTemplate.create Btr90AutoCannon
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 450.0
+weaponTemplate.optimalRangePercentage 90
+weaponTemplate.setStrength Infantry   20.0
+weaponTemplate.setStrength LightArmour 10.0
+weaponTemplate.setStrength HeavyArmour 1.0
+weaponTemplate.setStrength NavalArmour 4.0
+weaponTemplate.setStrength Helicopter  2.0
+weaponTemplate.setStrength Airplane    1.0
+weaponTemplate.allowedDeviation 3.0
+weaponTemplate.setExplosionRadius 5.0
+weaponTemplate.setFiresThroughTransparent 0
+
+weaponTemplate.create Btr90HJ8
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 150.0
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 30.0
+weaponTemplate.setStrength HeavyArmour 60.0
+weaponTemplate.setStrength NavalArmour 5.0
+weaponTemplate.setStrength Helicopter  3.0
+weaponTemplate.setStrength Airplane    1.0
+weaponTemplate.allowedDeviation 3.0
+weaponTemplate.setFiresThroughTransparent 0
+
+

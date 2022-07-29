@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh seal_lt_nvg
+
+ObjectTemplate.create MaskObject seal_lt_nvg
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry seal_lt_nvg
+ObjectTemplate.maskType MOTNightVisionGoggles
+
+

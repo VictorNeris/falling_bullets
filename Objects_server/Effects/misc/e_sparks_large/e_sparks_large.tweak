@@ -1,0 +1,79 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/16 10:8]
+ObjectTemplate.activeSafe EffectBundle e_sparks_large
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_sparks_large_Start
+ObjectTemplate.addTemplate em_sparks_large_MP_Sparks
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_sparks_large_Start
+ObjectTemplate.modifiedByUser dsu
+
+ObjectTemplate.create MeshParticleSystem em_sparks_large_MP_Sparks
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.showInFirstPerson 1
+ObjectTemplate.showInThirdPerson 1
+ObjectTemplate.emitPrio High
+ObjectTemplate.lodDistance High
+ObjectTemplate.qualityLevel Medium
+ObjectTemplate.emitterType RadialDirection
+ObjectTemplate.isLocalSystem 0
+ObjectTemplate.emitRadius 0/0/0
+ObjectTemplate.emitRangeX CRD_UNIFORM/0/0.1/0
+ObjectTemplate.emitRangeY CRD_UNIFORM/0/0.1/0
+ObjectTemplate.emitRangeZ CRD_UNIFORM/0/0.1/0
+ObjectTemplate.randomRadialDirection 360
+ObjectTemplate.radialDirection 0
+ObjectTemplate.emitFrequency 80
+ObjectTemplate.preWarmTime 0.05
+ObjectTemplate.emitTime 0.2
+ObjectTemplate.emitDelay 0
+ObjectTemplate.isLooping 0
+ObjectTemplate.emitSpeed 6
+ObjectTemplate.emitDirection 0/1/0
+ObjectTemplate.timeToLive 1.3
+ObjectTemplate.randomTimeToLive 0.6
+ObjectTemplate.windAffectionFactor 0
+ObjectTemplate.forceToWaterSurface 0
+ObjectTemplate.waterSurfaceOffset 0.03
+ObjectTemplate.rotationGraph 0/0/0/1
+ObjectTemplate.alignRotationToSpeed 0
+ObjectTemplate.transparencyGraph 0/-1/0/1
+ObjectTemplate.gravity -8
+ObjectTemplate.gravityGraph 0/0/0/1
+ObjectTemplate.airResistanceGraph 0/0/0/1
+ObjectTemplate.emitSpeedGraph 0/0/-0.6/1
+ObjectTemplate.randomSpeed 1
+ObjectTemplate.randomDirectionAngle 30/30/30
+ObjectTemplate.airResistance 0.3
+ObjectTemplate.collisionEnable 1
+ObjectTemplate.collisionSpeedAlongNormal 0.5
+ObjectTemplate.collisionSpeedAlongPlane 0.6
+ObjectTemplate.randomSize 1.1
+ObjectTemplate.particleMaxSize 2.75
+ObjectTemplate.sizeGraph 0/-0.75/0/1
+ObjectTemplate.randomIntensity 0
+ObjectTemplate.lightMapIntensityOffset -1
+ObjectTemplate.color1 1.49804/1.49804/0.886275
+ObjectTemplate.color2 0.643137/0.219608/0.015686
+ObjectTemplate.colorBlendGraph 0/-0.5/1/0.5
+ObjectTemplate.alphaCull 0.2
+ObjectTemplate.randomRotation 0/0/0
+ObjectTemplate.randomRotationSpeed 0/0/0
+ObjectTemplate.rotationSpeed 0/0/0
+ObjectTemplate.directionalScale 0.6
+ObjectTemplate.blendMode Additive
+ObjectTemplate.drawOrder Back
+ObjectTemplate.writeZ 0
+ObjectTemplate.geometry mp_spark
+

@@ -1,0 +1,201 @@
+hudBuilder.createSplitNode		VehicleHuds T90Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 7
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 160
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 161
+
+
+hudBuilder.createPictureNode 	        T90Hud T90driverhud 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90tankhud02b.tga
+
+rem ---------------------------------------- Crosshair ------------------------------------------------------
+
+hudBuilder.createPictureNode		T90Hud T90CrosshairHor 143 296 512 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90CrosshairHorizontal2.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode		T90Hud T90CrosshairVert 378 322 32 128
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90CrosshairVertical2.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode		T90Hud T90CrosshairDia 410 324 128 64
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90CrosshairDiagonal.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+rem ----------------------------- Compass -------------------------------------------------------
+hudBuilder.createCompassNode 		T90Hud T90Compass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Navigation\compass2.tga
+hudBuilder.setCompassNodeTextureSize	801 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+rem ----------------------------- Speed -------------------------------------------------------
+hudBuilder.createPictureNode		T90Hud T90HudSpeedtext 684 285 64 8
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90speedtext.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode		T90Hud T90HudSpeedBox 705 294 32 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90textbox.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		T90Hud T90HudSpeedValue 695 298 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	SpeedString
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+rem ----------------------------- Torque -------------------------------------------------------
+hudBuilder.createPictureNode		T90Hud T90HudTorquetext 689 365 64 8
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90torquetext.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode		T90Hud T90HudTorqueBox 705 374 32 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90textbox.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		T90Hud T90HudTorquePercentValue 690 378 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ------------------------------HE shellammo------------------------------------------------------
+
+hudBuilder.createPictureNode		T90Hud T90HEscreenammoText 580 451 84 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90HEammo_text.tga
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 160
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+
+rem ----------------------------------------------------------------------------------------------------
+
+hudBuilder.createPictureNode		T90Hud T90AmmoBox 670 451 32 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90textbox.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		T90Hud T90HEAmmo 660 454 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 160
+hudBuilder.setTextNodeStringVariable	PrimaryAmmoString
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode		T90Hud T90MagBox 705 451 32 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90textbox.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		T90Hud T90HEMagCount 719 454 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 160
+hudBuilder.setTextNodeStringVariable	PrimaryClipString
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+rem ------------------------------------HE reload-------------------------------------------------------
+
+hudBuilder.createSplitNode 		T90Hud T90HEReload
+hudBuilder.setNodeShowVariable 		PrimaryReloadTimeShow
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryHeatShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 160
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		T90Hud T90HEReloadTime 2 670 489 64 16
+hudBuilder.setBarNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\T90\T90_HEhudshell.tga
+hudBuilder.setBarNodeValueVariable 	PrimaryReloadTime
+rem hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeColor 		0.945 0.224 0.167 1
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 160
+hudBuilder.addNodeBlendEffect		7 2
+
+
+
+rem ------------------------------KE shellammo------------------------------------------------------
+
+hudBuilder.createPictureNode		T90Hud T90KEscreenammoText 580 451 84 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90KEammo_text.tga
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 161
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+
+rem ----------------------------------------------------------------------------------------------------
+
+hudBuilder.createTextNode		T90Hud T90KEAmmo 660 454 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 161
+hudBuilder.setTextNodeStringVariable	PrimaryAmmoString
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createTextNode		T90Hud T90KEMagCount 719 454 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 161
+hudBuilder.setTextNodeStringVariable	PrimaryClipString
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+rem ------------------------------------KE reload-------------------------------------------------------
+
+hudBuilder.createSplitNode 		T90Hud T90KEReload
+hudBuilder.setNodeShowVariable 		PrimaryReloadTimeShow
+hudBuilder.setNodeLogicShowVariable 	NOT PrimaryHeatShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 161
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createBarNode 		T90Hud T90KEReloadTime 2 670 489 64 16
+hudBuilder.setBarNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\T90\T90_KEhudshell.tga
+hudBuilder.setBarNodeValueVariable 	PrimaryReloadTime
+rem hudBuilder.setBarNodeSnap		4
+hudBuilder.setNodeColor 		0.945 0.224 0.167 1
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 161
+hudBuilder.addNodeBlendEffect		7 2
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+   
+hudBuilder.createPictureNode 		T90Hud T90HitIndication 370 235 64 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90_HitIndicator.tga
+hudBuilder.setNodeColor 		0.9 0.05 0.05 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ------------range to target text---------------
+hudBuilder.createPictureNode		T90Hud T90RangeBox 146 451 32 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90textbox.tga
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode		T90Hud T90RangeText 62 451 80 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90rangetotarget_text.tga
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		T90Hud T90RangeLabel 149 454 101 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeStringVariable	TargetDistanceString
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		T90Hud T90DirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+
+hudBuilder.createPictureNode		T90Hud T90TurretBase 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode		T90DirectionHud T90TurretBarrel 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode			T90Hud T90Coax 626 413 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\T90\RUCoaX.dds
+hudBuilder.setNodeColor				0.945 0.224 0.167 1

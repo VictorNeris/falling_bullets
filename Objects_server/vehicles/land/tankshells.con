@@ -1,0 +1,277 @@
+
+
+ObjectTemplate.create GenericProjectile Tank_Projectile
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 2
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.endEffectTemplate e_exp_medium
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 1.25
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 43
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Tank_Projectile_Looping
+ObjectTemplate.addTemplate e_tank_trail
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.setPosition 0/0/-0.00992489
+ObjectTemplate.addTemplate houselight_big_LightSource
+ObjectTemplate.setPosition 0/0/-0.00992489
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+ObjectTemplate.material 43
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 3
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerTemplate p_tracer_tank
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 600
+
+ObjectTemplate.create GenericProjectile Tank_HE_Projectile
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 10
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.endEffectTemplate e_exp_large
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 1.25
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 43
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Tank_HE_Projectile_Looping
+ObjectTemplate.addTemplate e_tank_trail
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.setPosition 0/0/-0.00992489
+ObjectTemplate.addTemplate houselight_big_LightSource
+ObjectTemplate.setPosition 0/0/-0.00992489
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+ObjectTemplate.material 43
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 3
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerTemplate p_tracer_tank
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 450
+
+ObjectTemplate.create GenericProjectile Tank_Guided_Projectile
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 2
+ObjectTemplate.detonation.explosionForce 7
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.endEffectTemplate e_exp_medium
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTLaser
+ObjectTemplate.seek.trackingDelay 0.2
+ObjectTemplate.seek.maxAngleLock 90
+ObjectTemplate.seek.maxDistLock 2000
+ObjectTemplate.seek.directionBonus 0.5
+ObjectTemplate.seek.reLockTime 30
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 1.5
+ObjectTemplate.follow.maxPitch 1.5
+ObjectTemplate.follow.changePitch 0.25
+ObjectTemplate.follow.changeYaw 0.2
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.drag 7
+ObjectTemplate.mass 10
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 43
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Tank_Projectile_Looping
+ObjectTemplate.addTemplate e_tank_trail
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.setPosition 0/0/-0.00992489
+ObjectTemplate.addTemplate houselight_big_LightSource
+ObjectTemplate.setPosition 0/0/-0.00992489
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+ObjectTemplate.material 43
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerScaler 3
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerTemplate p_tracer_tank
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 400
+ObjectTemplate.damageOwner 0
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 250
+ObjectTemplate.startDelay 0.2
+
+ObjectTemplate.create GenericProjectile Tank_Canister_Projectile
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 40
+ObjectTemplate.detonation.explosionRadius 4
+ObjectTemplate.detonation.explosionForce 0.1
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.detectionRadius 4
+ObjectTemplate.detonation.maxDepthForExplosion 4
+ObjectTemplate.detonation.detonateOnWaterCollision 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 1
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.material 40
+rem -------------------------------------
+rem ObjectTemplate.addTemplate GravityAffector_hmg
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+ObjectTemplate.material 40
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.minDamage 0
+ObjectTemplate.damage 0
+rem objecttemplate.damagemandownsoldiers 1
+
+ObjectTemplate.create EffectBundle e_tank_trail
+ObjectTemplate.modifiedByUser "Alex"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.physicsType Point
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_tank_trail_Start
+rem -------------------------------------
+rem begin Auto-generated effectProperties-part.
+ObjectTemplate.AlphaIntensityRange 1/1
+ObjectTemplate.AlphaIntensityUsed 0
+ObjectTemplate.EmitScaleFactorRange 0.25/1
+ObjectTemplate.EmitScaleFactorUsed 0
+ObjectTemplate.EmitScaleFactorFromSpeed 0/5
+ObjectTemplate.EmitSpeedScaleRange 0.25/1
+ObjectTemplate.EmitSpeedScaleUsed 0
+ObjectTemplate.EmitSpeedScaleFromSpeed 0/30
+ObjectTemplate.AgeScaleFactorRange 1/1
+ObjectTemplate.AgeScaleFactorUsed 0
+ObjectTemplate.StartAgeRange 0/0
+ObjectTemplate.StartAgeUsed 0
+ObjectTemplate.SoundIntensityRange 1/1
+ObjectTemplate.SoundIntensityUsed 0
+rem end Auto-generated effectProperties-part.
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_tank_trail_Start
+ObjectTemplate.modifiedByUser "Alex"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/usart_lw155/sounds/tank_projectile_01.wav,objects/weapons/stationary/usart_lw155/sounds/tank_projectile_02.wav,objects/weapons/stationary/usart_lw155/sounds/tank_projectile_03.wav,objects/weapons/stationary/usart_lw155/sounds/tank_projectile_04.wav,objects/weapons/stationary/usart_lw155/sounds/tank_projectile_05.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 20

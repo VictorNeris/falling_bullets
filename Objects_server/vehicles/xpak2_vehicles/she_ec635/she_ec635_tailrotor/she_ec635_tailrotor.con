@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh she_ec635_tailrotor
+CollisionManager.createTemplate she_ec635_tailrotor
+
+ObjectTemplate.create Rotor she_ec635_tailrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator KHE-2:khe
+ObjectTemplate.collisionMesh she_ec635_tailrotor
+ObjectTemplate.mapMaterial 0 alpha 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry she_ec635_tailrotor
+
+include she_ec635_tailrotor.tweak

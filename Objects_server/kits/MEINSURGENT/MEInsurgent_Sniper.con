@@ -1,0 +1,71 @@
+ObjectTemplate.create Kit MEInsurgent_Sniper
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Sniper
+ObjectTemplate.aiTemplate Sniper
+ObjectTemplate.geometry ins_kits
+ObjectTemplate.geometry.kit 6
+ObjectTemplate.geometry.dropGeom 16
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.dropHeadwear mec_helmet
+ObjectTemplate.unlockIndex 6
+ObjectTemplate.cullRadiusScale 100000
+ObjectTemplate.timeToLiveAfterDeath 60
+ObjectTemplate.addTemplate meinsurgent_lt_mask
+ObjectTemplate.addTemplate meinsurgent_lt_nvg
+
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate nagant_sniper
+ObjectTemplate.addTemplate rupis_makarov
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate USMIN_Claymore
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockMEISniper_1
+ObjectTemplate.addTemplate UnlockMEISniper_2
+ObjectTemplate.addTemplate UnlockMEISniper_3
+rem -------------------------------------
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SNIPER"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Sniper_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Sniper.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 	0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage		"sniper_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockMEISniper_1
+ObjectTemplate.addTemplate sr_sks_pso
+ObjectTemplate.replaceItem nagant_sniper
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMEISniper_2
+ObjectTemplate.addTemplate sr_svd
+ObjectTemplate.replaceItem sr_sks_pso
+ObjectTemplate.unlockLevel 2
+
+ObjectTemplate.create ItemContainer UnlockMEISniper_3
+ObjectTemplate.addTemplate bf1_m1903_sniper
+ObjectTemplate.replaceItem sr_svd
+ObjectTemplate.addTemplate bf1_m1903_sniper_bayonet
+ObjectTemplate.replaceItem kni_knife
+ObjectTemplate.unlockLevel 3
+
+
+
+

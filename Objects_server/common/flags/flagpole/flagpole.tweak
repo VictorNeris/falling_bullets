@@ -1,0 +1,47 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/10/21 3:15]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe Bundle flagpole
+ObjectTemplate.creator DPA-1:dpa
+ObjectTemplate.modifiedByUser "RyanLo"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry flagpole
+ObjectTemplate.setCollisionMesh flagpole
+ObjectTemplate.mapMaterial 0 Metal_solid 21
+ObjectTemplate.mapMaterial 1 Rock_or_concrete 78
+ObjectTemplate.mapMaterial 2 Roap 10
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate flagpole_SFXBundle
+rem -------------------------------------
+
+ObjectTemplate.create EffectBundle flagpole_SFXBundle
+ObjectTemplate.modifiedByUser "RyanLo"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_flagpole_SFXBundle_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_flagpole_SFXBundle_Start
+ObjectTemplate.modifiedByUser "RyanLo"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/flag.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.halfVolumeDistance 3.5
+

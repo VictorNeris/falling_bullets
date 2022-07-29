@@ -1,0 +1,112 @@
+hudBuilder.createSplitNode		VehicleHuds Type95Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 43
+rem hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode			Type95Hud Type95CrossHair 243 139 314 314
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\Type95\crosshair.tga
+hudBuilder.setNodeColor				0.5725 0.8666 0.2352 1
+
+hudBuilder.createPictureNode		Type95Hud Type95Scope 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Simcardo\Vehicles\Icons\Hud\Land\T90Sight.dds
+
+
+hudBuilder.createTextNode			Type95Hud Type95MarkerLabel0 100 100 40 10  
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor		 		0.486 0.773 0.463 1
+
+hudBuilder.createTextNode			Type95Hud Type95MarkerLabel1 100 120 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor		 		0.486 0.773 0.463 1
+
+hudBuilder.createTextNode			Type95Hud Type95MarkerLabel2 100 140 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor		 		0.486 0.773 0.463 1
+
+hudBuilder.createTextNode			Type95Hud Type95MarkerLabel3 100 160 40 10
+hudBuilder.setTextNodeStyle			Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setNodeColor		 		0.486 0.773 0.463 1
+
+hudBuilder.createObjectMarkerNode 		Type95Hud Type95Marker 97 130 606 340
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\Type95\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\Type95\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Land\Type95\lockBoxLocked.tga
+hudBuilder.setObjectMarkerNodeTexture 		3 Ingame\Vehicles\Icons\Hud\Land\Tunguska\rangeLine.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 56 56
+hudBuilder.setObjectMarkerNodeTextureSize	1 56 56
+hudBuilder.setObjectMarkerNodeTextureSize	2 56 56
+hudBuilder.setObjectMarkerNodeTextureSize	3 16 256
+hudBuilder.setObjectMarkerNodeObjects 		4
+rem hudBuilder.setObjectMarkerNodeWeapon 		1
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeLockText 		1 Type95MarkerLabel
+hudBuilder.setObjectMarkerNodeLockTextOffset	-32 8
+hudBuilder.addObjectMarkerNodeLockTextNode	Type95MarkerLabel0
+hudBuilder.addObjectMarkerNodeLockTextNode	Type95MarkerLabel1
+hudBuilder.addObjectMarkerNodeLockTextNode	Type95MarkerLabel2
+hudBuilder.addObjectMarkerNodeLockTextNode	Type95MarkerLabel3
+hudBuilder.setNodeColor		 		0.486 0.773 0.463 1
+
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel0TextNode
+hudBuilder.setTextNodeStringVariable		Type95MarkerLabel0String
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel0
+hudBuilder.setNodeShowVariable 			Type95MarkerLabel0Show
+
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel1TextNode 
+hudBuilder.setTextNodeStringVariable		Type95MarkerLabel1String
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel1
+hudBuilder.setNodeShowVariable 			Type95MarkerLabel1Show
+
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel2TextNode
+hudBuilder.setTextNodeStringVariable		Type95MarkerLabel2String
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel2
+hudBuilder.setNodeShowVariable 			Type95MarkerLabel2Show
+
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel3TextNode  
+hudBuilder.setTextNodeStringVariable		Type95MarkerLabel3String
+hudBuilder.setActiveObject			Type95Hud Type95MarkerLabel3
+hudBuilder.setNodeShowVariable 			Type95MarkerLabel3Show
+
+hudBuilder.createPictureNode			Type95Hud Type95HeatLock 353 460 78 14
+hudBuilder.setPictureNodeTexture 		Ingame\Vehicles\Icons\Hud\Land\Type95\missileLock.tga
+hudBuilder.setNodeColor				0.5725 0.8666 0.2352 1
+hudBuilder.setNodeShowVariable 			Type95MarkerObjectMarkerNodeLockedShow
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+   
+hudBuilder.createPictureNode 		Type95Hud Type95HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.5725 0.8666 0.2352 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+rem ----------------compass-------------------------
+
+hudBuilder.createCompassNode 		Type95Hud Type95Compass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Navigation\compass2.tga
+hudBuilder.setCompassNodeTextureSize	801 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0.5725 0.8666 0.2352 1
+rem hudBuilder.addNodeBlendEffect		7 2
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		Type95Hud Type95DirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+rem hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode		Type95Hud Type95TurretBase 451 497 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		0.5725 0.8666 0.2352 1
+rem hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createPictureNode		Type95DirectionHud Type95TurretBarrel 451 497 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		0.5725 0.8666 0.2352 1
+rem hudBuilder.addNodeBlendEffect		7 2

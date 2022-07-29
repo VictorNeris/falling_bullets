@@ -1,0 +1,194 @@
+hudBuilder.createSplitNode			VehicleHuds M1A2Hud
+hudBuilder.setNodeLogicShowVariable 		EQUAL GuiIndex 14
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 140
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 141
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 142
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 143
+
+
+
+hudBuilder.createPictureNode		M1A2Hud M1A2Scope 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Simcardo\Vehicles\Icons\Hud\Land\T90Sight.dds
+
+hudBuilder.createPictureNode		M1A2Hud M1A2Glow 634 57 128 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\glow.dds
+hudBuilder.setNodeColor    		0 0.8 0 1
+
+hudBuilder.createSplitNode			M1A2Hud M1A2RangeGlow
+rem hudBuilder.addNodeBlendEffect			7 2
+
+rem ----------------------------------weapon selection----------------------------------------
+
+hudBuilder.createSplitNode			M1A2Hud M1A2_APHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 140
+
+hudBuilder.createTextNode				M1A2_APHud M1A2_APGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"APFSDS"
+hudBuilder.setNodeColor				0 1 0.1 1
+
+hudBuilder.createSplitNode			M1A2Hud M1A2_HEHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 141
+
+hudBuilder.createTextNode				M1A2_HEHud M1A2_HEGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"HEAT"
+hudBuilder.setNodeColor				0 1 0.1 1
+
+hudBuilder.createSplitNode			M1A2Hud M1A2_CanisterHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 142
+
+hudBuilder.createTextNode				M1A2_CanisterHud M1A2_CanisterGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"CANISTER"
+hudBuilder.setNodeColor				0 1 0.1 1
+
+hudBuilder.createSplitNode			M1A2Hud M1A2_GuidedHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 143
+
+hudBuilder.createTextNode				M1A2_GuidedHud M1A2_GuidedGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"GUIDED"
+hudBuilder.setNodeColor				0 1 0.1 1
+
+
+beginrem
+hudBuilder.createPictureNode			M1A2RangeGlow M1A2Coax 626 405 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Land\M1A2\CoaXLabel.dds
+hudBuilder.setNodeColor				0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createPictureNode			M1A2RangeGlow M1A2Sabot 626 440 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Land\M1A2\SABOT.dds
+hudBuilder.setNodeColor				0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+endrem
+
+rem --------------------------------------Lock Boxes---------------------------------------------------- 
+hudBuilder.createObjectMarkerNode 		M1A2RangeGlow M1A2HeatMarker 224 139 352 321
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBoxLocked.tga
+hudBuilder.setObjectMarkerNodeTexture 		3 Ingame\Vehicles\Icons\Hud\Land\Tunguska\rangeLine.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	1 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	2 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	3 16 256
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setNodeColor		 		0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createObjectMarkerNode 		M1A2RangeGlow M1A2LaserMarker 224 139 352 321
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Land\M6Linebacker\lockBoxLocked.tga
+hudBuilder.setObjectMarkerNodeTexture 		3 Ingame\Vehicles\Icons\Hud\Land\Tunguska\rangeLine.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	1 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	2 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	3 16 256
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setNodeColor		 		0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createPictureNode			M1A2RangeGlow M1A2label 125 157 64 32
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Land\M1A2\Hertz.dds
+hudBuilder.setNodeColor    			0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createPictureNode			M1A2RangeGlow M1A2Crosshair1 272 236 256 128 
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Land\M1A2\NeuCross.dds
+hudBuilder.setNodeColor		 		1 0 0 1
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createPictureNode			M1A2RangeGlow M1A2Crosshair2 272 276 256 128 
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Land\M6Linebacker\Range.dds
+hudBuilder.setNodeColor				1 0 0 1
+hudBuilder.addNodeBlendEffect			7 2
+
+rem -------------------------------------- Hit Indication---------------------------------------------------- 
+
+hudBuilder.createPictureNode M1A2Hud M1A2HitIndication 370 235 64 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2\M1A2_HitIndicator.tga 
+hudBuilder.setNodeColor 0.9 0.05 0.05 1 
+hudBuilder.setNodeAlphaVariable HitIndicatorIconAlpha 
+hudBuilder.setNodeShowVariable HitIndicatorIconShow 
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ------------range to target text---------------
+
+hudBuilder.createPictureNode		M1A2Hud M1A2RangeText 150 496 128 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\M1A2\range_toTarget_text.tga
+hudBuilder.setNodeColor			0 0.8 0 0.9
+
+hudBuilder.createTextNode		M1A2Hud M1A2RangeLabel 275 499 101 10
+hudBuilder.setTextNodeStyle		Fonts/digitalNumbers.dif 2
+rem vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeStringVariable	TargetDistanceString
+hudBuilder.setNodeColor			0 0.8 0 0.9
+
+rem ----------------------------- Speed ------------------------------------------------------- 
+
+hudBuilder.createTextNode M1A2Hud M1A2SpeedValue 530 35 40 10 
+hudBuilder.setTextNodeStyle Fonts/digitalNumbers.dif 1 
+rem Fonts/vehicleHudFont_6.dif 1 
+hudBuilder.setTextNodeStringVariable SpeedString 
+hudBuilder.setNodeColor			0 0.8 0 0.9
+
+rem RD hudBuilder.createPictureNode M1A2Hud M1A2Speed 503 32 40 16 
+rem RD hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\speed.tga 
+rem RD hudBuilder.setNodeColor 0.5725 0.8666 0.2352 0.9 
+rem RD hudBuilder.addNodeBlendEffect 7 2 
+
+hudBuilder.createPictureNode M1A2Hud M1A2Kmh 575 32 32 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\kmh.tga 
+hudBuilder.setNodeColor			0 0.8 0 0.9
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem ----------------------------- Torque ------------------------------------------------------- 
+
+hudBuilder.createTextNode M1A2Hud M1A2TorquePercentValue 371 499 40 10 
+hudBuilder.setTextNodeStyle Fonts/digitalNumbers.dif 1
+rem vehicleHudFont_6.dif 1 
+hudBuilder.setTextNodeStringVariable TorqueString 
+hudBuilder.setNodeColor			0 0.8 0 0.9
+
+hudBuilder.createPictureNode M1A2Hud M1A2Torque 325 496 64 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\torque.tga 
+hudBuilder.setNodeColor			0 0.8 0 0.9
+hudBuilder.addNodeBlendEffect 7 2 
+
+hudBuilder.createPictureNode M1A2Hud M1A2Percent 415 496 16 16 
+hudBuilder.setPictureNodeTexture Ingame\Vehicles\Icons\Hud\Land\M1A2custom\percent.tga 
+hudBuilder.setNodeColor			0 0.8 0 0.9
+hudBuilder.addNodeBlendEffect 7 2 
+
+rem --------------------------------------Turret icon---------------------------------------------------- 
+hudBuilder.createSplitNode			M1A2RangeGlow M1A2DirectionHud
+hudBuilder.setNodeShowVariable  		TurretIconShow
+hudBuilder.setNodeLogicShowVariable  		NOT CommanderShow 1
+hudBuilder.setNodeInTime 			0.3
+hudBuilder.setNodeOutTime 			0.3
+hudBuilder.addNodeMoveShowEffect		1.57 53
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createPictureNode			M1A2RangeGlow M1A2TurretBase 451 497 64 64
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable 	VehicleTurretAngle
+hudBuilder.setNodeColor    			0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+
+hudBuilder.createPictureNode			M1A2DirectionHud M1A2TurretBarrel 451 497 64 64
+hudBuilder.setPictureNodeTexture 		Ingame\Simcardo\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.dds
+hudBuilder.setNodeColor    			0 1 0.1 1
+hudBuilder.addNodeBlendEffect			7 2
+
+rem --------------------------------------Compass---------------------------------------------------- 
+hudBuilder.createCompassNode 			M1A2Hud M1A2Compass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 		1 Ingame\Simcardo\Vehicles\Icons\Hud\Navigation\compass2.dds
+hudBuilder.setCompassNodeTextureSize		801 32
+hudBuilder.setCompassNodeBorder			0 0 0 152
+hudBuilder.setCompassNodeValueVariable		VehicleAngle
+hudBuilder.setCompassNodeOffset			121
+hudBuilder.setNodeColor		 		0 1 0.1 1

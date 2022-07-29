@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh vz58p
+
+ObjectTemplate.create GenericFireArm vz58p_s
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DTNETER-PC:Dtneter
+ObjectTemplate.geometry vz58p
+
+include vz58p_s.tweak

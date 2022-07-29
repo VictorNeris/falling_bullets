@@ -1,0 +1,38 @@
+GeometryTemplate.create SkinnedMesh seal_kits
+
+ObjectTemplate.create SimpleObject seal_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAYE:jayev
+ObjectTemplate.geometry seal_kits
+
+ObjectTemplate.create SimpleObject K_legpackA8
+
+ObjectTemplate.create SimpleObject K_canteen14
+
+ObjectTemplate.create SimpleObject K_frontpack36
+
+ObjectTemplate.create SimpleObject K_legpackA9
+
+ObjectTemplate.create SimpleObject K_backpack4
+
+ObjectTemplate.create SimpleObject K_butpack8
+
+ObjectTemplate.create SimpleObject K_frontpack37
+
+ObjectTemplate.create SimpleObject K_frontpack38
+
+ObjectTemplate.create SimpleObject K_chestpack3
+
+ObjectTemplate.create SimpleObject K_neckscarf2
+
+ObjectTemplate.create SimpleObject K_holsterlong4
+
+ObjectTemplate.create SimpleObject K_radio10
+
+ObjectTemplate.create SimpleObject K_chestpack4
+
+ObjectTemplate.create SimpleObject K_binocks2
+
+ObjectTemplate.create SimpleObject K_sealhelmet5
+
+include seal_kits.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh moh_fn2000telescopic
+
+ObjectTemplate.create GenericFireArm moh_fn2000telescopic
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator AU-PC:Au
+ObjectTemplate.geometry moh_fn2000telescopic
+
+include moh_fn2000telescopic.tweak

@@ -1,0 +1,75 @@
+rem *** Kit Loaders ***
+
+rem --- US SPECOPS ---
+run load.con us_load_01 us_specops_none_m4a1_ironsight_none_default us_specops_none_m4a1_ironsight_none_camo
+run load.con us_load_02 us_specops_none_m4a1_ironsight_suppressor_default us_specops_none_m4a1_ironsight_suppressor_camo
+run load.con us_load_03 us_specops_none_m4a1_aimpoint_none_default us_specops_none_m4a1_aimpoint_none_camo
+run load.con us_load_04 us_specops_none_m4a1_aimpoint_suppressor_default us_specops_none_m4a1_aimpoint_suppressor_camo
+run load.con us_load_05 us_specops_none_m4a1_acog_none_default us_specops_none_m4a1_acog_none_camo
+run load.con us_load_06 us_specops_none_m4a1_acog_suppressor_default us_specops_none_m4a1_acog_suppressor_camo
+run load.con us_load_07 us_specops_none_m4a1_eotech_none_default us_specops_none_m4a1_eotech_none_camo
+run load.con us_load_08 us_specops_none_m4a1_eotech_suppressor_default us_specops_none_m4a1_eotech_suppressor_camo
+run load.con us_load_09 us_specops_none_g36c_ironsight_none_default us_specops_none_g36c_ironsight_suppressor_default
+run load.con us_load_10 us_specops_none_g36c_aimpoint_none_default us_specops_none_g36c_aimpoint_suppressor_default
+
+rem --- US SNIPER ---
+run load.con us_load_11 us_sniper_none_m24_longrange_none_default us_sniper_none_m24_longrange_none_camo
+run load.con us_load_12 us_sniper_none_m24_longrange_suppressor_default us_sniper_none_m24_longrange_suppressor_camo
+run load.con us_load_13 us_sniper_none_m24_closerange_none_default us_sniper_none_m24_closerange_none_camo
+run load.con us_load_14 us_sniper_none_m24_closerange_suppressor_default us_sniper_none_m24_closerange_suppressor_camo
+
+rem --- US ASSAULT ---
+run load.con us_load_15 us_assault_none_m16a4_ironsight_none_default us_assault_none_m16a4_ironsight_none_camo
+run load.con us_load_16 us_assault_none_m16a4_aimpoint_none_default us_assault_none_m16a4_aimpoint_none_camo
+run load.con us_load_17 us_assault_none_m16a4_acog_none_default us_assault_none_m16a4_acog_none_camo
+run load.con us_load_18 us_assault_none_m16a4_eotech_none_default us_assault_none_m16a4_eotech_none_camo
+run load.con us_load_19 us_assault_none_m203_ironsight_ugl_default us_assault_none_m203_ironsight_ugl_camo
+run load.con us_load_20 us_assault_none_m203_ironsight_usl_default us_assault_none_m203_ironsight_usl_camo
+
+rem --- US SUPPORT ---
+run load.con us_load_21 us_support_none_m249_ironsight_none_default us_support_none_m249_eotech_none_default
+run load.con us_load_22 us_support_none_m249_elcan_none_default us_support_none_m249_elcan_none_default
+
+rem --- US ENGINEER ---
+run load.con us_load_23 us_engineer_none_remington870_ironsight_none_default us_engineer_none_remington870_ironsight_none_default
+
+rem --- US MEDIC ---
+run load.con us_load_24 us_medic_none_m16a2_ironsight_none_default us_medic_none_m16a2_ironsight_none_camo
+
+rem --- US ANTITANK ---
+run load.con us_load_25 us_antitank_none_mp5_ironsight_none_default us_antitank_none_mp5_aimpoint_none_default
+run load.con us_load_26 us_antitank_none_mp5_ironsight_suppressor_default us_antitank_none_mp5_aimpoint_suppressor_default
+run load.con us_load_27 us_antitank_none_mp7_ironsight_none_default us_antitank_none_mp7_ironsight_suppressor_default
+
+
+
+rem *** Weapondrop col ***
+run load.con wdUS_1 weapondrop_m11-87 weapondrop_m16a2
+run load.con wdUS_2 weapondrop_m203 weapondrop_m24
+run load.con wdUS_3 weapondrop_m249 weapondrop_m4
+run load.con wdUS_4 weapondrop_m4_iron weapondrop_m4_iron_sd
+run load.con wdUS_5 weapondrop_m4_eotech weapondrop_m4_acog
+run load.con wdUS_6 weapondrop_mp5 weapondrop_m16a4_acog
+run load.con wdUS_7 weapondrop_m16a4_m2 weapondrop_m82
+
+
+
+rem *** Headgear ***
+run load.con kpUS_1 kitpart_us_cap kitpart_us_helmet
+run load.con kpUS_2 kitpart_us_hat kitpart_us_hat
+
+
+rem *** HUD ***
+
+if v_arg1 == 1
+	hudBuilder.setActiveObject CustomizationSplit US_Split
+	hudBuilder.setNodeShowVariable Team1Selected
+	hudBuilder.setActiveObject IngameHud US_KitInfo
+	hudBuilder.setNodeShowVariable Team1Selected
+endif
+if v_arg1 == 2
+	hudBuilder.setActiveObject CustomizationSplit US_Split
+	hudBuilder.setNodeShowVariable Team2Selected
+	hudBuilder.setActiveObject IngameHud US_KitInfo
+	hudBuilder.setNodeShowVariable Team2Selected
+endif

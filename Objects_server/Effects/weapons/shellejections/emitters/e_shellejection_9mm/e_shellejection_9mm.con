@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_shellejection_9mm
+ObjectTemplate.createdInEditor 1
+
+include e_shellejection_9mm.tweak

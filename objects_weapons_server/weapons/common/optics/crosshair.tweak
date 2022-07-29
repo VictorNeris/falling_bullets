@@ -1,0 +1,9 @@
+rem crosshair
+ObjectTemplate.weaponHud.showLeftMags 0
+ObjectTemplate.weaponHud.guiIndex 52
+rem ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 30
+ObjectTemplate.weaponHud.maxVisualDeviation 10000
+ObjectTemplate.weaponHud.minVisualDeviation 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem chosshair

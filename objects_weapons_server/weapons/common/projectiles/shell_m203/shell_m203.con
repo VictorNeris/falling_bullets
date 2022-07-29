@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh shell_m203
+
+ObjectTemplate.create GenericProjectile shell_m203
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.collisionMesh shell_m203
+ObjectTemplate.mapMaterial 0 Grenade_rifle 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry shell_m203
+
+include shell_m203.tweak

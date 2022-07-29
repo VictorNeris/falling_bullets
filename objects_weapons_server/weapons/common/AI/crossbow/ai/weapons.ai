@@ -1,0 +1,52 @@
+weaponTemplate.create crossbow_ai
+weaponTemplate.indirect 0
+weaponTemplate.minRange 10.0
+weaponTemplate.maxRange 60.0
+weaponTemplate.optimalRangePercentage 100
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    2.0
+weaponTemplate.setStrength LightArmour 10.0
+weaponTemplate.setStrength HeavyArmour 2.0
+weaponTemplate.setStrength NavalArmour 2.0
+weaponTemplate.setStrength Helicopter 1.0
+weaponTemplate.setStrength AirPlane 1.0
+weaponTemplate.deviation 3
+weaponTemplate.deviationCorrectionTime 1
+weaponTemplate.setSoundSphereRadius 0
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.setExplosionRadius 1
+
+weaponTemplate.create crossbow_explosive_ai
+weaponTemplate.indirect 0
+weaponTemplate.minRange 30.0
+weaponTemplate.maxRange 60.0
+weaponTemplate.optimalRangePercentage 100
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    2.0
+weaponTemplate.setStrength LightArmour 10.0
+weaponTemplate.setStrength HeavyArmour 2.0
+weaponTemplate.setStrength NavalArmour 2.0
+weaponTemplate.setStrength Helicopter 1.0
+weaponTemplate.setStrength AirPlane 1.0
+weaponTemplate.deviation 5
+weaponTemplate.deviationCorrectionTime 1
+weaponTemplate.setSoundSphereRadius 0
+weaponTemplate.setFiresThroughTransparent 0
+weaponTemplate.setExplosionRadius 1
+
+weaponTemplate.create crossbow_scan_ai
+weaponTemplate.indirect 0
+weaponTemplate.minRange 30.0
+weaponTemplate.maxRange 60.0
+weaponTemplate.optimalRangePercentage 100
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter 0.0
+weaponTemplate.setStrength AirPlane 0.0
+weaponTemplate.deviation 1
+weaponTemplate.deviationCorrectionTime 1
+weaponTemplate.setSoundSphereRadius 0
+weaponTemplate.setFiresThroughTransparent 0

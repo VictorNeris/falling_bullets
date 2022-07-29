@@ -1,0 +1,220 @@
+GeometryTemplate.create BundledMesh air_su39
+CollisionManager.createTemplate air_su39
+
+ObjectTemplate.create PlayerControlObject air_su39
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NICKW:nickwh
+ObjectTemplate.collisionMesh air_su39
+ObjectTemplate.mapMaterial 0 MainPlane 0
+ObjectTemplate.mapMaterial 1 Glass 0
+ObjectTemplate.mapMaterial 2 wreck 0
+ObjectTemplate.mapMaterial 3 Rubberheavy 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry air_su39
+ObjectTemplate.addTemplate Air_Su39_GearRotator
+ObjectTemplate.setPosition 0/-0.9588/-0.3581
+ObjectTemplate.setRotation 0/12.3813/0
+ObjectTemplate.addTemplate Air_Su39_Front_Rot
+ObjectTemplate.setPosition -0.1893/-1.4078/3.5403
+ObjectTemplate.addTemplate Air_Su39_L_BreakRoot1
+ObjectTemplate.setPosition 0/-0.3050/-1.9191
+ObjectTemplate.addTemplate Air_Su39_L_BreakRoot2
+ObjectTemplate.setPosition 0/-0.3066/-1.9208
+ObjectTemplate.addTemplate Air_Su39_L_Aileron
+ObjectTemplate.setPosition -5.2459/-0.2566/-1.5221
+ObjectTemplate.setRotation 0/0/1.3225
+ObjectTemplate.addTemplate Air_Su39_R_Aileron
+ObjectTemplate.setPosition 5.2459/-0.2566/-1.5221
+ObjectTemplate.setRotation 0/0/-3.1773
+ObjectTemplate.addTemplate Air_Su39_Front_GearHatch1
+ObjectTemplate.setPosition -0.3514/-1.5370/3.5334
+ObjectTemplate.setRotation 0/0/-90.0000
+ObjectTemplate.addTemplate Air_Su39_Front_GearHatch2
+ObjectTemplate.setPosition -0.3514/-1.5356/3.3714
+ObjectTemplate.setRotation 0/0/-90.0000
+ObjectTemplate.addTemplate Air_Su39_Left_Gearhatch1
+ObjectTemplate.setPosition -0.3193/-1.5391/0.9332
+ObjectTemplate.setRotation 0/0/90.0000
+ObjectTemplate.addTemplate Air_Su39_Left_Gearhatch2
+ObjectTemplate.setPosition -1.2434/-1.1775/0.0894
+ObjectTemplate.setRotation -6.4215/10.3031/-101.0181
+ObjectTemplate.addTemplate Air_Su39_Right_Gearhatch1
+ObjectTemplate.setPosition 0.3193/-1.5391/0.9332
+ObjectTemplate.setRotation 0/0/-90.0000
+ObjectTemplate.addTemplate Air_Su39_Right_Gearhatch2
+ObjectTemplate.setPosition 1.2434/-1.1775/0.0894
+ObjectTemplate.setRotation 11.1333/4.8248/101.0687
+ObjectTemplate.addTemplate Air_Su39_TailRudder
+ObjectTemplate.setPosition 0/2.0779/-5.5590
+ObjectTemplate.setRotation -0.3875/-1.9863/90.0134
+ObjectTemplate.addTemplate Air_Su39_Back_Stabilizer
+ObjectTemplate.setPosition 0/0.1516/-5.7699
+ObjectTemplate.setRotation 0/0.1/0
+
+
+ObjectTemplate.create LandingGear Air_Su39_GearRotator
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate Air_Su39_R_LGear
+ObjectTemplate.setPosition 1.0412/-0.1110/0.0694
+ObjectTemplate.addTemplate Air_Su39_L_LGear
+ObjectTemplate.setPosition -1.0412/-0.1110/0.0694
+ObjectTemplate.setRotation -180.0000/0/0
+
+ObjectTemplate.create LandingGear Air_Su39_R_LGear
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate Air_Su39_R_wheel
+ObjectTemplate.setPosition 0.4696/-1.0827/-0.1226
+
+ObjectTemplate.create Spring Air_Su39_R_wheel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create LandingGear Air_Su39_L_LGear
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate Air_Su39_L_wheel
+ObjectTemplate.setPosition 0.4696/-1.0827/0.1226
+
+ObjectTemplate.create Spring Air_Su39_L_wheel
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create LandingGear Air_Su39_Front_Rot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.addTemplate Air_Su39_Front_Nav_wheel
+ObjectTemplate.setPosition 0/-0.5023/0.0013
+
+ObjectTemplate.create RotationalBundle Air_Su39_Front_Nav_wheel
+ObjectTemplate.collisionPart 7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate Air_Su39_Front_wheel
+ObjectTemplate.setPosition 0/-0.6178/-0.3490
+
+ObjectTemplate.create Spring Air_Su39_Front_wheel
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create RotationalBundle Air_Su39_L_BreakRoot1
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate Air_Su39_L_Break1
+ObjectTemplate.setPosition 0/0.0774/-0.5421
+
+ObjectTemplate.create RotationalBundle Air_Su39_L_Break1
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create RotationalBundle Air_Su39_L_BreakRoot2
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+ObjectTemplate.addTemplate Air_Su39_L_Break2
+ObjectTemplate.setPosition 0/-0.0890/-0.5433
+
+ObjectTemplate.create RotationalBundle Air_Su39_L_Break2
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Wing Air_Su39_L_Aileron
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Wing Air_Su39_R_Aileron
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create LandingGear Air_Su39_Front_GearHatch1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create LandingGear Air_Su39_Front_GearHatch2
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create LandingGear Air_Su39_Left_Gearhatch1
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create LandingGear Air_Su39_Left_Gearhatch2
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create LandingGear Air_Su39_Right_Gearhatch1
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create LandingGear Air_Su39_Right_Gearhatch2
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Wing Air_Su39_TailRudder
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Wing Air_Su39_Back_Stabilizer
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+
+include air_su39.tweak

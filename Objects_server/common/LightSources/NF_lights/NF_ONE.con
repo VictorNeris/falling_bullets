@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle NF_ONE
+ObjectTemplate.createdInEditor 1
+
+include NF_ONE.tweak

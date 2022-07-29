@@ -1,0 +1,6 @@
+GeometryTemplate.create BundledMesh bf4_m16a4_s
+ObjectTemplate.create GenericFireArm bf4_m16a4_s
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.geometry bf4_m16a4_s
+include bf4_m16a4_s.tweak

@@ -1,0 +1,75 @@
+ObjectTemplate.create Kit CH_Support
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.kitType Support
+ObjectTemplate.aiTemplate Support
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 1
+ObjectTemplate.geometry.dropGeom 14
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.dropHeadwear mec_helmet
+ObjectTemplate.abilityRestoreRate 0.05
+ObjectTemplate.abilityInVehicleRadius 7
+ObjectTemplate.abilityInVehicleStrength 0.2
+ObjectTemplate.abilityInVehicleMaterial 91
+ObjectTemplate.unlockIndex 5
+ObjectTemplate.cullRadiusScale 2.4
+rem -------------------------------------
+ObjectTemplate.addTemplate kni_knife
+ObjectTemplate.addTemplate bf4_type88lmg
+ObjectTemplate.addTemplate bf4_type88lmg_deployed
+ObjectTemplate.addTemplate chpis_qsz92
+
+ObjectTemplate.addTemplate USHGR_M67
+ObjectTemplate.addTemplate ammokit
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.addTemplate medikit_dressing
+
+ObjectTemplate.addTemplate UnlockCHSupport_1
+ObjectTemplate.addTemplate UnlockCHSupport_2
+rem -------------------------------------
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.hasAmmoAbility 1
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SUPPORT"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Heavy_Assault_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Heavy_Assault.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.abilityIcon 		"Ingame\Weapons\Icons\Hud\SpecialKitIcons\kevlarVest.tga"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.6
+
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_KIT_SUPPORT_inVehicle"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_KIT_SUPPORT_inVehicle"
+rem ---EndComp ---
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---
+
+ObjectTemplate.create ItemContainer UnlockCHSupport_1
+ObjectTemplate.addTemplate bf4_type88lmg_jgm4
+Objecttemplate.replaceItem bf4_type88lmg
+ObjectTemplate.addTemplate bf4_type88lmg_jgm4_deployed
+Objecttemplate.replaceItem bf4_type88lmg_deployed
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCHSupport_2
+ObjectTemplate.addTemplate chlmg_qbb95
+Objecttemplate.replaceItem bf4_type88lmg_jgm4
+ObjectTemplate.addTemplate chlmg_qbb95_deployed
+Objecttemplate.replaceItem bf4_type88lmg_jgm4_deployed
+ObjectTemplate.unlockLevel 2

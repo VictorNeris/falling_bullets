@@ -1,0 +1,29 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/14 17:21]
+GeometryTemplate.setSubGeometryLodDistance 0 0 35
+GeometryTemplate.setSubGeometryLodDistance 0 1 70
+GeometryTemplate.setSubGeometryLodDistance 0 2 100
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject fishingboat
+ObjectTemplate.creator GOD-1:god
+ObjectTemplate.modifiedByUser eni
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry fishingboat
+ObjectTemplate.setCollisionMesh fishingboat
+ObjectTemplate.mapMaterial 0 metalPlate_thin 20
+ObjectTemplate.mapMaterial 1 solid_metal 21
+ObjectTemplate.mapMaterial 2 wood 14
+ObjectTemplate.mapMaterial 3 plastic 11
+ObjectTemplate.mapMaterial 4 stairs_metal 36
+ObjectTemplate.mapMaterial 5 wooden_floor 15
+ObjectTemplate.mapMaterial 6 slippery 7001
+ObjectTemplate.mass 350
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.isSleeping 1
+ObjectTemplate.setNetworkableInfo BasicInfo
+

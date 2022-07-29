@@ -1,0 +1,19 @@
+rem ** Need to create NetworkableInfo here also ***
+NetworkableInfo.createNewInfo NoGhostingInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority 0
+
+rem
+rem *** Default MultiPlayerCamera  ***
+rem
+ObjectTemplate.create FreeCamera MultiPlayerFreeCamera
+ObjectTemplate.setNetworkableInfo NoGhostingInfo
+ObjectTemplate.saveInSeparateFile 1
+include MultiPlayerFreeCamera.tweak
+
+
+rem
+rem *** Default Camera ***
+rem
+ObjectTemplate.create FreeCamera defaultCamera
+

@@ -1,0 +1,289 @@
+ObjectTemplate.create Particle e_distdel_1p_obj2
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.preCacheObject 1
+rem ObjectTemplate.geometry p_fish
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionEffectName "e_distdel_1p_snd2"
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/5/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+
+
+ObjectTemplate.create EffectBundle e_distdel_1p_snd2
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_snd2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/8/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_distdel_1p_snd1_Start
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.soundFilename "objects/sounds/distdels/distdel_new_2.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.create Particle e_distdel_1p_556_obj2
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.preCacheObject 1
+rem ObjectTemplate.geometry p_fish
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionEffectName "e_distdel_1p_556_snd2"
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/5/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+
+
+ObjectTemplate.create EffectBundle e_distdel_1p_556_snd2
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_556_snd2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/8/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_distdel_1p_556_snd1_Start
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.soundFilename "objects/sounds/distdels/distdel_556.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.create Particle e_distdel_1p_762_obj2
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.preCacheObject 1
+rem ObjectTemplate.geometry p_fish
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionEffectName "e_distdel_1p_762_snd2"
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/5/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+
+
+ObjectTemplate.create EffectBundle e_distdel_1p_762_snd2
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_762_snd2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/8/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_distdel_1p_762_snd1_Start
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.soundFilename "objects/sounds/distdels/distdel_762.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.create Particle e_distdel_1p_m14_obj2
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.preCacheObject 1
+rem ObjectTemplate.geometry p_fish
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionEffectName "e_distdel_1p_m14_snd2"
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/5/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+
+
+ObjectTemplate.create EffectBundle e_distdel_1p_m14_snd2
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_m14_snd2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/8/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_distdel_1p_m14_snd1_Start
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.soundFilename "objects/sounds/distdels/distdel_m14.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rem --------------------------------------------------------------------------------------------------
+ObjectTemplate.create Particle e_distdel_1p_127_obj2
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.preCacheObject 1
+rem ObjectTemplate.geometry p_fish
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionEffectName "e_distdel_1p_127_snd2"
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/5/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+
+
+ObjectTemplate.create EffectBundle e_distdel_1p_127_snd2
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_distdel_1p_127_snd2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/8/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_distdel_1p_127_snd1_Start
+ObjectTemplate.modifiedByUser "Dodek"
+ObjectTemplate.soundFilename "objects/sounds/distdels/distdel_127.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 60

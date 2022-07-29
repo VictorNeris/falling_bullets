@@ -1,0 +1,111 @@
+hudBuilder.createSplitNode		VehicleHuds SU34PilotHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 13
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 12
+hudBuilder.addNodeBlendEffect		7 2
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+beginrem
+hudBuilder.createPictureNode 		SU34PilotHud SU34PilotHitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.952 0.243 0.019 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+endrem
+rem -------------
+
+hudBuilder.createCompassNode 		SU34PilotHud Su34Compass 3 290 166 220 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\compass.tga
+hudBuilder.setCompassNodeTextureSize	1024 32
+hudBuilder.setCompassNodeBorder		0 0 0 224
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		340
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		SU34PilotHud Su34MissileSideBarLeft 265 172 16 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\sideBarLeft.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 0
+
+hudBuilder.createPictureNode		SU34PilotHud Su34MissileSideBarRight 520 172 16 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\sideBarRight.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 0
+
+hudBuilder.createPictureNode		SU34PilotHud Su34MissileHorizon 272 172 256 8
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\horizon.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setNodePosVariable		1 AngleOfAttack
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 0
+
+hudBuilder.createPictureNode		SU34PilotHud Su34HeadingArrow 387 158 16 8
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\compassArrow.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		SU34PilotHud Su34SpeedBox 210 279 64 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\speedBox.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createTextNode		SU34PilotHud Su34SpeedValue 213 295 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	SpeedString
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		SU34PilotHud Su34AltitudeBox 529 279 64 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Navigation\altBox.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createTextNode		SU34PilotHud Su34AltitudeValue 532 295 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	AltitudeString
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createSplitNode		SU34PilotHud SU34HeatHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 13
+
+hudBuilder.createPictureNode		SU34HeatHud Su34MissileCircle 272 172 256 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\missileCrosshair.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createObjectMarkerNode 		SU34HeatHud Su34Marker 227 77 344 446
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\lockBoxLocked.tga
+hudBuilder.setObjectMarkerNodeTexture 		3 Ingame\Vehicles\Icons\Hud\Land\Tunguska\rangeLine.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	1 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	2 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	3 16 256
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setObjectMarkerNodeWeapon 		1
+hudBuilder.setNodeColor		 		0.952 0.243 0.019 1
+
+hudBuilder.createSplitNode		SU34PilotHud SU34BombHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 12
+
+hudBuilder.createObjectMarkerNode 		SU34BombHud SU34GroundTargetMarker 227 77 344 446
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\lockBoxFriendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\lockBox.tga
+hudBuilder.setObjectMarkerNodeTexture 		2 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\HeatSeeking\lockBoxLocked.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	1 32 32
+hudBuilder.setObjectMarkerNodeTextureSize	2 64 64
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeObjects 		4
+hudBuilder.setNodeColor		 		0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		SU34BombHud Su34BombMarker 337 453 128 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Bombs\bombMarker.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		SU34BombHud Su34BombCircle 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Bombs\bombCrosshair.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		SU34BombHud Su34BombLine 392 262 16 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\Su34\Bombs\bombCrosshair_line.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 0

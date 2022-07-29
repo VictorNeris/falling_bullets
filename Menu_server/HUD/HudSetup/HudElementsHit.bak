@@ -1,0 +1,20 @@
+
+rem -----------------------------------Hit direction----------------------------------------------------
+
+hudBuilder.createPictureNode 		IngameHud HitDirection 210 -270 370 600
+hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/hitIndicator.tga
+hudBuilder.setPictureNodeRotateVariable HitDirectionAngle
+hudBuilder.setPictureNodeCenterPoint 	0 0
+hudBuilder.setNodeColor 	        1 0 0 1
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		2
+hudBuilder.addNodeAlphaShowEffect
+
+hudBuilder.createPictureNode 		IngameHud HitDirectionBlood 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame/Player/Icons/Hud/HUD_blood.tga
+hudBuilder.setNodeColor 	        1 1 1 1
+hudBuilder.setNodeShowVariable 		HitDirectionShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		2.5
+hudBuilder.addNodeAlphaShowEffect

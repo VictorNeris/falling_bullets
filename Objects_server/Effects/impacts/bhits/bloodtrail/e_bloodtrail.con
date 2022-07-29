@@ -1,0 +1,4 @@
+ObjectTemplate.create AirDraftEffectBundle e_bloodtrail
+ObjectTemplate.createdInEditor 1
+
+include e_bloodtrail.tweak

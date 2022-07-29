@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh rupis_pb6b9
+
+ObjectTemplate.create GenericFireArm rupis_pb6b9
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator Millenia
+ObjectTemplate.geometry rupis_pb6b9
+
+include rupis_pb6b9.tweak

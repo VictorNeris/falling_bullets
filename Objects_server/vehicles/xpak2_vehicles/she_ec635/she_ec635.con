@@ -1,0 +1,53 @@
+GeometryTemplate.create BundledMesh she_ec635
+CollisionManager.createTemplate she_ec635
+
+ObjectTemplate.create PlayerControlObject she_ec635
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NICKW:nickwh
+ObjectTemplate.collisionMesh she_ec635
+ObjectTemplate.mapMaterial 0 col_body 0
+ObjectTemplate.mapMaterial 1 col_glass 0
+ObjectTemplate.mapMaterial 2 col_wreck 0
+ObjectTemplate.mapMaterial 3 helicopter_landing_rail 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry she_ec635
+ObjectTemplate.addTemplate SHE_EC635_Damper1
+ObjectTemplate.setPosition -1.1707/-1.1558/-2.5339
+ObjectTemplate.addTemplate SHE_EC635_Damper2
+ObjectTemplate.setPosition 1.1710/-1.1558/3.2797
+ObjectTemplate.addTemplate SHE_EC635_Damper3
+ObjectTemplate.setPosition 1.1710/-1.1558/-2.5339
+ObjectTemplate.addTemplate SHE_EC635_Damper0
+ObjectTemplate.setPosition -1.1707/-1.1558/3.2797
+
+ObjectTemplate.create Spring SHE_EC635_Damper1
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Spring SHE_EC635_Damper2
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Spring SHE_EC635_Damper3
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Spring SHE_EC635_Damper0
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+
+include she_ec635.tweak

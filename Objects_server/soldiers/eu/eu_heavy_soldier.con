@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh eu_heavy_soldier
+
+ObjectTemplate.create Soldier eu_heavy_soldier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAYE:jayev
+ObjectTemplate.geometry eu_heavy_soldier
+
+include eu_heavy_soldier.tweak

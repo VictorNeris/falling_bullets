@@ -1,0 +1,122 @@
+hudBuilder.createSplitNode		VehicleHuds BTR90_2Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 632
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 633
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 634
+hudBuilder.setNodeLogicShowVariable 	OR GuiIndex 635
+rem hudBuilder.addNodeBlendEffect		7 2
+
+rem ------------crosshair-------------------------
+
+hudBuilder.createPictureNode		BTR90_2Hud BTR90_2Crosshair 272 265 256 128 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\BTR90\btr_cross2.dds
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode		BTR90_2Hud BTR90_2Scope 0 0 800 600
+hudBuilder.setPictureNodeTexture 	Ingame\Simcardo\Vehicles\Icons\Hud\Land\T90Sight.dds
+
+hudBuilder.createPictureNode		BTR90_2Hud BTR90_2Glow 634 57 128 512
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\glow.dds
+hudBuilder.setNodeColor    		1 0 0 1
+
+rem ------------range to target text---------------
+
+hudBuilder.createPictureNode		BTR90_2Hud BTR90_2RangeText 62 451 80 16 
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Land\T90\T90rangetotarget_text.tga
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+hudBuilder.createTextNode		BTR90_2Hud BTR90_2RangeLabel 149 454 101 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeStringVariable	TargetDistanceString
+hudBuilder.setNodeColor			0.945 0.224 0.167 1
+hudBuilder.addNodeBlendEffect		7 2
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+   
+hudBuilder.createPictureNode 		BTR90_2Hud BTR90_2HitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.945 0.224 0.167 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+
+rem -------------------------------------- Weapon Selection----------------------------------------------------
+hudBuilder.createSplitNode			BTR90_2Hud BTR90_2_30mmAPHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 632
+
+hudBuilder.createTextNode				BTR90_2_30mmAPHud BTR90_2_APGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"30MM AP"
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createSplitNode			BTR90_2Hud BTR90_2_30mmHEHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 633
+
+hudBuilder.createTextNode				BTR90_2_30mmHEHud BTR90_2_HEGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"30MM HE"
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+hudBuilder.createSplitNode			BTR90_2Hud BTR90_2_30mmCanisterHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 634
+
+hudBuilder.createTextNode				BTR90_2_30mmCanisterHud BTR90_2_CanisterGun 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"30MM CANISTER"
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+
+hudBuilder.createSplitNode			BTR90_2Hud BTR90_2_HJ8Hud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 635
+
+hudBuilder.createTextNode				BTR90_2_HJ8Hud BTR90_2_HJ8 550 465 300 10
+hudBuilder.setTextNodeStyle				Fonts/vehicleHudFont_6.dif 2
+hudBuilder.setTextNodeString			"9M113"
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1
+
+
+rem ------------------------------------Turret Icon-------------------------------------------------------
+
+hudBuilder.createSplitNode		BTR90_2Hud BTR90_2DirectionHud
+hudBuilder.setNodeShowVariable  	TurretIconShow
+hudBuilder.setNodeLogicShowVariable  	NOT CommanderShow 1
+hudBuilder.setNodeInTime 		0.3
+hudBuilder.setNodeOutTime 		0.3
+hudBuilder.addNodeMoveShowEffect	1.57 53
+
+hudBuilder.createPictureNode		BTR90_2Hud BTR90_2TurretBase 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_base2.dds
+hudBuilder.setPictureNodeRotateVariable VehicleTurretAngle
+hudBuilder.setNodeColor    		0.945 0.224 0.167 1
+
+hudBuilder.createPictureNode		BTR90_2DirectionHud BTR90_2TurretBarrel 451 521 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Navigation\turretRotation_barrel2.tga
+hudBuilder.setNodeColor    		0.945 0.224 0.167 1
+
+rem -----------------------------------Lock boxes-----------------------------------------------------------
+hudBuilder.createObjectMarkerNode 		BTR90_2Hud BTR90_2HeatMarker 224 139 352 321
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\Tunguska\friendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\Tunguska\lockBox.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	1 64 64
+hudBuilder.setObjectMarkerNodeObjects 		2
+hudBuilder.setNodeColor		 		0.945 0.224 0.167 1
+
+hudBuilder.createObjectMarkerNode 		BTR90_2Hud BTR90_2LaserMarker 224 139 352 321
+hudBuilder.setObjectMarkerNodeTexture 		0 Ingame\Vehicles\Icons\Hud\Land\Tunguska\friendly.tga
+hudBuilder.setObjectMarkerNodeTexture 		1 Ingame\Vehicles\Icons\Hud\Land\Tunguska\lockBox.tga
+hudBuilder.setObjectMarkerNodeTextureSize	0 64 64
+hudBuilder.setObjectMarkerNodeTextureSize	1 64 64
+hudBuilder.setObjectMarkerNodeLockOnType	1
+hudBuilder.setObjectMarkerNodeObjects 		2
+hudBuilder.setNodeColor		 		0.945 0.224 0.167 1
+
+rem ------------compass-------------------------
+
+hudBuilder.createCompassNode 		BTR90_2Hud BTR90_2Compass 3 69 57 801 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Navigation\compass2.tga
+hudBuilder.setCompassNodeTextureSize	801 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0.945 0.224 0.167 1

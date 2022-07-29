@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh smg_g53
+CollisionManager.createTemplate smg_g53
+
+ObjectTemplate.create GenericFireArm smg_g53
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ASUS-K45VJ-PC:Asus-K45VJ
+ObjectTemplate.collisionMesh smg_g53
+ObjectTemplate.mapMaterial 0 EnvMapColormapGloss 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry smg_g53
+
+include smg_g53.tweak

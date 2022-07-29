@@ -1,0 +1,11 @@
+GeometryTemplate.create BundledMesh s8_pod
+collisionManager.createTemplate s8_pod
+
+ObjectTemplate.create SimpleObject s8_pod
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator USER-KOMPUTER:W_RAZIE_BSODA
+ObjectTemplate.geometry s8_pod
+ObjectTemplate.collisionMesh s8_pod
+ObjectTemplate.addTemplate e_muzz_rocketpod
+
+include s8_pod.tweak

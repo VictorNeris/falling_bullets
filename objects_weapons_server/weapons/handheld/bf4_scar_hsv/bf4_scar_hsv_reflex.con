@@ -1,0 +1,6 @@
+GeometryTemplate.create BundledMesh bf4_scar_hsv_reflex
+ObjectTemplate.create GenericFireArm bf4_scar_hsv_reflex
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.geometry bf4_scar_hsv_reflex
+include bf4_scar_hsv_reflex.tweak

@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh rurif_sv98
+CollisionManager.createTemplate rurif_sv98
+
+ObjectTemplate.create GenericFireArm rurif_sv98
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NZN-BE0ABEC2223:Administrator
+ObjectTemplate.collisionMesh rurif_sv98
+ObjectTemplate.mapMaterial 0 01_-_Default 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry rurif_sv98
+
+include rurif_sv98.tweak

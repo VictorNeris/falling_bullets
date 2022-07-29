@@ -1,0 +1,143 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/10 9:53]
+ObjectTemplate.activeSafe EffectBundle e_vexp_j10
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_vexp_j10_Start
+ObjectTemplate.addTemplate e_dist_XLARGE
+ObjectTemplate.addTemplate em_vexp_j10_frontwing
+ObjectTemplate.setPosition 1.03625/-0.380111/3.2945
+ObjectTemplate.addTemplate em_vexp_j10_tail
+ObjectTemplate.setPosition 0.376368/-0.77848/-5.5715
+ObjectTemplate.addTemplate em_vexp_j10_wing
+ObjectTemplate.setPosition 2.40207/-1.03741/-1.50552
+ObjectTemplate.addTemplate em_vexp_j10_firefingers
+ObjectTemplate.setPosition 0/1.11486/0.461903
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+
+ObjectTemplate.activeSafe Sound S_e_vexp_j10_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/effects/sounds/explosions/generic_helicopter_explosion.wav,objects/effects/sounds/explosions/f-15_explode.wav,objects/effects/sounds/explosions/wreck_explosion_03.wav,objects/effects/sounds/explosions/generic_air_explosion.wav,objects/effects/sounds/explosions/generic_air_explosion_02.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 25
+ObjectTemplate.halfVolumeDistance 50
+ObjectTemplate.soundRadius 2
+
+ObjectTemplate.create Emitter em_vexp_j10_frontwing
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.relativePositionOffset 50/0/0
+ObjectTemplate.template p_wreck_j10_frontwing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/8/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/2/4/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/2/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_j10_tail
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_j10_tail
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.relativePositionInDof CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/6/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/-3/3/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-5/5/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create Emitter em_vexp_j10_wing
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_wreck_j10_wing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NORMAL/2/1/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-6/-4/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.create ParticleSystemEmitter em_vexp_j10_firefingers
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.showInFirstPerson 1
+ObjectTemplate.showInThirdPerson 1
+ObjectTemplate.emitPrio High
+ObjectTemplate.lodDistance High
+ObjectTemplate.qualityLevel Medium
+ObjectTemplate.emitterType Standard
+ObjectTemplate.isLocalSystem 0
+ObjectTemplate.emitRadius 5/0/5
+ObjectTemplate.emitRangeX CRD_NONE/0/0/0
+ObjectTemplate.emitRangeY CRD_NONE/0/0/0
+ObjectTemplate.emitRangeZ CRD_NONE/0/0/0
+ObjectTemplate.randomRadialDirection 360
+ObjectTemplate.radialDirection 0
+ObjectTemplate.emitFrequency 33
+ObjectTemplate.preWarmTime 0
+ObjectTemplate.emitTime 0.2
+ObjectTemplate.emitDelay 0
+ObjectTemplate.isLooping 0
+ObjectTemplate.emitSpeed 150
+ObjectTemplate.emitDirection 0/1/0
+ObjectTemplate.timeToLive 0.3
+ObjectTemplate.randomTimeToLive 0.1
+ObjectTemplate.windAffectionFactor 0
+ObjectTemplate.forceToWaterSurface 0
+ObjectTemplate.waterSurfaceOffset 0.03
+ObjectTemplate.rotationGraph 0/0/0/1
+ObjectTemplate.alignRotationToSpeed 1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.gravity -8
+ObjectTemplate.gravityGraph 0/0/0/1
+ObjectTemplate.airResistanceGraph 0/0/0/1
+ObjectTemplate.emitSpeedGraph -0.55/0/-0.46/1
+ObjectTemplate.randomSpeed 40
+ObjectTemplate.randomDirectionAngle 360/360/360
+ObjectTemplate.airResistance 0.1
+ObjectTemplate.collisionEnable 1
+ObjectTemplate.collisionSpeedAlongNormal 0.7
+ObjectTemplate.collisionSpeedAlongPlane 0.8
+ObjectTemplate.randomRotation 0/0/0
+ObjectTemplate.randomRotationSpeed 0/0/0
+ObjectTemplate.rotationSpeed 0/0/0
+ObjectTemplate.speedFromParticle 0.1
+ObjectTemplate.particleSystemTemplate em_exp_firefinger_large
+

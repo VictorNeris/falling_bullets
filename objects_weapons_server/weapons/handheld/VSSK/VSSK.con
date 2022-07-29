@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh VSSK
+
+ObjectTemplate.create GenericFireArm VSSK
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator USER-77:Владелец
+ObjectTemplate.geometry VSSK
+
+include VSSK.tweak

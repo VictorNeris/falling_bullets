@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh glock17
+
+ObjectTemplate.create GenericFireArm glock17
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GAMEPC:Admin
+ObjectTemplate.geometry glock17
+
+include glock17.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_muzzle_gravel
+ObjectTemplate.createdInEditor 1
+
+include e_geb_muzzle_gravel.tweak

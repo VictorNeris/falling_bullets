@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_vexp_heli_generic_spec
+ObjectTemplate.createdInEditor 1
+
+include e_vexp_heli_generic_spec.tweak

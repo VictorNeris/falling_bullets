@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh RUS_AK9
+
+ObjectTemplate.create GenericFirearm RUS_AK9
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator COMPUTER:Eversmen
+ObjectTemplate.geometry RUS_AK9
+
+include RUS_AK9.tweak

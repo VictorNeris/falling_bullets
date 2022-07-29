@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh pis_deagle
+
+ObjectTemplate.create GenericFireArm pis_deagle
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator USER-20160422ID:Administrator
+ObjectTemplate.geometry pis_deagle
+
+include pis_deagle.tweak

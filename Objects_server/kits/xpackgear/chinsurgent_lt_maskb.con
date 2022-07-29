@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh chinsurgent_lt_maskb
+
+ObjectTemplate.create MaskObject chinsurgent_lt_maskb
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry chinsurgent_lt_maskb
+ObjectTemplate.maskType MOTGasMask
+
+

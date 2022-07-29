@@ -1,0 +1,7 @@
+ObjectTemplate.heatAddWhenFire 0.0222
+ObjectTemplate.coolDownPerSec 0.0083
+ObjectTemplate.overheatPenalty 1.0011
+
+rem 55 rounds
+rem 2 minutes
+rem 0.141 sec penalty // 425 rpm

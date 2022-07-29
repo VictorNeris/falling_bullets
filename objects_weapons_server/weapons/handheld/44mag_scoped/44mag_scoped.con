@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh 44mag_scoped
+
+ObjectTemplate.create GenericFireArm 44mag_scoped
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MARVIN:radeexpitheta
+ObjectTemplate.geometry 44mag_scoped
+
+include 44mag_scoped.tweak

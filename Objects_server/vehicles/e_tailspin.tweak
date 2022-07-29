@@ -1,0 +1,100 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/21 14:16]
+ObjectTemplate.activeSafe EffectBundle e_tailspin
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_tailspin_Start
+ObjectTemplate.addTemplate e_tailspin_f
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_tailspin_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/vehicles/air/sounds/tailspin.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 30
+ObjectTemplate.soundRadius 1.5
+
+ObjectTemplate.create ForceObject e_tailspin_f
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.rotationalForce 4/0/0
+ObjectTemplate.force 0
+ObjectTemplate.constantForce 0
+ObjectTemplate.onlyWhenOccupied 1
+
+
+
+ObjectTemplate.create EffectBundle e_jet_engine_stop
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_jet_engine_stop_f_back
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate e_jet_engine_stop_f_down
+ObjectTemplate.setPosition 3/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+
+ObjectTemplate.create ForceObject e_jet_engine_stop_f_back
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.rotationalForce 0/0/0
+ObjectTemplate.force 25
+ObjectTemplate.constantForce 25
+ObjectTemplate.onlyWhenOccupied 1
+
+
+ObjectTemplate.create ForceObject e_jet_engine_stop_f_down
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.rotationalForce 0/0/0
+ObjectTemplate.force 15
+ObjectTemplate.constantForce 15
+ObjectTemplate.onlyWhenOccupied 1
+
+
+
+
+ObjectTemplate.create EffectBundle e_tailspin_chinook
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_tailspin_chinook_f
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.create ForceObject e_tailspin_chinook_f
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.rotationalForce 2/0/0
+ObjectTemplate.force 2
+ObjectTemplate.constantForce 2
+ObjectTemplate.onlyWhenOccupied 0

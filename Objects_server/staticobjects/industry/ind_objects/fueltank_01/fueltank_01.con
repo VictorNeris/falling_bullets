@@ -1,0 +1,15 @@
+GeometryTemplate.create StaticMesh fueltank_01
+CollisionManager.createTemplate fueltank_01
+
+ObjectTemplate.create SimpleObject fueltank_01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator GTI-1:gti
+ObjectTemplate.collisionMesh fueltank_01
+ObjectTemplate.mapMaterial 0 metalSolid 0
+ObjectTemplate.mapMaterial 1 metalThin 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry fueltank_01
+ObjectTemplate.anchor -0.0416/-1.1084/0
+
+include fueltank_01.tweak

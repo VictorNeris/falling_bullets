@@ -1,0 +1,28 @@
+GeometryTemplate.create SkinnedMesh spetz_kits
+
+ObjectTemplate.create SimpleObject spetz_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHRIS:chrisel
+ObjectTemplate.geometry spetz_kits
+
+ObjectTemplate.create SimpleObject chkit_pouch03
+
+ObjectTemplate.create SimpleObject chkit_hipbag
+
+ObjectTemplate.create SimpleObject chkit_canteen01
+
+ObjectTemplate.create SimpleObject chkit_camlebak
+
+ObjectTemplate.create SimpleObject ch_kit_grenade_set03
+
+ObjectTemplate.create SimpleObject ch_kit_grenade_set04
+
+ObjectTemplate.create SimpleObject knife3
+
+ObjectTemplate.create SimpleObject helmet
+
+ObjectTemplate.create SimpleObject ch_kit_gun
+
+ObjectTemplate.create SimpleObject chkit_pouch06
+
+include spetz_kits.tweak

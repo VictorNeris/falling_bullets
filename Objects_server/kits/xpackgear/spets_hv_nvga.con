@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh spets_hv_nvga
+
+ObjectTemplate.create MaskObject spets_hv_nvga
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry spets_hv_nvga
+ObjectTemplate.maskType MOTNightVisionGoggles
+
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle xp1_Dayglowlight
+ObjectTemplate.createdInEditor 1
+
+include xp1_Dayglowlight.tweak

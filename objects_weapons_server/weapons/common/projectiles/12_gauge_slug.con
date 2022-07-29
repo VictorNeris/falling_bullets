@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile 12_gauge_slug
+ObjectTemplate.material 38
+ObjectTemplate.damage 119.8
+ObjectTemplate.minDamage 99.7
+ObjectTemplate.DistToStartLoseDamage 0
+ObjectTemplate.DistToMinDamage 535
+ObjectTemplate.drag 0.005
+ObjectTemplate.mass 0.036
+ObjectTemplate.gravityModifier 1
+include projectiles_common_suppressive.tweak
+include projectiles_tracer.tweak
+
+rem 4-all

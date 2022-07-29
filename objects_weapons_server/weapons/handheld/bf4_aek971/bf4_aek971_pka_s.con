@@ -1,0 +1,6 @@
+GeometryTemplate.create BundledMesh bf4_aek971_pka_s
+ObjectTemplate.create GenericFireArm bf4_aek971_pka_s
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.geometry bf4_aek971_pka_s
+include bf4_aek971_pka_s.tweak

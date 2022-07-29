@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh chsht_hawk_slug
+
+ObjectTemplate.create GenericFireArm chsht_hawk_slug
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry chsht_hawk_slug
+
+include chsht_hawk_slug.tweak

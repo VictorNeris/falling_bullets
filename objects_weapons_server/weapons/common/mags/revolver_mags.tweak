@@ -1,0 +1,7 @@
+
+ObjectTemplate.ammo.nrOfMags 37
+ObjectTemplate.ammo.reloadAmount 1
+ObjectTemplate.ammo.reloadTime 0.001
+ObjectTemplate.ammo.firstShotExtraTime 1.4
+ObjectTemplate.ammo.lastShotExtraTime 1.4
+ObjectTemplate.ammo.reloadWithoutPlayer 0

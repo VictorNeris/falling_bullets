@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh chinsurgent_lt_nvgb
+
+ObjectTemplate.create MaskObject chinsurgent_lt_nvgb
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry chinsurgent_lt_nvgb
+ObjectTemplate.maskType MOTNightVisionGoggles
+
+

@@ -1,0 +1,116 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+ObjectTemplate.activeSafe EffectBundle e_muzz_svd
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_svd_Start
+ObjectTemplate.addTemplate em_Muzz_sniper_3p
+ObjectTemplate.addTemplate em_muzz_sniper_lightSource
+ObjectTemplate.setPosition 0/0/0.120361
+ObjectTemplate.addTemplate em_muzz_sniper_smokepuff
+ObjectTemplate.addTemplate em_muzz_sniper_microFlashglow_3p
+ObjectTemplate.setPosition 0/0/0.05392
+ObjectTemplate.addTemplate em_muzz_sniper_microFlashglow_1p
+ObjectTemplate.addTemplate em_muzz_sniper_quickflame_3p
+ObjectTemplate.addTemplate e_muzz_svd_dist1
+ObjectTemplate.addTemplate e_muzz_svd_dist2
+rem ObjectTemplate.addTemplate e_distdel_1p_762
+rem ObjectTemplate.addTemplate e_distdel_sniper
+rem ObjectTemplate.addTemplate e_echo_sniper
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_svd_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/svd/svd_dist.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 1000
+ObjectTemplate.soundRadius 1
+
+
+
+
+
+
+ObjectTemplate.create EffectBundle e_muzz_svd_dist1
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_svd_dist1_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_svd_dist1_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/svd/svd_dist1.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 1
+
+
+
+ObjectTemplate.create EffectBundle e_muzz_svd_dist2
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_muzz_svd_dist2_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_muzz_svd_dist2_Start
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/sounds/weapons/svd/svd_dist2.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+rem 0.775
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.9/1.1/
+ObjectTemplate.minDistance 70
+ObjectTemplate.halfVolumeDistance 140
+ObjectTemplate.soundRadius 1
+
+

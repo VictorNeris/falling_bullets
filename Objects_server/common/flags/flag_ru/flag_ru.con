@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh flag_ru
+
+ObjectTemplate.create AnimatedBundle flag_ru
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMY:jeremypr
+ObjectTemplate.geometry flag_ru
+
+include flag_ru.tweak

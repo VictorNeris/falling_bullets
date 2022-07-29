@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh RUS_AK105
+
+ObjectTemplate.create GenericFireArm RUS_AK105
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PC-201506021528:Administrator
+ObjectTemplate.geometry RUS_AK105
+
+include RUS_AK105.tweak

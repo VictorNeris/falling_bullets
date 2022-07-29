@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle NFDY_TWO
+ObjectTemplate.createdInEditor 1
+
+include NFDY_TWO.tweak

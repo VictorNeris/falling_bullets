@@ -1,0 +1,7 @@
+hudBuilder.createSplitNode IngameHud HandheldHitIndicatorMain
+hudBuilder.setNodeLogicShowVariable NOT VehicleIconShow 1
+
+hudBuilder.createButtonNode HandheldHitIndicatorMain HandheldHitIndicatorButton -1 -1 802 602
+rem hudBuilder.setButtonNodeConCmd "sound.playSound hitIndicator" 1
+rem hudBuilder.setButtonNodeConCmd "sound.playSound hitIndicator1" 1
+rem hudBuilder.setNodeShowVariable HitIndicatorIconShow

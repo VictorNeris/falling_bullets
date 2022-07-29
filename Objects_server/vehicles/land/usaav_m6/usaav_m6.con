@@ -1,0 +1,228 @@
+GeometryTemplate.create BundledMesh usaav_m6
+GeometryTemplate.nrOfAnimatedUVMatrix 6
+CollisionManager.createTemplate usaav_m6
+
+ObjectTemplate.create PlayerControlObject usaav_m6
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.collisionMesh usaav_m6
+ObjectTemplate.mapMaterial 0 Armor_2_light_armored_vehicles 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 Penetrablemetal 0
+ObjectTemplate.mapMaterial 3 Tank_tracks 0
+ObjectTemplate.mapMaterial 4 wreck 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry usaav_m6
+ObjectTemplate.addTemplate USAAV_M6_Turret
+ObjectTemplate.setPosition 0.2164/1.0409/-0.4268
+ObjectTemplate.addTemplate USAAV_M6_Engine
+ObjectTemplate.setPosition 0/-0.3370/0
+
+ObjectTemplate.create RotationalBundle USAAV_M6_Turret
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate USAAV_M6_BarrelBase
+ObjectTemplate.setPosition 0.0332/0.4732/0.5935
+ObjectTemplate.addTemplate USAAV_M6_Viewfinder_Mount
+ObjectTemplate.setPosition 0.9850/0.8841/-0.7642
+ObjectTemplate.addTemplate USAAV_M6_Launcher_Arm
+ObjectTemplate.setPosition -1.0634/0.4590/0.4548
+ObjectTemplate.addTemplate USAAV_M6_hud_Spring
+ObjectTemplate.setPosition -0.5130/0.9517/0.5080
+
+ObjectTemplate.create RotationalBundle USAAV_M6_BarrelBase
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate USAAV_M6_Barrel
+ObjectTemplate.setPosition 0.0026/-0.0179/1.4535
+
+ObjectTemplate.create GenericFireArm USAAV_M6_Barrel
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle USAAV_M6_Viewfinder_Mount
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate USAAV_M6_Viewfinder_Camera
+ObjectTemplate.setPosition 0.0085/0.3205/0
+
+ObjectTemplate.create RotationalBundle USAAV_M6_Viewfinder_Camera
+ObjectTemplate.collisionPart 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+
+ObjectTemplate.create RotationalBundle USAAV_M6_Launcher_Arm
+ObjectTemplate.collisionPart 6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle USAAV_M6_hud_Spring
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+ObjectTemplate.addTemplate USAAV_M6_hud
+
+ObjectTemplate.create RotationalBundle USAAV_M6_hud
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Engine USAAV_M6_Engine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+ObjectTemplate.addTemplate USAAV_M6_LDriveWheel
+ObjectTemplate.setPosition -1.2405/0.1938/2.7589
+ObjectTemplate.addTemplate USAAV_M6_LWheel_1
+ObjectTemplate.setPosition -1.2406/-0.5209/-1.8249
+ObjectTemplate.addTemplate USAAV_M6_LWheel_2
+ObjectTemplate.setPosition -1.2406/-0.5209/-1.1490
+ObjectTemplate.addTemplate USAAV_M6_LWheel_3
+ObjectTemplate.setPosition -1.2406/-0.5209/-0.4576
+ObjectTemplate.addTemplate USAAV_M6_LWheel_4
+ObjectTemplate.setPosition -1.2406/-0.5209/0.3224
+ObjectTemplate.addTemplate USAAV_M6_LWheel_5
+ObjectTemplate.setPosition -1.2406/-0.5209/1.0509
+ObjectTemplate.addTemplate USAAV_M6_LWheel_6
+ObjectTemplate.setPosition -1.2406/-0.5209/1.8958
+ObjectTemplate.addTemplate USAAV_M6_RWheel_6
+ObjectTemplate.setPosition 1.2504/-0.5209/1.8958
+ObjectTemplate.addTemplate USAAV_M6_RWheel_5
+ObjectTemplate.setPosition 1.2504/-0.5209/1.0502
+ObjectTemplate.addTemplate USAAV_M6_RWheel_4
+ObjectTemplate.setPosition 1.2504/-0.5209/0.3222
+ObjectTemplate.addTemplate USAAV_M6_RWheel_3
+ObjectTemplate.setPosition 1.2504/-0.5209/-0.4576
+ObjectTemplate.addTemplate USAAV_M6_RWheel_2
+ObjectTemplate.setPosition 1.2504/-0.5209/-1.1490
+ObjectTemplate.addTemplate USAAV_M6_RWheel_1
+ObjectTemplate.setPosition 1.2504/-0.5209/-1.8195
+ObjectTemplate.addTemplate USAAV_M6_RDriveWheel
+ObjectTemplate.setPosition 1.2504/0.1938/2.7589
+ObjectTemplate.addTemplate USAAV_M6_LBackWheel
+ObjectTemplate.setPosition -1.2375/0.1784/-2.4774
+ObjectTemplate.addTemplate USAAV_M6_RBackWheel
+ObjectTemplate.setPosition 1.1511/0.1784/-2.4774
+
+ObjectTemplate.create RotationalBundle USAAV_M6_LDriveWheel
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+ObjectTemplate.create Spring USAAV_M6_LWheel_1
+ObjectTemplate.collisionPart 11
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 11
+
+ObjectTemplate.create Spring USAAV_M6_LWheel_2
+ObjectTemplate.collisionPart 12
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 12
+
+ObjectTemplate.create Spring USAAV_M6_LWheel_3
+ObjectTemplate.collisionPart 13
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 13
+
+ObjectTemplate.create Spring USAAV_M6_LWheel_4
+ObjectTemplate.collisionPart 14
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 14
+
+ObjectTemplate.create Spring USAAV_M6_LWheel_5
+ObjectTemplate.collisionPart 15
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 15
+
+ObjectTemplate.create Spring USAAV_M6_LWheel_6
+ObjectTemplate.collisionPart 16
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 16
+
+ObjectTemplate.create Spring USAAV_M6_RWheel_6
+ObjectTemplate.collisionPart 17
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 17
+
+ObjectTemplate.create Spring USAAV_M6_RWheel_5
+ObjectTemplate.collisionPart 18
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 18
+
+ObjectTemplate.create Spring USAAV_M6_RWheel_4
+ObjectTemplate.collisionPart 19
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 19
+
+ObjectTemplate.create Spring USAAV_M6_RWheel_3
+ObjectTemplate.collisionPart 20
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 20
+
+ObjectTemplate.create Spring USAAV_M6_RWheel_2
+ObjectTemplate.collisionPart 21
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 21
+
+ObjectTemplate.create Spring USAAV_M6_RWheel_1
+ObjectTemplate.collisionPart 22
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 22
+
+ObjectTemplate.create RotationalBundle USAAV_M6_RDriveWheel
+ObjectTemplate.collisionPart 23
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 23
+
+ObjectTemplate.create RotationalBundle USAAV_M6_LBackWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 24
+
+ObjectTemplate.create RotationalBundle USAAV_M6_RBackWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 25
+
+include usaav_m6.tweak

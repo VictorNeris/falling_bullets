@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh bf4_asval
+
+ObjectTemplate.create GenericFireArm bf4_asval
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
+ObjectTemplate.geometry bf4_asval
+
+include bf4_asval.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh gbat_nlaw
+
+ObjectTemplate.create GenericFireArm gbat_nlaw
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator CHUC-PASOCON:Main
+ObjectTemplate.geometry gbat_nlaw
+
+include gbat_nlaw.tweak

@@ -1,0 +1,234 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/18 17:41]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.4
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm pis_m9
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bfp4f_pis_m9
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\bfp4f_pis_m9
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\bfp4f_pis_m9
+ObjectTemplate.weaponHud.hudName "M9"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 23
+rem ObjectTemplate.weaponHud.minVisualDeviation 3
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.02/0
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/pistol_mags.tweak
+rem ObjectTemplate.ammo.nrOfMags 10
+ObjectTemplate.ammo.magSize 15
+ObjectTemplate.ammo.reloadTime 2.2
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/09_00x19mm_pistol_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.goBackOnRecoil 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.8/0.5/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.4/0.4/0
+rem ObjectTemplate.recoil.zoomModifier 1
+rem ObjectTemplate.recoil.recoilGraphFrameCount 12
+rem ObjectTemplate.recoil.recoilGraphExponent 5
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.8
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/pistol_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/lowzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.08
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 1.09
+rem ---EndComp ---
+ObjectTemplate.geometry pis_m9
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate pistol_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_pis_m9_Fire1P
+ObjectTemplate.setPosition 0/0.0368838/0.245643
+ObjectTemplate.addTemplate S_pis_m9_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.0365171/0.245324
+ObjectTemplate.addTemplate S_pis_m9_Fire3P
+ObjectTemplate.setPosition 0/0.0387022/0.247454
+ObjectTemplate.addTemplate S_pis_m9_BoltClick
+ObjectTemplate.setPosition 0/0.032593/-0.0417674
+ObjectTemplate.addTemplate S_pis_m9_TriggerClick
+ObjectTemplate.addTemplate S_pis_m9_SwitchFireRate
+ObjectTemplate.addTemplate S_pis_m9_Reload1P
+ObjectTemplate.setPosition 0/-0.0663167/-0.0589631
+ObjectTemplate.addTemplate S_pis_m9_Reload3P
+ObjectTemplate.setPosition 0/-0.0725516/-0.0591016
+ObjectTemplate.addTemplate S_pis_m9_Deploy1P
+ObjectTemplate.addTemplate S_pis_m9_Deploy3P
+ObjectTemplate.addTemplate S_pis_m9_Zoom
+ObjectTemplate.addTemplate e_muzz_m9
+ObjectTemplate.setPosition 0/0.0351048/0.137087
+ObjectTemplate.addTemplate e_shellejection_9mm
+ObjectTemplate.setPosition 0/0.0416955/0.0325331
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/uspis_92fs/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/USPIS_92FS/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 9mm_pistol
+ObjectTemplate.velocity 381
+ObjectTemplate.itemIndex 2
+ObjectTemplate.delayToUse 0.65
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Fire1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/M9_fire_1p.wav"
+rem "objects/weapons/handheld/uspis_92fs/sounds/M9_fire_indoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.94/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+ObjectTemplate.position 0/0.0365171/0.245324
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Fire1P_outdoor
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/M9_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.94/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.901/1/
+ObjectTemplate.position 0/0.0365171/0.245324
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Fire3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/M9_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 10
+
+
+ObjectTemplate.activeSafe Sound S_pis_m9_BoltClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.032593/-0.0417674
+
+ObjectTemplate.activeSafe Sound S_pis_m9_TriggerClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_pis_m9_SwitchFireRate
+ObjectTemplate.modifiedByUser jsa
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Reload1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0663167/-0.0589631
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Reload3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0725516/-0.0591016
+ObjectTemplate.halfVolumeDistance 8
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Deploy1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Deploy3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 3
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Zoom
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav,objects/weapons/handheld/rurif_bizon/sounds/zoom_2.wav,objects/weapons/handheld/rurif_bizon/sounds/zoom_3.wav,objects/weapons/handheld/rurif_bizon/sounds/zoom_4.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_pis_m9_Projectile_Looping
+ObjectTemplate.modifiedByUser jsa

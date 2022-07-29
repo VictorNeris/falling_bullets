@@ -1,0 +1,214 @@
+hudBuilder.createSplitNode		IngameHud RadioRose
+hudBuilder.setNodeShowVariable 		RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeAlphaShowEffect
+
+rem ------------------------------------MIDDLE
+
+hudBuilder.createButtonNode 		RadioRose RadioMiddle 345 245 108 108
+hudBuilder.setButtonNodeMouseArea 	-20 -20 148 148
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_circle.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_circle.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 1" 1
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeAltConCmd	"Radio.setSpottedMenuActive" 0
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeAlphaShowEffect 
+
+hudBuilder.createTextNode		RadioRose RadioMiddleLabel 376 293 47 47
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio1String
+hudBuilder.setNodeColor 		1 1 1 1
+
+rem -----------------------------------UP
+
+hudBuilder.createButtonNode 		RadioRose RadioUp 285 222 228 26
+hudBuilder.setButtonNodeMouseArea 	40 -100 148 103	
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_top.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_top.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 2" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	-1.57 30m
+
+hudBuilder.createTextNode		RadioRose RadioUpLabel 303 225 190 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio2String
+hudBuilder.setNodeColor 		1 1 1 1
+
+rem ------------------------------------RIGHT
+
+hudBuilder.createButtonNode 		RadioRose RadioUpRight 426 248 190 26
+hudBuilder.setButtonNodeMouseArea 	47 -126 170 103
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_R01.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_R01.tga
+hudBuilder.setButtonNodeConCmd	"RadioInterface.selectOrder 3" 0
+hudBuilder.setButtonNodeConCmd	"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd	"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	-2.44 30
+
+hudBuilder.createTextNode		RadioRose RadioUpRightLabel 456 254 150 120
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio3String
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createButtonNode 		RadioRose RadioRightHigh 449 273 198 26
+hudBuilder.setButtonNodeMouseArea 	24 -48 170 74
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_R02.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_R02.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 4" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable 		RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	3.14 30
+	
+hudBuilder.createTextNode		RadioRose RadioRightHighLabel 467 279 150 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio4String
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createButtonNode 		RadioRose RadioRightLow 449 298 199 26
+hudBuilder.setButtonNodeMouseArea 	24 1 170 74
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_R03.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_R03.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 11" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable 		RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	3.14 30
+	
+hudBuilder.createTextNode		RadioRose RadioRightLowLabel 467 304 150 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio11String
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createButtonNode 		RadioRose RadioDownRight 426 324 190 26
+hudBuilder.setButtonNodeMouseArea 	47 49 170 103
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_R04.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_R04.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 5" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	2.44 30
+
+hudBuilder.createTextNode		RadioRose RadioDownRightLabel 456 330 150 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio5String
+hudBuilder.setNodeColor 		1 1 1 1
+
+rem -----------------------------------------DOWN
+
+hudBuilder.createButtonNode 		RadioRose RadioDOwn 285 350 228 26
+hudBuilder.setButtonNodeMouseArea 	40 23 148 103
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_bottom.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_bottom.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 6" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	1.57 30
+
+hudBuilder.createTextNode		RadioRose RadioDOwnLabel 300 353 194 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio6String
+hudBuilder.setNodeColor 		1 1 1 1
+
+rem ----------------------------------------LEFT
+
+hudBuilder.createButtonNode 		RadioRose RadioDownLeft 181 324 190 26
+hudBuilder.setButtonNodeMouseArea 	-46 49 190 103
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_L04.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_L04.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 7" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	0.7 30
+
+hudBuilder.createTextNode		RadioRose RadioDownLeftLabel 194 330 150 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio7String
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createButtonNode 		RadioRose RadioLeftLow 150 298 198 26
+hudBuilder.setButtonNodeMouseArea 	-15 1 190 74
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_L03.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_L03.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 10" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	0 30
+
+hudBuilder.createTextNode		RadioRose RadioLeftLowLabel 157 304 175 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio10String
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createButtonNode 		RadioRose RadioLeftHigh 150 273 199 26
+hudBuilder.setButtonNodeMouseArea 	-15 -48 190 74
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_L02.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_L02.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 8" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	0 30
+
+hudBuilder.createTextNode		RadioRose RadioLeftHighLabel 157 279 175 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio8String
+hudBuilder.setNodeColor 		1 1 1 1
+
+hudBuilder.createButtonNode 		RadioRose RadioUpLeft 182 248 190 26
+hudBuilder.setButtonNodeMouseArea 	-47 -126 190 103
+hudBuilder.setButtonNodeTexture 	2 Ingame\Communication\Rose\Selected_L01.tga
+hudBuilder.setButtonNodeTexture 	1 Ingame\Communication\Rose\unSelected_L01.tga
+hudBuilder.setButtonNodeConCmd		"RadioInterface.selectOrder 9" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound rosePress" 0
+hudBuilder.setButtonNodeConCmd		"sound.playSound roseOver" 1
+hudBuilder.setButtonNodeDebug		0
+hudBuilder.setNodeShowVariable  	RadioInterfaceShow
+hudBuilder.setNodeInTime 		0.1
+hudBuilder.setNodeOutTime 		0.1
+hudBuilder.addNodeMoveShowEffect	-0.7 30
+
+hudBuilder.createTextNode		RadioRose RadioUpLeftLabel 193 254 150 20
+hudBuilder.setTextNodeStyle		Fonts/commRoseFontLocalBold_9.dif 0
+hudBuilder.setTextNodeStringVariable	Radio9String
+hudBuilder.setNodeColor 		1 1 1 1

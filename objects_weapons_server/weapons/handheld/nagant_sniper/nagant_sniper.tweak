@@ -1,0 +1,240 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm nagant_sniper
+ObjectTemplate.creator MOD:daofeng
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair_sniper.tweak
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\mosinsniper.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\mosinsniper.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\mosinsniper.dds
+ObjectTemplate.weaponHud.hudName "Mosin Nagant"
+rem ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 50
+rem ObjectTemplate.weaponHud.minVisualDeviation 15
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.06/0
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.roundsPerMinute 820
+ObjectTemplate.fire.busyUntilButtonRelease 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 56
+ObjectTemplate.ammo.magSize 5
+ObjectTemplate.ammo.reloadAmount 1
+ObjectTemplate.ammo.reloadTime 0.7
+ObjectTemplate.ammo.firstShotExtraTime 0.7
+ObjectTemplate.ammo.lastShotExtraTime 0.9
+ObjectTemplate.ammo.reloadWithoutPlayer 0
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/07_62x54mmR_bolt_recoil.tweak
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/sniper_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay 1.2
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/scope_3.5x.tweak
+ObjectTemplate.zoom.zoomDelay 0.4
+ObjectTemplate.zoom.changeFovDelay 0.4
+ObjectTemplate.zoom.zoomLod 1
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.25
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 1
+ObjectTemplate.zoom.zoomOutAfterFire 1
+rem ---EndComp ---
+ObjectTemplate.geometry nagant_sniper
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate sniper_rifle_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_nagant_sniper_Fire1P
+ObjectTemplate.addTemplate S_nagant_sniper_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_nagant_sniper_Fire3P
+ObjectTemplate.addTemplate S_nagant_sniper_BoltClick
+ObjectTemplate.addTemplate S_nagant_sniper_TriggerClick
+ObjectTemplate.addTemplate S_nagant_sniper_SwitchFireRate
+ObjectTemplate.addTemplate S_nagant_sniper_Reload1P
+ObjectTemplate.addTemplate S_nagant_sniper_Reload3P
+ObjectTemplate.addTemplate S_nagant_sniper_Deploy1P
+ObjectTemplate.addTemplate S_nagant_sniper_Deploy3P
+ObjectTemplate.addTemplate S_nagant_sniper_Zoom
+ObjectTemplate.addTemplate e_muzz_sniper
+ObjectTemplate.setPosition 0.00028/0.01834/0.57311
+ObjectTemplate.addTemplate e_Mosin_shift
+ObjectTemplate.setPosition 0/0.02177/-0.23015
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/nagant_sniper/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/nagant_sniper/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 762_54_sniper
+ObjectTemplate.velocity 880
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.95
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Fire1P
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/Nagant_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/Nagant_fire_1p_out.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Fire3P
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sr_svd/sounds/svd_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/-1.97887e-005/0.67157
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 20
+
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_BoltClick
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_TriggerClick
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_SwitchFireRate
+ObjectTemplate.modifiedByUser "Develop013"
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Reload1P
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/reload1.wav,objects/weapons/handheld/nagant_sniper/sounds/reload2.wav,objects/weapons/handheld/nagant_sniper/sounds/reload3.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Reload3P
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/reload1.wav,objects/weapons/handheld/nagant_sniper/sounds/reload2.wav,objects/weapons/handheld/nagant_sniper/sounds/reload3.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Deploy1P
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Deploy3P
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_nagant_sniper_Zoom
+ObjectTemplate.modifiedByUser "Develop013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/nagant_sniper/sounds/zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+

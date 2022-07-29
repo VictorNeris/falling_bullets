@@ -1,0 +1,19 @@
+GeometryTemplate.create BundledMesh barrett_rec7
+CollisionManager.createTemplate barrett_rec7
+
+ObjectTemplate.create GenericFireArm barrett_rec7
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator ASUS-K45VJ-PC:Asus-K45VJ
+ObjectTemplate.collisionMesh barrett_rec7
+ObjectTemplate.mapMaterial 0 vltor 0
+ObjectTemplate.mapMaterial 1 xxxxx 0
+ObjectTemplate.mapMaterial 2 MAIN_COLOR1 0
+ObjectTemplate.mapMaterial 3 VERTGRIP 0
+ObjectTemplate.mapMaterial 4 ACOG 0
+ObjectTemplate.mapMaterial 5 Lens 0
+ObjectTemplate.mapMaterial 6 mag 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry barrett_rec7
+
+include barrett_rec7.tweak
