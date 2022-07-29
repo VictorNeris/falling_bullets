@@ -1,0 +1,24 @@
+include ..\..\Core\esaivars.ai
+
+rem ~~~ Prereq will only be valid if friendly is behind on control points ~~~~
+rem ~~~ ( Goal is for team to quickly gain control of one more CP )       ~~~
+rem :
+aiStrategy.createPrerequisite focusedCounterAttackPrereq
+aiStrategy.addCondition enemyGainingStrength 0.01
+aiStrategy.addCondition enemyTicketAdvantage_AP 7.99
+
+rem ~~~ This strategy will have one attack at max agression ~~~~
+rem ~~~ Time limited to 3 minutes                         ~~~~~~
+rem :
+aiStrategy.createStrategy focusedCounterAttack
+aiStrategy.Aggression 1
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      c_NeutralCPM Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      c_HostileCPM Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_RemoteM Owned
+rem -----------------------------------------------------------------
+aiStrategy.setStrategicObjectsModifier Front c_FrontM
+aiStrategy.setStrategicObjectsModifier Safe c_SafeM
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite focusedCounterAttackPrereq

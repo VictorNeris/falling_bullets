@@ -1,0 +1,14 @@
+Main Directory:
+
+\MapFiles 	--> Add these in a map's 'server.zip'/GameModes/[gameMode]/[size]/AI folder
+                    to activate ESAI for that game mode.
+
+\Docs 		--> ESAI Documentation
+
+\Core 		--> ESAI core code
+
+\Plugin 	--> ESAI plugin scripts
+
+\Strategy 	--> Strategy sets for ESAI
+
+\Debug          --> Example files for enabling AI Debug output in BF2.

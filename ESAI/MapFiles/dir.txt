@@ -1,0 +1,3 @@
+\default ---> ESAI stock 'Strategies.ai' map files
+
+\user    ---> user added 'Strategies.ai' map files go here. Now stocked with some examples.

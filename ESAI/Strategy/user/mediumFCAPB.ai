@@ -1,0 +1,33 @@
+rem ESAI medium map FCAPB strategy set
+
+rem Team 1
+ai.addSAIStrategy 1 protectBase
+ai.addSAIStrategy 1 focusedCounterAttack
+ai.addSAIStrategy 1 grabNeutrals
+ai.addSAIStrategy 1 basicAttack2
+ai.addSAIStrategy 1 basicAttackHarder2
+ai.addSAIStrategy 1 basicAttackHardest2
+ai.addSAIStrategy 1 pressAttack3
+ai.addSAIStrategy 1 pressAttackHarder3
+ai.addSAIStrategy 1 pressAttackHardest3
+ai.addSAIStrategy 1 counterAttack4
+ai.addSAIStrategy 1 counterAttackHarder4
+ai.addSAIStrategy 1 counterAttackHardest4
+ai.addSAIStrategy 1 defendMap
+ai.addSAIStrategy 1 lastStand
+
+rem Team 2
+ai.addSAIStrategy 2 protectBase
+ai.addSAIStrategy 2 focusedCounterAttack
+ai.addSAIStrategy 2 grabNeutrals
+ai.addSAIStrategy 2 basicAttack2
+ai.addSAIStrategy 2 basicAttackHarder2
+ai.addSAIStrategy 2 basicAttackHardest2
+ai.addSAIStrategy 2 pressAttack3
+ai.addSAIStrategy 2 pressAttackHarder3
+ai.addSAIStrategy 2 pressAttackHardest3
+ai.addSAIStrategy 2 counterAttack4
+ai.addSAIStrategy 2 counterAttackHarder4
+ai.addSAIStrategy 2 counterAttackHardest4
+ai.addSAIStrategy 2 defendMap
+ai.addSAIStrategy 2 lastStand

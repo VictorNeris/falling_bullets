@@ -1,0 +1,5 @@
+CACHE_PATH = "cache"
+EXTERNAL_CACHE_PATH = "external-cache"
+LATEST_PATH = "latest.txt"
+FILELIST_PATH = "filelist.txt"
+UPDPKG_PATH = "updatepackages"

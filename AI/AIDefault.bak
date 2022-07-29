@@ -1,0 +1,13 @@
+echo *****************************************************************************************
+echo AIDefault.ai ****************************************************************************
+echo *****************************************************************************************
+aiSettings.setNSides 2
+aiSettings.setAutoSpawnBots 1
+aiSettings.overrideMenuSettings 1
+aiSettings.setMaxNBots 28
+aiSettings.maxBotsIncludeHumans 0
+aiSettings.setBotSkill 0.7
+run BotNames.ai
+aiSettings.setInformationGridDimension 62
+run AIPathFinding.ai
+rem EOF

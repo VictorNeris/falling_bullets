@@ -1,0 +1,25 @@
+rem -- large map with airAttack --
+
+rem Team 1
+ai.addSAIStrategy 1 airAttackGround
+ai.addSAIStrategy 1 grabNeutrals
+ai.addSAIStrategy 1 basicAttack3
+ai.addSAIStrategy 1 basicAttackHarder3
+ai.addSAIStrategy 1 pressAttack4
+ai.addSAIStrategy 1 pressAttackHarder4
+ai.addSAIStrategy 1 counterAttack5
+ai.addSAIStrategy 1 counterAttackHarder5
+ai.addSAIStrategy 1 defendMap
+ai.addSAIStrategy 1 lastStand
+
+rem Team 2
+ai.addSAIStrategy 2 airAttackGround
+ai.addSAIStrategy 2 grabNeutrals
+ai.addSAIStrategy 2 basicAttack3
+ai.addSAIStrategy 2 basicAttackHarder3
+ai.addSAIStrategy 2 pressAttack4
+ai.addSAIStrategy 2 pressAttackHarder4
+ai.addSAIStrategy 2 counterAttack5
+ai.addSAIStrategy 2 counterAttackHarder5
+ai.addSAIStrategy 2 defendMap
+ai.addSAIStrategy 2 lastStand

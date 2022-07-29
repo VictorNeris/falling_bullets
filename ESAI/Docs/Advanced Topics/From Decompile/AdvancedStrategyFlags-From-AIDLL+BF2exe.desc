@@ -1,0 +1,114 @@
+TTN means "Temperature TreeNode" (found in AIDLL_r.dll)
+CST means "Combat Strength Type" (found in AIDLL_r.dll)
+
+- Extracts from AIDLL.dll -
+
+TTN Flags: 
+
+000000132760   000010132760      0   TTNSuppliesAmmunition
+000000132778   000010132778      0   TTNSuppliesRepair
+00000013278C   00001013278C      0   TTNSupplies
+000000132798   000010132798      0   TTNControlPoint
+0000001327A8   0000101327A8      0   TTNTransportation
+0000001327BC   0000101327BC      0   TTNRadar
+0000001327C8   0000101327C8      0   TTNProduction
+0000001327D8   0000101327D8      0   TTNAirfield
+0000001327E4   0000101327E4      0   TTNFixedWeapons
+0000001327F4   0000101327F4      0   TTNEditors
+000000132800   000010132800      0   TTNTopography
+000000132810   000010132810      0   TTNDefensivePos
+
+------------------- Of Primary Interest -----------------------------------------------------------------------
+TTN types with *Hostile* or *Friend* seem to map to the IT flags extracted from BF2.exe.
+There are 22 of these TTN types,11 Unique. Combinations of IT flags are set in a Unit's \AI\Objects.ai file.
+
+000000132820   000010132820      0   TTNHostileAirMobile
+000000132834   000010132834      0   TTNHostileAirFixed
+000000132848   000010132848      0   TTNHostileNavalMobile
+000000132860   000010132860      0   TTNHostileNavalFixed
+000000132878   000010132878      0   TTNHostileGroundMobile
+000000132890   000010132890      0   TTNHostileGroundFixed
+00000013292C   00001013292C      0   TTNHostileNaval
+00000013293C   00001013293C      0   TTNHostileAir
+00000013294C   00001013294C      0   TTNHostileGround
+0000001329B8   0000101329B8      0   TTNHostileGroundAndNaval
+000000132990   000010132990      0   TTNHostileArtillery
+
+0000001328A8   0000101328A8      0   TTNFriendAirMobile
+0000001328BC   0000101328BC      0   TTNFriendAirFixed
+0000001328D0   0000101328D0      0   TTNFriendNavalMobile
+0000001328FC   0000101328FC      0   TTNFriendGroundMobile
+000000132914   000010132914      0   TTNFriendGroundFixed
+0000001328E8   0000101328E8      0   TTNFriendNavalFixed
+000000132960   000010132960      0   TTNFriendAir
+000000132970   000010132970      0   TTNFriendNaval
+000000132980   000010132980      0   TTNFriendGround
+0000001329D4   0000101329D4      0   TTNFriendGroundAndNaval
+0000001329A4   0000101329A4      0   TTNFriendArtillery
+____________________________________________________________________________________________________________________
+
+-------------------------------------------------------------------------
+0000001329EC   0000101329EC      0   TTNStrategic
+0000001329FC   0000101329FC      0   TTNTactical
+000000132A08   000010132A08      0   TTNHostile
+000000132A14   000010132A14      0   TTNFriendly
+000000132A20   000010132A20      0   TTNStatic
+000000132A2C   000010132A2C      0   TTNDynamic
+000000132A38   000010132A38      0   TTNTop
+
+Extracted from BF2.exe (1.41)
+
+IT Flags: (27 total)
+
+000000521108   000000922108      0   ITHasCarHorn
+000000521118   000000922118      0   ITObstacle
+000000521124   000000922124      0   ITHasWreck
+000000521130   000000922130      0   ITHelicopter
+000000521140   000000922140      0   ITNoTemperature
+000000521150   000000922150      0   ITObstructedView
+000000521164   000000922164      0   ITSoldier
+000000521170   000000922170      0   ITVegetation
+000000521180   000000922180      0   ITBiological
+000000521190   000000922190      0   ITStructure
+00000052119C   00000092219C      0   ITLowPriority
+0000005211AC   0000009221AC      0   ITUnmanned
+0000005211B8   0000009221B8      0   ITMobile
+0000005211C4   0000009221C4      0   ITCover
+0000005211CC   0000009221CC      0   ITFixed
+0000005211D4   0000009221D4      0   ITArtillery
+0000005211E0   0000009221E0      0   ITTransportation
+0000005211F4   0000009221F4      0   ITAirfield
+000000521200   000000922200      0   ITRadar
+000000521208   000000922208      0   ITControlpoint
+000000521218   000000922218      0   ITNaval
+000000521220   000000922220      0   ITGround
+00000052122C   00000092222C      0   ITAir
+000000521234   000000922234      0   ITUnit
+00000052123C   00000092223C      0   ITRepair
+000000521248   000000922248      0   ITAmmunition
+000000521258   000000922258      0   ITProduction
+
+- Extracted from AIDLL.dll -
+CST flags: Except CSTNumberOfTypes, these map to every strength type used in a standard 'Weapons.ai' file.
+           [infant*ry is duplicated: Infantry && Infantery ]
+		   These strength types are set in each vehicle's 'Objects.ai' file in the `Physical` plugin section.
+
+000000132A40   000010132A40      0   CSTNumberOfTypes
+
+000000132A54   000010132A54      0   CSTAirPlane
+000000132A60   000010132A60      0   CSTHelicopter
+000000132A70   000010132A70      0   CSTNavalArmour
+000000132A80   000010132A80      0   CSTHeavyArmour
+000000132A90   000010132A90      0   CSTLightArmour
+000000132AA0   000010132AA0      0   CSTInfantry
+00000013342C   00001013342C      0   CSTInfantery
+
+- Extracted from AIDLL.dll -
+Misc: (this is probably internal to AI engine and not callable from a script)
+000000129D0C   000010129D0C      0   getTreeModifierCombatStrength
+
+- Commands to call this jazz -
+
+aiStrategy.setTreeModifier [TTNFlag] [Weight]
+
+aiStrategy.setTreeModifierCombatStrength [TTNFlag] [All | CSTFlag] [Weight]

@@ -1,0 +1,16 @@
+rem ** gameLogic hasn't been initialized yet **
+
+renderer.tweaknearplane1p 0.03
+rem 0.04
+renderer.tweakFarPlane1p 2
+
+renderer.roadLodDistMod 0.9
+renderer.roadDepthBias -0.0000045
+
+
+rem ** Intro Movies **
+bf2Engine.playMovie mods\bf2\Movies\EA.bik 1
+bf2Engine.playMovie mods\bf2\Movies\dice.bik 1
+bf2Engine.playMovie mods\bf2\Movies\legal.bik 1
+bf2Engine.playMovie mods\bf2\Movies\intro.bik 0
+bf2Engine.playMovie mods\bf2\Movies\welcome.bik 0

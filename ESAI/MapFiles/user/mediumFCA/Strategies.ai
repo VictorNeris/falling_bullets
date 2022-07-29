@@ -1,0 +1,15 @@
+rem ESAI Strategy- mediumMapFCA
+
+rem -= load Enhanced SAI core =-
+run /mods/DISE/ESAI/Core/esaicore.ai
+
+rem -= load Enhanced SAI default plugins =-
+run /mods/DISE/ESAI/Plugin/default/grabNeutrals.ai
+run /mods/DISE/ESAI/Plugin/default/endGame.ai
+
+rem -= load user plugins =-
+run /mods/DISE/ESAI/Plugin/user/userConditions.ai
+run /mods/DISE/ESAI/Plugin/user/focusedCounterAttack.ai
+
+rem -= load strategy =-
+run /mods/DISE/ESAI/Strategy/user/mediumFCA.ai

@@ -1,0 +1,14 @@
+rem -- ESAI Strategy Set for BFSP64 Wake Island --
+
+rem China:
+ai.addSAIStrategy 1 chinaDefend
+ai.addSAIStrategy 1 chinaAttack
+ai.addSAIStrategy 1 chinaAttackAlt
+ai.addSAIStrategy 1 chinaPanic
+
+rem USMC:
+ai.addSAIStrategy 2 usAttackSouth
+ai.addSAIStrategy 2 usAttackBeach
+ai.addSAIStrategy 2 usAttack
+ai.addSAIStrategy 2 usAttackAlt
+ai.addSAIStrategy 2 usDefend

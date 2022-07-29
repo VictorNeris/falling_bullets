@@ -1,0 +1,23 @@
+1.把这个aiArty文件夹放进模组目录下python\game\gamemodes文件夹中。
+
+2.打开gpm_cq.py/gpm_coop.py或者其他游戏模式定义文件，
+(1)找到：
+from bf2 import g_debug
+下面加一行import aiArty
+(2)找到：
+def init():
+下面加一行aiArty.init()
+改成这样：
+def init():
+	aiArty.init()	
+(3)找到：
+def deinit():
+下面加一行aiArty.deinit()
+改成这样：
+def deinit():
+	aiArty.deinit()
+注意，前面的空格为一个制表符（tab）
+
+如果你的游戏模式定义文件和原版bf2相同，那就直接用插件包中提供的文件覆盖就行了。
+
+3.开始游戏，体验在呼啸的火炮中战斗的感觉吧！

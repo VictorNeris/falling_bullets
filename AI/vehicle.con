@@ -1,0 +1,9 @@
+rem *** Create Object ***
+gamelogic.createobject v_arg1
+object.name v_arg4
+
+rem *** Create Bot and attach to tank ***
+game.createAndSpawnAIPlayer v_arg4 v_arg3 v_arg2
+ai.addBot v_arg4 v_arg3 StandardWeights v_arg4
+
+rem EOF

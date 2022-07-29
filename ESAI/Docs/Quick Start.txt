@@ -1,0 +1,14 @@
+                                       ESAI v4.2 Quick start
+
+First, copy the ESAI folder to '[BF2 Install Directory]\mods\bf2\'. You may now use ESAI with any BF2 mod.
+
+Second, you must enable ESAI inside your maps. This is done map by map, on a per game mode basis.
+
+1. Open a level's `server.zip`, and navigate to the '\gamemode\numberOfPlayers\AI' directory.
+
+2. Pick an ESAI map file ("Strategies.ai") that corresponds to the strategy set you want to use.
+   These files are located in the folder \ESAI\MapFiles
+
+3. Add the map file to the server zip in the directory indicated in 1.
+
+4. Close `server.zip` and play.

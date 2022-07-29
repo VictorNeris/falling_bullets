@@ -1,0 +1,193 @@
+rem <<---------------{      ESAI Extra Conditions        }----------------->>
+
+beginrem
+
+Naming convention is [conditionName]_[conditionStrength]
+
+conditionName list:
+
+		noNeutralsAvailable
+		allAreasSafe
+		enemyNearBase
+		groundTacticalAdvantage
+		groundTacticalDisadvantage
+		enemyTicketAdvantage
+		friendlyTicketAdvantage
+		friendlyHasBase
+	
+
+conditionStength list:
+
+		R	-	Required
+		A	-	Advisory
+		AP	-	AdvisoryPositive
+		
+endrem
+rem -------------------------------------------------------------------------------------------------------------------
+rem 									noNeutralsAvailable
+
+rem ===================================================================================================================
+
+rem ~~~ Check if there are 0 neutral SAs   ~~~
+rem '
+aiStrategy.createConstantCondition noNeutralsAvailable_R Crisp "-" Friendly NumberOfNeutralAreas 0
+aiStrategy.setConditionStrength Required
+
+aiStrategy.createConstantCondition noNeutralsAvailable_A Crisp "-" Friendly NumberOfNeutralAreas 0
+aiStrategy.setConditionStrength Advisory
+
+aiStrategy.createConstantCondition noNeutralsAvailable_AP Crisp "-" Friendly NumberOfNeutralAreas 0
+aiStrategy.setConditionStrength AdvisoryPositive
+rem ====================================================================================================================
+
+rem 										allAreasSafe
+
+rem ====================================================================================================================
+
+rem ~~~ Check if all SAs are Safe (no hostile neighbor)  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition allAreasSafe_R Crisp "-" Friendly NumberOfFriendlyAreas Safe
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if all SAs are Safe (no hostile neighbor)  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition allAreasSafe_A Crisp "-" Friendly NumberOfFriendlyAreas Safe
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if all SAs are Safe (no hostile neighbor)  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition allAreasSafe_AP Crisp "-" Friendly NumberOfFriendlyAreas Safe
+aiStrategy.setConditionStrength AdvisoryPositive
+rem ====================================================================================================================
+
+rem											enemyNearBase
+
+rem ====================================================================================================================
+
+rem ~~~ Check if at least one Friendly Base is also a Front ~~~
+rem '
+aiStrategy.createConstantCondition enemyNearBase_R Crisp ">-" Friendly FrontBase 1
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if at least one Friendly Base is also a Front ~~~
+rem '
+aiStrategy.createConstantCondition enemyNearBase_A Crisp ">-" Friendly FrontBase 1
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if at least one Friendly Base is also a Front ~~~
+rem '
+aiStrategy.createConstantCondition enemyNearBase_AP Crisp ">-" Friendly FrontBase 1
+aiStrategy.setConditionStrength AdvisoryPositive
+rem ====================================================================================================================
+
+rem 									 groundTacticalAdvantage
+
+rem ====================================================================================================================
+
+rem ~~~ Check if # Safe CPs >= # CPs that are Fronts  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition groundTacticalAdvantage_R Crisp ">-" Friendly Safe Front
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if # Safe CPs >= # CPs that are Fronts  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition groundTacticalAdvantage_A Crisp ">-" Friendly Safe Front
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if # Safe CPs >= # CPs that are Fronts  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition groundTacticalAdvantage_AP Crisp ">-" Friendly Safe Front
+aiStrategy.setConditionStrength AdvisoryPositive
+
+rem =====================================================================================================================
+
+rem 									groundTacticalDisadvantage
+
+rem =====================================================================================================================
+
+rem ~~~ Check if more SAs are Fronts than are Safe ~~~
+rem '
+aiStrategy.createHeterogeneousCondition groundTacticalDisadvantage_R Crisp ">-" Friendly Front Safe
+aiStrategy.TargetValue 1.0
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if more SAs are Fronts than are Safe ~~~
+rem '
+aiStrategy.createHeterogeneousCondition groundTacticalDisadvantage_A Crisp ">-" Friendly Front Safe
+aiStrategy.TargetValue 1.0
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if more SAs are Fronts than are Safe ~~~
+rem '
+aiStrategy.createHeterogeneousCondition groundTacticalDisadvantage_AP Crisp ">-" Friendly Front Safe
+aiStrategy.TargetValue 1.0
+aiStrategy.setConditionStrength AdvisoryPositive
+rem ====================================================================================================================
+
+rem 										enemyTicketAdvantage
+
+rem =====================================================================================================================
+
+rem ~~~ Check if ratio of Friendly to Enemy tickets <= 75 percent ~~~
+rem '
+aiStrategy.createHeterogeneousCondition enemyTicketAdvantage_R Crisp "</" Both Ticket Ticket
+aiStrategy.TargetValue 0.75
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if ratio of Friendly to Enemy tickets <= 75 percent ~~~
+rem '
+aiStrategy.createHeterogeneousCondition enemyTicketAdvantage_A Crisp "</" Both Ticket Ticket
+aiStrategy.TargetValue 0.75
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if ratio of Friendly to Enemy tickets <= 75 percent ~~~
+rem '
+aiStrategy.createHeterogeneousCondition enemyTicketAdvantage_AP Crisp "</" Both Ticket Ticket
+aiStrategy.TargetValue 0.75
+aiStrategy.setConditionStrength AdvisoryPositive
+rem ====================================================================================================================
+
+rem 									 friendlyTicketAdvantage
+
+rem ====================================================================================================================
+
+rem ~~~ Check if ratio of Friendly to Enemy tickets >= 1.25 ~~~
+rem '
+aiStrategy.createHeterogeneousCondition friendlyTicketAdvantage_R Crisp ">/" Both Ticket Ticket
+aiStrategy.TargetValue 1.25
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if ratio of Friendly to Enemy tickets >= 1.25 ~~~
+rem '
+aiStrategy.createHeterogeneousCondition friendlyTicketAdvantage_A Crisp ">/" Both Ticket Ticket
+aiStrategy.TargetValue 1.25
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if ratio of Friendly to Enemy tickets >= 1.25 ~~~
+rem '
+aiStrategy.createHeterogeneousCondition friendlyTicketAdvantage_AP Crisp ">/" Both Ticket Ticket
+aiStrategy.TargetValue 1.25
+aiStrategy.setConditionStrength AdvisoryPositive
+rem ====================================================================================================================
+
+rem 										  friendlyHasBase
+
+rem =====================================================================================================================
+
+rem ~~~ Check if Friendly has at least one SA flagged as `Base` ~~~~
+rem '
+aiStrategy.createConstantCondition friendlyHasBase_R Crisp ">-" Friendly Base 1
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if Friendly has at least one SA flagged as `Base` ~~~~
+rem '
+aiStrategy.createConstantCondition friendlyHasBase_A Crisp ">-" Friendly Base 1
+aiStrategy.setConditionStrength Advisory
+
+rem ~~~ Check if Friendly has at least one SA flagged as `Base` ~~~~
+rem '
+aiStrategy.createConstantCondition friendlyHasBase_AP Crisp ">-" Friendly Base 1
+aiStrategy.setConditionStrength AdvisoryPositive
+rem =======================================================================================================================
+
+aiStrategy.CompleteConditions

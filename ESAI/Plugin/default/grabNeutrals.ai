@@ -1,0 +1,19 @@
+rem %%%% Check if [number of Neutral SAs] - [number of Owned CPs] >= 2 %%%%
+rem : 
+aiStrategy.createHeterogeneousCondition neutralsAvailable Crisp ">-" Friendly NumberOfNeutralAreas ControlPoint
+aiStrategy.TargetValue 2.0
+aiStrategy.setConditionStrength Required
+
+aiStrategy.CompleteConditions
+
+aiStrategy.createPrerequisite grabNeutralsPrereq
+aiStrategy.addCondition neutralsAvailable 50.0
+
+aiStrategy.createStrategy grabNeutrals
+aiStrategy.Aggression 1
+aiStrategy.NumberOfAttacks 6
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      30.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      4.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint      0.8 Owned
+aiStrategy.setPrerequisite grabNeutralsPrereq

@@ -1,0 +1,184 @@
+rem -------         Wake Island 2007 BFSP64 ESAI Plugin         -------
+rem   -------                                               ---------  
+rem     -------                 by Void                    --------
+rem      -----------------------~~~~~~~~--------------------------
+
+rem              ===========  Conditions ================
+
+rem ~~~ Check if Round has been running <= 75 seconds   ~~~
+rem ~~~ This will trigger 'usAttackSouth' Strategy   ~~~~~~
+rem '
+aiStrategy.createConstantCondition roundStart Crisp "<-" Friendly Time 75
+aiStrategy.setConditionStrength Required
+
+rem %%% Check if friendly owns exactly one CP (for US) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+rem %%% This will trigger either the 'usAttackBeach' or 'usAttackSouth' Strategy %%%%
+rem :
+aiStrategy.createConstantCondition usOnCarrier Crisp "-" Friendly ControlPoint 1
+aiStrategy.setConditionStrength Required
+
+rem %%% Check if friendly owns > 1 CP %%%%% (for US) %%%%%%%%%%%%%%
+rem %%% This will trigger one of the [usAttack]* Strategies %%%%%%%
+rem:
+aiStrategy.createConstantCondition usOnIsland Crisp ">-" Friendly ControlPoint 1
+aiStrategy.TargetValue 1
+aiStrategy.setConditionStrength Required
+
+rem %%% Check if friendly owns exactly 6 CPs %%%% (for US) %%%%
+rem %%% This will trigger the 'usDefend' Strategy %%%%%%%%%%%%%
+rem :
+aiStrategy.createConstantCondition usControlsIsland Crisp "-" Friendly ControlPoint 6
+aiStrategy.setConditionStrength Required
+
+rem %%% Check if friendly owns exactly 5 CPs %%%%% (for China) %%%%
+rem %%% This will trigger the 'chinaDefend' Strategy %%%%%%%%%%%%%%
+rem :
+aiStrategy.createConstantCondition chinaControlsIsland Crisp "-" Friendly ControlPoint 5
+aiStrategy.setConditionStrength Required
+
+rem %%% Check if friendly owns 4 or less CPs %%%% (for China)  %%%%%%%%%%%%%%
+rem %%% This will trigger one of the [chinaAttack]* Strategies %%%%
+rem :
+aiStrategy.createConstantCondition losingIsland Crisp "<-" Friendly ControlPoint 4
+aiStrategy.setConditionStrength Required
+
+rem %%% Check if enemy owns exactly 6 CPs %%% (for China) %%%%%%%
+rem %%% This will trigger the 'chinaPanic' Strategy %%%%%%
+rem :
+aiStrategy.createConstantCondition islandLost Crisp "-" Enemy ControlPoint 6
+aiStrategy.setConditionStrength Required
+
+aiStrategy.completeConditions
+
+rem ===================  Prerequisites ==============================
+
+aiStrategy.createPrerequisite usAttackSouthPrereq
+aiStrategy.addCondition usOnCarrier 0.1
+aiStrategy.addCondition roundStart 99.9
+
+aiStrategy.createPrerequisite usAttackBeachPrereq
+aiStrategy.addCondition usOnCarrier 2.0
+
+aiStrategy.createPrerequisite usAttackPrereq
+aiStrategy.addCondition usOnIsland 1.0
+
+aiStrategy.createPrerequisite usAttackAltPrereq
+aiStrategy.addCondition usOnIsland 8.0
+
+aiStrategy.createPrerequisite usDefendPrereq
+aiStrategy.addCondition usControlsIsland 108.0
+
+aiStrategy.createPrerequisite chinaDefendPrereq
+aiStrategy.addCondition chinaControlsIsland 2.0
+
+aiStrategy.createPrerequisite chinaAttackPrereq
+aiStrategy.addCondition losingIsland 2.0
+
+aiStrategy.createPrerequisite chinaAttackAltPrereq
+aiStrategy.addCondition losingIsland 2.0
+
+aiStrategy.createPrerequisite chinaPanicPrereq
+aiStrategy.addCondition islandLost 100.0
+
+rem ================ Strategies =====================================
+
+aiStrategy.createStrategy usAttackSouth
+aiStrategy.Aggression 1
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint 0.1 Hostile
+aiStrategy.setStrategicObjectsModifier North 0.1 Hostile  
+aiStrategy.setStrategicObjectsModifier South 100.0 Hostile
+aiStrategy.setStrategicObjectsModifier Base 0.1 Owned
+aiStrategy.setTreeModifier TTNFriendAirMobile 5.0
+aiStrategy.setTreeModifier TTNFriendNavalMobile 0.1
+aiStrategy.setPrerequisite usAttackSouthPrereq
+
+aiStrategy.createStrategy usAttackBeach
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier North 10.0 Hostile 
+aiStrategy.setStrategicObjectsModifier South 50.0 Hostile
+aiStrategy.setStrategicObjectsModifier Base 0.1 Owned
+aiStrategy.setTreeModifier TTNFriendAirMobile 5.0
+aiStrategy.setTreeModifier TTNFriendNavalMobile 0.1
+aiStrategy.setPrerequisite usAttackBeachPrereq
+
+aiStrategy.createStrategy usAttack
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      12.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      10.0 Hostile
+aiStrategy.setStrategicObjectsModifier North 2.0 Hostile
+aiStrategy.setStrategicObjectsModifier South 8.0 Hostile
+aiStrategy.setStrategicObjectsModifier Safe 0.75
+aiStrategy.setStrategicObjectsModifier Front 1.75
+aiStrategy.setTreeModifier TTNFriendAirMobile 3.0
+aiStrategy.setTreeModifier TTNFriendNavalMobile 0.1
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite usAttackPrereq
+
+aiStrategy.createStrategy usAttackAlt
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      18.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      12.0 Hostile
+aiStrategy.setStrategicObjectsModifier North 2.0 Hostile
+aiStrategy.setStrategicObjectsModifier South 8.0 Hostile
+aiStrategy.setStrategicObjectsModifier Front 4.0
+aiStrategy.setStrategicObjectsModifier Safe 0.25
+aiStrategy.setStrategicObjectsModifier Base 0.25 Owned
+aiStrategy.setTreeModifier TTNFriendAirMobile 3.0
+aiStrategy.setTreeModifier TTNFriendNavalMobile 0.1
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite usAttackAltPrereq
+
+aiStrategy.createStrategy usDefend
+aiStrategy.Aggression 0.1
+aiStrategy.NumberOfAttacks 0
+aiStrategy.NumberOfDefences 5
+aiStrategy.setStrategicObjectsModifier ControlPoint      10.0
+aiStrategy.setStrategicObjectsModifier NavalSpawner 0.1
+aiStrategy.setPrerequisite usDefendPrereq
+
+aiStrategy.createStrategy chinaDefend
+aiStrategy.Aggression 0
+aiStrategy.NumberOfAttacks 0
+aiStrategy.NumberOfDefences 2
+aiStrategy.setStrategicObjectsModifier ControlPoint 0.1 Owned
+aiStrategy.setStrategicObjectsModifier North      100.0 Owned
+aiStrategy.setStrategicObjectsModifier South      100.0 Owned
+aiStrategy.setPrerequisite chinaDefendPrereq
+
+aiStrategy.createStrategy chinaAttack
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      12.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      10.0 Hostile
+aiStrategy.setStrategicObjectsModifier Base 2.0 Owned
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite chinaAttackPrereq
+
+aiStrategy.createStrategy chinaAttackAlt
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      12.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      10.0 Hostile
+aiStrategy.setStrategicObjectsModifier Front 2.5
+aiStrategy.setStrategicObjectsModifier Safe 0.75
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite chinaAttackAltPrereq
+
+aiStrategy.createStrategy chinaPanic
+aiStrategy.Aggression 1
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      50.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      25.0 Hostile
+aiStrategy.setStrategicObjectsModifier Base      2.0
+aiStrategy.setPrerequisite chinaPanicPrereq

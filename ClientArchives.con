@@ -1,0 +1,29 @@
+fileManager.mountArchive Menu_Client_lanip.zip Menu
+fileManager.mountArchive Rush_res/Objects_client.zip Objects
+fileManager.mountArchive Rush_res/Common_client.zip Common
+fileManager.mountArchive Rush_res/Menu_client.zip Menu
+fileManager.mountArchive Rush_res/objects_bf2ext_client.zip Objects
+
+fileManager.mountArchive Objects_client.zip Objects
+fileManager.mountArchive Objects_vehicles_client.zip Objects
+fileManager.mountArchive Objects_weapons_client.zip Objects
+fileManager.mountArchive Common_client.zip Common
+rem fileManager.mountArchive Common_client_hd_terrain.zip Common
+fileManager.mountArchive Common_client_sounds_extra.zip Common
+fileManager.mountArchive Menu_client.zip Menu
+fileManager.mountArchive Fonts_client.zip Fonts
+
+rem fileManager.mountArchive Shaders_client_custom.zip Shaders
+
+rem fileManager.mountArchive mods/xpack/Objects_client.zip Objects
+rem fileManager.mountArchive mods/xpack/Common_client.zip Common
+rem fileManager.mountArchive mods/xpack/Menu_client.zip Menu
+rem fileManager.mountArchive mods/xpack/Fonts_client.zip Fonts
+
+
+rem fileManager.mountArchive mods/bf2/Booster_client.zip Objects
+fileManager.mountArchive mods/bf2/Objects_client.zip Objects
+fileManager.mountArchive mods/bf2/Common_client.zip Common
+fileManager.mountArchive mods/bf2/Menu_client.zip Menu
+fileManager.mountArchive mods/bf2/Fonts_client.zip Fonts
+fileManager.mountArchive mods/bf2/Shaders_client.zip Shaders

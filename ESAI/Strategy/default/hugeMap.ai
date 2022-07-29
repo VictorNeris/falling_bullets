@@ -1,0 +1,29 @@
+rem -- huge map strategies --
+
+rem Team 1
+ai.addSAIStrategy 1 grabNeutrals
+ai.addSAIStrategy 1 basicAttack4
+ai.addSAIStrategy 1 basicAttackHarder4
+ai.addSAIStrategy 1 basicAttackHardest4
+ai.addSAIStrategy 1 pressAttack5
+ai.addSAIStrategy 1 pressAttackHarder5
+ai.addSAIStrategy 1 pressAttackHardest5
+ai.addSAIStrategy 1 counterAttack6
+ai.addSAIStrategy 1 counterAttackHarder6
+ai.addSAIStrategy 1 counterAttackHardest6
+ai.addSAIStrategy 1 defendMap
+ai.addSAIStrategy 1 lastStand
+
+rem Team 2
+ai.addSAIStrategy 2 grabNeutrals
+ai.addSAIStrategy 2 basicAttack4
+ai.addSAIStrategy 2 basicAttackHarder4
+ai.addSAIStrategy 2 basicAttackHardest4
+ai.addSAIStrategy 2 pressAttack5
+ai.addSAIStrategy 2 pressAttackHarder5
+ai.addSAIStrategy 2 pressAttackHardest5
+ai.addSAIStrategy 2 counterAttack6
+ai.addSAIStrategy 2 counterAttackHarder6
+ai.addSAIStrategy 2 counterAttackHardest6
+ai.addSAIStrategy 2 defendMap
+ai.addSAIStrategy 2 lastStand

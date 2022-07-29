@@ -1,0 +1,53 @@
+rem *** Put non level specific initializations here ***
+
+
+rem *** Load multiplayer free camera here
+run Common/FreeCamera/Object.con
+
+gameLogic.setDefaultNumberOfTickets 1 250
+gameLogic.setDefaultNumberOfTickets 2 250
+
+gameLogic.enableVoHelp 0
+gameLogic.supplyDropHeight 50
+gameLogic.supplyDropNumSecsToLive 300
+
+rem renderer.drawfps 1
+renderer.drawnametags 1
+sv.numPlayersNeededToStart 0
+sv_spawntime 3
+
+sv.radioSpamInterval 9999
+sv.radioMaxSpamFlagCount 9999
+sv.radioBlockedDurationTime 0
+sv.friendlyFireWithMines 0
+
+renderer.glowEnabled 1
+renderer.glowStrength 1
+
+rem renderer.fakeHDREnabled 1
+rem renderer.fakeHDRPassGate 0.25
+rem renderer.fakeHDRweights 0,0.025,0.05,0.075,0.1,0.075,0.05,0.025,0
+
+renderer.enablehwocclusion 0
+
+gameLogic.supplyDropHeight 200
+gameLogic.supplyDropNumSecsToLive 60
+
+rem *** rather straight forward ***
+Vars.Set explosion-camshake-insidevehicle-mod 0.05
+Vars.Set explosion-camshake-maxdamage 150.0
+Vars.Set explosion-camshake-maxforce 50.0
+Vars.Set explosion-camshake-mod 50
+Vars.Set explosion-camshake-ownvehicle-mod 0.75
+
+rem *** makes tanks cause the ground to rumble out to set distance
+Vars.Set camera-shake-distance 60.0
+
+beginrem
+shadowManager.shadowMapSize 1024
+shadowManager.shadowMapDepthDistance 50
+shadowManager.shadowMapDepthBias 0.001
+endrem
+
+renderer.roadLodDistMod 0.9
+renderer.roadDepthBias -0.0000045

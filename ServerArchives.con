@@ -1,0 +1,26 @@
+fileManager.mountArchive bf2map_building_server.zip Objects
+rem fileManager.mountArchive objects_server_aiArty.zip Objects
+rem fileManager.mountArchive Menu_server_aicomm.zip Menu
+
+fileManager.mountArchive Rush_res/objects_bf2ext_server.zip Objects
+fileManager.mountArchive Rush_res/Objects_server.zip Objects
+rem fileManager.mountArchive Rush_res/Menu_server.zip Menu
+rem fileManager.mountArchive Rush_res/Common_server.zip Common
+
+fileManager.mountArchive Objects_server.zip Objects
+fileManager.mountArchive Objects_vehicles_server.zip Objects
+fileManager.mountArchive Objects_weapons_server.zip Objects
+fileManager.mountArchive Menu_server.zip Menu
+fileManager.mountArchive Fonts_server.zip Fonts
+fileManager.mountArchive Common_server.zip Common
+
+beginrem
+fileManager.mountArchive mods/xpack/Objects_server.zip Objects
+fileManager.mountArchive mods/xpack/Menu_server.zip Menu
+fileManager.mountArchive mods/xpack/Common_server.zip Common
+endrem
+
+rem fileManager.mountArchive mods/bf2/Booster_server.zip Objects
+fileManager.mountArchive mods/bf2/Objects_server.zip Objects
+fileManager.mountArchive mods/bf2/Menu_server.zip Menu
+fileManager.mountArchive mods/bf2/Common_server.zip Common

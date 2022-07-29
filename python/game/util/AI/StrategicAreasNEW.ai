@@ -1,0 +1,105 @@
+rem *** Created with FiRe's CON parser ***
+
+aiStrategicArea.createFromControlPoint SinglePlayer_16p_GW_CentralWall 409 50
+aiStrategicArea.layer 5
+
+aiStrategicArea.createFromControlPoint SinglePlayer_16p_GW_CentralWall2 1 50
+aiStrategicArea.layer 1
+
+aiStrategicArea.createFromControlPoint SinglePlayer_16p_GW_CompoundGateVillage 404 50
+aiStrategicArea.layer 5
+
+aiStrategicArea.createFromControlPoint SinglePlayer_16p_GW_FortressVillage 402 50
+aiStrategicArea.layer 5
+
+aiStrategicArea.createFromControlPoint SinglePlayer_16p_GW_QuanCompound 408 50
+aiStrategicArea.layer 5
+
+aiStrategicArea.createFromControlPoint SinglePlayer_16p_GW_QuanTemple 403 50
+aiStrategicArea.layer 5
+
+aiStrategicArea.createFromControlPoint Singleplayer_16p_GW_CompundWall 401 50
+aiStrategicArea.layer 5
+
+aiStrategicArea.setActive SinglePlayer_16p_GW_CentralWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanCompound
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CompoundGateVillage
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_FortressVillage
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanTemple
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall2
+aiStrategicArea.addObjectTypeFlag ControlPoint
+AIStrategicArea.setOrderPosition Infantry -66.8662/375.512/-68.2503
+AIStrategicArea.setOrderPosition Vehicle -84.8761/365.762/-62.232
+aiStrategicArea.setSide 0
+aiStrategicArea.vehicleSearchRadius 28.2843
+
+aiStrategicArea.setActive SinglePlayer_16p_GW_CentralWall2
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanCompound
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CompoundGateVillage
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_FortressVillage
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanTemple
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall
+aiStrategicArea.addObjectTypeFlag ControlPoint
+AIStrategicArea.setOrderPosition Infantry -62.5415/375.521/16.7147
+AIStrategicArea.setOrderPosition Vehicle -62.5415/375.521/16.7147
+aiStrategicArea.setSide 0
+aiStrategicArea.vehicleSearchRadius 14.1421
+
+aiStrategicArea.setActive SinglePlayer_16p_GW_CompoundGateVillage
+AIStrategicArea.addNeighbour Singleplayer_16p_GW_CompundWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall2
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanCompound
+aiStrategicArea.addObjectTypeFlag ControlPoint
+AIStrategicArea.setOrderPosition Infantry -19.4819/362.567/-66.3556
+AIStrategicArea.setOrderPosition Vehicle -10.8427/362.188/-60.6981
+aiStrategicArea.setSide 0
+aiStrategicArea.vehicleSearchRadius 42.4264
+
+aiStrategicArea.setActive SinglePlayer_16p_GW_FortressVillage
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall2
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanTemple
+aiStrategicArea.addObjectTypeFlag ControlPoint
+AIStrategicArea.setOrderPosition Infantry -159.224/365.762/-8.39648
+AIStrategicArea.setOrderPosition Vehicle -152.285/365.762/3.47766
+aiStrategicArea.setSide 0
+aiStrategicArea.vehicleSearchRadius 33.9411
+
+aiStrategicArea.setActive SinglePlayer_16p_GW_QuanCompound
+AIStrategicArea.addNeighbour Singleplayer_16p_GW_CompundWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall2
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CompoundGateVillage
+aiStrategicArea.addObjectTypeFlag ControlPoint
+AIStrategicArea.setOrderPosition Infantry -1.04581/360.727/39.0133
+AIStrategicArea.setOrderPosition Vehicle -1.49311/360.727/24.5438
+aiStrategicArea.setSide 0
+aiStrategicArea.vehicleSearchRadius 33.9411
+
+aiStrategicArea.setActive SinglePlayer_16p_GW_QuanTemple
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CentralWall2
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_FortressVillage
+aiStrategicArea.addObjectTypeFlag ControlPoint
+AIStrategicArea.setOrderPosition Infantry -153.762/366.776/-63.2969
+AIStrategicArea.setOrderPosition Vehicle -157.907/366.666/-54.5703
+aiStrategicArea.setSide 0
+aiStrategicArea.vehicleSearchRadius 28.2843
+
+aiStrategicArea.setActive Singleplayer_16p_GW_CompundWall
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_QuanCompound
+AIStrategicArea.addNeighbour SinglePlayer_16p_GW_CompoundGateVillage
+aiStrategicArea.addObjectTypeFlag Base
+AIStrategicArea.setOrderPosition Infantry 46.3517/359.79/-87.7438
+AIStrategicArea.setOrderPosition Vehicle 42.7177/359.857/-89.9305
+aiStrategicArea.setSide 1
+aiStrategicArea.vehicleSearchRadius 0
+
+aiStrategicArea.addWayPoint -27.2755/365.113/-27.0557 Vehicle SinglePlayer_16p_GW_CentralWall SinglePlayer_16p_GW_CompoundGateVillage
+aiStrategicArea.addWayPoint -82.754/365.762/-24.5422 Vehicle SinglePlayer_16p_GW_CentralWall SinglePlayer_16p_GW_CompoundGateVillage
+aiStrategicArea.addWayPoint -24.9092/364.923/-27.8078 Vehicle SinglePlayer_16p_GW_CentralWall SinglePlayer_16p_GW_QuanCompound
+aiStrategicArea.addWayPoint -81.7379/365.762/-25.128 Vehicle SinglePlayer_16p_GW_CentralWall SinglePlayer_16p_GW_QuanCompound
+aiStrategicArea.addWayPoint -82.8283/365.762/-25.256 Vehicle SinglePlayer_16p_GW_CentralWall SinglePlayer_16p_GW_QuanCompound
+aiStrategicArea.addWayPoint -28.6555/365.229/-25.4441 Vehicle SinglePlayer_16p_GW_CompoundGateVillage SinglePlayer_16p_GW_FortressVillage
+aiStrategicArea.addWayPoint -29.3296/365.267/-26.7069 Vehicle SinglePlayer_16p_GW_FortressVillage SinglePlayer_16p_GW_QuanCompound

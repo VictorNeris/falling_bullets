@@ -1,0 +1,12 @@
+rem
+rem Settingsfile automatically saved by bf2
+rem
+SettingsManager.boolSet GSClPunkBuster 1
+SettingsManager.floatSet GSDefaultLatencyCompensation 0.100000
+SettingsManager.boolSet GSExtrapolateFrame 0
+SettingsManager.U32Set GSExtrapolationTime 1200
+SettingsManager.U32Set GSInterpolationTime 100
+SettingsManager.U32Set GSPerfLogAtPlayerCount 30
+SettingsManager.stringSet GSPlayerName "Victorovisky"
+SettingsManager.boolSet GSShowNetGraph 0
+SettingsManager.boolSet GSUseObjectCache 1

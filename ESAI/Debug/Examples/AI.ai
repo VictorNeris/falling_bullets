@@ -1,0 +1,36 @@
+
+rem ************** LEVEL SPECIFIC AI SETTINGS ***************************
+
+rem aiSettings.setViewDistance 300
+
+rem *** Init AI using current settings ****
+ai.init 2
+
+
+rem =======================-   Enable AI Debug Output   -===================================
+rem   Main Switch
+rem :
+aiDebug.draw 1
+rem %
+rem   Turn Off bot AI stats
+rem : 
+aiSettings.setDrawBotStats 0
+rem %
+rem   Limit the draw distance for bot targeting/pathfinding lines to 1m
+rem :
+aiSettings.setStatsViewDistance 1
+rem ========================================================================================
+
+rem *** Level specific AI pathfinding settings ****
+aiPathfinding.setActiveMap Infantry
+aiPathfinding.map.maxSlope 43
+aiPathfinding.map.addVehicleForClusterCost Infantery
+
+aiPathfinding.setActiveMap Vehicle
+aiPathfinding.map.maxSlope 28
+aiPathfinding.map.headClearance 3
+aiPathfinding.map.radius 2
+aiPathfinding.map.addVehicleForClusterCost Tank
+aiPathfinding.map.addVehicleForClusterCost ArmedCar
+
+rem ----------------------------------------------------------------------------

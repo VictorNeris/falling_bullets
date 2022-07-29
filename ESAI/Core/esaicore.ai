@@ -1,0 +1,655 @@
+rem                       *********************************************
+rem                       ***         ESAI Core Version 3.7         ***
+rem                       ****                                    *****
+rem                       ******           Eric Dobbs            ******
+rem                       ****************===========******************
+rem load constants :
+include esaivars.ai
+
+rem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rem =========================---       Conditions           ---======================================================
+
+rem ~~~ Check if number of friendly CPs  < number of enemy CPs  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition enemyGainingStrength Crisp "<-" Both ControlPoint ControlPoint
+aiStrategy.TargetValue -1.0
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if number of friendly CPs  = number of enemy CPs  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition strongAsEnemy Crisp "-" Both ControlPoint ControlPoint
+aiStrategy.setConditionStrength Required
+
+rem ~~~ Check if number of friendly CPs  > number of enemy CPs  ~~~
+rem '
+aiStrategy.createHeterogeneousCondition enemyLosingStrength Crisp ">-" Both ControlPoint ControlPoint
+aiStrategy.TargetValue 1.0
+aiStrategy.setConditionStrength Required
+
+rem ~~~~~~~~~~ All ESAI code must call the function below after creating  conditions. ~~~~~~~~~~~~~~~~~~~~~~
+rem ~~~                (This is required for loading multiple ai definition files)                      ~~~~
+rem '
+
+aiStrategy.CompleteConditions
+
+rem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rem ===============================---      Prerequisites     ---==================================================
+
+aiStrategy.createPrerequisite basicAttackPrereq
+aiStrategy.addCondition strongAsEnemy 0.25
+
+aiStrategy.createPrerequisite basicAttackHarderPrereq
+aiStrategy.addCondition strongAsEnemy 0.50
+
+aiStrategy.createPrerequisite basicAttackHardestPrereq
+aiStrategy.addCondition strongAsEnemy 0.75
+
+aiStrategy.createPrerequisite counterAttackPrereq
+aiStrategy.addCondition enemyGainingStrength 0.25
+
+aiStrategy.createPrerequisite counterAttackHarderPrereq
+aiStrategy.addCondition enemyGainingStrength 0.50
+
+aiStrategy.createPrerequisite counterAttackHardestPrereq
+aiStrategy.addCondition enemyGainingStrength 0.75
+
+aiStrategy.createPrerequisite pressAttackPrereq
+aiStrategy.addCondition enemyLosingStrength 0.25
+
+aiStrategy.createPrerequisite pressAttackHarderPrereq
+aiStrategy.addCondition enemyLosingStrength 0.50
+
+aiStrategy.createPrerequisite pressAttackHardestPrereq
+aiStrategy.addCondition enemyLosingStrength 0.75
+
+
+rem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rem ===================================-_  Strategies   _-===========================================================
+
+aiStrategy.createStrategy basicAttack1
+aiStrategy.Aggression c_basicAttack_aggression
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite basicAttackPrereq
+
+aiStrategy.createStrategy basicAttackHarder1
+aiStrategy.Aggression c_basicAttackHarder_aggression
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite basicAttackHarderPrereq
+
+aiStrategy.createStrategy basicAttackHardest1
+aiStrategy.Aggression c_basicAttackHardest_aggression
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite basicAttackHardestPrereq
+
+aiStrategy.createStrategy basicAttack2
+aiStrategy.Aggression c_basicAttack_aggression
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite basicAttackPrereq
+
+aiStrategy.createStrategy basicAttackHarder2
+aiStrategy.Aggression c_basicAttackHarder_aggression
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite basicAttackHarderPrereq
+
+aiStrategy.createStrategy basicAttackHardest2
+aiStrategy.Aggression c_basicAttackHardest_aggression
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite basicAttackHardestPrereq
+
+aiStrategy.createStrategy basicAttack3
+aiStrategy.Aggression c_basicAttack_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite basicAttackPrereq
+
+aiStrategy.createStrategy basicAttackHarder3
+aiStrategy.Aggression c_basicAttackHarder_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite basicAttackHarderPrereq
+
+aiStrategy.createStrategy basicAttackHardest3
+aiStrategy.Aggression c_basicAttackHardest_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite basicAttackHardestPrereq
+
+aiStrategy.createStrategy basicAttack4
+aiStrategy.Aggression c_basicAttack_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite basicAttackPrereq
+
+aiStrategy.createStrategy basicAttackHarder4
+aiStrategy.Aggression c_basicAttackHarder_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite basicAttackHarderPrereq
+
+aiStrategy.createStrategy basicAttackHardest4
+aiStrategy.Aggression c_basicAttackHardest_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite basicAttackHardestPrereq
+
+aiStrategy.createStrategy counterAttack3
+aiStrategy.Aggression c_counterAttack_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite counterAttackPrereq
+
+aiStrategy.createStrategy counterAttackHarder3
+aiStrategy.Aggression c_counterAttackHarder_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite counterAttackHarderPrereq
+
+aiStrategy.createStrategy counterAttackHardest3
+aiStrategy.Aggression c_counterAttackHardest_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite counterAttackHardestPrereq
+
+aiStrategy.createStrategy counterAttack4
+aiStrategy.Aggression c_counterAttack_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite counterAttackPrereq
+
+aiStrategy.createStrategy counterAttackHarder4
+aiStrategy.Aggression c_counterAttackHarder_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite counterAttackHarderPrereq
+
+aiStrategy.createStrategy counterAttackHardest4
+aiStrategy.Aggression c_counterAttackHardest_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite counterAttackHardestPrereq
+
+aiStrategy.createStrategy counterAttack5
+aiStrategy.Aggression c_counterAttack_aggression
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite counterAttackPrereq
+
+aiStrategy.createStrategy counterAttackHarder5
+aiStrategy.Aggression c_counterAttackHarder_aggression
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite counterAttackHarderPrereq
+
+aiStrategy.createStrategy counterAttackHardest5
+aiStrategy.Aggression c_counterAttackHardest_aggression
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite counterAttackHardestPrereq
+
+aiStrategy.createStrategy counterAttack6
+aiStrategy.Aggression c_counterAttack_aggression
+aiStrategy.NumberOfAttacks 6
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite counterAttackPrereq
+
+aiStrategy.createStrategy counterAttackHarder6
+aiStrategy.Aggression c_counterAttackHarder_aggression
+aiStrategy.NumberOfAttacks 6
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite counterAttackHarderPrereq
+
+aiStrategy.createStrategy counterAttackHardest6
+aiStrategy.Aggression c_counterAttackHardest_aggression
+aiStrategy.NumberOfAttacks 6
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite counterAttackHardestPrereq
+
+aiStrategy.createStrategy pressAttack2
+aiStrategy.Aggression c_pressAttack_aggression
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite pressAttackPrereq
+
+aiStrategy.createStrategy pressAttackHarder2
+aiStrategy.Aggression c_pressAttackHarder_aggression
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite pressAttackHarderPrereq
+
+aiStrategy.createStrategy pressAttackHardest2
+aiStrategy.Aggression c_pressAttackHardest_aggression
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite pressAttackHardestPrereq
+
+aiStrategy.createStrategy pressAttack3
+aiStrategy.Aggression c_pressAttack_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite pressAttackPrereq
+
+aiStrategy.createStrategy pressAttackHarder3
+aiStrategy.Aggression c_pressAttackHarder_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite pressAttackHarderPrereq
+
+aiStrategy.createStrategy pressAttackHardest3
+aiStrategy.Aggression c_pressAttackHardest_aggression
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite pressAttackHardestPrereq
+
+aiStrategy.createStrategy pressAttack4
+aiStrategy.Aggression c_pressAttack_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 60
+aiStrategy.setPrerequisite pressAttackPrereq
+
+aiStrategy.createStrategy pressAttackHarder4
+aiStrategy.Aggression c_pressAttackHarder_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite pressAttackHarderPrereq
+
+aiStrategy.createStrategy pressAttackHardest4
+aiStrategy.Aggression c_pressAttackHardest_aggression
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite pressAttackHardestPrereq
+
+aiStrategy.createStrategy pressAttack5
+aiStrategy.Aggression c_pressAttack_aggression
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_A Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_A Hostile
+aiStrategy.setStrategicObjectsModifier Base c_Base_A Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_A Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_A Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_A Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_A Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileA
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileA
+aiStrategy.TimeLimit 90
+aiStrategy.setPrerequisite pressAttackPrereq
+
+aiStrategy.createStrategy pressAttackHarder5
+aiStrategy.Aggression c_pressAttackHarder_aggression
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH1 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH1 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH1 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH1
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH1
+aiStrategy.setStrategicObjectsModifier Base c_Base_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirSpawner c_Airspawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier LandSpawner c_LandSpawner_AH1 Owned
+aiStrategy.setStrategicObjectsModifier AirField c_AirField_AH1 Owned
+aiStrategy.setStrategicObjectsModifier SupplyPoint  c_SupplyPoint_AH1 Owned
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite pressAttackHarderPrereq
+
+aiStrategy.createStrategy pressAttackHardest5
+aiStrategy.Aggression c_pressAttackHardest_aggression
+aiStrategy.NumberOfAttacks 5
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_NeutralCP_AH2 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCP_AH2 Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_Remote_AH2 Owned
+aiStrategy.setStrategicObjectsModifier Front c_Front_AH2
+aiStrategy.setStrategicObjectsModifier Safe c_Safe_AH2
+aiStrategy.setTreeModifier TTNFriendGroundMobile c_TTN_FriendGroundMobileAH
+aiStrategy.setTreeModifier TTNFriendAirMobile c_TTN_FriendAirMobileAH
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite pressAttackHardestPrereq

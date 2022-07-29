@@ -1,0 +1,75 @@
+rem             *********************************************
+rem             ***       ESAI Core v3.7 Constants        ***
+rem             ****                                    *****
+rem             ******          Eric Dobbs             ******
+rem             ****************~~~~~~~~~~~******************
+
+rem <------------------------------------------------------------------------->
+rem              New constants for ESAI v4.2, Core v3.7 :
+
+rem Neutral/Hostile ControlPoint Temperature multipliers
+rem :
+const c_HostileCP_A    = 10.0
+const c_NeutralCP_A    = 14.0
+const c_HostileCP_AH1  = 14.0
+const c_NeutralCP_AH1  = 18.0
+const c_HostileCP_AH2  = 16.0
+const c_NeutralCP_AH2  = 20.0
+
+rem SA Temperature Multipliers (Attack,AttackHarder)
+rem :
+const c_Base_A          = 3.0
+const c_Airspawner_A    = 1.5
+const c_AirField_A      = 2.0
+const c_LandSpawner_A   = 1.35
+const c_SupplyPoint_A   = 1.35
+const c_Base_AH1        = 1.5
+const c_Airspawner_AH1  = 1.2
+const c_AirField_AH1    = 1.35
+const c_LandSpawner_AH1 = 1.15
+const c_SupplyPoint_AH1 = 1.15
+
+rem  SA Temperature Multipliers (AttackHarder,AttackHardest)
+rem :
+const c_Front_AH1   = 2.5
+const c_Safe_AH1    = 0.5
+const c_Remote_AH1  = 0.35
+const c_Front_AH2   = 5.0
+const c_Safe_AH2    = 0.25
+const c_Remote_AH2  = 0.1
+
+rem Aggression Levels ([Basic|Counter|Press] Attack,AttackHarder,AttackHardest)
+rem :
+const c_basicAttack_aggression          = 0.75
+const c_basicAttackHarder_aggression    = 0.80
+const c_basicAttackHardest_aggression   = 0.90
+
+const c_pressAttack_aggression        = 0.85
+const c_pressAttackHarder_aggression  = 0.90
+const c_pressAttackHardest_aggression = 0.98
+
+const c_counterAttack_aggression        = 0.88
+const c_counterAttackHarder_aggression  = 0.94
+const c_counterAttackHardest_aggression = 0.99
+
+rem Tree Temperature Node Multipliers
+rem :
+const c_TTN_FriendGroundMobileA = 1.25
+const c_TTN_FriendGroundMobileAH = 1.5
+const c_TTN_FriendAirMobileA = 1.5
+const c_TTN_FriendAirMobileAH = 2.0
+
+rem <-------------------------------------------------------------------------------------------------------------------->
+rem This constants in this section are now deprecated, but are retained for compatability with existing plugins
+rem :
+const c_HostileCPM = 12.0
+const c_NeutralCPM = 16.0
+const c_FrontM = 5.0
+const c_SafeM = 0.50
+const c_RemoteM = 0.5
+const c_BaseM = 1.5
+const c_AirspawnerM = 1.2
+const c_AirFieldM = 1.35
+const c_LandSpawnerM = 1.2
+const c_SupplyPointM = 1.2
+rem ----------------------------------------------------------------------------------------------------------------------

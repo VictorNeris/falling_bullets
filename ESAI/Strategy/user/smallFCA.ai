@@ -1,0 +1,29 @@
+rem -- ESAI Small Map FCA Strategy Set ----
+
+rem Team 1
+ai.addSAIStrategy 1 focusedCounterAttack
+ai.addSAIStrategy 1 basicAttack1
+ai.addSAIStrategy 1 basicAttackHarder1
+ai.addSAIStrategy 1 basicAttackHardest1
+ai.addSAIStrategy 1 pressAttack2
+ai.addSAIStrategy 1 pressAttackHarder2
+ai.addSAIStrategy 1 pressAttackHardest2
+ai.addSAIStrategy 1 counterAttack3
+ai.addSAIStrategy 1 counterAttackHarder3
+ai.addSAIStrategy 1 counterAttackHardest3
+ai.addSAIStrategy 1 defendMap
+ai.addSAIStrategy 1 lastStand
+
+rem Team2
+ai.addSAIStrategy 2 focusedCounterAttack
+ai.addSAIStrategy 2 basicAttack1
+ai.addSAIStrategy 2 basicAttackHarder1
+ai.addSAIStrategy 2 basicAttackHardest1
+ai.addSAIStrategy 2 pressAttack2
+ai.addSAIStrategy 2 pressAttackHarder2
+ai.addSAIStrategy 2 pressAttackHardest2
+ai.addSAIStrategy 2 counterAttack3
+ai.addSAIStrategy 2 counterAttackHarder3
+ai.addSAIStrategy 2 counterAttackHardest3
+ai.addSAIStrategy 2 defendMap
+ai.addSAIStrategy 2 lastStand

@@ -1,0 +1,21 @@
+rem ----- Host 
+rem ---------------------------------------------------------------------------- 
+
+rem radius 45, centre -636/92/-31
+aiPathfinding.createMap Infantry
+aiPathfinding.map.maxSlope 30
+aiPathfinding.map.headClearance 1.9
+aiPathfinding.map.radius 0.25
+aiPathfinding.map.allowedHeightDiff 2.5
+
+aiPathfinding.createMap Vehicle
+aiPathfinding.map.maxSlope 20
+aiPathfinding.map.headClearance 3.5
+aiPathfinding.map.radius 3.5
+aiPathfinding.map.allowedHeightDiff 5.0
+
+aiPathfinding.maxWaterDepth 0.7
+
+aiPathfinding.traceMap Infantry
+
+rem ----------------------------------------------------------------------------

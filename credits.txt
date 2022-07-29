@@ -1,0 +1,163 @@
+Weapons:
+Mk18 Suppressed for US SpecOps: Model from Insurgency Sandstorm, textures by noodum, JAX, and HunterAZR with edits by phale, animations by Eversmen, edited by phale
+M40A5 for US Sniper: model from BF3/4, textures from BF4, desert texture by Disruptor, texture edits by phale, animations by EnemySniper
+M16A4 for US Assault: Model from Insurgency, textures by noodum, JAX, and HunterAZR with edits by phale, animations by Develop013
+M249 Holo for US Support: model from BF3/4, textures from BF4, desert texture by JAX, texture edits by phale, animations by EnemySniper
+R870 for US Engineer: model and textures from P4F, animations by 7game
+M4 for US Medic: Model from Insurgency Sandstorm, textures by noodum, JAX, and HunterAZR with edits by phale, animations by Develop013
+MP5A3 for US AT: model by MihR, textures from BF3 and P4F, mesh edits by phale, animations by Develop013, reload animation by 7game
+M45 (M1911) from Modern Warfare Remastered, ported by phale, animations by Develop013
+M9 model by Kimono, textures by Millenia, port and texture edits by phale, animations by EnemySniper
+M9A1 S-TAC from CoD Ghosts, port and animations by Develop013, texture edits by phale
+44 Magnum from BF4, texture edits by phale, animations by EnemySniper
+M320 from BF4, animations by Develop013 and Ponysaurus
+SMAW from BF4, animations by Develop013
+C4 textures from BF4, animations by Tuerix
+Repair tool model and textures from BF4, animations by Tuerix
+
+HK416 Suppressed for SEAL SpecOps: model and textures from P4F, animations by EnemySniper
+M95 for SEAL Sniper: model and textures from P4F, animations by Develop013, bolt and reload animations by Chad509
+SCAR-H Holo for SEAL Assault: model from BF4, textures by JohannLiebert, animations by Juantu, edited by phale
+M60E4 for SEAL Support: model and textures from P4F, animations by EnemySniper
+AA-12 for SEAL Engineer: model and textures from MOH:WF, animations by Develop013, edited by phale
+HK416 for SEAL Medic: model from BF4, textures by MihR and HarenoAntyo, animations by Eversmen with edits by phale, reload animation by Develop013
+P90 for SEAL AT: model from BF4, textures by P4F and HarenoAntyo, texture edits by phale, animations by Develop013
+P226R from BF4, animations by EnemySniper
+SRAW from BF4, animations by Ponysaurus
+
+MP5SD3 for EU SpecOps: model by Seph, textures by BULL5H1T, animations by Develop013, reload animation by 7game
+L96A1 for EU Sniper: model by ImbrokeRU, textures by Millenia, texture edits by phale, animations by Juantu
+F2000 for EU Assault: model and textures from MOH2010, port by Striker105, mesh edits by phale, animations by Develop013
+Minimi Para for EU Support: model and textures from Survarium, animations by Develop013
+Benelli M4 for EU Engineer: model by Kukru, mesh edits by phale, texture edits by phale and HarenoAntyo, port by ReapFreak, animations by EnemySniper with edits by phale
+Mateba Model 6 Unica for EU Engineer: model and textures from BF4, animations by TUERIX, edits by phale
+AUG A3 for EU Medic: model from BF4, port and textures by MihR, animations by EnemySniper
+MP7A1 for EU AT: model and textures from BF4, desert texture by HarenoAntyo, animations by Develop013
+Glock 17 by Tigg, animations by Eversmen
+MBT LAW from BF4, animations by Ponysaurus
+
+AKS-74U Suppressed for MEC SpecOps: model and textures by Millenia, animations by Strifer, port by Yak43
+SVD for MEC Sniper: model and textures from P4F, mesh edits by Lt. Nomad and phale, animations by Develop013
+G3A3 for MEC Assault: model and textures from Modern Warfare Remastered, textures by Millenia, mesh edits by phale, animations by Develop013
+MG3 for MEC Support: model and textures from FC4, port and mesh hack by phale, animations by Develop013
+Saiga-12 for MEC Engineer: model and textures from BF4, texture edits by phale, animations by Develop013
+KH-2002 for MEC Medic: model and textures from BF3, animations by EnemySniper
+Uzi for MEC AT: model from P4F, textures by MihR, animations by Develop013
+P226 from P4F, animations by EnemySniper
+Desert Eagle model by Toasty Fresh, textures by Millenia, animations by Yak43
+Grenade Launcher mesh by Lt. Nomad, animations by Develop013
+RPG-7 model and textures by Red Fox, mesh edits by phale, animations by EnemySniper
+
+QBZ-95B Suppressed for PLA SpecOps: model and textures from COD: Online, animations by EnemySniper and Ponysaurus
+QBU-88 for PLA Sniper: model and textures from BF4, texture edits by phale, animations by EnemySniper
+QBZ-95 for PLA Assault: model and textures from COD: Online, animations by EnemySniper and Ponysaurus
+QBB-95 for PLA Support: model and textures from BF4, animations by Develop013
+Hawk for PLA Engineer: model and textures from BF4, animations by EnemySniper
+QBZ-03 for PLA Medic: model from Insurgency Sandstorm, magazine from COD: Online, mesh edits by phale, animations by EnemySniper and Ponysaurus
+QBZ-95B for PLA AT: model and textures from COD: Online, animations by EnemySniper and Ponysaurus
+QSZ-92 from BF4, texture edits by phale, animations by Develop013 and Ponysaurus
+MP412 REX model by Freefall, textures by Millenia, animations by EnemySniper
+
+VZ58 Suppressed for Insurgent SpecOps: model from NMRIH, textures by 11.11.11, animations by Develop013
+Model 1894 for Insurgent Sniper: model from BF4, mesh and texture edits by phale, animations by Develop013
+Galil ARM 7.62 for Insurgent Assault: model and textures by Millenia, animations by EnemySniper
+PKM for Insurgent Support: model and textures from P4F, animations by EnemySniper
+Protecta for Insurgent Engineer: mesh hack by Lt. Nomad, textures by LONer1TM, texture edits by phale, animations by EnemySniper
+AKM for Insurgent Medic: model and textures by Frimenitnet, animations by Develop013
+AKS-74U for Insurgent AT: model and textures by Millenia, animations by Strifer, port by Yak43
+PB-6B9 model by GR3B3N, textures by Millenia, animations by Develop013
+M1911 model by Freefall, textures by Millenia, animations by Develop013
+TOZ-66 Sawed Off by SAM-61, textures by Millenia, animations by Develop013
+S&W Model 10 model by Harry Ridgeway, textures by Millenia, animations by EnemySniper and Ponysaurus
+Makarov model by MTindle, textures by Millenia, animations by Develop013
+
+AS Val for Spetsnaz SpecOps: model and textures by SAM61, animations by EnemySniper, zoom animations by Eversmen
+SV-98 for Spetsnaz Sniper: model and textures from BF4, animations by EnemySniper
+AN-94 for Spetsnaz Assault: model and textures from BF4, animations by EnemySniper
+PKP Pecheneg for Spetsnaz Support: model and textures from BF4, animations by EnemySniper and Ponysaurus
+Saiga-12 for Spetsnaz Engineer: model and textures from BF4, texture edits by phale, animations by Develop013
+AEK-971 for Spetsnaz Medic: model from BF4, textures by 11.11.11, animations by Juantu
+PP-19 Bizon for Spetsnaz AT: model and textures by Paul68Rageous, port by Yak43, mesh hack by phale, animations by Develop013
+GSh-18 by SAM61, textures by Millenia, animations by MrBrightside, port by Yak43
+MP443 by Blackmetal, animations by Develop013
+
+M67 grenade model and textures by Thanez, animations by Develop013, texture and animation edits by phale
+
+Browning M2 model and textures from BF3
+Kord and Type 85 model improvements by Lt. Nomad
+
+RUSH GAMEMODE BY WORLDLIFE123
+
+Sounds/Effects:
+Distant sound system by Dodek96
+Distant sound effects by Dodek96 and Insurgency Sandstorm
+Various fire sounds by HarenoAntyo
+Various reload sounds from Insurgency Sandstorm and BF4
+
+Muzzle effects by phale with textures from Insurgency
+Impact effects by Dukern
+Soldier hit sounds by Kestrel
+Fire effects from P4F
+Improved shell ejection meshes by Lt. Nomad, textures by phale
+Menu music: The Theater, The Dream, The Battlefield by Remo Baldi
+Loading music: original sound from BF4 recorded and edited by Threatty, converted to BF2 by phale
+
+Soldiers:
+USMC from BF3, ported by Yak43, texture edits by phale
+MEC improved 1p models by Yak43
+MEC textures by The_Obscure, edited by phale
+SEALs from MOH2010, ported by Yak43
+Spetsnaz textures by Milosz
+Insurgents from Insurgency, ported by Yak43, textures by Warrior J, edits by phale
+EU 1p textures by Digital Assassin
+PLA 1p textures by Digital Assassin and B4RR3L
+
+UI:
+BF4-style fonts and nametag system by AGM114
+HD HUD elements by memb3r
+HD fonts by TBob
+HUD blood effect by CQB Japan and Kestrel
+Numerical health indicator from Insurgent Strike
+
+Maps:
+Dragon Valley lighting by Sgt. Prof
+FuShe Pass lighting by Frosty98B
+Great Wall lighting by HarenoAntyo
+Gulf of Oman lighting by Sgt. Prof
+Highway Tampa lighting by Sgt. Prof
+Kubra Dam lighting by Sgt. Prof
+Mashtuur City lighting by JONES
+Midnight Sun lighting by TheObscure and Sgt. Prof
+Operation Harvest lighting by Final War
+Operation Road Rage lighting by Sgt. Prof
+Scorched Earth lighting by 7game
+Road to Jalalabad lighting by Sgt. Prof
+Sharqi Peninsula lighting by Sgt. Prof
+Songhua Stalemate lighting by TheObscure
+Strike at Karkand lighting by tim_z
+Taraba Quarry lighting by Sgt. Prof
+Wake Island lighting by Sgt. Prof
+Zatar Wetlands lighting by Sgt. Prof
+
+Ghost Town lighting by Sgt. Prof
+Mass Destruction lighting by Sgt. Prof
+Warlord lighting by Sgt. Prof
+
+A Bad Surprise by theDark
+Devil’s Perch Dawn by TheObscure
+Dherynia by Frosty98B
+Gauntlet by tim_z
+Husky by imtheheadhunter
+Kirkuk Basin by theDark
+Kursk by imtheheadhunter
+Majidah Hill by Logan
+Operation Black Hawk Down by pro.bf2|Du$t, lighting by tim_z
+Operation Clean Sweep Day by TheObscure
+Operation Compton by Ga-Knomboe-Boy, lighting by Final War
+Operation Yellow Dragon by SPFreak
+Rebellion by imtheheadhunter
+Streets originally by SPFreak, remade by round300k
+Smyrna originally by Maranello, remade by round300k
+Urban Decay by imtheheadunter
+Xinjiang Conflict by imtheheadhunter
+Warlord’s Perch by Outlawz

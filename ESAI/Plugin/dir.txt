@@ -1,0 +1,3 @@
+\default --> ESAI default plugins: "grabNeutrals, endGame"
+
+\user    --> User created ESAI plugins go here. Now contains several sample plugins, and extra conditions in file `userConditions.ai`.

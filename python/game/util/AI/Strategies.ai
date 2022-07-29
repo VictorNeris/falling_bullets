@@ -1,0 +1,65 @@
+beginrem
+
+This script is originally from Void's "SAI Scripting Guide" Example-Two
+Modified by worldlife
+For rush mode
+endrem
+
+rem ------------ THE CONDITIONS ------------------------
+rem -= Check if there is at least one enemy control point
+aiStrategy.createConstantCondition enemyHasAtLeastOneControlPoint Crisp ">-" Enemy ControlPoint 1
+aiStrategy.setConditionStrength Required
+
+rem -= Check if enemy has no control points =-
+aiStrategy.createConstantCondition friendlyHasAllControlPoints Crisp "-" Enemy ControlPoint 0
+aiStrategy.setConditionStrength Required
+
+
+rem -= Check if there is at least one neutral area =-
+aiStrategy.createConstantCondition atLeastOneNeutral Crisp ">-" Friendly NumberOfNeutralAreas 1
+aiStrategy.setConditionStrength Required
+
+
+rem -= Check if there are no neutral areas  =-
+aiStrategy.createConstantCondition noNeutrals Crisp "-" Friendly NumberOfNeutralAreas 0
+aiStrategy.setConditionStrength Required
+
+
+aiStrategy.createConstantCondition friendlyHasControlPoints Crisp ">-" Friendly ControlPoint 1
+aiStrategy.setConditionStrength Required
+
+rem  --------- The PREREQUISITES  -----------------------
+
+aiStrategy.createPrerequisite DefendPrereq
+aiStrategy.addCondition friendlyHasControlPoints 5.0
+
+aiStrategy.createPrerequisite AttackPrereq
+aiStrategy.addCondition friendlyHasControlPoints 5.0
+
+rem ------------ THE STRATEGIES -------------
+
+aiStrategy.createStrategy Defend
+aiStrategy.Aggression 0.9
+aiStrategy.NumberOfAttacks 0
+aiStrategy.NumberOfDefences 2
+aiStrategy.setStrategicObjectsModifier ControlPoint 50.0 Owned
+aiStrategy.setStrategicObjectsModifier ControlPoint 2.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint 0.1 Hostile
+rem aiStrategy.setTreeModifier TTNFriendGroundFixed 5.0
+aiStrategy.setPrerequisite DefendPrereq
+
+aiStrategy.createStrategy Attack
+aiStrategy.Aggression 0.9
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint 5.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint 50.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint 0.5 Owned
+rem aiStrategy.setTreeModifier TTNFriendGroundFixed 5.0
+aiStrategy.setPrerequisite AttackPrereq
+
+rem ----------- ASSIGN THE STRATEGIES TO BOTH TEAMS ------------------
+
+ai.addSAIStrategy 1 Defend
+
+ai.addSAIStrategy 2 Attack

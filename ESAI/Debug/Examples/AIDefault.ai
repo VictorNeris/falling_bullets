@@ -1,0 +1,33 @@
+echo *****************************************************************************************
+echo AIDefault.ai ****************************************************************************
+echo *****************************************************************************************
+
+aiSettings.setNSides 2
+aiSettings.setAutoSpawnBots 1
+
+aiSettings.overrideMenuSettings 1
+aiSettings.setMaxNBots 64
+aiSettings.maxBotsIncludeHumans 0
+aiSettings.setBotSkill 0.9
+
+rem =======================-   Enable AI Debug Output   -===================================
+rem   Main Switch
+rem :
+aiDebug.draw 1
+rem %
+rem   Turn Off bot AI stats
+rem : 
+aiSettings.setDrawBotStats 0
+rem %
+rem   Limit the draw distance for bot targeting/pathfinding lines to 1m
+rem :
+aiSettings.setStatsViewDistance 1
+rem ========================================================================================
+
+run BotNames.ai
+
+aiSettings.setInformationGridDimension 32
+
+run AIPathFinding.ai
+
+rem EOF

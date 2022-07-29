@@ -1,0 +1,16 @@
+rem ESAI Strategy for BF2SP64 map Wake Island 64
+
+rem -= load Enhanced SAI core =-
+run /mods/bf2/ESAI/Core/esaicore.ai
+
+rem -= load Enhanced SAI default plugins =-
+run /mods/bf2/ESAI/Plugin/default/grabNeutrals.ai
+
+rem -= load user plugins =-
+run /mods/bf2/ESAI/Plugin/user/userConditions.ai
+run /mods/bf2/ESAI/Plugin/user/focusedCounterAttack.ai
+run /mods/bf2/ESAI/Plugin/user/pushForward.ai
+run /mods/bf2/ESAI/Plugin/user/wakeIsland.ai
+
+rem -= load strategy =-
+run /mods/bf2/ESAI/Strategy/user/wakeIsland.ai

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle pyart_explosion_effect
+ObjectTemplate.createdInEditor 1
+
+include pyart_explosion_effect.tweak

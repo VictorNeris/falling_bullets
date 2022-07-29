@@ -1,0 +1,26 @@
+include ..\..\Core\esaivars.ai
+
+aiStrategy.createPrerequisite airAttackGroundPrereq
+aiStrategy.addCondition friendlyHasBase_R 10.0
+rem aiStrategy.addCondition groundTacticalAdvantage_A 4.0
+
+aiStrategy.createStrategy airAttackGround
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      c_NeutralCPM Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      c_HostileCPM Hostile
+aiStrategy.setStrategicObjectsModifier Front c_FrontM
+rem aiStrategy.setStrategicObjectsModifier Safe c_SafeM
+aiStrategy.setStrategicObjectsModifier AirField c_AirFieldM
+rem -----------------------------------------------------------------
+aiStrategy.setTreeModifier TTNFriendAirMobile 4.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendAirMobile All 2.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendAirMobile CSTAirPlane 0.5
+aiStrategy.setTreeModifierCombatStrength TTNFriendAirMobile CSTHelicopter 0.25
+aiStrategy.setTreeModifierCombatStrength TTNFriendAirMobile CSTInfantry 3.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendAirMobile CSTLightArmour 6.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendAirMobile CSTHeavyArmour 8.0
+aiStrategy.setTreeModifier TTNHostileGroundMobile 8.0
+aiStrategy.TimeLimit 360
+aiStrategy.setPrerequisite airAttackGroundPrereq

@@ -1,0 +1,23 @@
+1.Put this aiArty folder in [mod folder]\python\game\gamemodes
+
+2.In gpm_cq.py/gpm_coop.py or any gamemode you want to install:
+(1)find:
+from bf2 import g_debug
+add "import aiArty" below
+(2)find:
+def init():
+add "aiArty.init()" below
+like this:
+def init():
+	aiArty.init()	
+(3)find:
+def deinit():
+add "aiArty.deinit()" below
+like this:
+def deinit():
+	aiArty.deinit()
+WATCH TABS!
+
+Or just use the gpm_cq.py/gpm_coop.py I provided if the .py files of your mod is the same as vanilla bf2.
+
+3.Start your game and play in the rain of artillery!

@@ -1,0 +1,13 @@
+naming conventions:
+
+[mapSize][extra strategy key]...[extra strategy key].ai
+
+Extra Strategy Keys:
+
+FCA - focusedCounterAttack
+PF  - pushForward
+PB  - protectBase
+
+the `[mapSize]airAttack.ai` Strategy Sets are for testing an experimental `airAttackGround` strategy, which doesn't seem to work well.
+
+

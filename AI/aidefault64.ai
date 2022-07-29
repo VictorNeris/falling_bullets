@@ -1,0 +1,34 @@
+echo *****************************************************************************************
+echo AIDefault.ai ****************************************************************************
+echo *****************************************************************************************
+
+aiSettings.setNSides 2
+aiSettings.setAutoSpawnBots 1
+
+REM Original AIX bot settings in case you need to copy and paste below
+REM aiSettings.overrideMenuSettings 1
+REM aiSettings.setMaxNBots 31
+REM aiSettings.maxBotsIncludeHumans 0
+REM aiSettings.setBotSkill 0.70
+REM
+REM *** keep the above lines intact in case you need to copy/paste them below ***
+
+REM *** make changes here ***
+REM *** max possible bots in assigned squads is 107, any more than 107 bots will not receive orders from commander
+REM *** overrideMenuSettings 1 must be set, otherwise mod and map defaults will take precedence ***
+REM *** botskill range is .10 to 1.00 ***
+REM
+
+aiSettings.overrideMenuSettings 1
+aiSettings.setMaxNBots 64
+aiSettings.maxBotsIncludeHumans 0
+aiSettings.setBotSkill 0.1
+
+
+run BotNames.ai
+
+aiSettings.setInformationGridDimension 48
+
+run AIPathFinding.ai
+
+rem EOF

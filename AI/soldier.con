@@ -1,0 +1,5 @@
+rem --> Requires Kit, Side and Name as argument <--
+
+rem *** Create Bot and attach to  ***
+game.createAndSpawnAIPlayer v_arg3 v_arg2 v_arg1 
+ai.addBot v_arg3 v_arg2 StandardWeights NoEquipment

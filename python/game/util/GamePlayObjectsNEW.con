@@ -1,0 +1,1885 @@
+rem *** Created with FiRe's CON parser ***
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanCompound_LightJeep
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanCompound_LightJeep
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 JEP_PARATROOPER
+ObjectTemplate.setObjectTemplate 2 xpak2_faav
+ObjectTemplate.minSpawnDelay 300
+ObjectTemplate.maxSpawnDelay 300
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanCompound_ATS
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanCompound_ATS
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 ATS_HJ8
+ObjectTemplate.setObjectTemplate 2 ATS_TOW
+ObjectTemplate.minSpawnDelay 300
+ObjectTemplate.maxSpawnDelay 300
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanCompound_HeavyJeep
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanCompound_HeavyJeep
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 JEP_NANJING
+ObjectTemplate.setObjectTemplate 2 xpak2_hmmwv
+ObjectTemplate.minSpawnDelay 300
+ObjectTemplate.maxSpawnDelay 300
+
+ObjectTemplate.create ObjectSpawner Singleplayer_16p_GW_CompundWall_UAV
+ObjectTemplate.activeSafe ObjectSpawner Singleplayer_16p_GW_CompundWall_UAV
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 aircontroltower_eu
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create ObjectSpawner Singleplayer_16p_GW_CompundWall_ART
+ObjectTemplate.activeSafe ObjectSpawner Singleplayer_16p_GW_CompundWall_ART
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 usart_lw155
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create ObjectSpawner Singleplayer_16p_GW_CompundWall_Radar
+ObjectTemplate.activeSafe ObjectSpawner Singleplayer_16p_GW_CompundWall_Radar
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 mobileradar_eu_dest
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_0_5
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_0_5
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 CH_BIPOD
+ObjectTemplate.setObjectTemplate 2 US_BIPOD
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_AAV
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_AAV
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 aav_type95
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.spawnDelayAtStart 1
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_HeavyJeep
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_HeavyJeep
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 JEP_NANJING
+ObjectTemplate.setObjectTemplate 2 xpak2_hmmwv
+ObjectTemplate.minSpawnDelay 300
+ObjectTemplate.maxSpawnDelay 300
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_LightJeep
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_LightJeep
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 JEP_PARATROOPER
+ObjectTemplate.setObjectTemplate 2 xpak2_faav
+ObjectTemplate.minSpawnDelay 300
+ObjectTemplate.maxSpawnDelay 300
+ObjectTemplate.maxNrOfObjectSpawned 2
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_ATS
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_ATS
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 ATS_HJ8
+ObjectTemplate.setObjectTemplate 2 ATS_TOW
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanTemple_SMG
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanTemple_SMG
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 CH_BIPOD
+ObjectTemplate.setObjectTemplate 2 US_BIPOD
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanTemple_ATS
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanTemple_ATS
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 ATS_HJ8
+ObjectTemplate.setObjectTemplate 2 ATS_TOW
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanTemple_SMG_0
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanTemple_SMG_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 CH_BIPOD
+ObjectTemplate.setObjectTemplate 2 US_BIPOD
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanTemple_7_0
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanTemple_7_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 CH_BIPOD
+ObjectTemplate.setObjectTemplate 2 US_BIPOD
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanTemple_0_3
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanTemple_0_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 CH_BIPOD
+ObjectTemplate.setObjectTemplate 2 US_BIPOD
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_CompoundGateVillage_LightJeep
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_CompoundGateVillage_LightJeep
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 JEP_PARATROOPER
+ObjectTemplate.setObjectTemplate 2 xpak2_faav
+ObjectTemplate.minSpawnDelay 300
+ObjectTemplate.maxSpawnDelay 300
+ObjectTemplate.maxNrOfObjectSpawned 2
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanCompound_CH_US_AAV
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanCompound_CH_US_AAV
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 AAV_TYPE95
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.spawnDelayAtStart 1
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_CH_US_ART
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_CH_US_ART
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 ars_d30
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_CH_UAV
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_CH_UAV
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 aircontroltower_chi
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_CH_Radar
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_CH_Radar
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 mobileradar_ch_dest
+ObjectTemplate.minSpawnDelay 360
+ObjectTemplate.maxSpawnDelay 360
+ObjectTemplate.teamOnVehicle 1
+
+if v_arg1 == host
+
+Object.create SinglePlayer_16p_GW_QuanCompound_LightJeep
+Object.absolutePosition 8.087/360.727/19.554
+Object.rotation 89.963/0.000/0.000
+Object.setControlPointId 411
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_ATS
+Object.absolutePosition 8.008/360.726/56.010
+Object.rotation 151.900/0.000/0.000
+Object.setControlPointId 411
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_HeavyJeep
+Object.absolutePosition 28.443/360.727/34.830
+Object.rotation -90.000/0.000/0.000
+Object.setControlPointId 411
+Object.layer 1
+
+Object.create Singleplayer_16p_GW_CompundWall_UAV
+Object.absolutePosition 73.111/363.183/40.242
+Object.rotation -153.227/-1.495/-1.037
+Object.setControlPointId 401
+Object.layer 1
+
+Object.create Singleplayer_16p_GW_CompundWall_ART
+Object.absolutePosition 79.125/363.867/26.334
+Object.rotation -74.702/-6.305/-7.540
+Object.setControlPointId 401
+Object.layer 1
+
+Object.create Singleplayer_16p_GW_CompundWall_Radar
+Object.absolutePosition 82.597/358.290/-22.318
+Object.rotation -33.090/-2.347/4.637
+Object.setControlPointId 401
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0_5
+Object.absolutePosition -183.645/375.162/-51.776
+Object.rotation 90.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_AAV
+Object.absolutePosition -207.962/365.762/18.186
+Object.rotation 90.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_HeavyJeep
+Object.absolutePosition -206.271/365.762/-0.780
+Object.rotation 90.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_LightJeep
+Object.absolutePosition -191.874/365.762/-4.993
+Object.rotation 0.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_ATS
+Object.absolutePosition -224.997/365.762/32.005
+Object.rotation 120.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_SMG
+Object.absolutePosition -132.425/375.119/-51.110
+Object.rotation -90.000/0.000/0.000
+Object.setControlPointId 416
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_ATS
+Object.absolutePosition -91.040/365.762/27.024
+Object.rotation -120.000/0.000/0.000
+Object.setControlPointId 416
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_SMG_0
+Object.absolutePosition -94.259/375.134/-43.099
+Object.rotation 90.000/0.000/0.000
+Object.setControlPointId 416
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_7_0
+Object.absolutePosition -123.068/375.115/-40.227
+Object.rotation 0.000/0.000/0.000
+Object.setControlPointId 416
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_0_3
+Object.absolutePosition -158.007/368.853/-70.140
+Object.rotation 0.000/0.000/0.000
+Object.setControlPointId 416
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_LightJeep
+Object.absolutePosition -25.169/362.567/-78.515
+Object.rotation 0.000/0.000/0.000
+Object.setControlPointId 406
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_CH_US_AAV
+Object.absolutePosition 28.267/360.727/15.111
+Object.rotation -89.732/0.000/0.000
+Object.setControlPointId 411
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_CH_US_ART
+Object.absolutePosition -237.907/365.747/-42.699
+Object.rotation 94.901/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_CH_UAV
+Object.absolutePosition -233.491/365.749/-2.663
+Object.rotation 90.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_CH_Radar
+Object.absolutePosition -243.536/376.695/8.401
+Object.rotation 90.000/0.000/0.000
+Object.setControlPointId 414
+Object.layer 1
+
+endIf
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_0
+Object.absolutePosition 36.136/360.762/22.970
+Object.rotation -70.588/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_0_0
+Object.absolutePosition 37.561/360.727/52.325
+Object.rotation -77.726/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_3
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_0_3
+Object.absolutePosition -4.686/360.727/44.773
+Object.rotation 74.180/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_4
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_4
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_0_4
+Object.absolutePosition -0.680/360.967/60.542
+Object.rotation 152.657/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_5
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_0_5
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_0_5
+Object.absolutePosition 7.020/371.766/84.549
+Object.rotation 118.111/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_8
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_8
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_8
+Object.absolutePosition 14.859/371.555/87.534
+Object.rotation 169.731/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_0
+Object.absolutePosition -57.483/375.767/-82.978
+Object.rotation 24.139/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_1
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_1
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_1
+Object.absolutePosition -64.147/380.791/-68.760
+Object.rotation 23.262/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_0_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_0_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_0_0
+Object.absolutePosition -54.746/375.767/-62.674
+Object.rotation -34.422/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_0_1
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_0_1
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_0_1
+Object.absolutePosition -63.977/380.784/14.690
+Object.rotation 162.455/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_0_2
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_0_2
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_0_2
+Object.absolutePosition -53.075/375.767/16.185
+Object.rotation -151.337/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_0_3
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_0_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_0_3
+Object.absolutePosition -56.472/375.767/35.936
+Object.rotation 168.829/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanCompound_10
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanCompound_10
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 410
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_10
+Object.absolutePosition 22.178/361.691/66.786
+Object.rotation -148.234/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_7
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_7
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_7
+Object.absolutePosition -59.682/375.767/-17.470
+Object.rotation 120.960/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_8
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_8
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_8
+Object.absolutePosition -57.127/375.767/-27.653
+Object.rotation -7.006/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0
+Object.absolutePosition -195.997/365.762/-12.995
+Object.rotation -36.772/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0_0
+Object.absolutePosition -215.541/365.762/-18.644
+Object.rotation 57.460/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_1
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_1
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0_1
+Object.absolutePosition -213.997/365.762/4.005
+Object.rotation 136.688/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_2
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_2
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0_2
+Object.absolutePosition -181.836/365.762/11.841
+Object.rotation -146.813/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_3
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0_3
+Object.absolutePosition -218.881/365.762/16.487
+Object.rotation 157.386/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_4
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_0_4
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_0_4
+Object.absolutePosition -184.997/365.762/0.005
+Object.rotation -84.395/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_0
+Object.absolutePosition -27.987/362.566/-68.002
+Object.rotation 106.091/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_0
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_0
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_0_0
+Object.absolutePosition -11.868/362.526/-77.080
+Object.rotation -19.867/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_1
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_1
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_0_1
+Object.absolutePosition -15.360/364.045/-52.712
+Object.rotation -179.412/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_2
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_2
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_0_2
+Object.absolutePosition -14.313/362.583/-45.076
+Object.rotation 174.008/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_3
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_0_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_0_3
+Object.absolutePosition -38.987/362.662/-78.002
+Object.rotation 51.104/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_1
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_1
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_1
+Object.absolutePosition -130.600/367.364/-79.986
+Object.rotation -57.609/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_2
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_2
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_2
+Object.absolutePosition -184.411/367.364/-79.681
+Object.rotation 57.197/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_3
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_3
+Object.absolutePosition -131.744/367.364/-38.566
+Object.rotation -132.553/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_4
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_4
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_4
+Object.absolutePosition -184.761/367.364/-38.258
+Object.rotation 132.279/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_5
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_5
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_5
+Object.absolutePosition -127.821/374.014/-51.201
+Object.rotation -114.419/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_6
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_6
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_6
+Object.absolutePosition -127.930/373.982/-66.820
+Object.rotation -76.584/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_7
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_7
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_7
+Object.absolutePosition -187.622/374.023/-71.319
+Object.rotation 65.226/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_8
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_8
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_8
+Object.absolutePosition -187.596/374.004/-47.288
+Object.rotation 116.986/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_9
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_9
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_9
+Object.absolutePosition -145.906/375.789/-94.452
+Object.rotation -4.670/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_10
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_10
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_10
+Object.absolutePosition -157.381/366.760/-75.743
+Object.rotation 43.989/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_11
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_11
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_11
+Object.absolutePosition -141.321/366.942/-70.796
+Object.rotation -13.849/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_12
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_12
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_12
+Object.absolutePosition -174.401/366.950/-69.089
+Object.rotation 68.556/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_7
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_7
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_7
+Object.absolutePosition -203.779/365.762/-26.103
+Object.rotation 2.025/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_8
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_8
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_8
+Object.absolutePosition -177.719/365.762/-6.257
+Object.rotation -161.543/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_9
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_9
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_9
+Object.absolutePosition -222.176/365.762/-8.169
+Object.rotation 77.721/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_10
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_10
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_10
+Object.absolutePosition -201.846/365.762/40.103
+Object.rotation -178.505/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_6
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_6
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_6
+Object.absolutePosition -19.424/362.567/-85.508
+Object.rotation 3.823/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_7
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_7
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_7
+Object.absolutePosition -43.122/362.801/-95.295
+Object.rotation 38.771/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_8
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_8
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_8
+Object.absolutePosition -23.760/362.640/-47.277
+Object.rotation 160.958/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_9
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_9
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_9
+Object.absolutePosition -45.125/362.710/-66.968
+Object.rotation 83.763/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_10
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_10
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_10
+Object.absolutePosition 31.141/360.897/-45.378
+Object.rotation -110.761/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_11
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_11
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_11
+Object.absolutePosition -192.134/375.744/46.495
+Object.rotation -162.611/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_FortressVillage_12
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_FortressVillage_12
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 407
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_12
+Object.absolutePosition -246.682/375.816/-0.926
+Object.rotation 99.092/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_13
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_13
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_13
+Object.absolutePosition -172.254/375.833/-97.810
+Object.rotation 35.499/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_14
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_14
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+
+Object.create SinglePlayer_16p_GW_QuanTemple_14
+Object.absolutePosition -125.547/375.764/-97.238
+Object.rotation -45.725/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_11
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_11
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_11
+Object.absolutePosition -39.150/372.374/-110.114
+Object.rotation 20.501/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_12
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_12
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_12
+Object.absolutePosition -0.614/370.592/-101.053
+Object.rotation -24.842/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_13
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CompoundGateVillage_13
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 405
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_13
+Object.absolutePosition 29.877/370.673/-70.320
+Object.rotation -92.993/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_CentralWall_9
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_CentralWall_9
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setControlPointId 412
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_9
+Object.absolutePosition -93.402/375.761/45.439
+Object.rotation 157.000/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_1
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_1
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_1
+Object.absolutePosition 32.057/360.503/-79.556
+Object.rotation -150.130/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_3
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_3
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_3
+Object.absolutePosition 13.891/360.772/-99.083
+Object.rotation 32.739/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_5
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_5
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_5
+Object.absolutePosition 9.929/360.503/-105.488
+Object.rotation 17.961/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_6
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_6
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_6
+Object.absolutePosition 38.116/360.730/-72.311
+Object.rotation -146.805/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_7
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_7
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_7
+Object.absolutePosition 58.465/362.810/12.227
+Object.rotation 5.712/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_8
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_8
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_8
+Object.absolutePosition 67.592/362.154/55.904
+Object.rotation -166.926/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_9
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_9
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_9
+Object.absolutePosition 74.400/362.581/49.270
+Object.rotation -80.925/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_10
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_10
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create Singleplayer_16p_GW_CompundWall_10
+Object.absolutePosition 60.051/362.585/36.253
+Object.rotation -128.210/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_11
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_11
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create Singleplayer_16p_GW_CompundWall_11
+Object.absolutePosition 45.989/358.917/-66.869
+Object.rotation -156.713/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_12
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_12
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create Singleplayer_16p_GW_CompundWall_12
+Object.absolutePosition 8.433/358.906/-111.556
+Object.rotation 40.511/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_13
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_13
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForHuman 1
+
+Object.create Singleplayer_16p_GW_CompundWall_13
+Object.absolutePosition 58.188/362.823/24.687
+Object.rotation 32.096/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_14
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_14
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_14
+Object.absolutePosition 83.412/362.859/25.986
+Object.rotation -71.196/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint Singleplayer_16p_GW_CompundWall_15
+ObjectTemplate.activeSafe SpawnPoint Singleplayer_16p_GW_CompundWall_15
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 401
+ObjectTemplate.setOnlyForAI 1
+
+Object.create Singleplayer_16p_GW_CompundWall_15
+Object.absolutePosition 62.735/362.792/30.705
+Object.rotation -43.417/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create SpawnPoint SinglePlayer_16p_GW_QuanTemple_15
+ObjectTemplate.activeSafe SpawnPoint SinglePlayer_16p_GW_QuanTemple_15
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 415
+ObjectTemplate.setOnlyForAI 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_15
+Object.absolutePosition -122.271/365.762/-15.550
+Object.rotation 61.198/0.000/0.000
+Object.layer 1
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_QuanCompound
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_QuanCompound
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_QuanCompound
+ObjectTemplate.radius 12
+ObjectTemplate.team 2
+ObjectTemplate.controlPointId 408
+ObjectTemplate.areaValueTeam1 34
+ObjectTemplate.areaValueTeam2 34
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.hoistMinMax 0.5/0.9
+
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_QuanCompound_spdummy_atk
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_QuanCompound_spdummy_atk
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_QuanCompound_spdummy_atk
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 410
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_QuanCompound_spdummy_def
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_QuanCompound_spdummy_def
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_QuanCompound_spdummy_def
+ObjectTemplate.radius 0
+ObjectTemplate.team 2
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 411
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CentralWall
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CentralWall
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CentralWall
+ObjectTemplate.radius 10
+ObjectTemplate.team 1
+ObjectTemplate.controlPointId 409
+ObjectTemplate.areaValueTeam1 34
+ObjectTemplate.areaValueTeam2 34
+ObjectTemplate.timeToGetControl 2
+ObjectTemplate.timeToLoseControl 2
+ObjectTemplate.isHemisphere 1
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CentralWall_spdummy_atk
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CentralWall_spdummy_atk
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CentralWall_spdummy_atk
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 412
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CentralWall_spdummy_def
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CentralWall_spdummy_def
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CentralWall_spdummy_def
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 413
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.timeToLoseControl 2
+ObjectTemplate.timeToGetControl 2
+ObjectTemplate.create ControlPoint Singleplayer_16p_GW_CompundWall
+ObjectTemplate.activeSafe ControlPoint Singleplayer_16p_GW_CompundWall
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName Singleplayer_16p_GW_CompundWall
+ObjectTemplate.radius 0
+ObjectTemplate.team 1
+ObjectTemplate.controlPointId 401
+ObjectTemplate.timeToGetControl 0
+ObjectTemplate.timeToLoseControl 0
+ObjectTemplate.loseControlWhenEnemyClose 0
+ObjectTemplate.unableToChangeTeam 1
+ObjectTemplate.isHemisphere 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+ObjectTemplate.timeToLoseControl 0
+ObjectTemplate.timeToGetControl 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_FortressVillage
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_FortressVillage
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_FortressVillage
+ObjectTemplate.radius 12
+ObjectTemplate.radiusOffset 3/0/0
+ObjectTemplate.team 1
+ObjectTemplate.controlPointId 402
+ObjectTemplate.areaValueTeam1 34
+ObjectTemplate.areaValueTeam2 34
+ObjectTemplate.timeToGetControl 3
+ObjectTemplate.timeToLoseControl 3
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_FortressVillage_spdummy_atk
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_FortressVillage_spdummy_atk
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_FortressVillage_spdummy_atk
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 407
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_FortressVillage_spdummy_def
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_FortressVillage_spdummy_def
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_FortressVillage_spdummy_def
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 414
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.timeToLoseControl 3
+ObjectTemplate.timeToGetControl 3
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_QuanTemple
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_QuanTemple
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_QuanTemple
+ObjectTemplate.radius 10
+ObjectTemplate.team 1
+ObjectTemplate.controlPointId 403
+ObjectTemplate.areaValueTeam1 34
+ObjectTemplate.areaValueTeam2 34
+ObjectTemplate.timeToGetControl 3
+ObjectTemplate.timeToLoseControl 3
+ObjectTemplate.isHemisphere 1
+ObjectTemplate.hoistMinMax 0.5/0.9
+
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_QuanTemple_spdummy_atk
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_QuanTemple_spdummy_atk
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_QuanTemple_spdummy_atk
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 415
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_QuanTemple_spdummy_def
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_QuanTemple_spdummy_def
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_QuanTemple_spdummy_def
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 416
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.timeToLoseControl 3
+ObjectTemplate.timeToGetControl 3
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CompoundGateVillage
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CompoundGateVillage
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CompoundGateVillage
+ObjectTemplate.radius 15
+ObjectTemplate.team 2
+ObjectTemplate.controlPointId 404
+ObjectTemplate.areaValueTeam1 34
+ObjectTemplate.areaValueTeam2 34
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CompoundGateVillage_spdummy_atk
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CompoundGateVillage_spdummy_atk
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CompoundGateVillage_spdummy_atk
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 405
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CompoundGateVillage_spdummy_def
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CompoundGateVillage_spdummy_def
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CompoundGateVillage_spdummy_def
+ObjectTemplate.radius 0
+ObjectTemplate.team 2
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 406
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CentralWall2
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CentralWall2
+ObjectTemplate.modifiedByUser "lenovo"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.addTemplate flagpole
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CentralWall2
+ObjectTemplate.radius 5
+ObjectTemplate.team 1
+ObjectTemplate.controlPointId 1
+ObjectTemplate.timeToGetControl 2
+ObjectTemplate.timeToLoseControl 2
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CentralWall2_spdummy_atk
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CentralWall2_spdummy_atk
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CentralWall2_spdummy_atk
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 2
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+
+
+ObjectTemplate.create ControlPoint SinglePlayer_16p_GW_CentralWall2_spdummy_def
+ObjectTemplate.activeSafe ControlPoint SinglePlayer_16p_GW_CentralWall2_spdummy_def
+ObjectTemplate.modifiedByUser "worldlife"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setControlPointName SinglePlayer_16p_GW_CentralWall2_spdummy_def
+ObjectTemplate.radius 0
+ObjectTemplate.team 0
+ObjectTemplate.timeToGetControl 1
+ObjectTemplate.timeToLoseControl 1
+ObjectTemplate.controlPointId 3
+ObjectTemplate.showOnMinimap 0
+ObjectTemplate.isUnstrategicControlPoint 1
+ObjectTemplate.hoistFlag 0
+ObjectTemplate.flagTemplateTeam0 None
+ObjectTemplate.flagTemplateTeam1 None
+ObjectTemplate.flagTemplateTeam2 None
+ObjectTemplate.timeToLoseControl 2
+ObjectTemplate.timeToGetControl 2
+if v_arg1 == host
+
+Object.create SinglePlayer_16p_GW_QuanCompound
+Object.absolutePosition -1.284/360.727/35.141
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanCompound_spdummy_atk
+Object.absolutePosition -1.284/365.727/35.141
+Object.layer 1
+
+
+Object.create SinglePlayer_16p_GW_QuanCompound_spdummy_def
+Object.absolutePosition -1.284/370.727/35.141
+Object.layer 1
+Object.create SinglePlayer_16p_GW_CentralWall
+Object.absolutePosition -62.668/375.512/-67.840
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_CentralWall_spdummy_atk
+Object.absolutePosition -62.668/380.512/-67.84
+Object.layer 1
+
+
+Object.create SinglePlayer_16p_GW_CentralWall_spdummy_def
+Object.absolutePosition -62.668/385.512/-67.84
+Object.layer 1
+Object.create Singleplayer_16p_GW_CompundWall
+Object.absolutePosition 68.939/355.823/-34.262
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage
+Object.absolutePosition -158.127/365.762/-3.995
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_FortressVillage_spdummy_atk
+Object.absolutePosition -158.127/370.762/-3.995
+Object.layer 1
+
+
+Object.create SinglePlayer_16p_GW_FortressVillage_spdummy_def
+Object.absolutePosition -158.127/375.762/-3.995
+Object.layer 1
+Object.create SinglePlayer_16p_GW_QuanTemple
+Object.absolutePosition -157.878/366.543/-62.630
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_QuanTemple_spdummy_atk
+Object.absolutePosition -157.878/371.543/-62.63
+Object.layer 1
+
+
+Object.create SinglePlayer_16p_GW_QuanTemple_spdummy_def
+Object.absolutePosition -157.878/376.543/-62.63
+Object.layer 1
+Object.create SinglePlayer_16p_GW_CompoundGateVillage
+Object.absolutePosition -17.987/362.566/-64.002
+Object.layer 1
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_spdummy_atk
+Object.absolutePosition -17.987/367.566/-64.002
+Object.layer 1
+
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_spdummy_def
+Object.absolutePosition -17.987/372.566/-64.002
+Object.layer 1
+Object.create SinglePlayer_16p_GW_CentralWall2
+Object.absolutePosition -63.542/375.521/16.715
+Object.layer 1
+
+endIf
+
+Object.create SinglePlayer_16p_GW_CentralWall2_spdummy_atk
+Object.absolutePosition -63.542/380.521/16.715
+Object.layer 1
+
+
+Object.create SinglePlayer_16p_GW_CentralWall2_spdummy_def
+Object.absolutePosition -63.542/385.521/16.715
+Object.layer 1
+CombatAreaManager.use 1
+CombatAreaManager.timeAllowedOutside 10.000000
+CombatArea.create CombatArea_21_32Player
+CombatArea.min 0.000000/0.000000
+CombatArea.max 0.000000/0.000000
+CombatArea.addAreaPoint -319.388733/-310.621094
+CombatArea.addAreaPoint -304.948547/-330.181580
+CombatArea.addAreaPoint -284.100159/-343.522400
+CombatArea.addAreaPoint -248.403076/-366.059204
+CombatArea.addAreaPoint -225.101196/-374.697021
+CombatArea.addAreaPoint -193.192322/-383.350586
+CombatArea.addAreaPoint -165.135742/-384.720581
+CombatArea.addAreaPoint -131.551636/-382.027344
+CombatArea.addAreaPoint -21.863586/-359.392578
+CombatArea.addAreaPoint 67.942993/-326.683228
+CombatArea.addAreaPoint 178.151855/-280.672791
+CombatArea.addAreaPoint 223.148315/-244.067261
+CombatArea.addAreaPoint 243.676880/-224.152893
+CombatArea.addAreaPoint 271.791504/-186.139099
+CombatArea.addAreaPoint 292.581177/-152.760864
+CombatArea.addAreaPoint 309.327271/-100.647583
+CombatArea.addAreaPoint 316.506104/-9.755737
+CombatArea.addAreaPoint 316.506104/-9.755737
+CombatArea.addAreaPoint 314.019653/68.676514
+CombatArea.addAreaPoint 299.409180/185.445801
+CombatArea.addAreaPoint 266.543457/254.207153
+CombatArea.addAreaPoint 219.231567/309.023804
+CombatArea.addAreaPoint 177.028809/341.721802
+CombatArea.addAreaPoint 135.274414/364.308838
+CombatArea.addAreaPoint 71.901245/392.658691
+CombatArea.addAreaPoint 5.711060/404.904541
+CombatArea.addAreaPoint -44.119446/403.646729
+CombatArea.addAreaPoint -96.959473/387.760986
+CombatArea.addAreaPoint -249.505981/324.302979
+CombatArea.addAreaPoint -299.309998/303.416504
+CombatArea.addAreaPoint -336.276123/282.286743
+CombatArea.addAreaPoint -374.105530/252.337646
+CombatArea.addAreaPoint -426.254822/206.720947
+CombatArea.addAreaPoint -448.189514/178.921021
+CombatArea.addAreaPoint -460.286011/145.728271
+CombatArea.addAreaPoint -464.834778/101.421021
+CombatArea.addAreaPoint -452.782471/38.157104
+CombatArea.addAreaPoint -440.594421/-1.325073
+CombatArea.addAreaPoint -392.735352/-123.165100
+CombatArea.addAreaPoint -359.939575/-208.269653
+CombatArea.addAreaPoint -337.108093/-261.046753
+CombatArea.team 0
+CombatArea.vehicles 4
+CombatArea.layer 5
+
+rem ***target info***
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_CompoundGateVillage_targetB
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_CompoundGateVillage_targetB
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 target_aircontroltower_mec_sp_B
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+
+
+Object.create SinglePlayer_16p_GW_CompoundGateVillage_targetB
+Object.absolutePosition -17.987/362.566/-64.002
+Object.rotation 90/0/0
+Object.setControlPointId 406
+Object.layer 1
+
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_CentralWall2_targetB
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_CentralWall2_targetB
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 target_aircontroltower_mec_sp_B
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+
+
+Object.create SinglePlayer_16p_GW_CentralWall2_targetB
+Object.absolutePosition -63.542/375.521/16.715
+Object.rotation 90/0/0
+Object.setControlPointId 3
+Object.layer 1
+
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanTemple_targetB
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanTemple_targetB
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 target_aircontroltower_mec_sp_B
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+
+
+Object.create SinglePlayer_16p_GW_QuanTemple_targetB
+Object.absolutePosition -157.878/366.543/-62.630
+Object.rotation 90/0/0
+Object.setControlPointId 416
+Object.layer 1
+
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_QuanCompound_targetA
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_QuanCompound_targetA
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 target_aircontroltower_mec_sp_A
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+
+
+Object.create SinglePlayer_16p_GW_QuanCompound_targetA
+Object.absolutePosition -1.284/360.727/35.141
+Object.rotation 90/0/0
+Object.setControlPointId 411
+Object.layer 1
+
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_CentralWall_targetA
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_CentralWall_targetA
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 target_aircontroltower_mec_sp_A
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+
+
+Object.create SinglePlayer_16p_GW_CentralWall_targetA
+Object.absolutePosition -62.668/375.512/-67.840
+Object.rotation 90/0/0
+Object.setControlPointId 413
+Object.layer 1
+
+
+ObjectTemplate.create ObjectSpawner SinglePlayer_16p_GW_FortressVillage_targetA
+ObjectTemplate.activeSafe ObjectSpawner SinglePlayer_16p_GW_FortressVillage_targetA
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 2 target_aircontroltower_mec_sp_A
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+
+
+Object.create SinglePlayer_16p_GW_FortressVillage_targetA
+Object.absolutePosition -158.127/365.762/-3.995
+Object.rotation 90/0/0
+Object.setControlPointId 414
+Object.layer 1
+
+

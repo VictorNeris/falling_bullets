@@ -1,0 +1,18 @@
+rem 			 	voice name 			modifier	max send period 	receive time to live
+aiComm.addAIRadioMessage 	"req_new_order" 		90		10 			1
+aiComm.addAIRadioMessage 	"defend" 			90		10 			1
+aiComm.addAIRadioMessage 	"attack_position"		90		2 			10
+aiComm.addAIRadioMessage 	"move" 				90		10 			1
+aiComm.addAIRadioMessage 	"bail_out" 			90		20 			10
+aiComm.addAIRadioMessage 	"get_in" 			90		20 			20
+aiComm.addAIRadioMessage 	"req_pickup" 			90 		30			10
+aiComm.addAIRadioMessage 	"medic" 			90 		20			20
+aiComm.addAIRadioMessage 	"need_repair" 			90 		30			20
+aiComm.addAIRadioMessage 	"roger_that" 			10		2 			10
+aiComm.addAIRadioMessage 	"negative" 			10		2 			10
+aiComm.addAIRadioMessage 	"PLAYER_CONFIRM_thankyou" 	10		2 			20
+aiComm.addAIRadioMessage 	"PLAYER_CONFIRM_sorry" 		10		2 			10
+aiComm.addAIRadioMessage 	"need_ammo" 			90		20			20
+aiComm.addAIRadioMessage 	"PLAYER_TACTICS_gogogo" 	90		10 			10
+aiComm.addAIRadioMessage 	"PLAYER_TACTICS_followme" 	90		10 			10
+

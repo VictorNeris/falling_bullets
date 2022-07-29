@@ -1,0 +1,20 @@
+rem *** Add Strategies ***
+
+rem --- MEC/CHINA ---
+ai.addSAIStrategy 1 basicAttackEnemy
+rem ai.addSAIStrategy 1 basicAttackNeutral
+ai.addSAIStrategy 1 basicGuard
+rem ai.addSAIStrategy 1 basicDefend
+
+rem --- US ---
+ai.addSAIStrategy 2 basicAttackEnemy
+rem ai.addSAIStrategy 2 basicAttackNeutral
+ai.addSAIStrategy 2 basicGuard
+rem ai.addSAIStrategy 2 basicDefend
+
+
+rem ****************************
+rem Temp lower bot skill
+rem ****************************
+rem aiSettings.setBotSkill 0.4
+

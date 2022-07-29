@@ -1,0 +1,12 @@
+<mod>
+	<title> Ffalling Bbullets </title>
+	<desc> Modified Heat of Battle. Still in Progress. Realistic Ballistics, Recoil And Damage </desc>
+	<url> http://wehavenosite.com </url>
+	<logo> mod.jpg </logo>
+	<icon> mod_icon.jpg </icon>
+	<music> common/sound/menu/music/menu_music.ogg </music>
+	<version> 1.0.0 </version>
+	<default_soldier_template> us_light_soldier </default_soldier_template>
+	<default_soldier_kit_template> us_specops </default_soldier_kit_template>
+	<editorversion> Battlefield2 </editorversion>
+</mod>

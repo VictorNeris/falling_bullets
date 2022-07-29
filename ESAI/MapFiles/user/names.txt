@@ -1,0 +1,16 @@
+Folder naming convention for map files compiled by Void:
+
+[mapSize][Strategy Abbrievation]...[Strategy Abbrievation]
+
+Abbreviations:
+
+AA = airAttackGround (don't get excited, it doesn't seem to work well)
+
+FCA = focusedCounterAttack
+
+PF = pushForward
+
+PB = protectBase
+
+
+

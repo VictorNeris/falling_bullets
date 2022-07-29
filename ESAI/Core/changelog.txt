@@ -1,0 +1,96 @@
+ESAI core v2.2
+- Initial public release
+
+====================================================================================
+
+ESAI core v2.3 beta
+- changed prereq weights: to 4.5/4.0
+- Increased *harder Front SA multiplier from 1.5 to 2.5
+
+====================================================================================
+
+ESAI core v2.4, 2.5
+- Misc. failed attempts to further motivate the bots
+
+====================================================================================
+
+ESAI core v2.6 beta
+- changed prereq weights: 4.0/3.5
+- reduced time limits
+- added Tree Modifers for FriendGroundMobile and FriendAirMobile
+- added 'Remote' ObjectType multiplier 0.8  to *harder strategies
+
+=====================================================================================
+
+ESAI core v2.7 beta
+- lowered weights for Temperature Tree Node Modifiers
+
+=====================================================================================
+
+ESAI core v2.8, 2.9
+- added SA multiplier for flag `Safe`
+- changed prereq weights: 2.0 (*Attack), 2.5 (*AttackHarder)
+
+==================================================================================
+ESAI core v3.0
+- implemented constants for SA multipliers instead of using hard coded values
+  all SA temp multipliers are now defined in `esaivars.ai`
+
+=================================================================================
+ESAI core v3.1
+
+- Added strategies `basicAttack1` && `basicAttackHarder1`
+                     \
+                      =--> added to smallMap strategy set
+
+- Temperature Tree Node modifiers implemented as constants,also defined in `esaivars.ai`
+
+===================================================================================
+ESAI core v3.2
+
+- no changes to esaicore. Major additions to the collection of user plugins,supported
+  by a library of new stock conditions.
+
+- To Do: Update plugin author's guide.
+=======================================================================================
+
+ESAI core v3.3, 3.4
+
+- misc internal tinkering, replaced named Compare operators with symbols found in AIDLL.dll
+  decompile.
+
+========================================================================================
+
+ESAI V3.5
+
+- Finished additions to collection of user plugins, added many user map files, updated
+  plugin developer guide and other documentation.
+
+=========================================================================================
+
+ESAI core V3.6 beta
+
+- Reduced time limits for all strategies
+- Increased CP temperature multipliers
+- Increased "Front" temp multipliers
+- Decreased "Remote" temp multipliers
+
+===========================================================================================
+
+ESAI 4.1 / core v3.7
+
+- Subdivided each strategy family into three sets of strategies:(*attack,*attackHarder,*attackHardest)
+- CP temperature multipliers now unique to each set of strategies
+- All other SA temperature multipliers now unique to each set of strategies
+- Implemented more structured changes of Aggression levels
+- Lowered weights for all core strategy prerequisites
+- Defined all multipliers as constants in esaivars.ai
+
+==============================================================
+
+ESAI 4.2 / core v3.7
+
+- Improved the project documentation
+
+
+

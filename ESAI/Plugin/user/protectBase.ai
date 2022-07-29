@@ -1,0 +1,16 @@
+aiStrategy.createPrerequisite protectBasePrereq
+aiStrategy.addCondition enemyNearBase_A 2.0
+aiStrategy.addCondition groundTacticalDisadvantage_A 2.0
+aiStrategy.addCondition enemyGainingStrength 0.01
+
+aiStrategy.createStrategy protectBase
+aiStrategy.Aggression 0.75
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      8.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      14.0 Hostile
+rem -----------------------------------------------------------------
+aiStrategy.setStrategicObjectsModifier Safe 0.5
+aiStrategy.setStrategicObjectsModifier Base 6.0 Owned
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite protectBasePrereq

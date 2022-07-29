@@ -1,0 +1,25 @@
+include ..\..\Core\esaivars.ai
+
+rem ~~~ Prereq valid when Friendly is ahead on flags and there are no neutrals ~~~
+rem ~~~ (only likely to activate when # Safe SAs >= # Fronts )                 ~~~
+rem '
+aiStrategy.createPrerequisite pushForwardPrereq
+aiStrategy.addCondition enemyLosingStrength 0.1
+aiStrategy.addCondition noNeutralsAvailable_R 0.1
+aiStrategy.addCondition groundTacticalAdvantage_AP 7.98
+
+rem ~~~ This strategy will have 2 attacks at 99% aggression ~~~~~~~~~~~~~~
+rem ~~~ Goal is to spawn bots at the front and get them moving quickly ~~~
+rem ~~~       ( 4 minute time limit )                                   ~~~~~~
+rem '
+aiStrategy.createStrategy pushForward
+aiStrategy.Aggression 0.99
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint c_HostileCPM Hostile
+aiStrategy.setStrategicObjectsModifier Remote c_RemoteM Owned
+aiStrategy.setStrategicObjectsModifier Front 6.0
+aiStrategy.setStrategicObjectsModifier Safe c_SafeM
+rem -----------------------------------------------------------------
+aiStrategy.TimeLimit 240
+aiStrategy.setPrerequisite pushForwardPrereq

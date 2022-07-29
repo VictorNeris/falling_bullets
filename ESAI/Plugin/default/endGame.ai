@@ -1,0 +1,36 @@
+rem %%%% Check if side Owns all CPs %%%%
+rem :
+aiStrategy.createConstantCondition enemyHasNoFlags Crisp "-" Enemy ControlPoint 0
+aiStrategy.setConditionStrength Required
+
+rem %%%% Check if side Owns no CPs %%%%%
+rem :
+aiStrategy.createConstantCondition friendlyHasNoFlags Crisp "-" Friendly ControlPoint 0
+aiStrategy.setConditionStrength Required
+
+aiStrategy.CompleteConditions
+
+aiStrategy.createPrerequisite defendMapPrereq
+aiStrategy.addCondition enemyHasNoFlags 75.0
+
+aiStrategy.createPrerequisite lastStandPrereq
+aiStrategy.addCondition friendlyHasNoFlags 75.0
+
+aiStrategy.createStrategy defendMap
+aiStrategy.Aggression 0.25
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 3
+aiStrategy.setStrategicObjectsModifier Base 2.0 Owned       
+aiStrategy.setStrategicObjectsModifier AirField 1.5 Owned
+aiStrategy.setStrategicObjectsModifier ControlPoint      4.0 Owned
+aiStrategy.setStrategicObjectsModifier ControlPoint      12.0 Neutral
+aiStrategy.setPrerequisite defendMapPrereq
+
+
+aiStrategy.createStrategy lastStand
+aiStrategy.Aggression 1
+aiStrategy.NumberOfAttacks 8
+aiStrategy.NumberOfDefences 0
+aiStrategy.setStrategicObjectsModifier ControlPoint      30.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint      15.0 Hostile
+aiStrategy.setPrerequisite lastStandPrereq

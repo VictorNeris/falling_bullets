@@ -1,0 +1,43 @@
+ - Conditionals from Dice BF1942 SAI pdf that don't work in BF2 -
+
+! means conditional asserts in debugger && is not found in AIDLL.dll
+? means conditional always returns zero
+
+
+AverageStrategicStrength !
+AttackStrategicStrength !
+DefenceStrategicStrength !
+Security !
+
+Air ?
+Bomber ?
+Fighter ?
+Naval ?
+HeavyNaval ?
+LCVP ?
+AntiAir ?
+Infantry / Infantery ?
+AntiTank ?
+HeavyAttack ?
+Carrier ?
+FastAttack ?
+Artillery ?
+
+-From AIDLL.dll disassembly-
+(conjecture: v_arg3 <13 == invalid conditional)
+
+list of v_arg3,string where v_arg3 < 13:
+
+	0,Carrier
+	1,HeavyNaval
+	2,LCVP
+	3,Naval
+	4,Bomber
+	5,Fighter
+	6,AntiAir
+	7,Air
+	8,Infantry || Infantery
+	9,Artillery
+	10,AntiTank
+	11,HeavyAttack
+	12,FastAttack

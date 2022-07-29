@@ -1,0 +1,19 @@
+                        ESAI v 4.2 - Credits and Thanks
+
+First off, a huge thanks goes out to the BFSP community for all the support and feedback on this project as well as for providing the documentation and resources I used to aquire my knowledge.
+
+Also, this release would not have happened without my beta testers, to whom I am very greatful for the time and effort expended at my request.
+
+============================================================
+ESAI Code                    - Eric Dobbs
+
+ESAI Logo and graphic design - Bob The Dinosaur
+============================================================
+
+ESAI Beta Testers:
+
+Col_Fokker
+Cannonfoddor
+Bubbles
+FastJack
+EnemySniper

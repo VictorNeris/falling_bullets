@@ -1,0 +1,19 @@
+rem Endgame Plugin for USI 73 Eastings
+
+aiStrategy.createConstantCondition eastingsAllFlags Crisp "-" Friendly ControlPoint 4
+aiStrategy.setConditionStrength Required
+
+aiStrategy.CompleteConditions
+
+aiStrategy.createPrerequisite eastingsAllFlagsPrereq
+aiStrategy.addCondition enemyLosingStrength 10.0
+aiStrategy.addCondition eastingsAllFlags 100.0
+
+aiStrategy.createStrategy eastingsDefend
+aiStrategy.Aggression 0
+aiStrategy.NumberOfAttacks 0
+aiStrategy.NumberOfDefences 3
+aiStrategy.setStrategicObjectsModifier Base 0.1 Owned       
+aiStrategy.setStrategicObjectsModifier Front 5.0
+aiStrategy.setStrategicObjectsModifier ControlPoint 12.0 Owned
+aiStrategy.setPrerequisite eastingsAllFlagsPrereq

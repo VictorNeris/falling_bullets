@@ -1,0 +1,69 @@
+                                             ESAI 4.2 Users Guide
+ 
+                                                 Eric Dobbs
+                                             bf2eai@gmail.com
+
+======================================================================================================================
+	
+ I. STANDARD ESAI
+ 
+ First the basic concepts. ESAI is a package of ready to use Strategic AI code. The ESAI strategies are organized into "strategy sets". To use ESAI with a map, you must assign a strategy set to each game mode you want to use ESAI with.
+ 
+The first thing to do is copy the ESAI folder to \mods\bf2\. Your final install path should look like this: [drive letter:]\[BF2 Install Directory]\mods\bf2\ESAI
+
+Now you are ready to start assigning strategy sets to your maps. This is done by placing the desired "Strategies.ai" file inside the map's server.zip.
+
+These "strategies.ai" files are the glue that binds ESAI to a game mode. They are located in the \ESAI\MapFiles\ directory. This directory is subdivided into the \default and \user folders. There are 4 default strategy sets; there are 14 more in the user directory.
+
+First, pick the strategy set you want to use on a game mode. (More on choosing a strategy set later in this guide).
+
+Now, open `server.zip` and navigate to the \AI folder for the game mode. Place the "Strategies.ai" file in this folder, and then update the zip.
+
+EXAMPLE: Say I wanted to assign the strategy set "smallMap" to Strike at Karkand SP 16. This is how I would do it:
+
+1. Open my main ESAI folder, and find the "Strategies.ai" file inside the directory "\ESAI\MapFiles\default\smallMap\"
+2. open the map's server archive
+3. open the folder \gamemodes
+4. now open the folder \sp1
+5. now open the folder \16
+6. now open the folder \ai
+7. Add the file from step 1 to this folder. (Just the `strategies.ai` file. Nothing else!)
+8. Close the zip and play the map.
+
+==================================================================================================================================
+
+II. The Strategy Sets
+
+The default strategy sets are organized by size: smallMap, mediumMap, largeMap, and hugeMap. As you go up in "size", the number of maximum attacks per strategy family increases. You should pick a strategy set based on the number of CPs in the map and the way they are neighbored. The names of the strategy sets have nothing to do with geographic size.
+
+You will find that "hugeMap" is rarely necessary. It was created to address some AIX maps that had a dozen or more flags in the level.
+
+The best way to determine the optimal strategy set for a map is trial and error. In general start with "mediumMap", and then go up or down in size as needed.
+
+The user strategy sets are all based on the default ones. The difference is the extra strategies available in these sets. These are FCA (Focused Counter Attack), PF (Push Forward), and PB (Protect Base). To learn more about the user strategy sets, refer to this BFSP post:
+
+http://www.battlefieldsingleplayer.com/forum/index.php?s=&showtopic=15109&view=findpost&p=168065
+
+==============================================================================================================
+
+III. ESAI Embedded
+
+ESAI Embedded is intended for use by map authors and coop server admins. This version of ESAI is completely contained inside a map. With the embedded version, there is no need to install ESAI to \mods\bf2\. Instead, you MUST place the entire ESAI folder inside your map's server archive. The ESAI folder goes in the ROOT directory of the server zip.
+
+In ESAI Embedded,Strategy Sets are assigned to game modes in precisely the same way as was described in Section I of this guide.
+
+IMPORTANT! The map files from the regular ESAI version are NOT the same as the ones contained in ESAI Embedded. Do not mix up your map files between the two versions, or you will likely crash your game.
+
+Let me clarify the statement above:
+
+You can have Standard ESAI installed and still use ESAI Embedded. The two versions do not conflict with one another. However, the map files ("strategies.ai" files) are completely different in the two versions. Take care to use the correct map files depending on what version of ESAI you are using with your map.
+
+Notes:
+
+- When you embed ESAI into a map, all of the ESAI strategy sets are available for use within that map. Different game modes can use different strategy sets (and it is recommended that they do!).
+
+- ESAI Embedded was created by request. It will not be supported with future updates or enhancements.
+
+- Due to the above, it is recommended that users stick with the Standard ESAI version unless they have a specific reason not to.
+
+======================================================================================================================

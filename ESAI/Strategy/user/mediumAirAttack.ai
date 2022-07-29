@@ -1,0 +1,25 @@
+rem -- ESAI medium map airAttackGround map strategy set --
+
+rem Team 1
+ai.addSAIStrategy 1 airAttackGround
+ai.addSAIStrategy 1 grabNeutrals
+ai.addSAIStrategy 1 basicAttack3
+ai.addSAIStrategy 1 basicAttackHarder3
+ai.addSAIStrategy 1 pressAttack3
+ai.addSAIStrategy 1 pressAttackHarder3
+ai.addSAIStrategy 1 counterAttack4
+ai.addSAIStrategy 1 counterAttackHarder4
+ai.addSAIStrategy 1 defendMap
+ai.addSAIStrategy 1 lastStand
+
+rem Team 2
+ai.addSAIStrategy 2 airAttackGround
+ai.addSAIStrategy 2 grabNeutrals
+ai.addSAIStrategy 2 basicAttack3
+ai.addSAIStrategy 2 basicAttackHarder3
+ai.addSAIStrategy 2 pressAttack3
+ai.addSAIStrategy 2 pressAttackHarder3
+ai.addSAIStrategy 2 counterAttack4
+ai.addSAIStrategy 2 counterAttackHarder4
+ai.addSAIStrategy 2 defendMap
+ai.addSAIStrategy 2 lastStand

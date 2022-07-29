@@ -1,0 +1,11 @@
+Difference			"-"
+DifferenceGreater 	">-"
+DifferenceSmaller	"<-"
+
+Equal				"="
+EqualGreater		">="
+EqualSmaller		"<="
+
+Quotient 			"/"
+QuotientGreater		">/"
+QuotientSmaller		"</"

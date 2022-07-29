@@ -1,0 +1,6 @@
+Credit to:
+DICE -- for gpm_cq.py/gpm_coop.py
+Alpha Project(Hjid) -- for BF2Object.py
+Omnicide Final(Hjid) -- for timer.py
+CUR -- for testing
+panther223 -- for providing models, ideas and testing
