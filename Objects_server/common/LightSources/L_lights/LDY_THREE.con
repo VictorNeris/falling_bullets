@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle LDY_THREE
-ObjectTemplate.createdInEditor 1
-
-include LDY_THREE.tweak

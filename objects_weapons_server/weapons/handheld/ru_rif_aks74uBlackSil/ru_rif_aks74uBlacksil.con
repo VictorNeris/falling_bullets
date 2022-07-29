@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh ru_rif_aks74uBlacksil
-
-ObjectTemplate.create GenericFireArm ru_rif_aks74uBlacksil
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator 20100811-1033:YAK43
-ObjectTemplate.geometry ru_rif_aks74uBlacksil
-
-include ru_rif_aks74uBlacksil.tweak

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_bhit_s_penetrable_plasterwall
-ObjectTemplate.createdInEditor 1
-
-include e_bhit_s_penetrable_plasterwall.tweak

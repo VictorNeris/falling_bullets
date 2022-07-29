@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_ump45
-
-ObjectTemplate.create GenericFireArm bf4_ump45
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_ump45
-
-include bf4_ump45.tweak

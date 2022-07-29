@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_mexp_grenade_Mud
-ObjectTemplate.createdInEditor 1
-
-include e_mexp_grenade_Mud.tweak

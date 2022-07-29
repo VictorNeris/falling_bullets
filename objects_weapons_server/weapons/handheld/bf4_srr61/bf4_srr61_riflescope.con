@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_srr61_riflescope
-
-ObjectTemplate.create GenericFireArm bf4_srr61_riflescope
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_srr61_riflescope
-
-include bf4_srr61_riflescope.tweak

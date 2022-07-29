@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_vexp_lw155
-ObjectTemplate.createdInEditor 1
-
-include e_vexp_lw155.tweak

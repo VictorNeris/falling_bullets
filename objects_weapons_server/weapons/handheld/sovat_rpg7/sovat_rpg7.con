@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh sovat_rpg7
-
-ObjectTemplate.create GenericFireArm sovat_rpg7
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator REDFOX2017:REDFOX
-ObjectTemplate.geometry sovat_rpg7
-
-include sovat_rpg7.tweak

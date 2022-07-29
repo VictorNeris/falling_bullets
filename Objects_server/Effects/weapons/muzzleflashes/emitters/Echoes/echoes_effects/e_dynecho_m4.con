@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_dynecho_m4
-ObjectTemplate.createdInEditor 1
-
-include e_dynecho_m4.tweak

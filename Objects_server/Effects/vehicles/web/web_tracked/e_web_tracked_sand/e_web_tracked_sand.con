@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_web_tracked_sand
-ObjectTemplate.createdInEditor 1
-
-include e_web_tracked_sand.tweak

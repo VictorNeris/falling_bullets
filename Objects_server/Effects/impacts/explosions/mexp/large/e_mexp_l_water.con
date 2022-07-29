@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_mexp_L_water
-ObjectTemplate.createdInEditor 1
-
-include e_mexp_L_water.tweak

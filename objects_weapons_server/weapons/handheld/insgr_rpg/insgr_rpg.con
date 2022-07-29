@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh insgr_rpg
-
-ObjectTemplate.create GenericFirearm insgr_rpg
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator CHUC-PASOCON:Main
-ObjectTemplate.geometry insgr_rpg
-
-include insgr_rpg.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rulmg_rpk74_stationary
-
-ObjectTemplate.create GenericFireArm rulmg_rpk74_stationary
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MBA-1:mba
-ObjectTemplate.geometry rulmg_rpk74_stationary
-
-include rulmg_rpk74_stationary.tweak

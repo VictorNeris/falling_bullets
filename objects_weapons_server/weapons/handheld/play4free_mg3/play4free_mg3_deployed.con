@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh play4free_mg3_deployed
-
-ObjectTemplate.create GenericFireArm play4free_mg3_deployed
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator USER-��:User
-ObjectTemplate.geometry play4free_mg3_deployed
-
-include play4free_mg3_deployed.tweak

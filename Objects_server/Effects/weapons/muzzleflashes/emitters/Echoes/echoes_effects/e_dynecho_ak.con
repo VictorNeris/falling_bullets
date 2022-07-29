@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_dynecho_ak
-ObjectTemplate.createdInEditor 1
-
-include e_dynecho_ak.tweak

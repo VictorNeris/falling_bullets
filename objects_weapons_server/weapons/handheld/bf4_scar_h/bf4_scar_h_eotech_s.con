@@ -1,6 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_scar_h_eotech_s
-ObjectTemplate.create GenericFireArm bf4_scar_h_eotech_s
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_scar_h_eotech_s
-include bf4_scar_h_eotech_s.tweak

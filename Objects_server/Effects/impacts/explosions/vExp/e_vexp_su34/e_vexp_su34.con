@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_vexp_su34
-ObjectTemplate.createdInEditor 1
-
-include e_vexp_su34.tweak

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_missile_trail
-ObjectTemplate.createdInEditor 1
-
-include e_missile_trail.tweak

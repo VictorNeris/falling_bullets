@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh uslmg_m249saw_stationary
-
-ObjectTemplate.create GenericFireArm uslmg_m249saw_stationary
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MBA-1:mba
-ObjectTemplate.geometry uslmg_m249saw_stationary
-
-include uslmg_m249saw_stationary.tweak

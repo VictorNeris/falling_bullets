@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh c4_explosives
-
-ObjectTemplate.create GenericFireArm c4_explosives
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator CHUC-PASOCON:Main
-ObjectTemplate.geometry c4_explosives
-
-include c4_explosives.tweak

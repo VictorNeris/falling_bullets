@@ -1,4 +1,0 @@
-ObjectTemplate.create GenericFireArm Coaxial_browning
-
-include Coaxial_Browning.tweak
-

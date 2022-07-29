@@ -1,4 +1,0 @@
-ObjectTemplate.create GenericFireArm Firingport_AK
-
-include Firingport_AK.tweak
-

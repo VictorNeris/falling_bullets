@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle DP_FOUR
-ObjectTemplate.createdInEditor 1
-
-include DP_FOUR.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh 44mag
-
-ObjectTemplate.create GenericFireArm 44mag
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator KASSADALFAJHAD:Kassad_al_Fajhad
-ObjectTemplate.geometry 44mag
-
-include 44mag.tweak

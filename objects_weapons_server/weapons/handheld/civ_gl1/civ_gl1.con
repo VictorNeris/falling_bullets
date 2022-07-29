@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh civ_gl1
-
-ObjectTemplate.create GenericFireArm civ_gl1
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator RICK:rickgi
-ObjectTemplate.geometry civ_gl1
-
-include civ_gl1.tweak

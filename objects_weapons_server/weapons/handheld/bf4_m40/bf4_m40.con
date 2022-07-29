@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_m40
-
-ObjectTemplate.create GenericFireArm bf4_m40
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator DEMON:Demon_from_pripyat
-ObjectTemplate.geometry bf4_m40
-
-include bf4_m40.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_sv98_pks07
-
-ObjectTemplate.create GenericFireArm bf4_sv98_pks07
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_sv98_pks07
-
-include bf4_sv98_pks07.tweak

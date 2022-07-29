@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh mg_fnpara_custom_deployed
-
-ObjectTemplate.create GenericFireArm mg_fnpara_custom_deployed
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MARVIN:radeexpitheta
-ObjectTemplate.geometry mg_fnpara_custom_deployed
-
-include mg_fnpara_custom_deployed.tweak

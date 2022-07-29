@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh insrg_m1911
-
-ObjectTemplate.create GenericFireArm insrg_m1911
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator Natko
-ObjectTemplate.geometry insrg_m1911
-
-include insrg_m1911.tweak

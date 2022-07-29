@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle L_TWO
-ObjectTemplate.createdInEditor 1
-
-include L_TWO.tweak

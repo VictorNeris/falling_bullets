@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_mexp_xl_dirt
-ObjectTemplate.createdInEditor 1
-
-include e_mexp_xl_dirt.tweak

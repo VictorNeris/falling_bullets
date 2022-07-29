@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_deagle
-
-ObjectTemplate.create GenericFireArm bf4_deagle
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_deagle
-
-include bf4_deagle.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rurrif_an94_kobra
-
-ObjectTemplate.create GenericFireArm rurrif_an94_kobra_auto
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MARS:theta
-ObjectTemplate.geometry rurrif_an94_kobra
-
-include rurrif_an94_kobra_auto.tweak

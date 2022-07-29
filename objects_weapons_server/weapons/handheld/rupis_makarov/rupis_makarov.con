@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rupis_makarov
-
-ObjectTemplate.create GenericFireArm rupis_makarov
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator Millenia
-ObjectTemplate.geometry rupis_makarov
-
-include rupis_makarov.tweak

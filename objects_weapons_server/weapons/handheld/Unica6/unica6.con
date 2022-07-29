@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh unica6
-
-ObjectTemplate.create GenericFireArm unica6
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator Tuerix:Tuerix
-ObjectTemplate.geometry unica6
-
-include unica6.tweak

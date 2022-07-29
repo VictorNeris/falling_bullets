@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rurif_ak74n
-
-ObjectTemplate.create GenericFireArm rurif_ak74n
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator DNAPC:Администратор
-ObjectTemplate.geometry rurif_ak74n
-
-include rurif_ak74n.tweak

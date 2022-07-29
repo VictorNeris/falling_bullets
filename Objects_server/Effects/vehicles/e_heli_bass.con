@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_heli_bass
-ObjectTemplate.createdInEditor 1
-
-include e_heli_bass.tweak

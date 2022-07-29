@@ -1,4 +1,0 @@
-
-rem weaponTemplate.setFiringPose Standing
-rem weaponTemplate.setFiringPose Crouching
-rem weaponTemplate.setFiringPose Lying

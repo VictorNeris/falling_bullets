@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_dstate_jets_firesmoke
-ObjectTemplate.createdInEditor 1
-
-include e_dstate_jets_firesmoke.tweak

@@ -1,8 +1,0 @@
-ObjectTemplate.create EffectBundle e_dist
-ObjectTemplate.createdInEditor 1
-
-ObjectTemplate.create EffectBundle e_dist_mortar
-ObjectTemplate.createdInEditor 1
-
-include e_dist.tweak
-

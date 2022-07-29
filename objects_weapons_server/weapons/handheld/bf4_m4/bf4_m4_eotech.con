@@ -1,6 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_m4_eotech
-ObjectTemplate.create GenericFireArm bf4_m4_eotech
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_m4_eotech
-include bf4_m4_eotech.tweak

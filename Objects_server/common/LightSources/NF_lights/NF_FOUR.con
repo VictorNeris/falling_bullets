@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle NF_FOUR
-ObjectTemplate.createdInEditor 1
-
-include NF_FOUR.tweak

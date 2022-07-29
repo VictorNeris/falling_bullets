@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle LDY_TWO
-ObjectTemplate.createdInEditor 1
-
-include LDY_TWO.tweak

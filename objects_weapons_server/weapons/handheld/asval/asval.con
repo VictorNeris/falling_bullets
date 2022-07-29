@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh asval
-
-ObjectTemplate.create GenericFireArm asval
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator USER-77:Владелец
-ObjectTemplate.geometry asval
-
-include asval.tweak

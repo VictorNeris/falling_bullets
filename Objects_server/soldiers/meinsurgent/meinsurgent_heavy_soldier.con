@@ -1,8 +1,0 @@
-GeometryTemplate.create SkinnedMesh meinsurgent_heavy_soldier
-
-ObjectTemplate.create Soldier meinsurgent_heavy_soldier
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator JAY:jayev
-ObjectTemplate.geometry meinsurgent_heavy_soldier
-
-include meinsurgent_heavy_soldier.tweak

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_Mosin_shift
-ObjectTemplate.createdInEditor 1
-
-include e_Mosin_shift.tweak

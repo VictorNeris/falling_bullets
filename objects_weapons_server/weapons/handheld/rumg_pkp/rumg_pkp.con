@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rumg_pkp
-
-ObjectTemplate.create GenericFireArm rumg_pkp
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator DNAPC:Администратор
-ObjectTemplate.geometry rumg_pkp
-
-include rumg_pkp.tweak

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_distdel_bizon
-ObjectTemplate.createdInEditor 1
-
-include e_distdel_bizon.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf1_m1903_sniper_bayonet
-
-ObjectTemplate.create GenericFireArm bf1_m1903_sniper_bayonet
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf1_m1903_sniper_bayonet
-
-include bf1_m1903_sniper_bayonet.tweak

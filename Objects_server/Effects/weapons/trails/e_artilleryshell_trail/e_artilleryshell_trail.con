@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_artilleryshell_trail
-ObjectTemplate.createdInEditor 1
-
-include e_artilleryshell_trail.tweak

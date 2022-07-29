@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh sasrif_teargas
-
-ObjectTemplate.create GenericFireArm sasrif_teargas
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator RICK:rickgi
-ObjectTemplate.geometry sasrif_teargas
-
-include sasrif_teargas.tweak

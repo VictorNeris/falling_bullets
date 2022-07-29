@@ -1,8 +1,0 @@
-GeometryTemplate.create SkinnedMesh sas_soldier_specops
-
-ObjectTemplate.create Soldier sas_soldier_specops
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator JAY:jayev
-ObjectTemplate.geometry sas_soldier_specops
-
-include sas_soldier_specops.tweak

@@ -1,9 +1,0 @@
-ObjectTemplate.create GenericProjectile HMG
-ObjectTemplate.material 39
-ObjectTemplate.damage 130
-ObjectTemplate.minDamage 90
-ObjectTemplate.drag 0.001
-ObjectTemplate.mass 0.049
-ObjectTemplate.gravityModifier 1
-include projectiles_common_suppressive.tweak
-include projectiles_tracer_big.tweak

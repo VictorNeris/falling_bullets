@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle E_web_trackedSmoke_dirt
-ObjectTemplate.createdInEditor 1
-
-include E_web_trackedSmoke_dirt.tweak

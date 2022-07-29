@@ -1,6 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_rpk
-ObjectTemplate.create GenericFirearm bf4_rpk
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_rpk
-include bf4_rpk.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rupis_gsh18
-
-ObjectTemplate.create GenericFireArm rupis_gsh18
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator 20100811-1033:YAK43
-ObjectTemplate.geometry rupis_gsh18
-
-include rupis_gsh18.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh rumg_pkm_alt
-
-ObjectTemplate.create GenericFireArm rumg_pkm_alt
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator USER-KOMPUTER:W_RAZIE_BSODA
-ObjectTemplate.geometry rumg_pkm_alt
-
-include rumg_pkm_alt.tweak

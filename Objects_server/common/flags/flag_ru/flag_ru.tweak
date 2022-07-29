@@ -1,5 +1,0 @@
-ObjectTemplate.activeSafe AnimatedBundle flag_ru
-ObjectTemplate.skeleton Objects\Common\Flags\flag_setup.ske
-ObjectTemplate.animationSystem1P Objects\Common\Flags\AnimationSystem.inc
-ObjectTemplate.cullRadiusScale 3
-

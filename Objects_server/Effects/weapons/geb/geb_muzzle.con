@@ -1,6 +1,0 @@
-ObjectTemplate.create GroundEffectBundle geb_muzzle
-ObjectTemplate.createdInEditor 1  
-
-ObjectTemplate.create GroundEffectBundle geb_muzzle_sniper
-ObjectTemplate.createdInEditor 1  
-include geb_muzzle.tweak

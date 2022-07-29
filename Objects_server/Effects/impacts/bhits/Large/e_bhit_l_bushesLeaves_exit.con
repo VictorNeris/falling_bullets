@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_bhit_l_bushesLeaves_exit
-ObjectTemplate.createdInEditor 1
-
-include e_bhit_l_bushesLeaves_exit.tweak

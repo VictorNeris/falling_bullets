@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_dAmb_dustdevil
-ObjectTemplate.createdInEditor 1
-
-include e_dAmb_dustdevil.tweak

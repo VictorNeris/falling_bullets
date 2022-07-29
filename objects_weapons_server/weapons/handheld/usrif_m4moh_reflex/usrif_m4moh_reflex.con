@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh usrif_m4moh_reflex
-
-ObjectTemplate.create GenericFireArm usrif_m4moh_reflex
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator DNAPC:Администратор
-ObjectTemplate.geometry usrif_m4moh_reflex
-
-include usrif_m4moh_reflex.tweak

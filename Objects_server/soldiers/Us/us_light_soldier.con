@@ -1,8 +1,0 @@
-GeometryTemplate.create SkinnedMesh us_light_soldier
-
-ObjectTemplate.create Soldier us_light_soldier
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator JSA-1:jsa
-ObjectTemplate.geometry us_light_soldier
-
-include us_light_soldier.tweak

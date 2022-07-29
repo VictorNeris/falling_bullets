@@ -1,7 +1,0 @@
-ObjectTemplate.create ObjectSpawner v_arg1
-ObjectTemplate.activeSafe ObjectSpawner v_arg1
-ObjectTemplate.modifiedByUser "Hjid"
-ObjectTemplate.isNotSaveable 1
-ObjectTemplate.hasMobilePhysics 0
-ObjectTemplate.setObjectTemplate 1 v_arg2
-ObjectTemplate.setObjectTemplate 2 v_arg3

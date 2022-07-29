@@ -1,5 +1,0 @@
-ObjectTemplate.activeSafe AnimatedBundle flag_mec_wall
-ObjectTemplate.skeleton Objects\Common\Flags\flag_setup_wall.ske
-ObjectTemplate.animationSystem1P Objects\Common\Flags\flag_mec_wall\AnimationSystem.inc
-ObjectTemplate.cullRadiusScale 3
-

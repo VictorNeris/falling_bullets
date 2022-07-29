@@ -1,8 +1,0 @@
-GeometryTemplate.create SkinnedMesh spetz_medic_soldier
-
-ObjectTemplate.create Soldier spetz_medic_soldier
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator CHRIS:chrisel
-ObjectTemplate.geometry spetz_medic_soldier
-
-include spetz_medic_soldier.tweak

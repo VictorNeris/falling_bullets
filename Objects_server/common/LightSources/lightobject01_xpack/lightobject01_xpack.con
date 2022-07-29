@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle lightobject01_xpack
-ObjectTemplate.createdInEditor 1
-
-include lightobject01_xpack.tweak

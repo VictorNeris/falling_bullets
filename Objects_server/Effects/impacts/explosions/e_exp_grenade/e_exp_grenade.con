@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_exp_grenade
-ObjectTemplate.createdInEditor 1
-
-include e_exp_grenade.tweak

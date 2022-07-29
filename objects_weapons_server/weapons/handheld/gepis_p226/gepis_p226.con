@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh gepis_p226
-
-ObjectTemplate.create GenericFireArm gepis_p226
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator ACE
-ObjectTemplate.geometry gepis_p226
-
-include gepis_p226.tweak

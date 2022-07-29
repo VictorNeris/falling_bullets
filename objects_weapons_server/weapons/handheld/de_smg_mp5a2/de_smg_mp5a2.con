@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh de_smg_mp5a2
-
-ObjectTemplate.create GenericFireArm de_smg_mp5a2
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator USER-ой:User
-ObjectTemplate.geometry de_smg_mp5a2
-
-include de_smg_mp5a2.tweak

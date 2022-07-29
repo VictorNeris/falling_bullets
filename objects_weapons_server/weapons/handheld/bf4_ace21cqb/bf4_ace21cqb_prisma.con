@@ -1,6 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_ace21cqb_prisma
-ObjectTemplate.create GenericFireArm bf4_ace21cqb_prisma
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bf4_ace21cqb_prisma
-include bf4_ace21cqb_prisma.tweak

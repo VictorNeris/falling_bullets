@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh insrg_model10
-
-ObjectTemplate.create GenericFireArm insrg_model10
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator phale
-ObjectTemplate.geometry insrg_model10
-
-include insrg_model10.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh IDFRIF_Galil
-
-ObjectTemplate.create GenericFireArm IDFRIF_Galil
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator CAPTAINCL4D-PC:CaptainCL4D-za
-ObjectTemplate.geometry IDFRIF_Galil
-
-include IDFRIF_Galil.tweak

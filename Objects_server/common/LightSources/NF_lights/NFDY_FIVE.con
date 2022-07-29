@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle NFDY_FIVE
-ObjectTemplate.createdInEditor 1
-
-include NFDY_FIVE.tweak

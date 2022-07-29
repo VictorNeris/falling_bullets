@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh pistol_sawedoff_slug
-
-ObjectTemplate.create GenericFireArm pistol_sawedoff_slug
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MARS:theta
-ObjectTemplate.geometry pistol_sawedoff_slug
-
-include pistol_sawedoff_slug.tweak

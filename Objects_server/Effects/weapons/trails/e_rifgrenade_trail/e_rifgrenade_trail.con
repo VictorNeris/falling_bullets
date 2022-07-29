@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_rifgrenade_trail
-ObjectTemplate.createdInEditor 1
-
-include e_rifgrenade_trail.tweak

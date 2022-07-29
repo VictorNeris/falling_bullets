@@ -1,9 +1,0 @@
-rem ObjectTemplate.tracerScaler 2
-rem ObjectTemplate.maxTracerScaler 5
-rem ObjectTemplate.minTracerScaler 0
-rem ObjectTemplate.tracerSizeModifier 1
-rem ObjectTemplate.tracerConvergeDistance 20
-rem ObjectTemplate.tracerTemplate p_tracer_r
-rem ObjectTemplate.tracerInterval 1
-rem ObjectTemplate.detonation.timeUntilCanDetonate 0.2
-ObjectTemplate.addTemplate e_sniper_trail

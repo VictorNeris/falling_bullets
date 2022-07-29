@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh mohw_aa12_slug
-
-ObjectTemplate.create GenericFireArm mohw_aa12_slug
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator AU-PC:Au
-ObjectTemplate.geometry mohw_aa12_slug
-
-include mohw_aa12_slug.tweak

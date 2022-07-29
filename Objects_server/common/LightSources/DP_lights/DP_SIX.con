@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle DP_SIX
-ObjectTemplate.createdInEditor 1
-
-include DP_SIX.tweak

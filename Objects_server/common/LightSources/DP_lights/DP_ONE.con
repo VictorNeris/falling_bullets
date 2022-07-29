@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle DP_ONE
-ObjectTemplate.createdInEditor 1
-
-include DP_ONE.tweak

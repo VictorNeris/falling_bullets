@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_dstate_land_smlheavysmoke
-ObjectTemplate.createdInEditor 1
-
-include e_dstate_land_smlheavysmoke.tweak

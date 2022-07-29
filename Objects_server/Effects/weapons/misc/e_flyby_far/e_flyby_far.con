@@ -1,5 +1,0 @@
-ObjectTemplate.create EffectBundle e_flyby_far
-ObjectTemplate.createdInEditor 1
-
-include e_flyby_far.tweak
-

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_muzzle_sand
-ObjectTemplate.createdInEditor 1
-
-include e_geb_muzzle_sand.tweak

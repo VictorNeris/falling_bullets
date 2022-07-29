@@ -1,0 +1,6 @@
+ObjectTemplate.heatAddWhenFire 0.006667
+ObjectTemplate.coolDownPerSec 0.004167
+ObjectTemplate.overheatPenalty 1.000391
+
+
+

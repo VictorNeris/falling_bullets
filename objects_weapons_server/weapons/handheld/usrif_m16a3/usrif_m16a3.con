@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh usrif_m16a3
-
-ObjectTemplate.create GenericFireArm usrif_m16a3
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator GAMEPC:Eversmen
-ObjectTemplate.geometry usrif_m16a3
-
-include usrif_m16a3.tweak

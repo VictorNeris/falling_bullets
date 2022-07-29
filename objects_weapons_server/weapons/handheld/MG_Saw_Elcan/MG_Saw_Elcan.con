@@ -1,7 +1,0 @@
-GeometryTemplate.create BundledMesh MG_Saw_Elcan
-
-ObjectTemplate.create GenericFireArm MG_Saw_Elcan
-ObjectTemplate.creator DORAGONKONG:KingKong
-ObjectTemplate.geometry MG_Saw_Elcan
-
-include MG_Saw_Elcan.tweak

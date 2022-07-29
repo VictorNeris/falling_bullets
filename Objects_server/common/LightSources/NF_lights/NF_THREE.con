@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle NF_THREE
-ObjectTemplate.createdInEditor 1
-
-include NF_THREE.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh pistol_mp412
-
-ObjectTemplate.create GenericFireArm pistol_mp412
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MARVIN:radeexpitheta
-ObjectTemplate.geometry pistol_mp412
-
-include pistol_mp412.tweak

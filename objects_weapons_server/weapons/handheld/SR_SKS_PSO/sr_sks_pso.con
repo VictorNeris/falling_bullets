@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh sr_sks_pso
-
-ObjectTemplate.create GenericFireArm sr_sks_pso
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MARS:theta
-ObjectTemplate.geometry sr_sks_pso
-
-include sr_sks_pso.tweak

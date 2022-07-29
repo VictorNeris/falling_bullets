@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_bhit_s_glass_vehicle
-ObjectTemplate.createdInEditor 1
-
-include e_bhit_s_glass_vehicle.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bf4_l115_hunterscope
-
-ObjectTemplate.create GenericFireArm bf4_l115_hunterscope
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator jeight
-ObjectTemplate.geometry bf4_l115_hunterscope
-
-include bf4_l115_hunterscope.tweak

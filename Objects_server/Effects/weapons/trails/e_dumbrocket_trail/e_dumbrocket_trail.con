@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_dumbrocket_trail
-ObjectTemplate.createdInEditor 1
-
-include e_dumbrocket_trail.tweak

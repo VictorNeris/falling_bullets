@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_distdel_ak
-ObjectTemplate.createdInEditor 1
-
-include e_distdel_ak.tweak

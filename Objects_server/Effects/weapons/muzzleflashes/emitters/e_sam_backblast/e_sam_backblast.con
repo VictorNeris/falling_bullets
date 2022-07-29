@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_sam_backblast
-ObjectTemplate.createdInEditor 1
-
-include e_sam_backblast.tweak

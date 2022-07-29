@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_distdel_g3
-ObjectTemplate.createdInEditor 1
-
-include e_distdel_g3.tweak

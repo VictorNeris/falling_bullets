@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh chpis_qsz92
-
-ObjectTemplate.create GenericFireArm chpis_qsz92
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator JSA-1:jsa
-ObjectTemplate.geometry chpis_qsz92
-
-include chpis_qsz92.tweak

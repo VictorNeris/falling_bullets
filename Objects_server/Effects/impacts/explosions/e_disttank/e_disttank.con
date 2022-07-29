@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_disttank
-ObjectTemplate.createdInEditor 1
-
-include e_disttank.tweak

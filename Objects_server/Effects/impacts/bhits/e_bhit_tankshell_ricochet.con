@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_bhit_tankshell_ricochet
-ObjectTemplate.createdInEditor 1
-
-include e_bhit_tankshell_ricochet.tweak

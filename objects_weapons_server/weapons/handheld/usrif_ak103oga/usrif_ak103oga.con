@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh usrif_ak103oga
-
-ObjectTemplate.create GenericFireArm usrif_ak103oga
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator PONG-HP:Pong
-ObjectTemplate.geometry usrif_ak103oga
-
-include usrif_ak103oga.tweak

@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh bc2_m60
-
-ObjectTemplate.create GenericFireArm bc2_m60
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator BRONYSAURUS:Kassad_al_Fajhad
-ObjectTemplate.geometry bc2_m60
-
-include bc2_m60.tweak

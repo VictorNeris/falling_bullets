@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_shellejection_m82a1
-ObjectTemplate.createdInEditor 1
-
-include e_shellejection_m82a1.tweak

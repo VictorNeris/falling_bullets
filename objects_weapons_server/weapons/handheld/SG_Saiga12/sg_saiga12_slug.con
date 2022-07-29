@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh sg_saiga12_slug
-
-ObjectTemplate.create GenericFireArm sg_saiga12_slug
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator MARVIN:radeexpitheta
-ObjectTemplate.geometry sg_saiga12_slug
-
-include sg_saiga12_slug.tweak

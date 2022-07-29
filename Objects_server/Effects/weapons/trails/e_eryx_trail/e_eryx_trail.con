@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_eryx_trail
-ObjectTemplate.createdInEditor 1
-
-include e_eryx_trail.tweak

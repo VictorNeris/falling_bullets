@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle L_THREE
-ObjectTemplate.createdInEditor 1
-
-include L_THREE.tweak

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_bhit_s_sand
-ObjectTemplate.createdInEditor 1
-
-include e_bhit_s_sand.tweak

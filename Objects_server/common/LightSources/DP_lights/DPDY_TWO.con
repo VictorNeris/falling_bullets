@@ -1,4 +1,0 @@
-ObjectTemplate.create Bundle DPDY_TWO
-ObjectTemplate.createdInEditor 1
-
-include DPDY_TWO.tweak

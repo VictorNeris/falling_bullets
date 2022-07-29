@@ -1,0 +1,229 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/23 15:53]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm medikit_dressing
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\medikit_dressing.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\medikit_dressing.dds
+ObjectTemplate.weaponHud.hudName "Bandage"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showInfo 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:ThrownFireComp ---
+ObjectTemplate.createComponent ThrownFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0.06/-0.12/0
+ObjectTemplate.fire.maxProjectilesInWorld 5
+ObjectTemplate.fire.showWeaponAfterReloadDelay 0.05
+ObjectTemplate.fire.pullBackTime 0
+ObjectTemplate.fire.projectileStartRotation 30/210/160
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 6
+ObjectTemplate.ammo.nrOfMags 2
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 3
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.toggleWhenNoAmmo 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:ThrownAnimationComp ---
+ObjectTemplate.createComponent ThrownAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.cullRadiusScale 3
+ObjectTemplate.geometry medikit_dressing
+ObjectTemplate.setCollisionMesh medikit_dressing
+ObjectTemplate.mapMaterial 0 col 74
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.material 74
+rem -------------------------------------
+ObjectTemplate.addTemplate S_medikit_dressing_Fire1P
+ObjectTemplate.addTemplate S_medikit_dressing_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_medikit_dressing_Fire3P
+ObjectTemplate.addTemplate S_medikit_dressing_BoltClick
+ObjectTemplate.addTemplate S_medikit_dressing_TriggerClick
+ObjectTemplate.addTemplate S_medikit_dressing_SwitchFireRate
+ObjectTemplate.addTemplate S_medikit_dressing_Reload1P
+ObjectTemplate.addTemplate S_medikit_dressing_Reload3P
+ObjectTemplate.addTemplate S_medikit_dressing_Deploy1P
+ObjectTemplate.addTemplate S_medikit_dressing_Deploy3P
+ObjectTemplate.addTemplate S_medikit_dressing_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/C4_Explosives/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/C4_Explosives/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate medikit_dressing_Projectile
+ObjectTemplate.keepProjectiles 1
+ObjectTemplate.velocity 2
+ObjectTemplate.itemIndex 8
+ObjectTemplate.delayToUse 2.5
+
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile medikit_dressing_Projectile
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.bouncing 1
+rem ---EndComp ---
+rem ---BeginComp:ReplenishDetonationComp ---
+ObjectTemplate.createComponent ReplenishDetonationComp
+ObjectTemplate.detonation.triggerRadius 1.75
+ObjectTemplate.detonation.triggerType MTYPco
+ObjectTemplate.detonation.replenishingType RTHeal
+ObjectTemplate.detonation.replenishingStrength 45
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry medikit_dressing
+ObjectTemplate.setCollisionMesh medikit_dressing
+ObjectTemplate.mass 5
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 73
+rem -------------------------------------
+ObjectTemplate.addTemplate S_medikit_dressing_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/9999/0/0
+ObjectTemplate.material 73
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.armingDelay 2
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.damage 0
+ObjectTemplate.visibleOn3dMap 1
+ObjectTemplate.3dMapIcon 4
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Fire1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/throw.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Fire3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/throw.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.25
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_BoltClick
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_TriggerClick
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_SwitchFireRate
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Reload1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/medikit_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Reload3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/medikit_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Deploy1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/medikit_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Deploy3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/medikit_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Zoom
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_medikit_dressing_Projectile_Looping
+ObjectTemplate.modifiedByUser nfe
+

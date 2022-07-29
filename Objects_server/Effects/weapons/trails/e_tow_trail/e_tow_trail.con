@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_tow_trail
-ObjectTemplate.createdInEditor 1
-
-include e_tow_trail.tweak

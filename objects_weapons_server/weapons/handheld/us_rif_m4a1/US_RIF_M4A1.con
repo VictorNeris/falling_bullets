@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh US_RIF_M4A1
-
-ObjectTemplate.create GenericFireArm US_RIF_M4A1
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator FLI-1:fli
-ObjectTemplate.geometry US_RIF_M4A1
-
-include US_RIF_M4A1.tweak

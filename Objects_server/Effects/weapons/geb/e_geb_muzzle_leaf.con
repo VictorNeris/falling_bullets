@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_muzzle_leaf
-ObjectTemplate.createdInEditor 1
-
-include e_geb_muzzle_leaf.tweak

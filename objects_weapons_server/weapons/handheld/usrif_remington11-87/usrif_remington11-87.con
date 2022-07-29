@@ -1,8 +1,0 @@
-GeometryTemplate.create BundledMesh usrif_remington11-87
-
-ObjectTemplate.create GenericFireArm usrif_remington11-87
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.creator JSA-1:jsa
-ObjectTemplate.geometry usrif_remington11-87
-
-include usrif_remington11-87.tweak

@@ -1,4 +1,0 @@
-ObjectTemplate.create EffectBundle e_heal_soldier
-ObjectTemplate.createdInEditor 1
-
-include e_heal_soldier.tweak
