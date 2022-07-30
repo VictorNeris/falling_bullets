@@ -94,7 +94,7 @@ ObjectTemplate.createComponent ReplenishDetonationComp
 ObjectTemplate.detonation.triggerRadius 1.75
 ObjectTemplate.detonation.triggerType MTYPco
 ObjectTemplate.detonation.replenishingType RTHeal
-ObjectTemplate.detonation.replenishingStrength 50
+ObjectTemplate.detonation.replenishingStrength 45
 rem ---EndComp ---
 rem ---BeginComp:DefaultProjSoundComp ---
 ObjectTemplate.createComponent DefaultProjSoundComp
