@@ -1,13 +1,150 @@
-2022/07/30 19:26:37	
+2022/07/30 23:04:18	
 local logfile init
-cq.py initialized
+aiArtyV2.py initialized
+AiCommander initialized!
+rofileId  0
 Creating new record for player profileId  0
-Reset orderiterator to 1 based on highest pid kept
 Creating new record for player profileId  0
-2022/07/30 19:27:10	
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Reset orderiterator to 17 based on highest pid kept
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+2022/07/30 23:05:09	
 aiArty:gameStart
+2022/07/30 23:05:09	
+ArtyManager:__init__
+2022/07/30 23:05:09	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:09	
+Team 1 arty ready: True; Team 2 arty ready: True
+2022/07/30 23:05:09	
+AiCommander: loopTimer registered!
 Conquest gamemode initialized.
-Reset orderiterator to 2 based on highest pid kept
+Reset orderiterator to 34 based on highest pid kept
 Creating new record for player profileId  0
-2022/07/30 19:27:10	
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+2022/07/30 23:05:09	
 aiArty:gameStart
+2022/07/30 23:05:09	
+ArtyManager:__init__
+2022/07/30 23:05:09	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:09	
+Team 1 arty ready: True; Team 2 arty ready: True
+Conquest gamemode initialized.
+Reset orderiterator to 51 based on highest pid kept
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+Creating new record for player profileId  0
+2022/07/30 23:05:09	
+aiArty:gameStart
+2022/07/30 23:05:09	
+ArtyManager:__init__
+2022/07/30 23:05:09	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:09	
+Team 1 arty ready: True; Team 2 arty ready: True
+Conquest gamemode initialized.
+2022/07/30 23:05:12	
+loopScan...
+2022/07/30 23:05:12	
+findPosForArty: team1 
+2022/07/30 23:05:12	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:12	
+Team 1 arty ready: False; Team 2 arty ready: False
+2022/07/30 23:05:12	
+findPosForArty: team2 
+2022/07/30 23:05:12	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:12	
+Team 1 arty ready: False; Team 2 arty ready: False
+2022/07/30 23:05:15	
+loopScan...
+2022/07/30 23:05:15	
+findPosForArty: team1 
+2022/07/30 23:05:15	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:15	
+Team 1 arty ready: False; Team 2 arty ready: False
+2022/07/30 23:05:15	
+findPosForArty: team2 
+2022/07/30 23:05:15	
+Team 1 arty num: 0; Team 2 arty num: 0
+2022/07/30 23:05:15	
+Team 1 arty ready: False; Team 2 arty ready: False
+Removed player index 254 from player cache
+Removed player index 253 from player cache
+Removed player index 252 from player cache
+Removed player index 251 from player cache
+Removed player index 250 from player cache
+Removed player index 249 from player cache
+Removed player index 248 from player cache
+Removed player index 247 from player cache
+Removed player index 246 from player cache
+Removed player index 245 from player cache
+Removed player index 244 from player cache
+Removed player index 243 from player cache
+Removed player index 242 from player cache
+Removed player index 241 from player cache
+Removed player index 240 from player cache
+Removed player index 239 from player cache
+cq.py uninitialized
+Removed player index 255 from player cache

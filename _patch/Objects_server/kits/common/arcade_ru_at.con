@@ -61,7 +61,7 @@ ObjectTemplate.unlockLevel 2
 
 ObjectTemplate.create ItemContainer Unlock_arcade_ru_AT_3
 ObjectTemplate.addTemplate smg_p90
-ObjectTemplate.replaceItem de_smg_mp5a2
+ObjectTemplate.replaceItem SMG_PP19
 ObjectTemplate.unlockLevel 3
 
 
