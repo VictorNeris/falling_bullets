@@ -18,7 +18,7 @@ ObjectTemplate.timeToLiveAfterDeath 30
 
 rem -------------------------------------
 ObjectTemplate.addTemplate kni_knife
-ObjectTemplate.addTemplate bf4_scar_hsv
+ObjectTemplate.addTemplate bf4_scar_hsv_acog
 ObjectTemplate.addTemplate pistol_m1911
 
 ObjectTemplate.addTemplate USHGR_M67
@@ -54,7 +54,7 @@ rem ---EndComp ---
 
 ObjectTemplate.create ItemContainer Unlock_arcade_us_Sniper_1
 ObjectTemplate.addTemplate VSSK
-ObjectTemplate.replaceItem bf4_scar_hsv
+ObjectTemplate.replaceItem bf4_scar_hsv_acog
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer Unlock_arcade_us_Sniper_2

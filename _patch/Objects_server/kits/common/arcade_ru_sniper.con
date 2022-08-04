@@ -53,7 +53,7 @@ ObjectTemplate.replaceItem sr_svd
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer Unlock_arcade_ru_Sniper_2
-ObjectTemplate.addTemplate bf4_scar_hsv
+ObjectTemplate.addTemplate bf4_scar_hsv_acog
 ObjectTemplate.replaceItem bf4_asval_pso1
 
 ObjectTemplate.addTemplate pis_deagle
@@ -62,6 +62,6 @@ ObjectTemplate.unlockLevel 2
 
 ObjectTemplate.create ItemContainer Unlock_arcade_ru_Sniper_3
 ObjectTemplate.addTemplate l96
-ObjectTemplate.replaceItem bf4_scar_hsv
+ObjectTemplate.replaceItem bf4_scar_hsv_acog
 ObjectTemplate.unlockLevel 3
 

@@ -1,0 +1,300 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/15 11:52]
+GeometryTemplate.setMaterialReflectionScale 0 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 0 0 2
+GeometryTemplate.setMaterialReflectionScale 1 0 1 0.25
+GeometryTemplate.setMaterialReflectionScale 1 1 0 2
+GeometryTemplate.setMaterialReflectionScale 1 1 1 0.25
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm sr_m95
+ObjectTemplate.creator NFE-2:nfe
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair_sniper.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\sr_m95.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\sr_m95.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\sr_m95.dds
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_barret95"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 3671
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.07/0
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.busyUntilButtonRelease 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/sniper_mags.tweak
+rem ObjectTemplate.ammo.nrOfMags 11
+ObjectTemplate.ammo.magSize 5
+ObjectTemplate.ammo.reloadTime 5.66667
+rem ObjectTemplate.ammo.reloadWithoutPlayer 1
+
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/12_70x99mm_bolt_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.goBackOnRecoil 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/4/3/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-3/3/2
+rem ObjectTemplate.recoil.zoomModifier 1.0
+rem ObjectTemplate.recoil.recoilGraphFrameCount 14
+rem ObjectTemplate.recoil.recoilGraphExponent 7
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.1
+rem ObjectTemplate.recoil.recoilSize 0.25
+rem ObjectTemplate.recoil.recoilSpeed 30
+rem ObjectTemplate.recoil.cameraRecoilSpeed 11
+rem ObjectTemplate.recoil.cameraRecoilSize 2.5
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/sniper_accurate_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.useShiftAnimation 1
+ObjectTemplate.animation.shiftDelay 1.875
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+include ../../common/optics/scope_16x.tweak
+rem sniper_zoom
+ObjectTemplate.zoom.zoomDelay 0.6
+ObjectTemplate.zoom.changeFovDelay 0.6
+ObjectTemplate.zoom.zoomLod 1
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.15
+rem ObjectTemplate.zoom.mouseSpeedMod 0.5
+rem ObjectTemplate.zoom.changeFovDelay 0.1
+ObjectTemplate.zoom.zoomOutAfterFire 1
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 0
+rem ---EndComp ---
+ObjectTemplate.geometry sr_m95
+ObjectTemplate.setCollisionMesh sr_m95
+ObjectTemplate.mapMaterial 0 SR_M95 68
+ObjectTemplate.mapMaterial 1 SR_m95_scope 0
+ObjectTemplate.mapMaterial 2 Alpha 0
+ObjectTemplate.mapMaterial 3 SR_m95_clip 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate sniper_rifle_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_sr_m95_Fire1P
+ObjectTemplate.addTemplate S_sr_m95_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_sr_m95_Fire3P
+ObjectTemplate.addTemplate S_sr_m95_BoltClick
+ObjectTemplate.addTemplate S_sr_m95_TriggerClick
+ObjectTemplate.addTemplate S_sr_m95_SwitchFireRate
+ObjectTemplate.addTemplate S_sr_m95_Reload1P
+ObjectTemplate.addTemplate S_sr_m95_Reload3P
+ObjectTemplate.addTemplate S_sr_m95_Deploy1P
+ObjectTemplate.addTemplate S_sr_m95_Deploy3P
+ObjectTemplate.addTemplate S_sr_m95_Zoom
+ObjectTemplate.addTemplate e_muzz_m95
+ObjectTemplate.setPosition 0.00342608/0.00878209/0.808916
+ObjectTemplate.addTemplate e_shellejection_m82a1
+ObjectTemplate.setPosition 0.0187211/0.0153116/-0.238272
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/sr_m95/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/USSNI_M95_Barret/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 50_BMG
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 890
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1
+
+rem ObjectTemplate.create GenericProjectile sr_m95_Projectile
+rem ObjectTemplate.modifiedByUser "DEVELOP013"
+rem ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+rem ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+rem ObjectTemplate.createComponent DefaultDetonationComp
+rem ObjectTemplate.detonation.explosionMaterial 70
+rem ObjectTemplate.detonation.explosionRadius 10
+rem ObjectTemplate.detonation.explosionForce 3
+rem ObjectTemplate.detonation.explosionDamage 0
+rem ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+rem ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+rem ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+rem ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+rem ObjectTemplate.floaterMod 0
+rem ObjectTemplate.hasMobilePhysics 1
+rem ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.physicsType Point
+rem ObjectTemplate.collisionGroups 8
+rem ObjectTemplate.material 39
+rem -------------------------------------
+rem ObjectTemplate.addTemplate S_USSNI_m107_Projectile_Looping
+rem ObjectTemplate.addTemplate e_rifgrenade_trail
+rem ObjectTemplate.setPosition 0/0/-0.00992489
+rem ObjectTemplate.addTemplate houselight_big_LightSource
+rem ObjectTemplate.setPosition 0/0/-0.00992489
+rem -------------------------------------
+rem ObjectTemplate.timeToLive CRD_NONE/5/0/0
+rem ObjectTemplate.material 39
+rem ObjectTemplate.tracerScaler 42
+rem ObjectTemplate.maxTracerScaler 81
+rem ObjectTemplate.minTracerScaler 11
+rem ObjectTemplate.tracerSizeModifier 20
+rem ObjectTemplate.tracerConvergeDistance 20
+rem ObjectTemplate.tracerTemplate p_tracer_r
+rem ObjectTemplate.tracerInterval 1
+rem ObjectTemplate.material 39
+rem ObjectTemplate.damage 1058
+rem ObjectTemplate.minDamage 200
+rem rem ObjectTemplate.drag 5
+rem rem ObjectTemplate.mass 1.6
+rem ObjectTemplate.gravityModifier 1.0
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Fire1P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sr_m95/sounds/fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Fire3P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sr_m95/sounds/fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/-1.97887e-005/0.67157
+ObjectTemplate.minDistance 30
+ObjectTemplate.halfVolumeDistance 30
+
+
+ObjectTemplate.activeSafe Sound S_sr_m95_BoltClick
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_sr_m95_TriggerClick
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sr_m95_SwitchFireRate
+ObjectTemplate.modifiedByUser "DEVELOP013"
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Reload1P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sr_m95/sounds/sn_m95_reload.wav,objects/weapons/handheld/sr_m95/sounds/sn_m95_bolt_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Reload3P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussni_m95_barret/sounds/barrett_1p_reload.wav,objects/weapons/handheld/ussni_m95_barret/sounds/barrett_shift_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Deploy1P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussni_m95_barret/sounds/barrett_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Deploy3P
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussni_m95_barret/sounds/barrett_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Zoom
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sr_m95_Projectile_Looping
+ObjectTemplate.modifiedByUser "DEVELOP013"
+ObjectTemplate.createdInEditor 1
+
