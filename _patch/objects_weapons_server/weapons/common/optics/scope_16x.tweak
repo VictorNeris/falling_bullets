@@ -1,0 +1,3 @@
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.0625
+ObjectTemplate.zoom.mouseSpeedMod 5.4

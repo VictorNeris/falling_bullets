@@ -9504,6 +9504,12 @@ MaterialManager.createCell 84 77
 MaterialManager.damageMod 0
 MaterialManager.createCell 84 79
 MaterialManager.damageMod 0
+MaterialManager.createCell 38 90
+MaterialManager.damageMod 0.5
+MaterialManager.createCell 39 90
+MaterialManager.damageMod 0.5
+MaterialManager.createCell 41 90
+MaterialManager.damageMod 0.5
 MaterialManager.createCell 84 90
 MaterialManager.damageMod 8
 MaterialManager.createCell 84 94

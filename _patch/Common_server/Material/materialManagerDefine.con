@@ -247,8 +247,8 @@ Material.type 4
 Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
-Material.damageLoss 90
-Material.minDamageLoss 85
+Material.damageLoss 25
+Material.minDamageLoss 10
 Material.penetrationDeviation 0.5
 Material.isOneSided 1
 
@@ -259,8 +259,8 @@ Material.type 4
 Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
-Material.damageLoss 10
-Material.minDamageLoss 5
+Material.damageLoss 2
+Material.minDamageLoss 0
 Material.penetrationDeviation 0.5
 Material.isOneSided 1
 
@@ -271,8 +271,8 @@ Material.type 4
 Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
-Material.damageLoss 50
-Material.minDamageLoss 5
+Material.damageLoss 5
+Material.minDamageLoss 1
 Material.penetrationDeviation 2
 Material.isOneSided 1
 

@@ -1,0 +1,134 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/11/23 10:15]
+ObjectTemplate.activeSafe AnimatedBundle c4_detonator
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\C4_Detonator.tga
+ObjectTemplate.weaponHud.hudName "C4 DETONATOR"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.altFireInput PIAltFire
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.fireLaunchDelay 0.6
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.toggleWhenNoAmmo 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry c4_detonator
+ObjectTemplate.setCollisionMesh c4_detonator
+ObjectTemplate.mapMaterial 0 Rubber 0
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_c4_detonator_Fire1P
+ObjectTemplate.addTemplate S_c4_detonator_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_c4_detonator_Fire3P
+ObjectTemplate.addTemplate S_c4_detonator_BoltClick
+ObjectTemplate.addTemplate S_c4_detonator_TriggerClick
+ObjectTemplate.addTemplate S_c4_detonator_SwitchFireRate
+ObjectTemplate.addTemplate S_c4_detonator_Reload1P
+ObjectTemplate.addTemplate S_c4_detonator_Reload3P
+ObjectTemplate.addTemplate S_c4_detonator_Deploy1P
+ObjectTemplate.addTemplate S_c4_detonator_Deploy3P
+ObjectTemplate.addTemplate S_c4_detonator_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P objects/weapons/handheld/c4_detonator/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P objects/weapons/handheld/c4_detonator/AnimationSystem3p.inc
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Fire1P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_detonator/sounds/fire_indoor_1p3p.wav"
+rem "objects/weapons/handheld/c4_detonator/sounds/detonator_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.88
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_detonator/sounds/Fire_1p3p.wav"
+rem "objects/weapons/handheld/c4_detonator/sounds/detonator_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Fire3P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_detonator/sounds/Fire_1p3p.wav"
+rem "objects/weapons/handheld/c4_detonator/sounds/detonator_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_BoltClick
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_TriggerClick
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_SwitchFireRate
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Reload1P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Reload3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Deploy1P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_detonator/sounds/deploy_1p3p.wav"
+rem "objects/weapons/handheld/c4_detonator/sounds/c4_detonator_1p_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.73
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Deploy3P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_detonator/sounds/deploy_1p3p.wav"
+rem "objects/weapons/handheld/c4_detonator/sounds/c4_detonator_1p_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.6
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_c4_detonator_Zoom
+ObjectTemplate.modifiedByUser ljo
+
