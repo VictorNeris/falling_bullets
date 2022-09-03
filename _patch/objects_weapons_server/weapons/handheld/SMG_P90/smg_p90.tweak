@@ -58,6 +58,7 @@ ObjectTemplate.createComponent DefaultAnimationComp
 rem ---EndComp ---
 rem ---BeginComp:DefaultZoomComp ---
 ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.mouseSpeedMod 0.9819
 include ../../common/optics/mediumzoom.tweak
 ObjectTemplate.zoom.zoomDelay 0.25
 ObjectTemplate.zoom.zoomLod 0

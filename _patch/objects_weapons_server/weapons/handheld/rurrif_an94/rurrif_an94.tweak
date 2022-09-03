@@ -1,0 +1,279 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.35
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm rurrif_an94
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\AN94_iron.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\AN94_iron.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\AN94_iron.dds
+ObjectTemplate.weaponHud.hudName "AN-94"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 52
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 27
+rem ObjectTemplate.weaponHud.minVisualDeviation 4
+ObjectTemplate.weaponHud.disableOnSprint 0
+ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 302
+rem ---EndComp ---
+rem ---BeginComp:PostProcess ---
+rem v_arg1 = zoom/blur mask scale,  v_arg2 = shaderzoomfactor.
+include /common/Scripts/PostProcess_OpticsBlurZoom.tweak 1 0.6
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.05/0
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 2
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/rifle_mags.tweak
+rem ObjectTemplate.ammo.ammoType 1
+rem ObjectTemplate.ammo.nrOfMags 11
+ObjectTemplate.ammo.reloadTime 3.4
+rem ObjectTemplate.ammo.reloadWithoutPlayer 1
+ObjectTemplate.ammo.magLinkWeapon rurrif_an94_auto
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/05_45x39mm_rifle_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.goBackOnRecoil 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.55/0.1/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.2/0.2/0
+rem ObjectTemplate.recoil.recoilGraphFrameCount 15
+rem ObjectTemplate.recoil.recoilGraphExponent 6
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ObjectTemplate.recoil.zoomModifier 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/assaultrifle_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.mouseSpeedMod 0.7752
+include ../../common/optics/mediumzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.6
+ObjectTemplate.zoom.zoomLod 0
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 0.740
+rem 1.35
+rem ObjectTemplate.zoom.mouseSpeedMod 0.7
+rem ---EndComp ---
+ObjectTemplate.geometry rurrif_an94
+rem ObjectTemplate.setCollisionMesh rurif_gp30
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate ar_scope_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_rurrif_an94_Fire1P
+ObjectTemplate.setPosition -6.08906e-008/0.0312745/0.501614
+ObjectTemplate.addTemplate S_rurrif_an94_Fire1P_Outdoor
+ObjectTemplate.setPosition -1.06299e-006/0.0306406/0.501084
+ObjectTemplate.addTemplate S_rurrif_an94_Fire3P
+ObjectTemplate.setPosition 0.00193596/0.0299145/0.502989
+ObjectTemplate.addTemplate S_rurrif_an94_BoltClick
+ObjectTemplate.setPosition -2.65122e-006/0.0365547/-0.168766
+ObjectTemplate.addTemplate S_rurrif_an94_TriggerClick
+ObjectTemplate.setPosition -8.82839e-007/-0.0100039/-0.121084
+ObjectTemplate.addTemplate S_rurrif_an94_SwitchFireRate
+ObjectTemplate.setPosition 2.2246e-006/0.0191611/-0.139714
+ObjectTemplate.addTemplate S_rurrif_an94_Reload1P
+ObjectTemplate.setPosition 5.87128e-008/-0.0285731/-0.055355
+ObjectTemplate.addTemplate S_rurrif_an94_Reload3P
+ObjectTemplate.setPosition -4.34826e-007/-0.0370879/-0.0480753
+ObjectTemplate.addTemplate S_rurrif_an94_Deploy1P
+ObjectTemplate.setPosition -4.68215e-007/0.0438033/-0.191369
+ObjectTemplate.addTemplate S_rurrif_an94_Deploy3P
+ObjectTemplate.setPosition 1.13096e-006/-0.0016402/-0.183915
+ObjectTemplate.addTemplate S_rurrif_an94_Zoom
+ObjectTemplate.setPosition 4.32048e-007/0.0325211/-0.170899
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.0153456/0.0351335/-0.0348405
+ObjectTemplate.setRotation -10/0/11
+ObjectTemplate.addTemplate e_muzz_ak74
+ObjectTemplate.setPosition 0.00345999/0.00940067/0.591148
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/rurrif_an94/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/rurif_ak47/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 545_39_rifle
+ObjectTemplate.velocity 900
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.75
+include ../../common/heat/ar_heat.tweak
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Fire1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_an94/sounds/an94_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.045/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Fire1P_outdoor
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_an94/sounds/an94_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.045/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Fire3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_an94/sounds/AR_AN94_Fire_3p_01.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position 0/0.013551/0.501526
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 15
+ObjectTemplate.soundRadius 0.4
+
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_BoltClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -2.65122e-006/0.0365547/-0.168766
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_TriggerClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -8.82839e-007/-0.0100039/-0.121084
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_SwitchFireRate
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 2.2246e-006/0.0191611/-0.139714
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Reload1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_an94/sounds/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 5.87128e-008/-0.0285731/-0.055355
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Reload3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/RURIF_AK47/sounds/ak47_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -4.34826e-007/-0.0370879/-0.0480753
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 8
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Deploy1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position -4.68215e-007/0.0438033/-0.191369
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Deploy3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 1.13096e-006/-0.0016402/-0.183915
+ObjectTemplate.minDistance 0.3
+ObjectTemplate.halfVolumeDistance 0.6
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Zoom
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 4.32048e-007/0.0325211/-0.170899
+
+ObjectTemplate.activeSafe Sound S_rurrif_an94_Projectile_Looping
+ObjectTemplate.modifiedByUser dsu
+

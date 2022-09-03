@@ -1,0 +1,269 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/9/15 0:21]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm ar_416carbine_supp
+ObjectTemplate.creator DANR_XP:danri
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.setNetworkableInfo HandFireArmsInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+include ../../common/optics/crosshair.tweak
+
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\ar_416carbine.dds
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\ar_416carbine.dds
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\ar_416carbine.dds
+ObjectTemplate.weaponHud.hudName "HK416 Suppressed"
+rem ObjectTemplate.weaponHud.guiIndex 52
+ObjectTemplate.weaponHud.altGuiIndex 302
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 23
+rem ObjectTemplate.weaponHud.minVisualDeviation 2
+ObjectTemplate.weaponHud.disableOnSprint 0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage AUTO_MOODGP_reloading
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.projectileStartPosition 0/-0.04/0
+ObjectTemplate.fire.roundsPerMinute 750
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+include ../../common/mags/rifle_mags.tweak
+rem ObjectTemplate.ammo.ammoType 1
+rem ObjectTemplate.ammo.nrOfMags 9
+ObjectTemplate.ammo.reloadTime 3.25
+rem ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+include ../../common/recoil/05_56x45mm_rifle_recoil.tweak
+rem ObjectTemplate.recoil.hasRecoilForce 1
+rem ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.3/0.85/0
+rem ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.3/0.3/0
+rem ObjectTemplate.recoil.zoomModifier 0.7
+rem ObjectTemplate.recoil.recoilGraphFrameCount 4
+rem ObjectTemplate.recoil.recoilGraphExponent 5
+rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+include ../../common/deviation/carbine_dev.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.mouseSpeedMod 0.9819
+include ../../common/optics/mediumzoom.tweak
+ObjectTemplate.zoom.zoomDelay 0.3
+ObjectTemplate.zoom.zoomLod 1
+rem ObjectTemplate.zoom.addZoomFactor 0
+rem ObjectTemplate.zoom.addZoomFactor 1
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+ObjectTemplate.geometry ar_416carbine
+ObjectTemplate.setCollisionMesh ar_416carbine
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ar_supp_ai
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Fire1P
+ObjectTemplate.setPosition -0.00154155/0.0174675/0.474922
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Fire1P_Outdoor
+ObjectTemplate.setPosition -0.000946715/0.0175849/0.474557
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Fire3P
+ObjectTemplate.setPosition -0.00107837/0.0164062/0.474377
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_BoltClick
+ObjectTemplate.setPosition 0/0.0271776/-0.108983
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_TriggerClick
+ObjectTemplate.setPosition 0/-0.0442018/-0.0382003
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_SwitchFireRate
+ObjectTemplate.setPosition 0/-0.0181397/-0.0909292
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Reload1P
+ObjectTemplate.setPosition 0/-0.063823/0.0222512
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Reload3P
+ObjectTemplate.setPosition 0/-0.0582734/0.0158555
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Deploy1P
+ObjectTemplate.setPosition 0/0.0595026/-0.0856211
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Deploy3P
+ObjectTemplate.setPosition 0/0.0159245/-0.0538461
+ObjectTemplate.addTemplate S_AR_416Carbine_supp_Zoom
+ObjectTemplate.setPosition 0/0.0913384/-0.0160701
+ObjectTemplate.addTemplate e_muzz_asval
+ObjectTemplate.setPosition 0/0.0205829/0.433344
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.0083518/0.0205752/0.00123446
+ObjectTemplate.setRotation -10/0/11
+ObjectTemplate.addTemplate silencer_moh
+ObjectTemplate.setPosition 0.00129928/0.02/0.44
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/ar_416carbine/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/usrif_m4/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate 556_45_carbine
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 752
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.75
+include ../../common/heat/ar_supp_heat.tweak
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Fire1P
+ObjectTemplate.modifiedByUser "Anders"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ar_416carbine/sounds/g36c_1p_suppressed.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.981/1.035/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "Anders"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename objects/weapons/handheld/ar_416carbine/sounds/g36c_1p_suppressed.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.981/1.035/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Fire3P
+ObjectTemplate.modifiedByUser "Anders"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/ar_416carbine/sounds/g36c_3p_suppressed.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.95
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.975/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.017/0.502
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 1.5
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_BoltClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_TriggerClick
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_SwitchFireRate
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.55
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0181397/-0.0909292
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Reload1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/ar_416carbine/sounds/aachb_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.62
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.063823/0.0222512
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Reload3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.68
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0582734/0.0158555
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 5
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Deploy1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0595026/-0.0856211
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Deploy3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0159245/-0.0538461
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Zoom
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+
+ObjectTemplate.activeSafe Sound S_AR_416Carbine_supp_Looping
+ObjectTemplate.modifiedByUser jsa

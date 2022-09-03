@@ -5,6 +5,11 @@ Material.type 4
 Material.friction 0.75
 Material.elasticity 0
 Material.resistance 0.02
+Material.penetrationDeviation 0.25
+Material.damageLoss 45
+Material.minDamageLoss 25
+Material.isOneSided 1
+
 
 Material.active 1
 Material.name "Water_deep"
@@ -138,9 +143,9 @@ Material.type 1
 Material.friction 0
 Material.elasticity 0
 Material.resistance 0.02
-Material.damageLoss 20
-Material.minDamageLoss 5
-Material.penetrationDeviation 0
+Material.damageLoss 10
+Material.minDamageLoss 3
+Material.penetrationDeviation 0.05
 Material.isOneSided 1
 
 Material.active 15
@@ -150,9 +155,9 @@ Material.type 1
 Material.friction 0
 Material.elasticity 0
 Material.resistance 0.01
-Material.damageLoss 40
-Material.minDamageLoss 10
-Material.penetrationDeviation 0
+Material.damageLoss 75
+Material.minDamageLoss 25
+Material.penetrationDeviation 0.2
 Material.isOneSided 1
 
 Material.active 16
@@ -175,8 +180,8 @@ Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
 Material.penetrationDeviation 0.5
-Material.damageLoss 5
-Material.minDamageLoss 5
+Material.damageLoss 2
+Material.minDamageLoss 0
 Material.penetrationDeviation 0
 Material.isOneSided 1
 
@@ -190,7 +195,7 @@ Material.resistance 0.01
 Material.penetrationDeviation -1
 Material.damageLoss 10
 Material.minDamageLoss 5
-Material.penetrationDeviation 0.1
+Material.penetrationDeviation 0
 Material.isOneSided 1
 
 
@@ -202,10 +207,9 @@ Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
 Material.projectileCollisionHardness 0.2
-Material.penetrationDeviation 0.2
-Material.damageLoss 100
-Material.minDamageLoss 50
-Material.penetrationDeviation 1
+Material.damageLoss 125
+Material.minDamageLoss 90
+Material.penetrationDeviation 0.25
 Material.isOneSided 1
 
 Material.active 20
@@ -216,9 +220,9 @@ Material.friction 0
 Material.elasticity 0
 Material.resistance 0.01
 Material.projectileCollisionHardness 0.1
-Material.damageLoss 30
-Material.minDamageLoss 15
-Material.penetrationDeviation 0
+Material.damageLoss 35
+Material.minDamageLoss 25
+Material.penetrationDeviation 0.15
 Material.isOneSided 1
 
 Material.active 21
@@ -247,9 +251,9 @@ Material.type 4
 Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
-Material.damageLoss 25
-Material.minDamageLoss 10
-Material.penetrationDeviation 0.5
+Material.damageLoss 50
+Material.minDamageLoss 40
+Material.penetrationDeviation 0.025
 Material.isOneSided 1
 
 Material.active 24
@@ -259,9 +263,9 @@ Material.type 4
 Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
-Material.damageLoss 2
-Material.minDamageLoss 0
-Material.penetrationDeviation 0.5
+Material.damageLoss 3
+Material.minDamageLoss 2
+Material.penetrationDeviation 0.025
 Material.isOneSided 1
 
 Material.active 25
@@ -272,8 +276,8 @@ Material.friction 1.1
 Material.elasticity 0
 Material.resistance 0.01
 Material.damageLoss 5
-Material.minDamageLoss 1
-Material.penetrationDeviation 2
+Material.minDamageLoss 2
+Material.penetrationDeviation 0.01
 Material.isOneSided 1
 
 Material.active 26
@@ -365,6 +369,9 @@ Material.friction 5
 Material.elasticity 0
 Material.resistance 0.01
 Material.penetrationDeviation 0.2
+Material.damageLoss 40
+Material.minDamageLoss 7
+Material.isOneSided 1
 
 Material.active 35
 Material.name "Stairs_wood"
@@ -373,7 +380,10 @@ Material.type 0
 Material.friction 5
 Material.elasticity 0
 Material.resistance 0.01
-Material.penetrationDeviation 0.2
+Material.penetrationDeviation 0.025
+Material.damageLoss 5
+Material.minDamageLoss 1
+Material.isOneSided 1
 
 Material.active 36
 Material.name "Stairs_metal"
@@ -383,7 +393,10 @@ Material.friction 5
 Material.elasticity 0
 Material.resistance 0.01
 Material.projectileCollisionHardness 0.3
-Material.penetrationDeviation 0.2
+Material.penetrationDeviation 0.02
+Material.damageLoss 20
+Material.minDamageLoss 5
+Material.isOneSided 1
 
 Material.active 37
 Material.name "webMat_lcac"
@@ -738,6 +751,9 @@ Material.elasticity 0
 Material.resistance 0.01
 Material.projectileCollisionHardness 0.1
 Material.penetrationDeviation 0.2
+Material.damageLoss 50
+Material.minDamageLoss 10
+Material.isOneSided 1
 
 Material.active 79
 Material.name "Soldier_weapon_light"
@@ -1203,6 +1219,9 @@ Material.elasticity 0
 Material.resistance 0.01
 Material.projectileCollisionHardness 0.1
 Material.penetrationDeviation 0.2
+Material.damageLoss 5
+Material.minDamageLoss 1
+Material.isOneSided 1
 
 Material.active 1013
 Material.name "Pentrable_Metal_plating"

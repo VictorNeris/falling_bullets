@@ -73,6 +73,7 @@ ObjectTemplate.animation.shiftDelay 1.2
 rem ---EndComp ---
 rem ---BeginComp:DefaultZoomComp ---
 ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.mouseSpeedMod 2.019
 include ../../common/optics/scope_8x.tweak
 ObjectTemplate.zoom.zoomDelay 0.4
 ObjectTemplate.zoom.changeFovDelay 0.4
