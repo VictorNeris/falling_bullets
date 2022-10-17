@@ -62,15 +62,15 @@ ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
 rem ---EndComp ---
 
 ObjectTemplate.create ItemContainer UnlockUSSupport_1	
-ObjectTemplate.addTemplate mg_xm22
+ObjectTemplate.addTemplate bf4_m249_m145
 ObjectTemplate.replaceItem bf4_m249
-ObjectTemplate.addTemplate mg_xm22_deployed
+ObjectTemplate.addTemplate bf4_m249_m145_deployed
 ObjectTemplate.replaceItem bf4_m249_deployed
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer UnlockUSSupport_2
 ObjectTemplate.addTemplate bc2_m60
-ObjectTemplate.replaceItem mg_xm22
+ObjectTemplate.replaceItem bf4_m249_m145
 ObjectTemplate.addTemplate bc2_m60_deployed
-ObjectTemplate.replaceItem mg_xm22_deployed
+ObjectTemplate.replaceItem bf4_m249_m145_deployed
 ObjectTemplate.unlockLevel 2

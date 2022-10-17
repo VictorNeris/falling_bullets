@@ -19,7 +19,7 @@ ObjectTemplate.addTemplate meinsurgent_lt_nvg
 
 rem -------------------------------------
 ObjectTemplate.addTemplate kni_knife
-ObjectTemplate.addTemplate vz58p
+ObjectTemplate.addTemplate rurif_ak74n
 ObjectTemplate.addTemplate rupis_makarov
 
 ObjectTemplate.addTemplate USHGR_M67
@@ -63,10 +63,10 @@ rem ---EndComp ---
 
 ObjectTemplate.create ItemContainer UnlockMEIMedic_1
 ObjectTemplate.addTemplate sr_sks
-Objecttemplate.replaceItem vz58p
+Objecttemplate.replaceItem rurif_ak74n
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer UnlockMEIMedic_2
 ObjectTemplate.addTemplate sr_sks_pso
-Objecttemplate.replaceItem ru_rif_ak47
+Objecttemplate.replaceItem sr_sks
 ObjectTemplate.unlockLevel 2

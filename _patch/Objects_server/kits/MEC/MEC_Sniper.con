@@ -13,7 +13,7 @@ ObjectTemplate.cullRadiusScale 100000
 ObjectTemplate.timeToLiveAfterDeath 60
 rem -------------------------------------
 ObjectTemplate.addTemplate kni_knife
-ObjectTemplate.addTemplate usrif_ak103oga
+ObjectTemplate.addTemplate sr_svd
 ObjectTemplate.addTemplate gepis_p226
 
 ObjectTemplate.addTemplate USHGR_M67
@@ -48,7 +48,7 @@ rem ---EndComp ---
 
 ObjectTemplate.create ItemContainer UnlockMECSniper_1
 ObjectTemplate.addTemplate bf4_ace53sv_jgm4
-ObjectTemplate.replaceItem usrif_ak103oga
+ObjectTemplate.replaceItem sr_svd
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer UnlockMECSniper_2

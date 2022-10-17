@@ -54,6 +54,6 @@ Objecttemplate.replaceItem smg_uzi
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer UnlockMEIAT_2
-ObjectTemplate.addTemplate sr_sks_pso
+ObjectTemplate.addTemplate ru_rif_ak47
 ObjectTemplate.replaceItem ru_rif_aks74u
 ObjectTemplate.unlockLevel 2

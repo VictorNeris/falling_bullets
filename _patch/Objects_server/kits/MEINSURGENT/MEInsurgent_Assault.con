@@ -25,6 +25,7 @@ ObjectTemplate.addTemplate ParachuteLauncher
 ObjectTemplate.addTemplate medikit_dressing
 
 ObjectTemplate.addTemplate UnlockMEIAssault_1
+ObjectTemplate.addTemplate UnlockMEIAssault_2
 rem -------------------------------------
 
 ObjectTemplate.createComponent AbilityHud
@@ -49,9 +50,14 @@ ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
 rem ---EndComp ---
 
 ObjectTemplate.create ItemContainer UnlockMEIAssault_1
-ObjectTemplate.addTemplate idfrif_galil
+ObjectTemplate.addTemplate rurif_ak74n
 ObjectTemplate.replaceItem ru_rif_ak47
 ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMEIAssault_2
+ObjectTemplate.addTemplate idfrif_galil
+ObjectTemplate.replaceItem rurif_ak74n
+ObjectTemplate.unlockLevel 2
 
 
 

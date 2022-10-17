@@ -47,6 +47,6 @@ ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
 rem ---EndComp ---
 
 ObjectTemplate.create ItemContainer UnlockMEISpecops_1
-ObjectTemplate.addTemplate vz58p_s
+ObjectTemplate.addTemplate rurif_ak74n
 ObjectTemplate.replaceItem ru_rif_aks74uBlackSil
 ObjectTemplate.unlockLevel 1

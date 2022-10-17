@@ -70,8 +70,9 @@ ObjectTemplate.replaceItem rumg_pkm_deployed
 ObjectTemplate.unlockLevel 1
 
 ObjectTemplate.create ItemContainer UnlockMEISupport_2
-ObjectTemplate.addTemplate bf4_rpk_pso1
+ObjectTemplate.addTemplate MG_RPK74M
 ObjectTemplate.replaceItem bf4_rpk
-ObjectTemplate.addTemplate bf4_rpk_pso1_deployed
+ObjectTemplate.addTemplate MG_RPK74M_deployed
 ObjectTemplate.replaceItem bf4_rpk_deployed
 ObjectTemplate.unlockLevel 2
+
