@@ -17,11 +17,11 @@ ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\bf4_sv98_pks07
 ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\bf4_sv98_pks07
 ObjectTemplate.weaponHud.hudName "SV-98"
 rem ObjectTemplate.weaponHud.guiIndex 4
-ObjectTemplate.weaponHud.altGuiIndex 52
-ObjectTemplate.weaponHud.deviationFactor 5
-ObjectTemplate.weaponHud.maxVisualDeviation 100
-ObjectTemplate.weaponHud.minVisualDeviation 50
-ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.altGuiIndex 3633
+rem ObjectTemplate.weaponHud.deviationFactor 5
+rem ObjectTemplate.weaponHud.maxVisualDeviation 100
+rem ObjectTemplate.weaponHud.minVisualDeviation 50
+rem ObjectTemplate.weaponHud.disableOnSprint 1
 rem ---EndComp ---
 rem ---BeginComp:SingleFireComp ---
 ObjectTemplate.createComponent SingleFireComp
