@@ -54,7 +54,7 @@ include ../../common/recoil/05_45x39mm_deployed_recoil.tweak
 rem ---EndComp ---
 
 rem ---BeginComp:SoldierDeviationComp ---
-include ../../common/deviation/deployed_dev.tweak
+include ../../common/deviation/iar_dev.tweak
 
 rem ---EndComp ---
 

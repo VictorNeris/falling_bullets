@@ -55,7 +55,7 @@ rem ObjectTemplate.recoil.recoilGraphExponent 5
 rem ObjectTemplate.recoil.recoilGraphTotalMovement 0.25
 rem ---EndComp ---
 rem ---BeginComp:SoldierDeviationComp ---
-include ../../common/deviation/deployed_dev.tweak
+include ../../common/deviation/iar_dev.tweak
 rem ---EndComp ---
 rem ---BeginComp:DefaultSoundComp ---
 ObjectTemplate.createComponent DefaultSoundComp

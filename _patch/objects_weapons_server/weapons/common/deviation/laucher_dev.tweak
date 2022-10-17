@@ -1,0 +1,19 @@
+rem ====================================================================
+rem ========================= GPMG Deviation File ======================
+rem ====================================================================
+	ObjectTemplate.createComponent SoldierDeviationComp
+	
+	ObjectTemplate.deviation.minDev 0.3333
+
+	ObjectTemplate.deviation.setFireDev 0 0 0
+	ObjectTemplate.deviation.setTurnDev 0.067 10 10 0.1
+	ObjectTemplate.deviation.setSpeedDev 1.6 0.125 0.15 0.5
+	ObjectTemplate.deviation.setMiscDev 2 2 0.05
+ 	ObjectTemplate.deviation.devModStand 1.25
+ 	ObjectTemplate.deviation.devModCrouch 1.0
+	ObjectTemplate.deviation.devModLie 10
+	ObjectTemplate.deviation.devModZoom 0.5
+	
+rem firing     XX
+rem precison   10 MOA
+rem movement   1.5
