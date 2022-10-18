@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile 9mm_pistol
+ObjectTemplate.material 38
+ObjectTemplate.damage 40.6
+ObjectTemplate.minDamage 23.5
+ObjectTemplate.DistToStartLoseDamage 0
+ObjectTemplate.DistToMinDamage 360
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 0.00745
+ObjectTemplate.gravityModifier 1
+include projectiles_common_small.tweak
+include projectiles_tracer_small.tweak
+
+rem 3-4

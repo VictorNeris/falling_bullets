@@ -14,7 +14,7 @@ ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\insurgency_sks_p
 ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\insurgency_sks_pso.dds
 ObjectTemplate.weaponHud.hudName "SKS"
 rem ObjectTemplate.weaponHud.guiIndex 00
-rem ObjectTemplate.weaponHud.altGuiIndex 3633
+rem ObjectTemplate.weaponHud.altGuiIndex 3632
 ObjectTemplate.weaponHud.altGuiIndex 52
 rem ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 52
 rem ObjectTemplate.weaponHud.deviationFactor 5

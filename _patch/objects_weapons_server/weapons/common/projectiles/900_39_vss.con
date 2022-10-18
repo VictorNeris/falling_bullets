@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile 900_39_vss
+ObjectTemplate.material 38
+ObjectTemplate.damage 51.2
+ObjectTemplate.minDamage 30.8
+ObjectTemplate.DistToStartLoseDamage 0
+ObjectTemplate.DistToMinDamage 290
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 0.016
+ObjectTemplate.gravityModifier 1
+include projectiles_common_suppressive.tweak
+include projectiles_tracer_small.tweak
+
+rem 3-3

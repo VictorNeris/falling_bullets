@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile 556_45_rifle
+ObjectTemplate.material 38
+ObjectTemplate.damage 87
+ObjectTemplate.minDamage 61.3
+ObjectTemplate.DistToStartLoseDamage 0
+ObjectTemplate.DistToMinDamage 948
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 0.004
+ObjectTemplate.gravityModifier 1
+include projectiles_common.tweak
+include projectiles_tracer.tweak
+
+rem 2-3

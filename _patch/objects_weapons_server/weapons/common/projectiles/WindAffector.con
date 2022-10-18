@@ -27,10 +27,10 @@ ObjectTemplate.setNetworkableInfo BasicInfo
 ObjectTemplate.createdInEditor 1
 ObjectTemplate.floaterMod 0
 ObjectTemplate.hasMobilePhysics 0
-ObjectTemplate.force 3.5
-ObjectTemplate.constantForce 3.5
+ObjectTemplate.force 0
+ObjectTemplate.constantForce CRD_UNIFORM/5/0/0
 ObjectTemplate.useAbsoluteDirection 1
-ObjectTemplate.startDelay 0.1
+ObjectTemplate.startDelay 0
 
 
 
@@ -39,10 +39,10 @@ ObjectTemplate.setNetworkableInfo BasicInfo
 ObjectTemplate.createdInEditor 1
 ObjectTemplate.floaterMod 0
 ObjectTemplate.hasMobilePhysics 0
-ObjectTemplate.force 5.2
-ObjectTemplate.constantForce 5.2
+ObjectTemplate.force 0
+ObjectTemplate.constantForce CRD_UNIFORM/5/0/0
 ObjectTemplate.useAbsoluteDirection 1
-ObjectTemplate.startDelay 0.5
+ObjectTemplate.startDelay 0
 
 
 
@@ -51,10 +51,10 @@ ObjectTemplate.setNetworkableInfo BasicInfo
 ObjectTemplate.createdInEditor 1
 ObjectTemplate.floaterMod 0
 ObjectTemplate.hasMobilePhysics 0
-ObjectTemplate.force 1.2
-ObjectTemplate.constantForce 1.2
+ObjectTemplate.force 0
+ObjectTemplate.constantForce CRD_UNIFORM/5/0/0
 ObjectTemplate.useAbsoluteDirection 1
-ObjectTemplate.startDelay 0.9
+ObjectTemplate.startDelay 0
 
 
 
@@ -63,7 +63,7 @@ ObjectTemplate.setNetworkableInfo BasicInfo
 ObjectTemplate.createdInEditor 1
 ObjectTemplate.floaterMod 0
 ObjectTemplate.hasMobilePhysics 0
-ObjectTemplate.force 2.5
-ObjectTemplate.constantForce 2.5
+ObjectTemplate.force 0
+ObjectTemplate.constantForce CRD_UNIFORM/5/0/0
 ObjectTemplate.useAbsoluteDirection 1
-ObjectTemplate.startDelay 1.2
+ObjectTemplate.startDelay 0

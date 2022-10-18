@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile 12_gauge_buckshot
+ObjectTemplate.material 41
+ObjectTemplate.damage 15.2
+ObjectTemplate.minDamage 12.17
+ObjectTemplate.DistToStartLoseDamage 0
+ObjectTemplate.DistToMinDamage 420
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 0.00514
+ObjectTemplate.gravityModifier 1
+include projectiles_common_small.tweak
+include projectiles_tracer_small.tweak
+
+rem 4-all

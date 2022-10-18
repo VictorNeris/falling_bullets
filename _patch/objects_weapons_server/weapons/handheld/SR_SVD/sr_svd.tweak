@@ -18,7 +18,7 @@ ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\svd.tga
 ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\svd.tga
 ObjectTemplate.weaponHud.hudName "SVD Dragunov"
 rem ObjectTemplate.weaponHud.guiIndex 00
-ObjectTemplate.weaponHud.altGuiIndex 3633
+ObjectTemplate.weaponHud.altGuiIndex 3632
 rem ObjectTemplate.weaponHud.enablePostProcessingOnGuiIndex 52
 rem ---EndComp ---
 rem ---BeginComp:PostProcess ---
