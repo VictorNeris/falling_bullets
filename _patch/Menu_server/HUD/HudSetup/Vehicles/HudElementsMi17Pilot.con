@@ -85,7 +85,7 @@ hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
 
 hudBuilder.createTextNode		Mi17PilotHud Mi17TorquePercentValue 241 201 40 10
 hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
-hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setTextNodeStringVariable	RpmString
 hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
 
 rem ------ Speed/Alt ------

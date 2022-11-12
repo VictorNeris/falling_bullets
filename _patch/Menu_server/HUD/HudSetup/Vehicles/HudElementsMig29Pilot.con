@@ -61,7 +61,7 @@ hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
 
 hudBuilder.createTextNode		MIG29Hud Mig29TorqueValue 213 325 40 10
 hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
-hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setTextNodeStringVariable	RpmString
 hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
 
 hudBuilder.createPictureNode		MIG29Hud Mig29AltitudeBox 529 279 64 32

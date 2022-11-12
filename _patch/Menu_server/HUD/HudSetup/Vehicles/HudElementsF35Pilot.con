@@ -59,7 +59,7 @@ hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
 
 hudBuilder.createTextNode		F35PilotHud F35TorqueValue 221 325 40 10
 hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
-hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setTextNodeStringVariable	RpmString
 hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
 
 hudBuilder.createPictureNode		F35PilotHud F35AltitudeBox 539 279 64 32
