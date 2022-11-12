@@ -1,0 +1,129 @@
+hudBuilder.createSplitNode		VehicleHuds HavocPilotHud
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 28
+hudBuilder.addNodeBlendEffect		7 2
+
+rem ------ Compass ------
+
+hudBuilder.createCompassNode 		HavocPilotHud HavocCompass 3 290 125 200 32 1 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_compas.tga
+hudBuilder.setCompassNodeTextureSize	512 32
+hudBuilder.setCompassNodeBorder		0 0 0 152
+hudBuilder.setCompassNodeValueVariable	VehicleAngle
+hudBuilder.setCompassNodeOffset		121
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createPictureNode		HavocPilotHud HavocCompassArrow 393 156 16 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_compasarrow.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+rem ------ HorizonBar ------
+
+hudBuilder.createPictureNode		HavocPilotHud HavocPilotMissileHorizon 285 303 231 3
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Attack\Su30\Navigation\horizon.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setNodePosVariable		1 AngleOfAttack
+hudBuilder.setPictureNodeRotateVariable VehicleBanking
+hudBuilder.setPictureNodeCenterPoint 	0 0
+
+rem ------ Crosshair ------
+
+hudBuilder.createPictureNode		HavocPilotHud HavocCrosshair 385 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_crosshair.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+rem -------------------------------------- Hit Indication----------------------------------------------------
+
+hudBuilder.createPictureNode 		HavocPilotHud HavocPilotHitIndication 384 284 32 32
+hudBuilder.setPictureNodeTexture 	Ingame/CrossHair/vsp_HitIndicator.tga
+hudBuilder.setNodeColor 		0.952 0.243 0.019 1
+hudBuilder.setNodeAlphaVariable     	HitIndicatorIconAlpha
+hudBuilder.setNodeShowVariable 		HitIndicatorIconShow
+
+rem ------ Hover ------
+
+hudBuilder.createHoverNode		HavocPilotHud HavocHover 280 100 240 360
+hudBuilder.setHoverInMiddlePos		385 280
+hudBuilder.setHoverMaxValue		0.5
+hudBuilder.setHoverWidthLength		20 20
+
+hudBuilder.createPictureNode		HavocPilotHud HavocHoverPic 385 279 32 32
+hudBuilder.setNodePosVariable		0 HavocHoverHoverNodeXPos
+hudBuilder.setNodePosVariable		1 HavocHoverHoverNodeYPos
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_hoverpos.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setNodeShowVariable 	 	HavocHoverHoverNodeShow
+
+rem ------ ClimbBar ------
+
+hudBuilder.createPictureNode		HavocPilotHud HavocClimbBar 490 200 64 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_climbbar.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createCompassNode 		HavocPilotHud HavocClimbBarArrow 0 494 225 32 115 0 1
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_meterarrow.tga
+hudBuilder.setCompassNodeTextureSize	32 256
+hudBuilder.setCompassNodeBorder		0 141 0 0
+hudBuilder.setCompassNodeValueVariable	VehicleElevationSpeedAngle
+hudBuilder.setCompassNodeOffset		-45
+hudBuilder.setCompassNodeSnapOffset	13 13 0 0
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+rem ------ Torque ------
+
+hudBuilder.createPictureNode		HavocPilotHud HavocTorqueBar 252 190 64 256
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_torque.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createCompassNode 		HavocPilotHud HavocTorqueArrow 0 257 215 32 163 0 1
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_meterarrow.tga
+hudBuilder.setCompassNodeTextureSize	32 256
+hudBuilder.setCompassNodeBorder		0 92 0 0
+hudBuilder.setCompassNodeValueVariable	TorqueAngle
+hudBuilder.setCompassNodeOffset		-150
+hudBuilder.setCompassNodeSnapOffset	13 13 0 0
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createTextNode		HavocPilotHud HavocTorquePercentValue 241 201 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+rem ------ Speed/Alt ------
+
+hudBuilder.createPictureNode		HavocPilotHud HavocSpeedBox 485 393 128 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_speed.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createTextNode		HavocPilotHud HavocSpeedValue 478 408 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	SpeedString
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createTextNode		HavocPilotHud HavocAltitudeValue 496 212 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 0
+hudBuilder.setTextNodeStringVariable	AltitudeString
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+rem ------ Gunner ------
+
+hudBuilder.createPictureNode		HavocPilotHud HavocGunnerBar 362 397 128 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_gunnerbar.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+hudBuilder.createCompassNode 		HavocPilotHud HavocGunnerBarView 3 365 405 79 16 0 0
+hudBuilder.setCompassNodeTexture 	1 Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_gunnerwiew.tga
+hudBuilder.setCompassNodeTextureSize	128 16
+hudBuilder.setCompassNodeBorder		0 0 0 8
+hudBuilder.setCompassNodeValueVariable	GunnerAngle
+hudBuilder.setCompassNodeOffset		-34
+rem hudBuilder.setCompassNodeSnapOffset	0 0 8 8
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+
+beginrem
+
+hudBuilder.createPictureNode		HavocPilotHud HavocGunnerBarView 392 442 16 16
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\havoc\havoc_gunnerwiew.tga
+hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
+hudBuilder.setNodeLogicShowVariable 	EQUAL GuiIndex 28
+
+endrem
