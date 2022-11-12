@@ -53,6 +53,17 @@ hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
 hudBuilder.setTextNodeStringVariable	SpeedString
 hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
 
+rem ----- engine rotation -----
+hudBuilder.createPictureNode		F15PilotHud F15TorqueBox 230 311 64 32
+hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\Navigation\speedBox.tga
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+hudBuilder.createTextNode		F15PilotHud F15TorqueValue 221 325 40 10
+hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
+hudBuilder.setTextNodeStringVariable	TorqueString
+hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
+
+
 hudBuilder.createPictureNode		F15PilotHud F15AltitudeBox 539 279 64 32
 hudBuilder.setPictureNodeTexture 	Ingame\Vehicles\Icons\Hud\Air\Improved\Attack\F15\Navigation\altBox.tga
 hudBuilder.setNodeColor		 	0.333 0.639 0.341 1
