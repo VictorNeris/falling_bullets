@@ -60,7 +60,7 @@ hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
 
 hudBuilder.createTextNode		SU34PilotHud Su34TorqueValue 213 325 40 10
 hudBuilder.setTextNodeStyle		Fonts/vehicleHudFont_6.dif 1
-hudBuilder.setTextNodeStringVariable	RpmString
+hudBuilder.setTextNodeStringVariable	TorqueString
 hudBuilder.setNodeColor		 	0.952 0.243 0.019 1
 
 hudBuilder.createPictureNode		SU34PilotHud Su34AltitudeBox 529 279 64 32
