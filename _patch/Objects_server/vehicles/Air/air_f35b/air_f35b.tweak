@@ -146,9 +146,9 @@ ObjectTemplate.seatInformation air_f35b 0/1.09134/5.78426 0/0/0
 ObjectTemplate.seatAnimationSystem Objects/Vehicles/Air/Air_f35b/3p_air_f35b_pilot_animSys.inc
 ObjectTemplate.soundFilter airplane
 ObjectTemplate.sprintRecoverTime 30
-ObjectTemplate.sprintDissipationTime 15
+ObjectTemplate.sprintDissipationTime 600
 ObjectTemplate.sprintLimit 0.2
-ObjectTemplate.sprintFactor 2.25
+ObjectTemplate.sprintFactor 2.85
 ObjectTemplate.vehicleCategory VCAir
 ObjectTemplate.listenerObstruction 0.995
 ObjectTemplate.damagedAmbientSoundLimit 0.3
@@ -716,9 +716,9 @@ ObjectTemplate.setMaxRotation 0/0/5000
 ObjectTemplate.setMaxSpeed 0/0/150
 ObjectTemplate.setAcceleration 0/0/300
 ObjectTemplate.setInputToRoll PIThrottle
-ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 100
+ObjectTemplate.setTorque 50
 ObjectTemplate.setDifferential 20
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -815,7 +815,7 @@ rem -------------------------------------
 ObjectTemplate.addTemplate S_air_f35b_BodyWingVertical_RotationRpm
 rem -------------------------------------
 ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 2
+ObjectTemplate.setWingLift 3
 ObjectTemplate.setFlapLift 0
 
 ObjectTemplate.activeSafe Sound S_air_f35b_BodyWingVertical_RotationRpm

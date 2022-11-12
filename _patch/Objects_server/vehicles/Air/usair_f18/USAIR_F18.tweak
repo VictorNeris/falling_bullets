@@ -142,9 +142,9 @@ ObjectTemplate.seatInformation usair_f18 0/1.24422/5.29191 0/0/0
 ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
 ObjectTemplate.soundFilter airplane
 ObjectTemplate.sprintRecoverTime 30
-ObjectTemplate.sprintDissipationTime 10
+ObjectTemplate.sprintDissipationTime 600
 ObjectTemplate.sprintLimit 0.2
-ObjectTemplate.sprintFactor 2
+ObjectTemplate.sprintFactor 2.5
 ObjectTemplate.vehicleCategory VCAir
 ObjectTemplate.setVehicleType VTFighter
 ObjectTemplate.listenerObstruction 0.995
@@ -643,9 +643,9 @@ ObjectTemplate.setMaxRotation 0/0/5000
 ObjectTemplate.setMaxSpeed 0/0/200
 ObjectTemplate.setAcceleration 0/0/300
 ObjectTemplate.setInputToRoll PIThrottle
-ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 100
+ObjectTemplate.setTorque 50
 ObjectTemplate.setDifferential 30
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -755,9 +755,9 @@ ObjectTemplate.setMaxRotation 0/0/5000
 ObjectTemplate.setMaxSpeed 0/0/200
 ObjectTemplate.setAcceleration 0/0/300
 ObjectTemplate.setInputToRoll PIThrottle
-ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 100
+ObjectTemplate.setTorque 50
 ObjectTemplate.setDifferential 30
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -821,7 +821,7 @@ rem -------------------------------------
 ObjectTemplate.addTemplate S_usair_f18_BodyWingVertical_RotationRpm
 rem -------------------------------------
 ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setWingLift 2.5
 ObjectTemplate.setFlapLift 0
 
 ObjectTemplate.activeSafe Sound S_usair_f18_BodyWingVertical_RotationRpm
