@@ -144,7 +144,7 @@ ObjectTemplate.soundFilter airplane
 ObjectTemplate.sprintRecoverTime 30
 ObjectTemplate.sprintDissipationTime 600
 ObjectTemplate.sprintLimit 0.2
-ObjectTemplate.sprintFactor 2.5
+ObjectTemplate.sprintFactor 1.8
 ObjectTemplate.vehicleCategory VCAir
 ObjectTemplate.setVehicleType VTFighter
 ObjectTemplate.listenerObstruction 0.995

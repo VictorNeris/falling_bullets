@@ -143,7 +143,7 @@ ObjectTemplate.soundFilter airplane
 ObjectTemplate.sprintRecoverTime 30
 ObjectTemplate.sprintDissipationTime 600
 ObjectTemplate.sprintLimit 0.2
-ObjectTemplate.sprintFactor 2.5
+ObjectTemplate.sprintFactor 1.8
 ObjectTemplate.vehicleCategory VCAir
 ObjectTemplate.setVehicleType VTFighter
 ObjectTemplate.listenerObstruction 0.995
@@ -753,7 +753,7 @@ ObjectTemplate.setAcceleration 0/0/300
 ObjectTemplate.setInputToRoll PIThrottle
 ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 60
+ObjectTemplate.setTorque 55
 ObjectTemplate.setDifferential 30
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -847,7 +847,7 @@ ObjectTemplate.setAcceleration 0/0/300
 ObjectTemplate.setInputToRoll PIThrottle
 ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 60
+ObjectTemplate.setTorque 55
 ObjectTemplate.setDifferential 30
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
